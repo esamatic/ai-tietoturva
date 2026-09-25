@@ -2,198 +2,226 @@
   "vendors": [
     {
       "id": "ms",
-      "name": "Microsoft"
+      "name": "Microsoft",
+      "color": "#2B67A8",
+      "color_dark": "#6FA3DC"
     },
     {
       "id": "go",
-      "name": "Google"
+      "name": "Google",
+      "color": "#2F7D5B",
+      "color_dark": "#6CC29A"
     },
     {
       "id": "an",
-      "name": "Anthropic"
+      "name": "Anthropic",
+      "color": "#8A5A2B",
+      "color_dark": "#D3A06E"
     },
     {
       "id": "oa",
-      "name": "OpenAI"
+      "name": "OpenAI",
+      "color": "#5A4A9C",
+      "color_dark": "#A796E0"
     }
   ],
   "groups": [
     {
-      "id": "data_use",
-      "label": "Datan käyttö"
+      "id": "baseline",
+      "label": "Kynnysehdot",
+      "tier": "threshold"
     },
     {
-      "id": "access",
-      "label": "Pääsynhallinta"
-    },
-    {
-      "id": "encryption",
-      "label": "Salaus"
+      "id": "data_access",
+      "label": "Datan käyttö ja pääsy",
+      "tier": "differentiator"
     },
     {
       "id": "location",
-      "label": "Sijainti ja lainkäyttöalue"
+      "label": "Sijainti ja lainkäyttöalue",
+      "tier": "differentiator"
     },
     {
-      "id": "contracts",
-      "label": "Sopimukset ja sertifikaatit"
+      "id": "access",
+      "label": "Pääsynhallinta ja valvonta",
+      "tier": "differentiator"
+    },
+    {
+      "id": "encryption",
+      "label": "Salaus ja avainten hallinta",
+      "tier": "differentiator"
     },
     {
       "id": "llm",
-      "label": "LLM-spesifit riskit"
+      "label": "Agentit ja integraatiot",
+      "tier": "differentiator"
     },
     {
-      "id": "ops",
-      "label": "Operatiivinen"
+      "id": "commercial",
+      "label": "Kaupalliset ehdot",
+      "tier": "differentiator"
     }
   ],
   "rows": [
     {
       "id": "training",
-      "group": "data_use",
+      "group": "baseline",
       "label": "Koulutus asiakasdatalla",
-      "hint": "Käytetäänkö prompteja, vastauksia tai tiedostoja mallien koulutukseen",
+      "hint": "Käytetäänkö yrityksen syötteitä mallien koulutukseen. Kyllä-vastaus sulkee vaihtoehdon pois.",
       "added": "2026-09-25"
     },
     {
-      "id": "human_review",
-      "group": "data_use",
-      "label": "Ihmistarkastus",
-      "hint": "Voiko palveluntarjoajan henkilöstö lukea sisältöä",
+      "id": "dpa",
+      "group": "baseline",
+      "label": "DPA ja GDPR-rooli",
+      "hint": "Onko tarjoaja sopimuksella henkilötietojen käsittelijä. Ilman tätä palvelua ei voi käyttää henkilötiedoille.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "certifications",
+      "group": "baseline",
+      "label": "Sertifikaatit",
+      "hint": "Riippumaton varmennus tietoturvasta. Tarkista, kattaako sertifikaatti juuri tämän lisenssin.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "incident_notification",
+      "group": "baseline",
+      "label": "Tietoturvapoikkeamista ilmoittaminen",
+      "hint": "Sopimukseen kirjattu ilmoitusaika ja -tapa. Tarvitaan omien GDPR- ja NIS2-velvoitteiden täyttämiseen.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "ai_act",
+      "group": "baseline",
+      "label": "EU AI Act -valmius",
+      "hint": "Tarjoajan GPAI-velvoitteet ja käyttäjälle annettava dokumentaatio, jota tarvitaan omien velvoitteiden arviointiin.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "provider_access",
+      "group": "data_access",
+      "label": "Palveluntarjoajan pääsy dataan",
+      "hint": "Voiko tarjoajan henkilöstö lukea sisältöä, ja voiko asiakas hyväksyä tai estää pääsyn (esim. Customer Lockbox).",
       "added": "2026-09-25"
     },
     {
       "id": "retention",
-      "group": "data_use",
+      "group": "data_access",
       "label": "Säilytys ja poistaminen",
-      "hint": "Kauanko keskustelut säilyvät ja voiko sitä hallita",
+      "hint": "Kauanko data säilyy ja voiko sen sovittaa omiin säilytys- ja eDiscovery-vaatimuksiin.",
       "added": "2026-09-25"
     },
     {
-      "id": "sso",
-      "group": "access",
-      "label": "SSO ja identiteetti",
-      "hint": "Kertakirjautuminen, MFA, ehdollinen pääsy",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "scim",
-      "group": "access",
-      "label": "SCIM-provisiointi",
-      "hint": "Käyttäjien automaattinen lisäys ja poisto IdP:stä",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "rbac",
-      "group": "access",
-      "label": "Roolit ja ominaisuusrajaukset",
-      "hint": "RBAC, IP-rajaukset, ominaisuuksien kytkeminen pois",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "audit",
-      "group": "access",
-      "label": "Audit-lokit",
-      "hint": "Kuka teki mitä ja milloin; eDiscovery",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "visibility",
-      "group": "access",
-      "label": "Mitä avustaja näkee",
-      "hint": "Oversharing-riski: mihin dataan malli pääsee käsiksi",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "personal_accounts",
-      "group": "access",
-      "label": "Henkilökohtaisten tilien hallinta",
-      "hint": "Shadow AI: voiko työntekijöiden omat tilit tuoda hallintaan",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "encryption_basic",
-      "group": "encryption",
-      "label": "Salaus siirrossa ja levossa",
-      "hint": "",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "cmk",
-      "group": "encryption",
-      "label": "Asiakkaan hallinnoimat avaimet",
-      "hint": "CMK / BYOK / EKM / CSE",
+      "id": "data_egress",
+      "group": "data_access",
+      "label": "Datan kulku palvelun ulkopuolelle",
+      "hint": "Lähteekö dataa web-hakuun, kolmansien osapuolten malleille tai konnektoreille eri ehdoilla kuin itse palvelussa.",
       "added": "2026-09-25"
     },
     {
       "id": "storage_eu",
       "group": "location",
       "label": "Tallennus EU:ssa",
-      "hint": "Data levossa",
+      "hint": "Pysyykö levossa oleva data EU:ssa.",
       "added": "2026-09-25"
     },
     {
       "id": "inference_eu",
       "group": "location",
-      "label": "Käsittely (inferenssi) EU:ssa",
-      "hint": "Missä malli ajetaan",
+      "label": "Käsittely EU:ssa",
+      "hint": "Ajetaanko malli EU:ssa. Usein eri asia kuin tallennus.",
       "added": "2026-09-25"
     },
     {
       "id": "jurisdiction",
       "group": "location",
       "label": "Lainkäyttöalue",
-      "hint": "",
-      "added": "2026-09-25",
-      "span": true
-    },
-    {
-      "id": "subprocessors",
-      "group": "location",
-      "label": "Alihankkijat ja kolmansien osapuolten mallit",
-      "hint": "",
+      "hint": "Minkä maan lainsäädäntö voi velvoittaa tarjoajan luovuttamaan dataa (esim. US CLOUD Act).",
       "added": "2026-09-25"
     },
     {
-      "id": "dpa",
-      "group": "contracts",
-      "label": "DPA ja GDPR-rooli",
-      "hint": "",
+      "id": "identity",
+      "group": "access",
+      "label": "Identiteetin- ja käyttäjähallinta",
+      "hint": "Kirjautuminen yrityksen tunnuksilla (SSO) ja automaattinen käyttäjähallinta (SCIM): poistuneen työntekijän pääsy katkeaa automaattisesti.",
       "added": "2026-09-25"
     },
     {
-      "id": "certifications",
-      "group": "contracts",
-      "label": "Sertifikaatit",
-      "hint": "Tarkista aina, kuuluuko juuri tämä palvelu scopeen",
+      "id": "rbac",
+      "group": "access",
+      "label": "Roolit ja ominaisuusrajaukset",
+      "hint": "Voiko ominaisuuksia ja pääsyä rajata ryhmittäin, esim. sallia konnektorit vain osalle käyttäjistä.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "dlp",
+      "group": "access",
+      "label": "DLP ja tietoluokitus",
+      "hint": "Kunnioittaako avustaja luottamuksellisuusluokituksia ja voiko syötteisiin ja vastauksiin soveltaa tietovuodon estosääntöjä.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "audit",
+      "group": "access",
+      "label": "Audit-lokit ja eDiscovery",
+      "hint": "Voidaanko käyttö selvittää jälkikäteen tietoturvapoikkeamassa tai oikeudellisessa selvityksessä.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "visibility",
+      "group": "access",
+      "label": "Mitä avustaja näkee",
+      "hint": "Integroitu avustaja näkee kaiken, mihin käyttäjällä on oikeus. Liian laajat jako-oikeudet on siivottava ennen käyttöönottoa.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "personal_accounts",
+      "group": "access",
+      "label": "Henkilökohtaisten tilien hallinta",
+      "hint": "Voiko työntekijöiden omat tilit tuoda organisaation hallintaan (shadow AI).",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "cmk",
+      "group": "encryption",
+      "label": "Asiakkaan hallinnoimat avaimet",
+      "hint": "Voiko yritys hallita salausavaimia itse ja siten estää pääsyn dataansa. Tarpeen lähinnä säännellyillä aloilla.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "agents",
+      "group": "llm",
+      "label": "Agenttiominaisuudet ja niiden hallinta",
+      "hint": "Mihin järjestelmiin avustaja pääsee ja mitä se voi tehdä (konnektorit, koodin suoritus, selain- ja tietokoneagentit), ja voiko näitä rajata.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "pricing",
+      "group": "commercial",
+      "label": "Hinta ja vähimmäissitoumus",
+      "hint": "Listahinta per käyttäjä, vähimmäismäärät ja sitoumus. Tietoturvaominaisuudet ovat usein vain kalliimmissa tasoissa.",
       "added": "2026-09-25"
     },
     {
       "id": "ip_indemnity",
-      "group": "contracts",
+      "group": "commercial",
       "label": "Tekijänoikeusvastuu",
-      "hint": "Puolustaako tarjoaja asiakasta outputia koskevissa vaateissa",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "prompt_injection",
-      "group": "llm",
-      "label": "Prompt injection -suojaus",
-      "hint": "Suojaus haitallisia ohjeita sisältävää sisältöä vastaan",
-      "added": "2026-09-25"
-    },
-    {
-      "id": "connectors",
-      "group": "llm",
-      "label": "Agenttien ja konnektorien hallinta",
-      "hint": "Mihin järjestelmiin avustaja pääsee ja kenen oikeuksin",
+      "hint": "Puolustaako tarjoaja asiakasta, jos tuotettu sisältö loukkaa tekijänoikeuksia.",
       "added": "2026-09-25"
     },
     {
       "id": "sla",
-      "group": "ops",
+      "group": "commercial",
       "label": "SLA ja tuki",
-      "hint": "",
+      "hint": "Sopimukseen kirjattu saatavuus ja tuen taso.",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "exit",
+      "group": "commercial",
+      "label": "Datan vienti ja irtautuminen",
+      "hint": "Saako datan ulos ja mitä sille tapahtuu sopimuksen päättyessä (lock-in-riski).",
       "added": "2026-09-25"
     }
   ],
