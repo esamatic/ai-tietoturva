@@ -4,7 +4,7 @@ from __future__ import annotations
 import sys
 from collections import Counter
 
-from common import DATE_RE, ID_RE, SOURCE_TYPES, SPAN_COL, STATUS_LABELS, load_all
+from common import DATE_RE, ID_RE, SOURCE_TYPES, SPAN_COL, STATUS_LABELS, TIERS, load_all
 
 
 def main() -> int:
@@ -23,6 +23,7 @@ def main() -> int:
     errors += [f"sarake {c['id']}: tuntematon vendor {c['vendor']}" for c in st["columns"] if c["vendor"] not in vendors]
     errors += [f"rivi {r['id']}: tuntematon group {r['group']}" for r in st["rows"] if r["group"] not in groups]
     errors += [f"lähde {s['id']}: tyyppi {s.get('type')!r}" for s in sources if s.get("type") not in SOURCE_TYPES]
+    errors += [f"ryhmä {g['id']}: tier {g['tier']!r}" for g in st["groups"] if "tier" in g and g["tier"] not in TIERS]
 
     rows = {r["id"]: r for r in st["rows"]}
     cols = {c["id"] for c in st["columns"]}

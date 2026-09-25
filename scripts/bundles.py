@@ -19,7 +19,8 @@ RECAP = """Vastaa noudattaen projektin ohjeita (prompts/project_instructions.md)
 - Jokaisella solulla (paitsi tila u) vähintään yksi lähde; merkitse lähdetyyppi primary/secondary.
 - Muuta tekstiä vain, jos tila tai lähteen sisältö muuttui. Perustele muutos kentässä reason.
 - Solut, jotka tarkistit ja jotka pitävät yhä paikkansa, listaa kenttään unchanged.
-- Jos et pysty varmistamaan asiaa, käytä tilaa u tai merkitse verify: true. Älä arvaa."""
+- Jos et pysty varmistamaan asiaa, käytä tilaa u tai merkitse verify: true. Älä arvaa.
+- Rivin hint kertoo, mitä rivillä arvioidaan; pysy sen rajauksessa."""
 
 
 def _resolve_sources(cell: dict, sources_by_id: dict) -> list[dict]:
@@ -126,11 +127,12 @@ def full_research(vendor_id: str, data: dict, col_ids: list[str] | None = None) 
     views = [_cell_view(key(r["id"], c["id"]), cells.get(key(r["id"], c["id"])), sources_by_id)
              for r in st["rows"] if not r.get("span") for c in cols]
     unsourced = sum(1 for v in views if v.get("status") and v["status"] != "u" and not v.get("sources"))
+    unresearched = sum(1 for v in views if v.get("status") is None)
     parts = [
         f"Tehtävä: täysi tarkistus tarjoajalle {vendors[vendor_id]}. (1) Selvitä, onko tarjoajalla uusia, "
         "poistuneita tai uudelleennimettyjä yrityslisenssejä; ehdota uudet sarakkeet patchin columns-kentässä. "
-        "(2) Tarkista jokainen solu ensisijaisista lähteistä. Erityisesti lähteettömät solut "
-        f"({unsourced} kpl) ja verify-merkityt. (3) Ehdota seurattaviksi lähteiksi keskeiset ensisijaiset sivut.",
+        "(2) Tarkista jokainen solu ensisijaisista lähteistä. Erityisesti tutkimattomat solut "
+        f"({unresearched} kpl), lähteettömät solut ({unsourced} kpl) ja verify-merkityt. (3) Ehdota seurattaviksi lähteiksi keskeiset ensisijaiset sivut.",
         f"Sarakkeet:\n{_json(_columns_view(cols, vendors))}",
         f"Rivit:\n{_json([{'row': r['id'], 'label': r['label'], 'hint': r.get('hint', '')} for r in st['rows'] if not r.get('span')])}",
         f"Nykyiset solut:\n{_json(views)}",

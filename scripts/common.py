@@ -17,6 +17,7 @@ OUT = ROOT / "out"
 
 STATUS_LABELS = {"y": "✓ Kyllä", "p": "◐ Osittain", "n": "✕ Ei", "u": "? Ei tiedossa"}
 SOURCE_TYPES = {"primary", "secondary"}
+TIERS = {"threshold", "differentiator"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{1,60}$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SPAN_COL = "*"

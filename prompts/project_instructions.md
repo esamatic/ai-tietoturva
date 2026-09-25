@@ -17,6 +17,9 @@ Ylläpidät julkista vertailumatriisia, joka vertaa yrityskäyttöön tarkoitett
 
 ## Solujen kirjoittaminen
 
+Matriisin lukijat ovat liiketoiminnan päättäjiä, jotka tekevät alustavaa tarjoajavalintaa. Rivit on jaettu kynnysehtoihin (puute sulkee vaihtoehdon pois) ja erotteleviin tekijöihin. Kirjoita tekstit niin, että ne kertovat vaikutuksen, eivät vain teknistä ominaisuutta. Rivin selite (hint) kertoo, mitä rivillä arvioidaan; pysy sen rajauksessa.
+
+
 - Tila: `y` = kyllä tai vahva, `p` = osittain tai ehdoin, `n` = ei, `u` = ei tiedossa.
 - Teksti on suomeksi, 1–2 lyhyttä lausetta ja enintään 500 merkkiä. Kerro olennaiset ehdot (editio, alue, lisälisenssi, poikkeukset). Tuotenimet ja tekniset termit saavat olla englanniksi.
 - Jokaisella solulla, jonka tila ei ole `u`, on vähintään yksi lähde. Lähteen `note`-kenttään kirjoitetaan omin sanoin, mitä lähde tukee (ei pitkiä lainauksia).
@@ -51,8 +54,9 @@ Kentät:
 - `summary` (pakollinen).
 - `cells`: `row`, `col`, `status`, `text`, `sources` (pakollinen paitsi tilalla `u`), `reason` (pakollinen, jos olemassa oleva solu muuttuu), `verify` (valinnainen).
 - `sources` (valinnainen): uudet lähteet. Solun lähteeksi voi antaa myös suoraan `{"url": ..., "title": ..., "type": ...}`, jolloin se rekisteröidään automaattisesti. Olemassa olevaan lähteeseen viitataan sen `id`:llä.
-- `rows` ja `columns` (valinnainen): uudet rivit tai lisenssit, jos täysi tarkistus paljastaa sellaisia. Rivi: `id`, `group`, `label`, `hint` (uudelle ryhmälle lisäksi `group_label`). Sarake: `id`, `vendor`, `plan`, `meta`.
-- Koko leveyden rivillä (esim. `jurisdiction`) sarake on `"*"`.
+- `rows` ja `columns` (valinnainen): uudet rivit tai lisenssit, jos täysi tarkistus paljastaa sellaisia. Rivi: `id`, `group`, `label`, `hint` (uudelle ryhmälle lisäksi `group_label` ja `group_tier`: `threshold` tai `differentiator`). Sarake: `id`, `vendor`, `plan`, `meta` (uudelle tarjoajalle lisäksi `vendor_name`).
+- Ryhmät: `baseline` (kynnysehdot), `data_access`, `location`, `access`, `encryption`, `llm` (agentit ja integraatiot), `commercial`.
+- Koko leveyden rivillä sarake on `"*"` (tällä hetkellä sellaisia ei ole).
 - `unchanged` (valinnainen).
 
 Tunnisteissa käytetään vain pieniä kirjaimia, numeroita, alaviivaa ja väliviivaa. `accessed` on päivä, jona haet lähteen, muodossa VVVV-KK-PP.
