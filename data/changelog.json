@@ -2,6 +2,38 @@
   {
     "date": "2026-09-25",
     "ref": "",
+    "summary": "Rivistön uudistus: kynnysehdot ja erottelevat tekijät erotettu; SSO ja SCIM yhdistetty; kolme riviä rajattu uudelleen (varmistettava); salaus- ja prompt injection -rivit poistettu; lainkäyttöalue sarakekohtaiseksi; viisi uutta riviä.",
+    "changes": [
+      {
+        "kind": "row",
+        "key": "incident_notification",
+        "text": "Tietoturvapoikkeamista ilmoittaminen"
+      },
+      {
+        "kind": "row",
+        "key": "ai_act",
+        "text": "EU AI Act -valmius"
+      },
+      {
+        "kind": "row",
+        "key": "dlp",
+        "text": "DLP ja tietoluokitus"
+      },
+      {
+        "kind": "row",
+        "key": "pricing",
+        "text": "Hinta ja vähimmäissitoumus"
+      },
+      {
+        "kind": "row",
+        "key": "exit",
+        "text": "Datan vienti ja irtautuminen"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "ref": "",
     "summary": "Ensimmäinen versio: matriisi muunnettu datamalliin ja lähteistetty solukohtaisesti.",
     "changes": []
   }
