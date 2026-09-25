@@ -16,7 +16,7 @@ import json
 import re
 import sys
 
-from common import (DATE_RE, ID_RE, SOURCE_TYPES, SPAN_COL, STATUS_LABELS, key, load_all,
+from common import (DATE_RE, ID_RE, SOURCE_TYPES, SPAN_COL, STATUS_LABELS, TIERS, key, load_all,
                     normalize_url, out_path, save, set_output, source_id_for, today)
 
 PATCH_RE = re.compile(r"BEGIN-PATCH\s*(.*?)\s*END-PATCH", re.S)
@@ -141,7 +141,11 @@ def apply(patch: dict, data: dict, ref: str) -> tuple[dict, list[str], list[dict
             continue
         if group not in group_ids:
             if row.get("group_label") and ID_RE.match(group or ""):
-                st["groups"].append({"id": group, "label": row["group_label"]})
+                tier = row.get("group_tier", "differentiator")
+                if tier not in TIERS:
+                    errors.append(f"{where}: group_tier pitää olla threshold tai differentiator.")
+                    continue
+                st["groups"].append({"id": group, "label": row["group_label"], "tier": tier})
                 group_ids.add(group)
             else:
                 errors.append(f"{where}: tuntematon group {group!r} (uudelle anna myös group_label).")

@@ -75,6 +75,9 @@ table.m{border-collapse:separate;border-spacing:0;min-width:100%;font-size:.83re
 .m th.rowh small{display:block;font-weight:400;color:var(--muted);margin-top:2px;line-height:1.35}
 .m tr.group th{position:sticky;left:0;background:var(--group);z-index:1;font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-size:.95rem;font-weight:600;padding:7px 12px}
 .m tr.group td{background:var(--group)}
+.m tr.tier th{position:sticky;left:0;z-index:1;background:var(--ink);color:var(--surface);font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-size:1.05rem;font-weight:600;padding:9px 12px;letter-spacing:.01em}
+.m tr.tier td{background:var(--ink);color:var(--surface);font-size:.82rem;padding:9px 12px;vertical-align:middle}
+.m tr.tier td span{position:sticky;left:236px}
 .m td.cell{padding:8px 10px 9px;line-height:1.4}
 .m td.cell.x{background:var(--x-bg);color:var(--muted)}
 .m td.cell.chg{box-shadow:inset 3px 0 0 var(--chg)}
@@ -147,7 +150,20 @@ const S = D.structure, CELLS = D.cells, SRC = Object.fromEntries(D.sources.map(s
 const MON = D.monitor || {};
 const LABEL = {y:"✓ Kyllä", p:"◐ Osittain", n:"✕ Ei", u:"? Ei tiedossa"};
 const VEND = Object.fromEntries(S.vendors.map(v => [v.id, v.name]));
-const vc = v => ["ms","go","an","oa"].includes(v) ? `var(--${v})` : "var(--other)";
+// vendor colours come from data; vendors without one get a fallback palette
+const FALLBACK = [["#9C3D54","#E08BA0"],["#2A7F8F","#6CC5D4"],["#7A6A1F","#D2BE62"],["#4E5D9C","#98A6E6"],["#A0522D","#E3A27C"]];
+(() => {
+  let i = 0, light = "", dark = "";
+  for (const v of S.vendors) {
+    const [l, d] = v.color ? [v.color, v.color_dark || v.color] : FALLBACK[i++ % FALLBACK.length];
+    light += `--v-${v.id}:${l};`; dark += `--v-${v.id}:${d};`;
+  }
+  const css = `:root{${light}}@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){${dark}}}:root[data-theme="dark"]{${dark}}`;
+  document.head.insertAdjacentHTML("beforeend", `<style>${css}</style>`);
+})();
+const vc = v => `var(--v-${v}, var(--other))`;
+const TIERS = D.meta.tiers || {};
+const TIER_ORDER = ["threshold", "differentiator"];
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt = d => d ? d.split("-").reverse().map(x => x.replace(/^0/, "")).join(".") : "";
 const WINDOW = D.meta.change_window_days || 45;
@@ -214,16 +230,26 @@ function build() {
     h += `<th scope="col" data-v="${esc(c.vendor)}" style="--vc:${vc(c.vendor)}"><span class="vendor">${esc(VEND[c.vendor] || c.vendor)}</span><span class="plan">${esc(c.plan)}</span><span class="meta">${esc(c.meta)}${isNew}</span></th>`;
   }
   h += "</tr></thead><tbody>";
-  for (const g of S.groups) {
+  const tierOf = g => TIER_ORDER.includes(g.tier) ? g.tier : "differentiator";
+  const groups = TIER_ORDER.flatMap(t => S.groups.filter(g => tierOf(g) === t));
+  let curTier = null;
+  for (const g of groups) {
     const rows = S.rows.filter(r => r.group === g.id);
     if (!rows.length) continue;
-    h += `<tr class="group" data-group="${esc(g.id)}"><th scope="rowgroup">${esc(g.label)}</th><td class="gfill" colspan="${S.columns.length}"></td></tr>`;
+    const t = tierOf(g);
+    if (t !== curTier && TIERS[t]) {
+      curTier = t;
+      h += `<tr class="tier" data-tier="${t}"><th scope="rowgroup">${esc(TIERS[t].label)}</th><td class="gfill" colspan="${S.columns.length}"><span>${esc(TIERS[t].description || "")}</span></td></tr>`;
+    }
+    // a group named like its tier (e.g. "Kynnysehdot") needs no second header
+    if (!TIERS[t] || g.label !== TIERS[t].label)
+      h += `<tr class="group" data-group="${esc(g.id)}"><th scope="rowgroup">${esc(g.label)}</th><td class="gfill" colspan="${S.columns.length}"></td></tr>`;
     for (const r of rows) {
       const tracked = r.added > firstDate ? `<small>Seurannassa ${fmt(r.added)} alkaen</small>` : "";
       const cells = r.span ? [CELLS[`${r.id}|*`]] : S.columns.map(c => CELLS[`${r.id}|${c.id}`]);
       const changed = cells.some(isChanged) ? "1" : "";
       const gaps = cells.some(c => !c || (c.status !== "u" && !c.sources.length)) ? "1" : "";
-      h += `<tr data-row="${esc(r.id)}" data-group-of="${esc(g.id)}" data-changed="${changed}" data-gaps="${gaps}"><th scope="row" class="rowh">${esc(r.label)}${r.hint ? `<small>${esc(r.hint)}</small>` : ""}${tracked}</th>`;
+      h += `<tr data-row="${esc(r.id)}" data-group-of="${esc(g.id)}" data-tier-of="${t}" data-changed="${changed}" data-gaps="${gaps}"><th scope="row" class="rowh">${esc(r.label)}${r.hint ? `<small>${esc(r.hint)}</small>` : ""}${tracked}</th>`;
       if (r.span) h += cellHtml(cells[0], S.columns.length);
       else S.columns.forEach((c, i) => { h += cellHtml(cells[i]).replace("<td ", `<td data-v="${esc(c.vendor)}" `); });
       h += "</tr>";
@@ -240,13 +266,14 @@ function applyFilters() {
   document.querySelectorAll('#m td[data-span], #m td.gfill').forEach(td => td.colSpan = n);
   const onlyChanged = document.getElementById('onlyChanged').checked;
   const onlyGaps = document.getElementById('onlyGaps').checked;
-  const visibleGroups = new Set();
+  const visibleGroups = new Set(), visibleTiers = new Set();
   document.querySelectorAll('#m tr[data-row]').forEach(tr => {
     const show = (!onlyChanged || tr.dataset.changed) && (!onlyGaps || tr.dataset.gaps);
     tr.classList.toggle('hide', !show);
-    if (show) visibleGroups.add(tr.dataset.groupOf);
+    if (show) { visibleGroups.add(tr.dataset.groupOf); visibleTiers.add(tr.dataset.tierOf); }
   });
   document.querySelectorAll('#m tr.group').forEach(tr => tr.classList.toggle('hide', !visibleGroups.has(tr.dataset.group)));
+  document.querySelectorAll('#m tr.tier').forEach(tr => tr.classList.toggle('hide', !visibleTiers.has(tr.dataset.tier)));
 }
 document.querySelectorAll('#filters button').forEach(b => b.addEventListener('click', () => {
   const pressed = b.getAttribute('aria-pressed') === 'true';

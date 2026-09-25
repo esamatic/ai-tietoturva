@@ -6,10 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       vendor:
-        description: "Tarjoaja"
-        type: choice
+        description: "Tarjoajan tunniste (esim. ms, go, an, oa) tai all"
+        type: string
         default: all
-        options: [all, ms, go, an, oa]
 
 permissions:
   contents: read
@@ -19,8 +18,8 @@ jobs:
   research:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip

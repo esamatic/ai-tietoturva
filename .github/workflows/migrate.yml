@@ -1,0 +1,46 @@
+name: Rivistön päivitys (kertaluonteinen)
+
+# Aja kerran käsin. Avaa pull requestin, joka muuntaa repon nykyisen datan uuteen rivistöön.
+# Yhdistämisen jälkeen tämän tiedoston ja scripts/migrate_rows_2026_09.py:n voi poistaa.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Migraatio
+        run: python scripts/migrate_rows_2026_09.py | tee out.txt
+      - run: python scripts/validate.py
+      - name: Avaa pull request
+        run: |
+          if git diff --quiet data; then echo "Ei muutoksia."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c migrate/rows-2026-09
+          git add data
+          git commit -m "Rivistön uudistus: kynnysehdot ja erottelevat tekijät"
+          git push origin migrate/rows-2026-09
+          {
+            echo "Rivistön uudistus: rivit jaettu kynnysehtoihin ja erotteleviin tekijöihin, SSO ja SCIM yhdistetty,"
+            echo "kolme riviä rajattu uudelleen (solut merkitty varmistettaviksi), kaksi riviä poistettu,"
+            echo "lainkäyttöalue sarakekohtaiseksi ja viisi uutta riviä (tila *Ei vielä tutkittu*)."
+            echo
+            echo "Yhdistämisen jälkeen aja **Täysi tarkistus** (all), niin uudet ja varmistettavat solut tutkitaan."
+            echo
+            echo '```'
+            cat out.txt
+            echo '```'
+          } > pr_body.md
+          gh pr create --title "Rivistön uudistus" --body-file pr_body.md
