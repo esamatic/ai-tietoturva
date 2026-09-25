@@ -1,0 +1,25 @@
+name: Uusi lisenssi
+description: Lisää matriisiin uusi sarake. Automaatio avaa PR:n ja tutkimuspaketin Claudelle.
+title: "Uusi lisenssi: "
+labels: [uusi-lisenssi]
+body:
+  - type: input
+    attributes:
+      label: Tarjoaja
+      description: Microsoft, Google, Anthropic tai OpenAI. Uusi nimi luo uuden tarjoajan.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Lisenssin nimi
+      placeholder: Esim. Microsoft Copilot Business
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Lisätieto
+      description: Näkyy sarakeotsikossa, esim. käyttäjämäärä tai mihin tilaukseen sisältyy.
+  - type: input
+    attributes:
+      label: Tunniste
+      description: Valinnainen. Tyhjänä muodostetaan nimestä.
