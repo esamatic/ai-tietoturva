@@ -1,0 +1,37 @@
+name: Uusi seurattava ominaisuus
+description: Lisää matriisiin uusi rivi. Automaatio avaa PR:n ja tutkimuspaketin Claudelle.
+title: "Uusi ominaisuus: "
+labels: [uusi-ominaisuus]
+body:
+  - type: input
+    attributes:
+      label: Nimi
+      description: Rivin otsikko taulukossa.
+      placeholder: Esim. Datan vienti ja siirrettävyys
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Tunniste
+      description: Valinnainen. Pienet kirjaimet, numerot, _ tai -. Tyhjänä muodostetaan nimestä.
+      placeholder: data_export
+  - type: textarea
+    attributes:
+      label: Selite
+      description: Lyhyt tarkennus, mitä rivillä arvioidaan. Näkyy rivin otsikon alla ja ohjaa tutkimusta.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Ryhmä
+      description: >-
+        Olemassa olevan ryhmän nimi tai tunniste (esim. Datan käyttö, Pääsynhallinta, Salaus,
+        Sijainti ja lainkäyttöalue, Sopimukset ja sertifikaatit, LLM-spesifit riskit, Operatiivinen).
+        Uusi nimi luo uuden ryhmän.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Asetukset
+      options:
+        - label: Koko leveyden rivi (sama arvio kaikille tarjoajille)

@@ -1,0 +1,32 @@
+name: Uusi seurattava lähde
+description: Lisää sivu päivittäiseen seurantaan.
+title: "Uusi lähde: "
+labels: [uusi-lahde]
+body:
+  - type: input
+    attributes:
+      label: URL
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Otsikko
+      placeholder: "Esim. OpenAI: Enterprise privacy"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Tyyppi
+      options:
+        - primary (palveluntarjoajan oma)
+        - secondary (muu)
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Tarjoaja
+      description: Valinnainen.
+  - type: input
+    attributes:
+      label: CSS-valitsin
+      description: Valinnainen. Rajaa seurannan sivun sisältöosaan (esim. main tai article), mikä vähentää vääriä hälytyksiä.

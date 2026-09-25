@@ -1,0 +1,299 @@
+[
+  {
+    "id": "ms-privacy",
+    "vendor": "ms",
+    "title": "Microsoft: Data, Privacy, and Security for Microsoft Copilot",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
+    "type": "primary",
+    "monitor": true,
+    "selector": "main"
+  },
+  {
+    "id": "ms-edp",
+    "vendor": "ms",
+    "title": "Microsoft: Enterprise data protection in Copilot and Copilot Chat",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection",
+    "type": "primary",
+    "monitor": true,
+    "selector": "main"
+  },
+  {
+    "id": "ms-chat-privacy",
+    "vendor": "ms",
+    "title": "Microsoft: Copilot Chat Privacy and Protections",
+    "url": "https://learn.microsoft.com/en-us/copilot/privacy-and-protections",
+    "type": "primary",
+    "monitor": true,
+    "selector": "main"
+  },
+  {
+    "id": "ms-anthropic-subproc",
+    "vendor": "ms",
+    "title": "Microsoft: Anthropic models in Microsoft Online Services",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+    "type": "primary",
+    "monitor": true,
+    "selector": "main"
+  },
+  {
+    "id": "g-privacyhub",
+    "vendor": "go",
+    "title": "Google: Generative AI in Google Workspace Privacy Hub",
+    "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-aiprivacy",
+    "vendor": "go",
+    "title": "Google Workspace: AI privacy",
+    "url": "https://workspace.google.com/intl/en_sg/security/ai-privacy",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-data-regions",
+    "vendor": "go",
+    "title": "Google Workspace: Advanced settings for data regions",
+    "url": "https://knowledge.workspace.google.com/admin/compliance/set-up-advanced-settings-for-data-regions",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-controls",
+    "vendor": "go",
+    "title": "Google Cloud: Gemini Enterprise compliance & security controls",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/docs/compliance-security-controls",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-locations",
+    "vendor": "go",
+    "title": "Google Cloud: Data residency for Gemini Enterprise Standard and Plus",
+    "url": "https://docs.cloud.google.com/agentspace/docs/locations",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-zdr",
+    "vendor": "go",
+    "title": "Google Cloud: Gemini Enterprise Agent Platform and zero data retention",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-innfactory",
+    "vendor": "go",
+    "title": "innFactory: CompanyGPT vs. Google Gemini (data regions)",
+    "url": "https://innfactory.ai/en/services/companygpt/vs-gemini/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-innfactory-ge",
+    "vendor": "go",
+    "title": "innFactory: Gemini Enterprise – tuotesivu",
+    "url": "https://innfactory.de/en/cloud/gcp/products/gemini-enterprise/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-digicloud",
+    "vendor": "go",
+    "title": "Digicloud: Gemini security and compliance FAQ",
+    "url": "https://www.digicloud.africa/google-workspace/gemini-seurity-and-governance/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-softprom",
+    "vendor": "go",
+    "title": "Softprom: Gemini Enterprise -editiovertailu",
+    "url": "https://softprom.com/vendor/google/product/gemini-enterprise",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-strac-gemini",
+    "vendor": "go",
+    "title": "Strac: Gemini Data Privacy (2026)",
+    "url": "https://www.strac.io/blog/gemini-data-privacy",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-sonomos-gemini",
+    "vendor": "go",
+    "title": "Sonomos: Is Gemini GDPR Compliant? (2026)",
+    "url": "https://sonomos.ai/blog/is-gemini-gdpr-compliant-2026/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-csharp",
+    "vendor": "go",
+    "title": "C# Corner: Does Google use my data to train Gemini Enterprise?",
+    "url": "https://www.c-sharpcorner.com/article/does-google-use-my-data-to-train-gemini-enterprise-ai",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-pricing",
+    "vendor": "an",
+    "title": "Anthropic: Plans & Pricing (ominaisuusvertailu)",
+    "url": "https://claude.com/pricing",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-certs",
+    "vendor": "an",
+    "title": "Anthropic: What certifications has Anthropic obtained?",
+    "url": "https://support.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-retention",
+    "vendor": "an",
+    "title": "Anthropic: How long do you store my organization's data?",
+    "url": "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-residency",
+    "vendor": "an",
+    "title": "Anthropic: Claude Platform data residency",
+    "url": "https://platform.claude.com/docs/en/manage-claude/data-residency",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-waimakers",
+    "vendor": "an",
+    "title": "WAIMAKERS: Claude – AI Data Security & GDPR Guide",
+    "url": "https://www.waimakers.com/en/resources/ai-data-security/claude-anthropic",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-welter",
+    "vendor": "an",
+    "title": "Kevin Welter: Claude Enterprise or Team – cost and GDPR",
+    "url": "https://kevinwelter.com/en/blog/claude-enterprise",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-aiconsultancy",
+    "vendor": "an",
+    "title": "The AI Consultancy: Claude Team vs Enterprise (UK 2026)",
+    "url": "https://theaiconsultancy.ai/blog/claude-team-vs-enterprise-uk-2026",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-readai",
+    "vendor": "an",
+    "title": "Read AI: How does Claude AI implement data security?",
+    "url": "https://www.read.ai/articles/how-does-claude-ai-implement-data-security",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-sonomos-claude",
+    "vendor": "an",
+    "title": "Sonomos: Claude EU Data Residency in 2026",
+    "url": "https://sonomos.ai/blog/claude-eu-data-residency-2026/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "o-pricing",
+    "vendor": "oa",
+    "title": "OpenAI: Business Pricing (ominaisuusvertailu)",
+    "url": "https://openai.com/business/pricing/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-residency",
+    "vendor": "oa",
+    "title": "OpenAI: Expanding data residency access to business customers",
+    "url": "https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-residency-help",
+    "vendor": "oa",
+    "title": "OpenAI Help: Data residency and inference residency for ChatGPT",
+    "url": "https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-business-data",
+    "vendor": "oa",
+    "title": "OpenAI: Business data privacy, security and compliance",
+    "url": "https://openai.com/business-data/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-help-ent",
+    "vendor": "oa",
+    "title": "OpenAI Help: ChatGPT Enterprise and Edu -kokoelma",
+    "url": "https://help.openai.com/en/collections/5688074-chatgpt-enterprise-and-edu",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-waimakers",
+    "vendor": "oa",
+    "title": "WAIMAKERS: ChatGPT – AI Data Security & GDPR Guide",
+    "url": "https://www.waimakers.com/en/resources/ai-data-security/openai-eu",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-epc",
+    "vendor": "ms",
+    "title": "EPC Group: Copilot Security & Data Protection (2026)",
+    "url": "https://www.epcgroup.net/blog/microsoft-365-copilot-security-data-protection-enterprise-guide",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  }
+]

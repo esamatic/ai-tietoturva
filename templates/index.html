@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F4F7; --surface:#FFFFFF; --ink:#18212E; --muted:#5A6475; --rule:#D6DBE3; --rule-strong:#B9C1CD;
+  --ms:#2B67A8; --go:#2F7D5B; --an:#8A5A2B; --oa:#5A4A9C; --other:#5A6475;
+  --y-bg:#E2F1EA; --y-fg:#17664A; --p-bg:#FBF0D6; --p-fg:#855A00;
+  --n-bg:#F7E1E1; --n-fg:#9A3434; --u-bg:#E9ECF1; --u-fg:#4F5868;
+  --x-bg:repeating-linear-gradient(135deg,#F4F6F9 0 6px,#ECEFF3 6px 12px);
+  --chg:#C2410C; --group:#E6EAF0; --focus:#2B67A8;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131820; --surface:#1B222C; --ink:#E6EAF0; --muted:#9AA4B4; --rule:#2E3845; --rule-strong:#3D4958;
+    --ms:#6FA3DC; --go:#6CC29A; --an:#D3A06E; --oa:#A796E0; --other:#9AA4B4;
+    --y-bg:#173529; --y-fg:#86D3B0; --p-bg:#3A2E12; --p-fg:#E8C170;
+    --n-bg:#3D1F22; --n-fg:#EE9A9A; --u-bg:#262E39; --u-fg:#AEB7C5;
+    --x-bg:repeating-linear-gradient(135deg,#1E252F 0 6px,#232B36 6px 12px);
+    --chg:#FB923C; --group:#232B36; --focus:#6FA3DC;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131820; --surface:#1B222C; --ink:#E6EAF0; --muted:#9AA4B4; --rule:#2E3845; --rule-strong:#3D4958;
+  --ms:#6FA3DC; --go:#6CC29A; --an:#D3A06E; --oa:#A796E0; --other:#9AA4B4;
+  --y-bg:#173529; --y-fg:#86D3B0; --p-bg:#3A2E12; --p-fg:#E8C170;
+  --n-bg:#3D1F22; --n-fg:#EE9A9A; --u-bg:#262E39; --u-fg:#AEB7C5;
+  --x-bg:repeating-linear-gradient(135deg,#1E252F 0 6px,#232B36 6px 12px);
+  --chg:#FB923C; --group:#232B36; --focus:#6FA3DC;
+}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.5}
+.wrap{max-width:1800px;margin:0 auto;padding:28px 20px 48px}
+header.intro{max-width:80ch}
+h1{font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-weight:600;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.15;margin:0 0 .5rem;letter-spacing:-.01em}
+h2{font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-size:1.3rem;font-weight:600;margin:2rem 0 .6rem}
+.lede{color:var(--muted);margin:0 0 .6rem}
+.facts{display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--muted);font-size:.88rem;margin:.4rem 0 0;padding:0;list-style:none}
+.facts b{color:var(--ink);font-weight:600}
+.controls{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;margin:18px 0 12px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-radius:999px;font-size:.8rem;font-weight:500}
+.s-y{background:var(--y-bg);color:var(--y-fg)} .s-p{background:var(--p-bg);color:var(--p-fg)}
+.s-n{background:var(--n-bg);color:var(--n-fg)} .s-u{background:var(--u-bg);color:var(--u-fg)}
+.s-x{background:var(--u-bg);color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.filters button{font:inherit;font-size:.84rem;font-weight:500;padding:3px 11px;border-radius:6px;cursor:pointer;
+  border:1.5px solid var(--vc);background:var(--vc);color:#fff}
+.filters button[aria-pressed="false"]{background:transparent;color:var(--vc)}
+label.tog{display:inline-flex;gap:6px;align-items:center;font-size:.86rem;color:var(--muted);cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.theme{font:inherit;font-size:.84rem;padding:3px 11px;border-radius:6px;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink);cursor:pointer}
+.scroller{overflow:auto;max-height:80vh;border:1px solid var(--rule-strong);border-radius:8px;background:var(--surface)}
+table.m{border-collapse:separate;border-spacing:0;min-width:100%;font-size:.83rem}
+.m th,.m td{border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);vertical-align:top;text-align:left}
+.m thead th{position:sticky;top:0;z-index:3;background:var(--surface);padding:10px 10px 9px;min-width:180px;max-width:240px;
+  border-top:4px solid var(--vc);border-bottom:1px solid var(--rule-strong)}
+.m thead th .vendor{display:block;font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-size:.78rem;color:var(--vc);font-weight:600}
+.m thead th .plan{display:block;font-weight:600;font-size:.92rem;line-height:1.25;margin:1px 0 3px}
+.m thead th .meta{display:block;color:var(--muted);font-weight:400;font-size:.76rem;line-height:1.3}
+.m th.rowh,.m thead th.corner{position:sticky;left:0;z-index:2;background:var(--surface);min-width:200px;max-width:250px}
+.m thead th.corner{z-index:4;border-top:4px solid var(--rule-strong);vertical-align:bottom;color:var(--muted);font-weight:500}
+.m th.rowh{padding:10px 12px;font-weight:600}
+.m th.rowh small{display:block;font-weight:400;color:var(--muted);margin-top:2px;line-height:1.35}
+.m tr.group th{position:sticky;left:0;background:var(--group);z-index:1;font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-size:.95rem;font-weight:600;padding:7px 12px}
+.m tr.group td{background:var(--group)}
+.m td.cell{padding:8px 10px 9px;line-height:1.4}
+.m td.cell.x{background:var(--x-bg);color:var(--muted)}
+.m td.cell.chg{box-shadow:inset 3px 0 0 var(--chg)}
+.st{display:inline-block;font-size:.71rem;font-weight:600;padding:1px 7px;border-radius:4px;margin:0 4px 4px 0}
+.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:0 6px;border-radius:4px;margin:0 3px 4px 0;border:1px solid currentColor}
+.b-verify{color:var(--p-fg)} .b-nosrc{color:var(--n-fg)} .b-chg{color:var(--chg)} .b-new{color:var(--muted)}
+.srcs{display:block;margin-top:5px;font-size:.72rem;line-height:1.5}
+.srcs a{display:inline-block;margin-right:6px;color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--muted)}
+.srcs a.primary{color:var(--ms);border-bottom-color:var(--ms)}
+.srcs a.secondary{font-style:italic}
+details.prev{margin-top:5px;font-size:.74rem;color:var(--muted)}
+details.prev summary{cursor:pointer}
+details.prev p{margin:3px 0 0}
+.hide{display:none}
+section.below{max-width:100ch}
+section.below li{margin-bottom:.35rem}
+table.plain{border-collapse:collapse;font-size:.82rem;width:100%}
+table.plain th,table.plain td{border-bottom:1px solid var(--rule);padding:5px 8px;text-align:left;vertical-align:top}
+table.plain th{color:var(--muted);font-weight:500}
+.ok{color:var(--y-fg)} .err{color:var(--n-fg)}
+.log{list-style:none;padding:0}
+.log li{padding:8px 0;border-bottom:1px solid var(--rule)}
+.log time{font-weight:600;margin-right:8px}
+.log ul{margin:4px 0 0;padding-left:1.1rem;color:var(--muted);font-size:.86rem}
+a{color:var(--ms)}
+.small{font-size:.85rem;color:var(--muted)}
+@media (max-width:640px){.wrap{padding:18px 12px 36px}.m thead th{min-width:160px}.m th.rowh,.m thead th.corner{min-width:150px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="intro">
+  <h1 id="title"></h1>
+  <p class="lede" id="desc"></p>
+  <ul class="facts" id="facts"></ul>
+</header>
+
+<div class="controls">
+  <div class="legend" aria-label="Merkintöjen selitys">
+    <span class="chip s-y">✓ Kyllä</span><span class="chip s-p">◐ Osittain</span>
+    <span class="chip s-n">✕ Ei</span><span class="chip s-u">? Ei tiedossa</span>
+    <span class="chip s-x">– Ei vielä tutkittu</span>
+  </div>
+  <div class="filters" role="group" aria-label="Näytä palveluntarjoajat" id="filters"></div>
+  <label class="tog"><input type="checkbox" id="onlyChanged"> Vain rivit, joissa muutoksia</label>
+  <label class="tog"><input type="checkbox" id="onlyGaps"> Vain rivit, joissa lähde puuttuu</label>
+  <button class="theme" id="theme" type="button">Vaihda teema</button>
+</div>
+<p class="small" id="legend2"></p>
+
+<div class="scroller" tabindex="0" aria-label="Vertailumatriisi, vieritettävä">
+  <table class="m" id="m"></table>
+</div>
+
+<section class="below">
+  <h2>Tärkeimmät huomiot</h2>
+  <ul id="notes"></ul>
+  <h2>Muutosloki</h2>
+  <ul class="log" id="log"></ul>
+  <h2>Lähteet ja seuranta</h2>
+  <div style="overflow-x:auto"><table class="plain" id="sources"></table></div>
+  <p class="small" id="disclaimer"></p>
+</section>
+</div>
+
+<script id="data" type="application/json">__DATA_JSON__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const S = D.structure, CELLS = D.cells, SRC = Object.fromEntries(D.sources.map(s => [s.id, s]));
+const MON = D.monitor || {};
+const LABEL = {y:"✓ Kyllä", p:"◐ Osittain", n:"✕ Ei", u:"? Ei tiedossa"};
+const VEND = Object.fromEntries(S.vendors.map(v => [v.id, v.name]));
+const vc = v => ["ms","go","an","oa"].includes(v) ? `var(--${v})` : "var(--other)";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = d => d ? d.split("-").reverse().map(x => x.replace(/^0/, "")).join(".") : "";
+const WINDOW = D.meta.change_window_days || 45;
+const cutoff = (() => { const t = new Date(D.generated); t.setDate(t.getDate() - WINDOW); return t.toISOString().slice(0,10); })();
+const firstDate = [...S.rows, ...S.columns].map(x => x.added).sort()[0];
+const isChanged = c => c && c.history && c.history.length && c.changed >= cutoff;
+const isNewCell = c => c && !(c.history && c.history.length) && c.changed >= cutoff && c.changed > firstDate;
+
+document.getElementById('title').textContent = D.meta.title;
+document.getElementById('desc').textContent = D.meta.description;
+document.getElementById('disclaimer').textContent = D.meta.disclaimer || "";
+document.getElementById('legend2').textContent =
+  `Oranssi reunus = solu muuttunut viimeisen ${WINDOW} päivän aikana (aiempi arvo avattavissa). ` +
+  "Lähdelinkit: sininen = ensisijainen lähde, kursiivi = toissijainen. Vie osoitin linkin päälle nähdäksesi otsikon ja hakupäivän.";
+
+const all = Object.entries(CELLS);
+const unsourced = all.filter(([,c]) => c.status !== "u" && !c.sources.length).length;
+const verify = all.filter(([,c]) => c.verify).length;
+const lastData = (D.changelog[0] || {}).date;
+const run = MON._run || {};
+document.getElementById('facts').innerHTML = [
+  `Data päivitetty <b>${fmt(lastData)}</b>`,
+  run.date ? `Lähteet tarkistettu <b>${fmt(run.date)}</b> (${run.monitored} seurattua${run.failed ? `, <span class="err">${run.failed} epäonnistui</span>` : ""})` : "Seuranta ei ole vielä ajanut",
+  `<b>${all.length}</b> solua, <b>${unsourced}</b> ilman lähdettä, <b>${verify}</b> varmistettavaa`
+].map(x => `<li>${x}</li>`).join("");
+
+document.getElementById('notes').innerHTML = (D.meta.notes || []).map(n => `<li>${esc(n)}</li>`).join("");
+
+// vendor filters
+const vendorsInUse = [...new Set(S.columns.map(c => c.vendor))];
+document.getElementById('filters').innerHTML = '<span class="small">Näytä:</span>' + vendorsInUse.map(v =>
+  `<button data-v="${esc(v)}" style="--vc:${vc(v)}" aria-pressed="true">${esc(VEND[v] || v)}</button>`).join("");
+
+function srcLinks(cell) {
+  if (!cell.sources.length) return "";
+  return '<span class="srcs">' + cell.sources.map((s, i) => {
+    const src = SRC[s.id] || {url:"#", title:s.id, type:""};
+    const tip = `${src.title} (${src.type === "primary" ? "ensisijainen" : "toissijainen"}, haettu ${fmt(s.accessed)})${s.note ? " – " + s.note : ""}`;
+    return `<a class="${esc(src.type)}" href="${esc(src.url)}" target="_blank" rel="noopener" title="${esc(tip)}">[${i+1}] ${esc(src.title.split(":")[0])}</a>`;
+  }).join("") + "</span>";
+}
+
+function cellHtml(cell, colspan) {
+  const span = colspan ? ` colspan="${colspan}" data-span="1"` : "";
+  if (!cell) return `<td class="cell x"${span}><span class="st s-x">– Ei vielä tutkittu</span></td>`;
+  const chg = isChanged(cell);
+  let b = "";
+  if (chg) b += `<span class="badge b-chg">Muuttunut ${fmt(cell.changed)}</span>`;
+  else if (isNewCell(cell)) b += `<span class="badge b-new">Uusi ${fmt(cell.changed)}</span>`;
+  if (cell.verify) b += '<span class="badge b-verify">Varmista</span>';
+  if (cell.status !== "u" && !cell.sources.length) b += '<span class="badge b-nosrc">Lähde puuttuu</span>';
+  let prev = "";
+  if (chg) {
+    const h = cell.history[0];
+    prev = `<details class="prev"><summary>Aiempi arvo: ${LABEL[h.status]}</summary><p>${esc(h.text)}</p><p>Voimassa ${fmt(h.from)}–${fmt(h.until)}. Syy muutokseen: ${esc(h.reason)}</p></details>`;
+  }
+  return `<td class="cell${chg ? " chg" : ""}"${span}><span class="st s-${cell.status}">${LABEL[cell.status]}</span>${b}<br>${esc(cell.text)}${srcLinks(cell)}${prev}</td>`;
+}
+
+function build() {
+  let h = '<thead><tr><th class="corner" scope="col">Elementti</th>';
+  for (const c of S.columns) {
+    const isNew = c.added > firstDate ? ` · lisätty ${fmt(c.added)}` : "";
+    h += `<th scope="col" data-v="${esc(c.vendor)}" style="--vc:${vc(c.vendor)}"><span class="vendor">${esc(VEND[c.vendor] || c.vendor)}</span><span class="plan">${esc(c.plan)}</span><span class="meta">${esc(c.meta)}${isNew}</span></th>`;
+  }
+  h += "</tr></thead><tbody>";
+  for (const g of S.groups) {
+    const rows = S.rows.filter(r => r.group === g.id);
+    if (!rows.length) continue;
+    h += `<tr class="group" data-group="${esc(g.id)}"><th scope="rowgroup">${esc(g.label)}</th><td class="gfill" colspan="${S.columns.length}"></td></tr>`;
+    for (const r of rows) {
+      const tracked = r.added > firstDate ? `<small>Seurannassa ${fmt(r.added)} alkaen</small>` : "";
+      const cells = r.span ? [CELLS[`${r.id}|*`]] : S.columns.map(c => CELLS[`${r.id}|${c.id}`]);
+      const changed = cells.some(isChanged) ? "1" : "";
+      const gaps = cells.some(c => !c || (c.status !== "u" && !c.sources.length)) ? "1" : "";
+      h += `<tr data-row="${esc(r.id)}" data-group-of="${esc(g.id)}" data-changed="${changed}" data-gaps="${gaps}"><th scope="row" class="rowh">${esc(r.label)}${r.hint ? `<small>${esc(r.hint)}</small>` : ""}${tracked}</th>`;
+      if (r.span) h += cellHtml(cells[0], S.columns.length);
+      else S.columns.forEach((c, i) => { h += cellHtml(cells[i]).replace("<td ", `<td data-v="${esc(c.vendor)}" `); });
+      h += "</tr>";
+    }
+  }
+  document.getElementById('m').innerHTML = h + "</tbody>";
+}
+build();
+
+function applyFilters() {
+  const on = new Set([...document.querySelectorAll('#filters button')].filter(b => b.getAttribute('aria-pressed') === 'true').map(b => b.dataset.v));
+  document.querySelectorAll('#m [data-v]').forEach(el => el.classList.toggle('hide', !on.has(el.dataset.v)));
+  const n = S.columns.filter(c => on.has(c.vendor)).length || 1;
+  document.querySelectorAll('#m td[data-span], #m td.gfill').forEach(td => td.colSpan = n);
+  const onlyChanged = document.getElementById('onlyChanged').checked;
+  const onlyGaps = document.getElementById('onlyGaps').checked;
+  const visibleGroups = new Set();
+  document.querySelectorAll('#m tr[data-row]').forEach(tr => {
+    const show = (!onlyChanged || tr.dataset.changed) && (!onlyGaps || tr.dataset.gaps);
+    tr.classList.toggle('hide', !show);
+    if (show) visibleGroups.add(tr.dataset.groupOf);
+  });
+  document.querySelectorAll('#m tr.group').forEach(tr => tr.classList.toggle('hide', !visibleGroups.has(tr.dataset.group)));
+}
+document.querySelectorAll('#filters button').forEach(b => b.addEventListener('click', () => {
+  const pressed = b.getAttribute('aria-pressed') === 'true';
+  if (pressed && document.querySelectorAll('#filters button[aria-pressed="true"]').length === 1) return;
+  b.setAttribute('aria-pressed', String(!pressed));
+  applyFilters();
+}));
+document.getElementById('onlyChanged').addEventListener('change', applyFilters);
+document.getElementById('onlyGaps').addEventListener('change', applyFilters);
+
+// changelog
+const rowLabel = Object.fromEntries(S.rows.map(r => [r.id, r.label]));
+const colLabel = Object.fromEntries(S.columns.map(c => [c.id, `${VEND[c.vendor] || c.vendor} ${c.plan}`]));
+colLabel["*"] = "kaikki";
+document.getElementById('log').innerHTML = D.changelog.slice(0, 40).map(e => {
+  const items = (e.changes || []).map(ch => {
+    if (["status","text","new"].includes(ch.kind)) {
+      const [r, c] = ch.key.split("|");
+      const what = ch.kind === "status" ? `${LABEL[ch.from]} → ${LABEL[ch.to]}` : ch.kind === "new" ? `uusi: ${LABEL[ch.to]}` : "teksti päivitetty";
+      return `<li>${esc(rowLabel[r] || r)} / ${esc(colLabel[c] || c)}: ${what}</li>`;
+    }
+    const kind = {row:"Uusi rivi", column:"Uusi sarake", source:"Uusi lähde"}[ch.kind] || ch.kind;
+    return `<li>${kind}: ${esc(ch.text)}</li>`;
+  }).join("");
+  const ref = e.ref && D.repo ? ` <a href="https://github.com/${esc(D.repo)}/issues/${esc(e.ref.replace("#",""))}">${esc(e.ref)}</a>` : (e.ref ? ` ${esc(e.ref)}` : "");
+  return `<li><time>${fmt(e.date)}</time>${esc(e.summary)}${ref}${items ? `<ul>${items}</ul>` : ""}</li>`;
+}).join("");
+
+// sources table
+const usage = {};
+for (const [, c] of all) for (const s of c.sources) usage[s.id] = (usage[s.id] || 0) + 1;
+document.getElementById('sources').innerHTML =
+  "<thead><tr><th>Lähde</th><th>Tyyppi</th><th>Soluja</th><th>Seuranta</th></tr></thead><tbody>" +
+  D.sources.map(s => {
+    const m = MON[s.id] || {};
+    let mon = "ei seurannassa";
+    if (s.monitor) {
+      if (m.error) mon = `<span class="err">virhe: ${esc(m.error)}</span>`;
+      else if (m.last_ok) mon = `<span class="ok">ok ${fmt(m.last_ok)}</span>${m.last_change ? `, muuttui ${fmt(m.last_change)}` : ""}`;
+      else mon = "odottaa ensimmäistä ajoa";
+    }
+    return `<tr><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td>${s.type === "primary" ? "ensisijainen" : "toissijainen"}</td><td>${usage[s.id] || 0}</td><td>${mon}</td></tr>`;
+  }).join("") + "</tbody>";
+
+// theme
+const root = document.documentElement;
+try { const t = localStorage.getItem('theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+document.getElementById('theme').addEventListener('click', () => {
+  const cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  try { localStorage.setItem('theme', next); } catch (e) {}
+});
+</script>
+</body>
+</html>

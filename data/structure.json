@@ -1,0 +1,265 @@
+{
+  "vendors": [
+    {
+      "id": "ms",
+      "name": "Microsoft"
+    },
+    {
+      "id": "go",
+      "name": "Google"
+    },
+    {
+      "id": "an",
+      "name": "Anthropic"
+    },
+    {
+      "id": "oa",
+      "name": "OpenAI"
+    }
+  ],
+  "groups": [
+    {
+      "id": "data_use",
+      "label": "Datan käyttö"
+    },
+    {
+      "id": "access",
+      "label": "Pääsynhallinta"
+    },
+    {
+      "id": "encryption",
+      "label": "Salaus"
+    },
+    {
+      "id": "location",
+      "label": "Sijainti ja lainkäyttöalue"
+    },
+    {
+      "id": "contracts",
+      "label": "Sopimukset ja sertifikaatit"
+    },
+    {
+      "id": "llm",
+      "label": "LLM-spesifit riskit"
+    },
+    {
+      "id": "ops",
+      "label": "Operatiivinen"
+    }
+  ],
+  "rows": [
+    {
+      "id": "training",
+      "group": "data_use",
+      "label": "Koulutus asiakasdatalla",
+      "hint": "Käytetäänkö prompteja, vastauksia tai tiedostoja mallien koulutukseen",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "human_review",
+      "group": "data_use",
+      "label": "Ihmistarkastus",
+      "hint": "Voiko palveluntarjoajan henkilöstö lukea sisältöä",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "retention",
+      "group": "data_use",
+      "label": "Säilytys ja poistaminen",
+      "hint": "Kauanko keskustelut säilyvät ja voiko sitä hallita",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "sso",
+      "group": "access",
+      "label": "SSO ja identiteetti",
+      "hint": "Kertakirjautuminen, MFA, ehdollinen pääsy",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "scim",
+      "group": "access",
+      "label": "SCIM-provisiointi",
+      "hint": "Käyttäjien automaattinen lisäys ja poisto IdP:stä",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "rbac",
+      "group": "access",
+      "label": "Roolit ja ominaisuusrajaukset",
+      "hint": "RBAC, IP-rajaukset, ominaisuuksien kytkeminen pois",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "audit",
+      "group": "access",
+      "label": "Audit-lokit",
+      "hint": "Kuka teki mitä ja milloin; eDiscovery",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "visibility",
+      "group": "access",
+      "label": "Mitä avustaja näkee",
+      "hint": "Oversharing-riski: mihin dataan malli pääsee käsiksi",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "personal_accounts",
+      "group": "access",
+      "label": "Henkilökohtaisten tilien hallinta",
+      "hint": "Shadow AI: voiko työntekijöiden omat tilit tuoda hallintaan",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "encryption_basic",
+      "group": "encryption",
+      "label": "Salaus siirrossa ja levossa",
+      "hint": "",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "cmk",
+      "group": "encryption",
+      "label": "Asiakkaan hallinnoimat avaimet",
+      "hint": "CMK / BYOK / EKM / CSE",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "storage_eu",
+      "group": "location",
+      "label": "Tallennus EU:ssa",
+      "hint": "Data levossa",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "inference_eu",
+      "group": "location",
+      "label": "Käsittely (inferenssi) EU:ssa",
+      "hint": "Missä malli ajetaan",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "jurisdiction",
+      "group": "location",
+      "label": "Lainkäyttöalue",
+      "hint": "",
+      "added": "2026-09-25",
+      "span": true
+    },
+    {
+      "id": "subprocessors",
+      "group": "location",
+      "label": "Alihankkijat ja kolmansien osapuolten mallit",
+      "hint": "",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "dpa",
+      "group": "contracts",
+      "label": "DPA ja GDPR-rooli",
+      "hint": "",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "certifications",
+      "group": "contracts",
+      "label": "Sertifikaatit",
+      "hint": "Tarkista aina, kuuluuko juuri tämä palvelu scopeen",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "ip_indemnity",
+      "group": "contracts",
+      "label": "Tekijänoikeusvastuu",
+      "hint": "Puolustaako tarjoaja asiakasta outputia koskevissa vaateissa",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "prompt_injection",
+      "group": "llm",
+      "label": "Prompt injection -suojaus",
+      "hint": "Suojaus haitallisia ohjeita sisältävää sisältöä vastaan",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "connectors",
+      "group": "llm",
+      "label": "Agenttien ja konnektorien hallinta",
+      "hint": "Mihin järjestelmiin avustaja pääsee ja kenen oikeuksin",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "sla",
+      "group": "ops",
+      "label": "SLA ja tuki",
+      "hint": "",
+      "added": "2026-09-25"
+    }
+  ],
+  "columns": [
+    {
+      "id": "ms_copilot_chat",
+      "vendor": "ms",
+      "plan": "Copilot Chat",
+      "meta": "Sisältyy M365-tilaukseen (Entra-käyttäjät)",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "ms_copilot",
+      "vendor": "ms",
+      "plan": "Microsoft Copilot",
+      "meta": "Maksullinen lisenssi (ent. M365 Copilot)",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "g_workspace_business",
+      "vendor": "go",
+      "plan": "Gemini – Workspace Business",
+      "meta": "Starter / Standard / Plus",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "g_workspace_enterprise",
+      "vendor": "go",
+      "plan": "Gemini – Workspace Enterprise",
+      "meta": "Standard / Plus",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "g_gemini_enterprise",
+      "vendor": "go",
+      "plan": "Gemini Enterprise (erillinen)",
+      "meta": "Business (≤300) vs. Standard / Plus",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "a_claude_team",
+      "vendor": "an",
+      "plan": "Claude Team",
+      "meta": "2–150 käyttäjää",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "a_claude_enterprise",
+      "vendor": "an",
+      "plan": "Claude Enterprise",
+      "meta": "Self-serve 20+ / myyntiavusteinen",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "o_chatgpt_business",
+      "vendor": "oa",
+      "plan": "ChatGPT Business",
+      "meta": "Ent. Team, 2–200 käyttäjää",
+      "added": "2026-09-25"
+    },
+    {
+      "id": "o_chatgpt_enterprise",
+      "vendor": "oa",
+      "plan": "ChatGPT Enterprise",
+      "meta": "Hinta neuvoteltava",
+      "added": "2026-09-25"
+    }
+  ]
+}

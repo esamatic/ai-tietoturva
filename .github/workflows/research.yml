@@ -1,0 +1,31 @@
+name: Täysi tarkistus
+
+on:
+  schedule:
+    - cron: "0 6 1 1,4,7,10 *"   # neljännesvuosittain
+  workflow_dispatch:
+    inputs:
+      vendor:
+        description: "Tarjoaja"
+        type: choice
+        default: all
+        options: [all, ms, go, an, oa]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/research.py --vendor "${VENDOR}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VENDOR: ${{ inputs.vendor || 'all' }}
