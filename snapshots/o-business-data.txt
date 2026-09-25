@@ -1,0 +1,44 @@
+Business data privacy, security, and compliance
+Trust, security, and privacy are at the core of our mission at OpenAI. Your organization’s data always remains confidential, secure, and entirely owned by you—across ChatGPT Enterprise, ChatGPT Business, ChatGPT Edu, ChatGPT for Healthcare, ChatGPT for Teachers, and our API platform.
+OpenAI is trusted by
+OpenAI security and privacy
+We don’t train our models on your organization’s data by default.
+By default, we do not use data from ChatGPT Enterprise, ChatGPT Business, ChatGPT Edu, ChatGPT for Healthcare, ChatGPT for Teachers, or our API platform—including inputs or outputs—for training or improving our models. Our models are trained on publicly available knowledge on the Internet, data provided through third-party partnerships, and information that our researchers provide or generate. If you are interested in helping us improve our models, you can do so through explicit opt-in(opens in a new window) in the API dashboard.
+Learn how ChatGPT and our models are developed ↗ (opens in a new window)
+Your data is encrypted at rest and in transit between you and OpenAI, and between OpenAI and its service providers.
+Whether you’re sending inputs or receiving outputs, your business data remains protected from unauthorized access. We use strong, industry-standard cryptography to protect your data. This includes using AES-256 encryption at rest and TLS 1.2 or higher in transit.
+With Enterprise Key Management (EKM)(opens in a new window), customers can control their own encryption keys, adding another layer of security and compliance.
+We offer data retention controls for qualifying organizations to help you stay compliant.
+Qualifying organizations are able to configure how long OpenAI retains business data, including opting for our zero data retention policy in the API platform.
+Learn more about our data retention policies for ChatGPT Enterprise, Business, Edu, ChatGPT for Healthcare, and the API platform(opens in a new window).
+We build security into our products and infrastructure.
+Security starts at design. We embrace zero trust and defense in-depth approaches to guide our overall security program. Our software development lifecycle ensures we design and architect security into our products from inception, and we appropriately address risks to our supply chain. We implement layered security controls across our endpoints, infrastructure, networks, and applications. We also invest heavily in research and security for next-generation technologies, such as agents.
+We protect your data with thorough testing and monitoring.
+Our OpenAI security team has an on-call rotation 24/7 365 days of the year in case of potential security incidents, with automated alerts and manual investigation processes in place to address suspicious activity. OpenAI’s infrastructure undergoes regular audits, including red team and adversarial assessments, by independent third parties to ensure adherence to the highest security standards.
+Compliance and governance
+We adhere to industry standards and regulatory compliance requirements.
+OpenAI’s data protection practices support your compliance with GDPR, CCPA, and other privacy laws, and align with CSA STAR(opens in a new window), SOC 2 Type 2 Trust Services Criteria(opens in a new window), and ISO/IEC 27001(opens in a new window), 27017(opens in a new window), 27018(opens in a new window), 27701(opens in a new window) certifications. We offer a Business Associate Agreement (BAA) (opens in a new window)with OpenAI to ChatGPT for Healthcare and API healthcare customers to support their HIPAA compliance requirements. We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements.
+We offer data residency to help your organization meet regional compliance needs.
+Eligible ChatGPT Enterprise, ChatGPT Edu, ChatGPT for Healthcare, and API platform customers can store sensitive customer content at rest in the U.S., Europe, UK, Japan, Canada, South Korea, Singapore, Australia, India, and the UAE to help support compliance with local data sovereignty requirements.
+In addition to data residency at rest, eligible customers can opt into in-region GPU inference in the U.S. or Europe, and API customers may also explicitly select the U.S. or Europe for data processing (GPU inference and non-GPU processing) on supported API endpoints.
+Learn more about data residency for ChatGPT(opens in a new window) and the API(opens in a new window).
+Product security controls
+We offer enterprise-grade access management to enable your IT team to manage users and permissions effectively. These features help ensure that only authorized personnel have access to your systems, providing your organization with full control over who can access sensitive information.
+Learn how to manage access controls in the API(opens in a new window) and ChatGPT.
+- Multi-factor authentication (MFA)(opens in a new window) to add an extra layer of security (supports TOTP authentication
+- Roles(opens in a new window) to define three types of users: Member, Admin, and Owner
+- GPT Controls to enable and disable access to 3rd party GPTs
+- Single sign-on (SAML SSO) lets users seamlessly access multiple applications with a single set of credentials
+- Basic analytics to track model and capability usage across your workspace
+- Includes everything in Business
+- SCIM(opens in a new window) enables IT administrators to automate provisioning and deprovisioning of user accounts
+- Role-based access controls(opens in a new window) to create and assign custom roles by group, and set permissions for ChatGPT Work, Codex, connected tools, workspace agents, and more
+- Centralized spend controls to manage Codex and ChatGPT Work usage with workspace defaults, group limits, individual overrides, and review of additional credit requests
+- User analytics for real-time visibility into adoption, engagement, and usage trends
+- Microsoft Intune support on iOS/iPadOS for managing mobile access through Intune App Protection Policies and Conditional Access
+- MFA(opens in a new window) to add an extra layer of security (supports TOTP authentication)
+- SAML SSO lets users seamlessly access multiple applications with a single set of credentials
+- Projects and Project Limits(opens in a new window) to control granular access, usage and spend within your workspace
+- Admin API(opens in a new window) to enable organization owners and security teams to manage access and permissions
+- Audit Logs API(opens in a new window) to provide complete visibility into security and compliance risks
+- Usage Dashboard(opens in a new window) to track API usage at the feature, product, team or project level

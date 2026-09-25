@@ -1,0 +1,110 @@
+Overview
+Data residency for ChatGPT allows customers to keep their in-scope customer content stored at rest in a specific geographic region. Inference residency for ChatGPT allows eligible customers to additionally ensure that model inference (GPU execution) on their in-scope customer content happens exclusively in-region for supported locations.
+This feature helps organizations in their region meet internal policies or regulatory obligations that dictate where data should reside.
+For API-specific requirements, see: OpenAI API data residency documentation.
+Eligibility
+Eligible API customers and new ChatGPT Enterprise/Edu customers can choose to have in-scope customer content stored at rest in supported countries.
+Inference residency is available to eligible ChatGPT Enterprise/Edu customers with data residency enabled in supported inference regions (see below).
+If you’re unsure whether your organization is eligible, contact our Sales team.
+Check your workspace’s residency settings
+Workspace owners and administrators can check the configured region in ChatGPT on the web:
+- Switch to the workspace you want to check.
+- Open your profile menu and select Workspace settings.
+- Select General.
+- Find Data Residency Region in the section that lists your organization and workspace IDs.
+Inference Residency Region, if shown, is a separate setting. These fields display the configured regions; they are not controls for changing data residency.
+If you can’t find the setting, ask a workspace owner or administrator to confirm the configuration. If you’re an owner or administrator and the value is missing or unclear, contact OpenAI Support.
+Supported regions
+Data residency (storage at rest)
+Data residency for ChatGPT is currently available in the following regions:
+- Australia
+- Canada
+- Europe (EEA + Switzerland)
+- India
+- Japan
+- Singapore
+- South Korea
+- United Arab Emirates
+- United Kingdom
+- United States
+We plan to offer more data residency regions in the future.
+Inference residency (model inference)
+Inference residency keeps model inference on in-scope customer content (GPU execution) in-region for supported locations.
+Inference residency for ChatGPT is currently available for the following regions. Inference residency requires data residency to be enabled in the same region:
+- Europe (EEA + Switzerland)
+- United States
+- United Arab Emirates
+For United Arab Emirates inference residency, the following limitations apply:
+- GPT-5.5 and GPT-5.6 Luna are currently available in ChatGPT with UAE inference residency.
+- In ChatGPT, image generation and internal search are not supported. Internal search means offline search using OpenAI's internal index.
+- ChatGPT Work is not supported.
+- Improved memory is not supported. Standard saved memories remain available.
+- GPT-Live is not available for workspaces configured for UAE inference residency. Where Advanced Voice is available for the workspace, members can continue using Advanced Voice.
+- External search, such as online web search, remains available unless Lockdown Mode or workspace search controls disable it. If external search is disabled for the workspace, Search is unavailable.
+We plan to expand supported inference residency regions over time and will update this article as new regions become available.
+Customer content stored in the selected region
+When a new ChatGPT workspace is provisioned with data residency, we store customer content in the selected region at rest for the following features:
+- ChatGPT Memory (stored conversation context)
+- Code Interpreter & Data Analysis artifacts
+- Conversations (text, image, voice)
+- Custom GPTs (and associated prompts/outputs)
+- Files (e.g., uploaded images, documents)
+- Image Generation inputs/outputs
+Backups and replicas of in-scope customer content are also stored in-region.
+Data residency only applies to customer content for the features listed above. If OpenAI releases any new features or modalities, they will not be data residency eligible unless listed above.
+Customer content refers to what you and your users put into and receive from the services (for example, prompts, files, and model outputs), as defined in your services agreement.
+Data that may be stored outside the selected region
+Certain categories of data may be stored outside the chosen data region. This includes (but may not be limited to):
+- Data that is stored and processed outside OpenAI's infrastructure through external integrations (e.g., Apps & MCP, Web Search, if enabled)
+- Transient or processing steps needed for service functionality
+- Workspace metadata
+- Workspace name
+- Billing information
+- User logins
+Some data may be processed or held transiently outside the region and is automatically purged when it’s no longer necessary.
+Inference performed in the selected region
+When inference residency is enabled for a supported region:
+- GPU inference on customer content stays in-region.
+Model inference (GPU execution) on in-scope customer content is performed on GPUs located in the selected region. This applies to the same categories of customer content listed in “Customer content stored in the selected region” (for example, prompts, files, conversations, and embeddings derived from that content).
+- Non-GPU processing may still occur globally.
+Inference residency does not extend to all CPU-based processing or to system data more broadly. Activities such as authentication, routing, and analytics may still occur outside the selected region.
+Inference residency adds an additional location guarantee for GPU execution on in-scope customer content; it does not change what is stored in-region or how system data is handled. Inference residency only applies to customer content for the features listed under “Customer content stored in the selected region”.
+Changes to inference residency settings apply only to new conversations, not ongoing conversations.
+Processing that may occur outside the selected region
+Inference residency adds a location guarantee for GPU execution on in-scope customer content, but does not confine all processing to the region.
+With inference residency enabled, the following may still occur outside the selected region:
+- CPU-based processing, such as extracting text from uploaded PDF or Word files, routing requests, and coordinating steps across services.
+- External integrations
+- Information sent to an external app, MCP server, web browsing provider, or other third-party service is handled under that provider’s own storage, processing, privacy, and data-residency terms.
+Unsupported features
+The following features are not eligible for data or inference residency:
+- Apple Intelligence (including Xcode "Code Intelligence")
+- Features that are not Generally Available (i.e. anything still in beta/alpha)
+- Third-Party GPTs
+- Codex Web (the Codex app and CLI are supported)
+- ChatGPT Sites, including deployed Sites, site code, D1/R2 data or file storage, generated site artifacts, and related logs, at launch.
+Inference residency follows the same feature availability limitations as data residency, with unsupported features disabled.
+Administrator-managed app indexing
+Administrator-managed app indexing has provider-specific residency requirements. The storage-at-rest region list in this article does not mean every app supports sync in those regions. For supported providers and sync setup regions, see: Administrator-managed apps with sync in ChatGPT.
+Individually configured app sync and GitHub sync are not available.
+Pricing for data residency
+Data residency is included at no additional cost for ChatGPT Enterprise and Education plans.
+FAQ
+How is data residency different from inference residency?
+Data residency (storage at rest)
+Controls where in-scope customer content is stored when it is saved by the service (for example, chat history, files, and GPT configurations).
+Inference residency (model execution)
+Controls where model inference on in-scope customer content runs on GPUs (for example, generating responses, embedding documents), for supported regions.
+Inference residency builds on data residency: you must have data residency enabled in a region to use inference residency in that region.
+What data is in scope for residency?
+Residency controls apply to in-scope customer content only. They do not apply to all user data or system data.
+In scope: Customer content (for example, prompts, files, model outputs) for the features listed under “Customer content stored in the selected region”.
+Out of scope: Account data, billing details, high-level usage statistics, logs without content, and other metadata used to operate and secure the service.
+Does inference residency guarantee that all processing stays in-region?
+No. Inference residency guarantees that GPU execution on in-scope customer content runs in the selected region for supported workloads. Other processing (for example, authentication, routing, indexing, logging without content) may still occur outside the region.
+If you require stricter controls, talk to your account team about our roadmap for broader compute residency options which is being actively developed.
+Are there restrictions on GPT sharing?
+Yes. Workspaces with data residency enabled will not have the ability to set GPT sharing settings to "Anyone".
+Only users within the same data residency region can access a shared GPT.
+Contact Sales
+Contact our Sales team to discuss enabling data residency for your organization.

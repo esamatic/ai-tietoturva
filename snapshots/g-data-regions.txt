@@ -1,0 +1,113 @@
+Supported editions for this feature: Frontline Plus, Enterprise Plus, and Enterprise Essentials Plus. Compare your edition
+Data regions allow administrators to define the regions where their data is stored and processed.
+Some Google Workspace features rely on services that process data globally. Consequently, some services might not function as expected if they are required to comply with a particular data region policy.
+On this page
+Before you begin
+With Data regions advanced settings, you can choose whether or not your users can access enhanced features that process data globally. The advanced settings are provided for organizations with stringent data location requirements.
+Google recommends that you carefully consider tradeoffs. Google Workspace works best when core services, such as Gmail, Drive, Docs, Calendar, Meet, and Chat integrate. This integration results in a more efficient, feature-rich working environment for your users. Deactivating these enhanced features may result in users losing familiar functionality and possibly experiencing unexpected behaviors.
+Set up advanced settings
+Before you begin: To work with advanced settings, ensure that Data processing is turned on by checking the Process data in the region selected for data at rest box.
+Step 1: Understand the settings
+Advanced settings allow you to turn off nonregionalized services on a per-service basis.
+You can turn off nonregionalized features for the following apps: Google Calendar, Google Docs and Google Drive (which include nonregionalized features for Google Apps Script), Gmail, Google Chat, and Google Meet. All features that process data globally are organized into a single control for each app. When a specific control is off, the corresponding app's nonregionalized features won't run. Keep these controls on if you want to continue using global features.
+If you choose to leave a specific control off, the corresponding features will be turned on once they are regionalized in the future.
+Note: To modify advanced data regions settings for specific organizational units and groups, you need a Frontline Plus, Enterprise Plus, or Data Regions add-on subscription.
+Step 2: Define advanced settings
+- In the Admin console, go to Menu Data Compliance Data regions Advanced settings. Note: You see only this option if you have Enterprise Data Regions.
+- Click the service.
+- To apply the setting to all users, select the top organizational unit. Otherwise, select a child organizational unit or a group.
+- Select an option:
+- Enable features that may process data across multiple regions—This option is turned on by default and doesn't change the user experience.
+- Turn off features that may process data across multiple regions—This option turns off any feature that may process data globally.
+- Click Save. Note: If you're applying a setting for a child organizational unit, click Override.
+Nonregionalized features affected by advanced settings
+When you turn off a service's data regions advanced setting, some features are deactivated. The following tables list examples of affected features.
+Apps Script
+Google Apps Script adheres to your organization's data regions policy. When administrators turn off features that process data globally for Google Docs and Google Drive, nonregionalized Apps Script classes and advanced services are unavailable.
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Classes and Advanced Services | When users use nonregionalized Apps Script Classes or Advanced services in their script, execution of script works. | The script execution fails with an error indicating that the specific nonregionalized Class or Advanced Service is unavailable. |
+| Cloud Execution Logs | Apps Script Execution logs are visible in Apps Script execution history tab. | For some pre-2018 scripts, execution logs may not be visible in Apps Script Execution History to comply with data regionalization. |
+Note: Nonregionalized Apps Script services and classes are unavailable starting in Q3 2026 for organizations that enable the Drive and Docs toggle to turn off features that may process data across multiple regions. Apps Script classes that are nonregionalized: FormApp, GroupsApp, Jdbc, Maps and nonregionalized advanced services are: AdminDirectory, AdminReports, AdSense, Analytics, AnalyticsAdmin, AnalyticsData, BigQuery, Chat, Classroom, ShoppingContent, MerchantApi, DoubleClickCampaigns, TagManager, Tasks, YouTube, YouTubeAnalytics, YouTubeContentId.
+Calendar
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Location suggestions | When users enter text in a location field, the exact location is autosuggested. Also applies to building locations in the Google Admin console. | The text entered in the Location field isn't automatically recognized as a location. This is true for both locations added in the Admin console and the Admin SDK API, which means no geographic coordinates are automatically added. |
+| Companion | The side panel in Google Calendar links to other apps, such as Google Contacts. | Some app links are not available. |
+| Images for autogenerated events from emails | Events that are autogenerated from emails, such as booking confirmations, display a snapshot of the Maps location. | The location snapshot isn't shown. |
+| Google Tasks in Calendar | Users can create and manage Tasks in Calendar. | Tasks are unavailable in Calendar. |
+Note: When you use Calendar Interop to search for the availability of a Calendar user from Microsoft Exchange, the Google role account determines the location of data processing, not the user's location.
+Drive and Docs
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Various intelligence features | Examples of intelligence features include Autocorrect, Sheets formula correction, Sheets formula suggestions (autocompleting formula contents), Smart Compose, Smart Select, Smart Summary, Smart Reply, universal entry point, Smart Fill, and pivot table recommendations and suggestions. | Impacted services don't appear for users. |
+| Integration with nonregionalized apps | Users can send content back-and-forth with nonregionalized apps, such as Google Sites, Google Tasks, Google Maps, and Google Keep. | Users cannot send content to nonregionalized Google apps, such as Sites, Tasks, Maps, and Keep. |
+| Voice features | In Google Docs and Google Slides, users can use voice-to-text speaker notes. Users can present Slides with automatic captions, displaying the speaker's words in real time. | Users cannot use these voice features. |
+| Companion | In Google Drive and Docs, users have a sidebar that provides links to other apps, such as Google Calendar and Contacts. | Some app links aren't available. |
+| Templates | Users can design preset layouts for use in their documents. | Users can't submit templates for moderation by their admins. |
+| Various Sheets functions | Users can use the functions that rely on intelligence services, such as DETECTLANGUAGE, GOOGLEFINANCE, and GOOGLETRANSLATE. | Users can't use these functions. |
+| Google Translate | Users can translate documents. | Users can't translate documents. |
+| Image generation and editing | Users can create and edit images using Gemini. Examples of this functionality include image generation, cover image generation, image expansion, creating and editing backgrounds, and slide and document generation with images. | Image generation and editing are unavailable. Presentations and documents generated with Gemini only include text. |
+| Help me create in Google Vids | Users can create new content using Gemini in the Vids app. | Help me create is unavailable in Vids. |
+| AI voiceover in Google Vids | Users can generate or write their own script to create an AI voiceover audio or video clip. | Users cannot use this feature. |
+| Teleprompter in Google Vids | Users can add a script and use a teleprompter when recording a video clip. | Users cannot use this feature. |
+| Generate video clips in Vids | Users can generate video clips from a prompt. | Users cannot use this feature. |
+| Transcript trim in Vids | Users can remove filler words, pauses, and unnecessary sections with a single click. | Users cannot use this feature. |
+| Generate music in Vids | Users can generate music clips from a prompt. | Users cannot use this feature. |
+Gmail
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Images in email signatures | Users can include images in saved email signatures. | Users can't add images to email signatures. |
+| Google Tasks | Users can assign to-do items to others in an email. | Users won't see Add to Tasks in Gmail. |
+| Google Photos | Users can include a photo from Google Photos in an email. | Users can't use Save to Photos and Insert Photo from Gmail. However, photos can be saved. |
+| Gmail Layouts | Users can use predefined text and email layouts. | Users can't use email templates and layouts. |
+| Dynamic email | Users can interact in an email with other Google or third-party services, such as responding to a calendar invitation. | Users can't interact with features in an email. Instead, users can access those features in another browser tab. |
+| Confidential mode | Users can use encryption and set TTL for email. | Confidential mode is deactivated. |
+| Themes | Users can customize the design and color palettes for Gmail. | Users can't select custom themes for Gmail. |
+| Companion | Users see a sidebar in Gmail that provides links to other apps, such as Calendar and Contacts. | Some app links aren't available. |
+| Home/Work location suggestions | When users write an email and type a saved Google Map address, the address is autocompleted. | This feature is turned off and no autocompletion suggestions for saved addresses are shown. |
+| Google Workspace Studio side panel | Users can open the Studio side panel in Drive to create and manage flows | Users cannot use this feature. |
+Google Chat
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Google Tasks | Users can assign to-do items to others within a chat. | Users can't view and assign Tasks. |
+| Chat apps | Users can install Chat apps to direct messages and spaces (when applicable). | Users can't install Chat apps to spaces. |
+| Companion | Chat users see a sidebar that links to other apps, such as Calendar and Contacts. | Some app links aren't available. |
+| Chat relevance Search | Users see intelligently ordered results, not chronologically ordered results. | |
+| Google Workspace Studio side panel | Users can open the Studio side panel in Drive to create and manage flows | Users cannot use this feature. |
+Google Meet
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Transcription | Users can open a meeting's written transcript. | Transcription is unavailable. |
+| Take notes for me | Users can have Gemini prepare notes that summarize a meeting's content. | Meeting content cannot be summarized. |
+| Image generation | Users can create background images using Gemini. | Image generation is unavailable. |
+Gemini in Google Workspace
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Image generation and editing | Users can create and edit images using Gemini. Examples of this functionality include cover image generation, help me create an image, image expansion, creating and editing backgrounds, and slide and document generation with images. | Image generation and editing are unavailable. Slides and Docs generated using Gemini will include only text. |
+| Help me create in Vids | Users can create new content using Gemini in the Vids app. | Help me create is unavailable in Vids. |
+| AI voiceover in Vids | Users can generate or write their own script to create an AI voiceover audio or video clip. | AI voiceover is unavailable in Vids. |
+| Use a teleprompter in Vids | Users can add a script and use a teleprompter when recording a video clip. | Teleprompter is unavailable in Vids. |
+| Generate video clips in Vids | Users can generate video clips from a prompt. | Generate video clips is unavailable in Vids. |
+| Gemini for Workspace in Meet | Users can use a variety of Gemini features, such as take notes for me, image generation, and the Gemini sidebar. | The Gemini sidebar is available. Other Gemini features, such as take notes for me and image generation, are unavailable. |
+| Audio Overviews in Gemini apps | Users can create podcast-style conversations from documents, slides, and reports. | Generate Audio Overviews is unavailable in Gemini apps. |
+| Transcript trim in Vids | Users can remove filler words, pauses, and unnecessary sections with a single click. | Users cannot use this feature. |
+Gemini app
+| Feature | Expectation | Actual behavior |
+|---|---|---|
+| Image generation | Users can create and edit images using Gemini. Examples of this functionality include image generation, background removal and editing, and image expansion. | Image generation is unavailable. |
+| Podcast and audio generation | Users can create podcast-style conversations and audio content in Gemini. | Audio and podcast creation is unavailable. |
+| Slide generation | Users can create Workspace Slides in Gemini. | Slide generation is unavailable. |
+| Veo | Users can generate video clips from a prompt. | Video generation is unavailable. |
+| Personalization | Users can tailor Gemini's responses based on chat history and preferences. | Personalization is unavailable. |
+| Gems | Users can create shareable, customized versions of Gemini that can be trained with specific instructions and knowledge to handle repetitive tasks or become an expert in particular topics. | Gems are unavailable. |
+| Deep research | Users can use an agent to autonomously conduct multi-step research on complex topics, synthesizing findings into detailed, cited reports. | Deep research is unavailable. |
+| Deep think | Gemini leverages persistent memory and deep access to your Google Account data (like email and docs) to provide highly contextual and anticipatory assistance. | Deep think is unavailable. |
+| Gemini conversation mode | Conversation mode gives users a more natural and real-time conversational experience, including natural voice conversation, camera sharing, brainstorming, and planning. | Gemini conversation mode is unavailable. |
+| Canvas | Users can generate, view, and edit documents and presentations, integrating deeply with Google Docs and Slides. | Canvas is unavailable. |
+| Guided learning | Users can engage with interactive tutorials and modules designed to help users understand and effectively utilize Gemini's various capabilities and features. | Guided learning is unavailable. |
+| People detection | Gemini can identify the presence of people in images, influencing how Gemini can generate, analyze, or modify that image content. | People detection is unavailable. |
+| Gemini mobile apps in iOS, Android | Users can generate, view, and edit documents and presentations, integrating deeply with Google Docs and Slides. | Gemini mobile apps are unavailable. |
+| Scheduled actions | Users can automate tasks and receive proactive information by scheduling prompts to run at specific times or regular intervals. | Scheduled actions are unavailable. |
+| Document upload | Users can upload documents directly to Gemini. | File upload is only available to certain file types (users can still upload documents to Drive). |
+| Non-Workspace extensions | Users can use extensions to other Google products like YouTube, Travel, etc. | Non-Workspace extensions are not available. |

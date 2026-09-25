@@ -1,0 +1,40 @@
+Enterprise-ready, secure AI
+Google Workspace with Gemini empowers teams to achieve more and helps keep data confidential, compliant and secure.
+What is generative AI privacy and security?
+Generative AI has become an indispensable tool, integrated into daily life to enhance productivity, foster creativity and provide convenience. Whether it's planning a holiday, researching a topic, writing a marketing brief or staying connected with a global team â can be a personal creative assistant to spark ideas and help get things done. To accomplish that, it may access various data sources, and not all tools offer the same AI safety and security controls. With its rapid adoption and growing importance, organisations are rightly concerned about potential data security and privacy risks. Evaluating generative AI's infrastructure, data governance policies and security controls to protect sensitive data is a must.
+Keep business data confidential, secure and compliant in Google Workspace with Gemini
+Confidential
+Your data, including personal and business data in products such as Gmail, is not reviewed by humans or otherwise used for outside your domain without permission.
+Secure
+Gemini is built with indirect prompt injection and comes with granular DLP to help protect sensitive content.
+Compliant
+Gemini has received security and privacy , including ISO 42001, BSI C5 and FedRAMP High, and can help meet HIPAA requirements.
+How to minimise risks with generative AI tools
+Protecting your data
+Gemini integrates with existing data security measures in Workspace to help prevent unauthorised data access and exfiltration.
+Understanding AI usage
+Workspace provides comprehensive logging and exporting capabilities for Gemini activity.
+Deploying AI with flexibility
+Workspace offers granular controls to manage user access, allowing administrators to define who can leverage these powerful and robust AI capabilities.
+Securing access points
+Organisations can implement device-specific access policies to further secure Gemini usage.
+Equifax securely provides Gemini to a global workforce, saving teams hours per day
+Equifax, a leading credit bureau with a global footprint, launched Google Workspace with Gemini, boosting productivity across its organisation.
+Gemini in Google Workspace delivers sovereign AI
+Customers can control where their data is stored and processed (EU or US). Customers can also limit data access to Google-support personnel in a specific region to retain sovereign control over their data.
+Customer testimonials
+Learn more about how to keep data secure and compliant in Google Workspace with Gemini
+Learn how to deploy secure, enterprise-ready AI with confidence
+Advanced AI with enterprise-grade security controls
+Mitigating prompt injection attacks with a layered defence strategy
+Frequently asked questions
+While generative AI tools are enabling employees to reach new levels of productivity and creativity, it is critical to select a solution that prioritises AI safety and security. Organisations also need to be intentional about their policies, including limiting the widespread use of 'shadow' AI tools that may increase the risk of data loss.
+By leveraging an integrated generative AI assistant that respects user access controls and provides granular management settings, administrators can help safeguard data and reduce the risk of data loss. Google Workspace with Gemini has a robust set of built-in threat defences, data protections and compliance , allowing organisations to get the most out of generative AI without making trade-offs to their security posture.
+With Workspace, files are securely stored and automatically versioned in a single place â Google Drive. This makes it easier for IT teams to protect business data and for Gemini to reference one single version of the document based on applied user permissions. Gemini can only retrieve data that the user has permissions to access, which minimises additional overhead in terms of managing access and costs for separate tools with access to these data sources.
+Security capabilities, such as AI classification, can help identify, manage and protect data at scale by leveraging labels and data loss prevention (DLP) rules automatically. With content restrictions, such as information rights management (disable downloading, copying or printing) and client-side encryption, admins can also help restrict Gemini's access to sensitive data. Take a closer look at available data security controls .
+Using the capabilities of Google Cloud Data Boundary as a foundation, Gemini in Workspace apps offers authoritative sovereign controls for customer data. Customers can confine Gemini in Workspace data processing to the US or EU. For digital resilience and survivability, customers can also store an independent copy of their Gemini in Workspace apps data in any country of their choice using local data storage.
+Furthermore, for their most critical data, customers can use client-side encryption, a unique technical control that provides end-to-end encryption and places the keys solely in the control of Workspace customers to help prevent all unauthorised access, even by Google, Gemini and other generative AI assistants in an authoritative manner.
+Google does not use customers' Workspace data to train or improve the underlying generative AI and large language models (LLMs) that power Gemini, Search and other systems outside of Workspace without permission. This has also been previously shared in a on how Google protects Workspace data and maintains these in the era of generative AI.
+Google has taken a layered security approach, introducing security measures designed for each stage of the prompt lifecycle. From Gemini 2.5 model hardening, to purpose-built machine learning (ML) models detecting malicious instructions, to system-level safeguards, we are meaningfully elevating the difficulty, expense and complexity faced by an attacker. This approach compels adversaries to resort to methods that are either more easily identified or demand greater resources.
+Our model training with adversarial data significantly enhanced our defences against indirect prompt injection attacks in Gemini 2.5 models. This inherent model resilience is augmented with additional defences that we built directly into Gemini. Learn more about these .
+Google Workspace with Gemini is and comes with granular user access and data security controls, helping admins safely and securely deploy AI tools. Check out our step-by-step and for further details, find additional information in the and get started with a no-cost .

@@ -1,0 +1,122 @@
+{
+  "_run": {
+    "changed": 0,
+    "date": "2026-09-25",
+    "failed": 0,
+    "monitored": 19
+  },
+  "a-certs": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "a-pricing": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "a-residency": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "a-retention": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "g-aiprivacy": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "g-data-regions": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "g-ge-controls": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "g-ge-locations": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "g-privacyhub": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "g-zdr": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "ms-anthropic-subproc": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "ms-chat-privacy": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "ms-edp": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "ms-privacy": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "o-business-data": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "o-help-ent": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "o-pricing": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "o-residency": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  },
+  "o-residency-help": {
+    "baseline": "2026-09-25",
+    "failures": 0,
+    "last_checked": "2026-09-25",
+    "last_ok": "2026-09-25"
+  }
+}

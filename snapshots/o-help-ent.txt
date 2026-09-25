@@ -1,0 +1,32 @@
+Guides for workspace setup, security, and day-to-day use in ChatGPT Enterprise and Edu.
+ChatGPT Enterprise admin quickstartSet up a new ChatGPT Enterprise workspace with recommended setup guidance for identity, access, workspace settings, roles and permissions, security controls, and monitoring.
+ChatGPT Enterprise and API Platform for FedRAMPLearn about supported features and functionality for ChatGPT and the API with FedRAMP compliance.
+ChatGPT Enterprise and Edu - Models & LimitsUnderstand which models are best suited for your tasks.
+ChatGPT Enterprise and Edu release notesReview new features, administrative controls, and product updates for ChatGPT Enterprise and Edu.
+ChatGPT Rate Card (Enterprise token-based pricing)Learn how token rates work for ChatGPT models and features across Chat, ChatGPT Work, and Codex.
+ChatGPT for TeachersLearn who qualifies for ChatGPT for Teachers and how to verify eligibility, get started, and manage classroom data.
+Company knowledge in ChatGPTUse the Company Knowledge plugin and the sources available to you to get organization-specific answers in ChatGPT.
+Corporate Network Controls in ChatGPT EnterpriseWorkspace Blocking is a feature that allows ChatGPT Enterprise customers to restrict access to specific ChatGPT workspaces, ensuring that users can log in and interact within the allowed workspaces.
+Enterprise compliance information for ChatGPT record modeReview transcription retention and Compliance API coverage for ChatGPT record mode in Enterprise and Edu workspaces.
+HIPAA eligible products and functionalityUnderstanding the HIPAA eligible OpenAI products and functionality.
+IP allowlisting for ChatGPTEnsure only traffic from trusted IPs can reach ChatGPT
+Legacy Model Access for Enterprise and Edu UsersFind the list of currently available legacy models
+Manage usage limits and overages in ChatGPT Enterprise and EduLearn how Enterprise and Edu workspace owners and admins can manage user limits and spending for their workspace's billing model.
+Managing impact surveys in workspace analyticsCreate, manage, and disable impact surveys in workspace analytics.
+OpenAI Compliance Platform for Enterprise and Edu customersObtain audit and compliance data in your workspace.
+Help articles with common questions relevant to ChatGPT Enterprise.
+Data residency and inference residency for ChatGPTLearn how ChatGPT data residency and inference residency affect storage, model processing, eligibility, and supported regions.
+Data retention when a member is removed from a workspaceLearn what happens to a user's conversations and data if they are removed from a workspace.
+Getting started with OpenAI identity and access for managed workspacesUnderstand OpenAI accounts, tenants, sign-in, and product access for ChatGPT Business, Enterprise, and Edu workspaces.
+How can I cancel my ChatGPT subscription once I have migrated to ChatGPT Enterprise?Individual paid ChatGPT subscriptions are canceled and partially refunded for unused time when you migrate to a ChatGPT Enterprise workspace.
+How can I edit my workspace name or change my workspace image?Workspace owners can customize their environment by updating the name and image in Workspace Settings.
+How do I get access to ChatGPT Enterprise for my company?Learn how to contact the sales team to purchase ChatGPT Enterprise for your organization.
+Managing groups and group managers in ChatGPT Enterprise and EduLearn how to organize workspace members into groups and delegate group administration in ChatGPT Enterprise.
+Managing members, workspace roles, and seats in ChatGPT Enterprise and EduLearn how to choose workspace roles and manage members and seat types in ChatGPT Enterprise.
+Managing workspace settings in ChatGPT EnterpriseLearn what workspace owners and admins can manage in Workspace settings, including appearance, seat defaults, permissions, analytics, and identity controls.
+Optimizing File Uploads in ChatGPT EnterpriseUnderstand how ChatGPT Enterprise features handle files based on their type, number, and size. Improve outputs based on file requirements.
+Visual Retrieval with PDFs FAQLearn how ChatGPT Enterprise analyzes images, charts, and other visual content embedded in PDF files.
+What is ChatGPT Enterprise?Learn what ChatGPT Enterprise includes, how organizations and members get access, how workspaces and seat types behave, and what happens when you migrate from an individual paid plan.
+What is a ChatGPT Enterprise workspace? How can I switch workspaces?Learn how ChatGPT Enterprise workspaces are structured, how they differ from personal workspaces, and how to switch between them.
+What is the difference between different roles on my ChatGPT Enterprise and Edu workspace?Exploring workspace roles in ChatGPT Enterprise and Edu
+Workspace analytics for ChatGPT Enterprise and EduUnderstand adoption, engagement, and how teams use ChatGPT across your workspace with built-in analytics and reporting.

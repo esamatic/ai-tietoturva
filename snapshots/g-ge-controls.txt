@@ -1,0 +1,30 @@
+This page provides a high-level view of the compliance certifications and security controls that are supported by Gemini Enterprise Standard edition, Gemini Enterprise Plus edition, and Gemini Notebook Enterprise.
+Certifications
+The Agentic AI Service formerly known as Agentspace, which is part of Gemini Enterprise Standard edition and Gemini Enterprise Plus edition, and Gemini Notebook Enterprise have many of the following certifications.
+To find out if a product has a compliance certification, search for the product name "Gemini Enterprise" or "Gemini Notebook" in these security pages:
+Security controls
+Gemini Enterprise Standard edition, Gemini Enterprise Plus edition, and Gemini Notebook Enterprise have the following security controls:
+| Security controls | Gemini Enterprise Standard edition and Gemini Enterprise Plus edition | Gemini Notebook Enterprise |
+|---|---|---|
+| Data Residency (DRZ) | ✔ (see DRZ for limitations) 2 | ✔ (see DRZ for limitations) 2 |
+| Customer-managed encryption keys: CMEK for Gemini Enterprise CMEK for Gemini Notebook Enterprise | ✔ US and EU multi-region APIs only 1, 2 | ✔ US and EU multi-region APIs only 1 |
+| VPC Service Controls | ✔ 2 | ✔ |
+| Access Transparency | ✔2 | ✔ |
+1 Using external key manager (EKM) or hardware security module (HSM) with CMEK is in GA with allowlist.
+2 Doesn't apply when Grounding with Google Search is enabled.
+AlphaEvolve limitations
+AlphaEvolve doesn't support the following compliance programs:
+- International Traffic in Arms Regulations (ITAR)
+- FedRAMP (Moderate and High)
+- Impact Level 5 (IL5)
+- Impact Level 4 (IL4)
+Antigravity limitations
+Antigravity in Gemini Enterprise doesn't support the following compliance certifications and security controls:
+- Access Transparency (AXT)
+- FedRAMP (Moderate and High)
+- Impact Level 4 (IL4) and Impact Level 5 (IL5)
+- International Organization for Standardization (ISO) certifications, including ISO 27001 and ISO 42001
+- International Traffic in Arms Regulations (ITAR)
+- Service Organization Control (SOC) 1, SOC 2, and SOC 3
+What's next
+Learn more about Google Cloud compliance.

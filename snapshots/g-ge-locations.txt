@@ -1,0 +1,93 @@
+This page lists the locations where Gemini Enterprise and Gemini Notebook Enterprise are available, along with their data residency commitments for at-rest storage (at-rest DRZ) and artificial intelligence (AI) or machine learning processing (MLP).
+Gemini Enterprise and Gemini Notebook Enterprise support at-rest DRZ in the multi-regions and in-country regions listed on this page, subject to limitations.
+If you don't have security, or regulatory reasons to locate your customer data
+in the us or eu multi-regions or the in-country regions with respect to at-rest
+DRZ or MLP, Google recommends that you choose the global location. This is
+because the global location provides better end-user response times, the
+latest model versions, and the most up-to-date features. See
+Limitations for multi-regions and in-country regions.
+Multi-regions
+The following tables list the multi-regions where Gemini Enterprise and Gemini Notebook Enterprise are available.
+Gemini Enterprise multi-regions
+The following table lists the multi-regions where Gemini Enterprise is available.
+| Multi-region description | Multi-region name |
+|---|---|
+| API availability in the European Union | eu |
+| API availability in the United States | us |
+For Gemini Enterprise, MLP, such as training,
+prediction, and model tuning, occurs within the us multi-region when requests
+are made to regionally-available APIs in the US, or within the eu multi-region
+when requests are made to regionally-available APIs in Europe, subject to the
+limitations outlined below.
+Gemini Notebook Enterprise multi-regions
+The following table lists the multi-regions where Gemini Notebook Enterprise is available.
+| Multi-region description | Multi-region name |
+|---|---|
+| API availability in the European Union | eu |
+| API availability in the United States | us |
+For more information on the limitations, see Limitations for multi-regions and in-country regions.
+In-country regions
+Using these locations is in GA with allowlist. To get access to these locations for use with Gemini Enterprise or Gemini Notebook Enterprise, contact your Google account team.
+The following table lists the in-country regions and multi-regions where Gemini Enterprise and Gemini Notebook Enterprise are available.
+| In-country description | In-country name |
+|---|---|
+| API availability in Canada | ca |
+| API availability in India | in |
+| API availability in Japan | asia-northeast1 |
+| API availability in Singapore | sg |
+| API availability in the United Kingdom | europe-west2 |
+These locations provide at-rest DRZ within the specified location. These
+in-country locations may be more constrained and have
+limitations similar to the us and eu multi-regions.
+Specify a multi-region for your data store
+To confine your Customer Data to at-rest DRZ in the us or eu multi-region, follow
+these steps:
+- If you create the data store through the Google Cloud console, then choose us (multiple regions in the United States) or eu (multiple regions in the European Union) when you pick your app location. For more information, see Create an app.
+- For API calls, replace global-discoveryengine ordiscoveryengine witheu-discoveryengine orus-discoveryengine , and replaceglobal witheu orus . The following table shows examples of the API paths:EU multi-region https://eu-discoveryengine.googleapis.com/v1/projects/PROJECT_ID/locations/eu/… US multi-region https://us-discoveryengine.googleapis.com/v1/projects/PROJECT_ID/locations/us/… Global multi-region (Two equivalent endpoints) With the global endpoint prefix:https://global-discoveryengine.googleapis.com/v1/projects/PROJECT_ID/locations/global/… Without the global endpoint prefix:https://discoveryengine.googleapis.com/v1/projects/PROJECT_ID/locations/global/…
+- For Gemini Notebook Enterprise, ensure the user is licensed and is using a notebook in the selected region.
+- Review the limitations associated with using a specific multi-region.
+Limitations for multi-regions and in-country regions
+The following features of Gemini Enterprise that are supported globally may have limitations for certain multi-regions and in-country regions:
+Gemini Enterprise limitations
+| Feature | US/EU multi-regions | In-country regions (CA, IN, JP, SG, UK) | Notes |
+|---|---|---|---|
+| Gemini Enterprise base functionality | | | Includes access-controlled data, blended search, Workspace search, people search, core search infrastructure, Assistant, answer generation, ingested and federated connectors, document understanding, analytics, frontend, Canvas, Agent Registry, Workflow Builder, custom Agents and Agent Engine Platform. |
+| Gemini 3.1 Pro | | | Gemini 3.1 Pro in Gemini Enterprise is in Limited Availability. |
+| Gemini 3.8 Flash | | | Gemini 3.8 Flash is enabled by default in the global ,us , andeu regions. Administrators can turn on or turn off the Gemini 3.8 Flash toggle in the Gemini Enterprise app. For more information, see Manage features on the web app. For unsupported in-country regions, you must confirm the warning dialog to route traffic to the global endpoint. |
+| Gemini 3.7 Flash | | | To make Gemini 3.7 Flash available to users in the Gemini Enterprise app, administrators must turn on the Gemini 3.7 Flash toggle. For more information, see Manage features on the web app. For unsupported in-country regions, you must confirm the warning dialog to route traffic to the global endpoint. |
+| Gemini 3.6 Flash | | | To make Gemini 3.6 Flash available to users in the Gemini Enterprise app, administrators must turn on the Gemini 3.6 Flash toggle. For more information, see Manage features on the web app. For unsupported in-country regions, you must confirm the warning dialog to route traffic to the global endpoint. |
+| Gemini 3.5 Flash | | | |
+| Gemini 2.5 Pro | | | IN, SG, UK regions don't offer the 2.5 Pro model. |
+| Model Armor | | | Model Armor is also not available in the global region. Previously created Model Armor templates in CA, IN, JP, SG, and UK continue to call out-of-region to avoid breaking changes for customers. |
+| CMEK | | | CMEK is also not available in the global region. For more information, see Customer-managed encryption keys (CMEK). To use this security feature, you must choose either the US multi-region or the EU multi-region. |
+| Autocomplete | | | Tail match suggestions and advanced document data mode are only available in global . For more information, see Configure autocomplete. |
+| Dynamic facets | | | Even if a field is set to Dynamic Facetable, Gemini Enterprise doesn't generate dynamic facets in these locations. |
+| Grounding with Google Search | | | The Grounding with Google Search feature has several additional limitations, which are described further in the Grounding with Google Search Service Specific Terms and in the Gemini Enterprise Agent Platform product documentation pages. Notably, Grounding with Google Search temporarily logs certain pieces of Customer Data as part of providing this feature. |
+| Web Grounding for Enterprise | | | Grounding features are turned on by default for US/EU. |
+| Gemini 3.1 Flash image (Nano Banana 2) | | | To make Gemini 3.1 Flash image available to users in the Gemini Enterprise app, administrators must turn on the Gemini 3.1 Flash image toggle. For more information, see Manage features on the web app. |
+| Gemini 3 Pro image (Nano Banana Pro) | | | To make Gemini 3 Pro image available to users in the Gemini Enterprise app, administrators must turn on the Gemini 3 Pro image toggle. For more information, see Manage features on the web app. For unsupported in-country, US, and EU regions, you must confirm the warning dialog to route traffic to the global endpoint. |
+| Gemini 2.5 Flash image | | | The system defaults to this model if an administrator doesn't select an image model. |
+| Video generation | | | |
+| AI developer tools | | | Includes Antigravity 2.0, Antigravity CLI, Antigravity for IDEs, and Android Studio. |
+Gemini Notebook Enterprise limitations
+The following features of Gemini Notebook Enterprise are supported globally but may have limitations for certain multi-regions and in-country regions:
+| Feature | US/EU multi-regions | In-country regions (CA, IN, JP, SG, UK) | Notes |
+|---|---|---|---|
+| Base functionality | | | Includes adding sources to generate embeddings and interacting with them to query, chat, or generate summaries. |
+| Gemini Notebook Content Studio | | | Content Studio includes audio overviews, slide decks, infographics, and video overviews. |
+| Discover Sources | | | Discover Sources is powered by Grounding with Google Search. The Grounding with Google Search feature has several additional limitations, which are described further in the Grounding with Google Search Service Specific Terms and in the Gemini Enterprise Agent Platform product documentation pages. Notably, Grounding with Google Search temporarily logs certain pieces of customer data as part of providing this feature. |
+Agent Runtime limitations
+The following features of Agent Runtime are supported globally but may have limitations for certain multi-regions and in-country regions:
+| Feature | US/EU multi-regions | In-country regions (CA, IN, JP, SG, UK) |
+|---|---|---|
+| Memory Bank and Sessions | | |
+| Runtime | | |
+| Code execution | | |
+AlphaEvolve limitations
+AlphaEvolve features are supported globally but may have limitations for certain multi-regions and in-country regions.
+| Feature | US/EU multi-regions | In-country regions (CA, IN, JP, SG, UK) |
+|---|---|---|
+| Base functionality (with Gemini 3.5 Flash) | At-rest DRZ supported. | At-rest DRZ not supported. |
+| | MLP supported. | MLP not supported. |
+| Base functionality (with Gemini 3.1 Pro) | At-rest DRZ supported. | At-rest DRZ not supported. |
+| | MLP not supported. | MLP not supported. |
