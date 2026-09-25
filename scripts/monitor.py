@@ -27,6 +27,9 @@ LABELS = {
     "lahdemuutos": ("0e8a16", "Seurattu lähde muuttui"),
     "seurantavirhe": ("d93f0b", "Lähteen haku epäonnistuu toistuvasti"),
     "tutkimus": ("1d76db", "Tutkimuspaketti Claudelle"),
+    "uusi-ominaisuus": ("5319e7", "Lomake: uusi seurattava ominaisuus"),
+    "uusi-lisenssi": ("5319e7", "Lomake: uusi lisenssi"),
+    "uusi-lahde": ("5319e7", "Lomake: uusi seurattava lähde"),
 }
 
 
