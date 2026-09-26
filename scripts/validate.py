@@ -25,6 +25,10 @@ def main() -> int:
     errors += [f"lähde {s['id']}: tyyppi {s.get('type')!r}" for s in sources if s.get("type") not in SOURCE_TYPES]
     errors += [f"ryhmä {g['id']}: tier {g['tier']!r}" for g in st["groups"] if "tier" in g and g["tier"] not in TIERS]
 
+    for r in st["rows"]:
+        bad = set(r.get("status_labels", {})) - set(STATUS_LABELS)
+        if bad:
+            errors.append(f"rivi {r['id']}: status_labels tuntemattomat avaimet {sorted(bad)}")
     rows = {r["id"]: r for r in st["rows"]}
     cols = {c["id"] for c in st["columns"]}
     src_ids = {s["id"] for s in sources}

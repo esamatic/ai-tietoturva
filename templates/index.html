@@ -117,13 +117,12 @@ a{color:var(--ms)}
 
 <div class="controls">
   <div class="legend" aria-label="Merkintöjen selitys">
-    <span class="chip s-y">✓ Kyllä</span><span class="chip s-p">◐ Osittain</span>
-    <span class="chip s-n">✕ Ei</span><span class="chip s-u">? Ei tiedossa</span>
+    <span class="chip s-y">✓ Hyvä</span><span class="chip s-p">◐ Osittain</span>
+    <span class="chip s-n">✕ Heikko</span><span class="chip s-u">? Ei tiedossa</span>
     <span class="chip s-x">– Ei vielä tutkittu</span>
   </div>
   <div class="filters" role="group" aria-label="Näytä palveluntarjoajat" id="filters"></div>
   <label class="tog"><input type="checkbox" id="onlyChanged"> Vain rivit, joissa muutoksia</label>
-  <label class="tog"><input type="checkbox" id="onlyGaps"> Vain rivit, joissa lähde puuttuu</label>
   <button class="theme" id="theme" type="button">Vaihda teema</button>
 </div>
 <p class="small" id="legend2"></p>
@@ -148,7 +147,10 @@ a{color:var(--ms)}
 const D = JSON.parse(document.getElementById('data').textContent);
 const S = D.structure, CELLS = D.cells, SRC = Object.fromEntries(D.sources.map(s => [s.id, s]));
 const MON = D.monitor || {};
-const LABEL = {y:"✓ Kyllä", p:"◐ Osittain", n:"✕ Ei", u:"? Ei tiedossa"};
+const LABEL = {y:"✓ Hyvä", p:"◐ Osittain", n:"✕ Heikko", u:"? Ei tiedossa"};
+// a row may define its own scale (e.g. pricing: public price vs. quote only)
+const ROW = Object.fromEntries(S.rows.map(r => [r.id, r]));
+const lbl = (rowId, s) => ((ROW[rowId] || {}).status_labels || {})[s] || LABEL[s];
 const VEND = Object.fromEntries(S.vendors.map(v => [v.id, v.name]));
 // vendor colours come from data; vendors without one get a fallback palette
 const FALLBACK = [["#9C3D54","#E08BA0"],["#2A7F8F","#6CC5D4"],["#7A6A1F","#D2BE62"],["#4E5D9C","#98A6E6"],["#A0522D","#E3A27C"]];
@@ -176,6 +178,7 @@ document.getElementById('title').textContent = D.meta.title;
 document.getElementById('desc').textContent = D.meta.description;
 document.getElementById('disclaimer').textContent = D.meta.disclaimer || "";
 document.getElementById('legend2').textContent =
+  "Tila on arvio tietoturvan ja hankinnan kannalta, ei kyllä/ei-vastaus rivin kysymykseen: esimerkiksi koulutusrivillä ✓ Hyvä tarkoittaa, ettei dataa käytetä koulutukseen. " +
   `Oranssi reunus = solu muuttunut viimeisen ${WINDOW} päivän aikana (aiempi arvo avattavissa). ` +
   "Lähdelinkit: sininen = ensisijainen lähde, kursiivi = toissijainen. Vie osoitin linkin päälle nähdäksesi otsikon ja hakupäivän.";
 
@@ -206,7 +209,7 @@ function srcLinks(cell) {
   }).join("") + "</span>";
 }
 
-function cellHtml(cell, colspan) {
+function cellHtml(rowId, cell, colspan) {
   const span = colspan ? ` colspan="${colspan}" data-span="1"` : "";
   if (!cell) return `<td class="cell x"${span}><span class="st s-x">– Ei vielä tutkittu</span></td>`;
   const chg = isChanged(cell);
@@ -218,9 +221,9 @@ function cellHtml(cell, colspan) {
   let prev = "";
   if (chg) {
     const h = cell.history[0];
-    prev = `<details class="prev"><summary>Aiempi arvo: ${LABEL[h.status]}</summary><p>${esc(h.text)}</p><p>Voimassa ${fmt(h.from)}–${fmt(h.until)}. Syy muutokseen: ${esc(h.reason)}</p></details>`;
+    prev = `<details class="prev"><summary>Aiempi arvo: ${lbl(rowId, h.status)}</summary><p>${esc(h.text)}</p><p>Voimassa ${fmt(h.from)}–${fmt(h.until)}. Syy muutokseen: ${esc(h.reason)}</p></details>`;
   }
-  return `<td class="cell${chg ? " chg" : ""}"${span}><span class="st s-${cell.status}">${LABEL[cell.status]}</span>${b}<br>${esc(cell.text)}${srcLinks(cell)}${prev}</td>`;
+  return `<td class="cell${chg ? " chg" : ""}"${span}><span class="st s-${cell.status}">${lbl(rowId, cell.status)}</span>${b}<br>${esc(cell.text)}${srcLinks(cell)}${prev}</td>`;
 }
 
 function build() {
@@ -246,12 +249,12 @@ function build() {
       h += `<tr class="group" data-group="${esc(g.id)}"><th scope="rowgroup">${esc(g.label)}</th><td class="gfill" colspan="${S.columns.length}"></td></tr>`;
     for (const r of rows) {
       const tracked = r.added > firstDate ? `<small>Seurannassa ${fmt(r.added)} alkaen</small>` : "";
+      const scale = r.status_labels ? `<small>Asteikko: ${["y","p","n"].map(s => esc(lbl(r.id, s))).join(" / ")}</small>` : "";
       const cells = r.span ? [CELLS[`${r.id}|*`]] : S.columns.map(c => CELLS[`${r.id}|${c.id}`]);
       const changed = cells.some(isChanged) ? "1" : "";
-      const gaps = cells.some(c => !c || (c.status !== "u" && !c.sources.length)) ? "1" : "";
-      h += `<tr data-row="${esc(r.id)}" data-group-of="${esc(g.id)}" data-tier-of="${t}" data-changed="${changed}" data-gaps="${gaps}"><th scope="row" class="rowh">${esc(r.label)}${r.hint ? `<small>${esc(r.hint)}</small>` : ""}${tracked}</th>`;
-      if (r.span) h += cellHtml(cells[0], S.columns.length);
-      else S.columns.forEach((c, i) => { h += cellHtml(cells[i]).replace("<td ", `<td data-v="${esc(c.vendor)}" `); });
+      h += `<tr data-row="${esc(r.id)}" data-group-of="${esc(g.id)}" data-tier-of="${t}" data-changed="${changed}"><th scope="row" class="rowh">${esc(r.label)}${r.hint ? `<small>${esc(r.hint)}</small>` : ""}${scale}${tracked}</th>`;
+      if (r.span) h += cellHtml(r.id, cells[0], S.columns.length);
+      else S.columns.forEach((c, i) => { h += cellHtml(r.id, cells[i]).replace("<td ", `<td data-v="${esc(c.vendor)}" `); });
       h += "</tr>";
     }
   }
@@ -265,10 +268,9 @@ function applyFilters() {
   const n = S.columns.filter(c => on.has(c.vendor)).length || 1;
   document.querySelectorAll('#m td[data-span], #m td.gfill').forEach(td => td.colSpan = n);
   const onlyChanged = document.getElementById('onlyChanged').checked;
-  const onlyGaps = document.getElementById('onlyGaps').checked;
   const visibleGroups = new Set(), visibleTiers = new Set();
   document.querySelectorAll('#m tr[data-row]').forEach(tr => {
-    const show = (!onlyChanged || tr.dataset.changed) && (!onlyGaps || tr.dataset.gaps);
+    const show = !onlyChanged || tr.dataset.changed;
     tr.classList.toggle('hide', !show);
     if (show) { visibleGroups.add(tr.dataset.groupOf); visibleTiers.add(tr.dataset.tierOf); }
   });
@@ -282,7 +284,6 @@ document.querySelectorAll('#filters button').forEach(b => b.addEventListener('cl
   applyFilters();
 }));
 document.getElementById('onlyChanged').addEventListener('change', applyFilters);
-document.getElementById('onlyGaps').addEventListener('change', applyFilters);
 
 // changelog
 const rowLabel = Object.fromEntries(S.rows.map(r => [r.id, r.label]));
@@ -292,7 +293,7 @@ document.getElementById('log').innerHTML = D.changelog.slice(0, 40).map(e => {
   const items = (e.changes || []).map(ch => {
     if (["status","text","new"].includes(ch.kind)) {
       const [r, c] = ch.key.split("|");
-      const what = ch.kind === "status" ? `${LABEL[ch.from]} → ${LABEL[ch.to]}` : ch.kind === "new" ? `uusi: ${LABEL[ch.to]}` : "teksti päivitetty";
+      const what = ch.kind === "status" ? `${lbl(r, ch.from)} → ${lbl(r, ch.to)}` : ch.kind === "new" ? `uusi: ${lbl(r, ch.to)}` : "teksti päivitetty";
       return `<li>${esc(rowLabel[r] || r)} / ${esc(colLabel[c] || c)}: ${what}</li>`;
     }
     const kind = {row:"Uusi rivi", column:"Uusi sarake", source:"Uusi lähde"}[ch.kind] || ch.kind;
