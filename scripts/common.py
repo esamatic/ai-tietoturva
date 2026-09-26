@@ -15,7 +15,7 @@ DATA = ROOT / "data"
 SNAPSHOTS = ROOT / "snapshots"
 OUT = ROOT / "out"
 
-STATUS_LABELS = {"y": "✓ Kyllä", "p": "◐ Osittain", "n": "✕ Ei", "u": "? Ei tiedossa"}
+STATUS_LABELS = {"y": "✓ Hyvä", "p": "◐ Osittain", "n": "✕ Heikko", "u": "? Ei tiedossa"}
 SOURCE_TYPES = {"primary", "secondary"}
 TIERS = {"threshold", "differentiator"}
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{1,60}$")

@@ -15,7 +15,7 @@ FENCE = "~~~~"  # tilde fence so that ``` inside the payload cannot break it
 
 RECAP = """Vastaa noudattaen projektin ohjeita (prompts/project_instructions.md). Lyhyesti:
 - Palauta VAIN muuttuneet tai uudet solut patchina merkkien BEGIN-PATCH ja END-PATCH väliin.
-- Tilat: y = kyllä, p = osittain/ehdoin, n = ei, u = ei tiedossa.
+- Tila on arvio, ei kyllä/ei-vastaus: y = hyvä (vahva tietoturvan kannalta), p = osittain/ehdoin, n = heikko tai puuttuu, u = ei tiedossa. Rivin status_labels voi määritellä oman asteikon.
 - Jokaisella solulla (paitsi tila u) vähintään yksi lähde; merkitse lähdetyyppi primary/secondary.
 - Muuta tekstiä vain, jos tila tai lähteen sisältö muuttui. Perustele muutos kentässä reason.
 - Solut, jotka tarkistit ja jotka pitävät yhä paikkansa, listaa kenttään unchanged.
@@ -139,3 +139,48 @@ def full_research(vendor_id: str, data: dict, col_ids: list[str] | None = None) 
         f"Tarjoajan tunnetut lähteet:\n{_json(_known_sources(data['sources'], {vendor_id}))}",
     ]
     return _wrap(f"Täysi tarkistus: {vendors[vendor_id]}", parts)
+
+
+def _match_columns(scope: str, st: dict) -> list[dict]:
+    """Columns whose vendor name, plan or id appears in the free-text scope."""
+    s = scope.lower()
+    if not s.strip():
+        return []
+    vendors = {v["id"]: v["name"].lower() for v in st["vendors"]}
+    plan_hits = [c for c in st["columns"] if c["plan"].lower() in s or c["id"] in s]
+    if plan_hits:
+        return plan_hits
+    return [c for c in st["columns"] if vendors.get(c["vendor"], "") in s]
+
+
+def _match_rows(scope: str, st: dict) -> list[dict]:
+    s = scope.lower()
+    return [r for r in st["rows"] if r["id"] in s or r["label"].lower() in s]
+
+
+def correction(urls: list[str], scope: str, note: str, data: dict) -> str:
+    """Bundle for a user-submitted source or correction: find which cells the URLs support."""
+    st, cells = data["structure"], data["cells"]
+    vendors = {v["id"]: v["name"] for v in st["vendors"]}
+    sources_by_id = {s["id"]: s for s in data["sources"]}
+    cols, rows = _match_columns(scope, st), _match_rows(scope, st)
+    col_ids = [c["id"] for c in (cols or st["columns"])]
+    row_list = rows or [r for r in st["rows"] if not r.get("span")]
+    keys = [key(r["id"], c) for r in row_list for c in col_ids]
+    if not (cols or rows):
+        # no scope given: show only the cells that most need a source
+        keys = [k for k, c in cells.items() if (c["status"] != "u" and not c.get("sources")) or c.get("verify")]
+    views = [_cell_view(k, cells.get(k), sources_by_id) for k in sorted(keys)][:120]
+    parts = [
+        "Tehtävä: käyttäjä ehdottaa alla olevia lähteitä. Hae jokainen URL ja selvitä, mitä matriisin soluja "
+        "se tukee, kumoaa tai tarkentaa. Päivitä solut ja lisää URL lähteeksi (id, title, type). "
+        "Jos lähde ei tue mitään solua, kerro se ja palauta patch, jossa on vain summary.",
+        "Ehdotetut lähteet:\n" + "\n".join(f"- {u}" for u in urls),
+        f"Käyttäjän rajaus: {scope or '(ei annettu)'}",
+        f"Käyttäjän huomio: {note or '(ei annettu)'}",
+        f"Sarakkeet:\n{_json(_columns_view(cols or st['columns'], vendors))}",
+        ("Asiaan liittyvät solut" if (cols or rows) else
+         "Rajausta ei annettu; alla solut, joilta puuttuu lähde tai jotka on merkitty varmistettaviksi") +
+        f" ({len(views)} kpl):\n{_json(views)}",
+    ]
+    return _wrap("Lähde-ehdotus", parts)
