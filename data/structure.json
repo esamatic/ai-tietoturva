@@ -201,7 +201,8 @@
       "group": "commercial",
       "label": "Hinta ja vähimmäissitoumus",
       "hint": "Listahinta per käyttäjä, vähimmäismäärät ja sitoumus. Tietoturvaominaisuudet ovat usein vain kalliimmissa tasoissa.",
-      "added": "2026-09-25"
+      "added": "2026-09-25",
+      "status_labels": {"y": "✓ Julkinen hinta", "p": "◐ Osittain julkinen", "n": "✕ Vain tarjouksesta"}
     },
     {
       "id": "ip_indemnity",
