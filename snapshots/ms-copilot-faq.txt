@@ -1,0 +1,122 @@
+à¤¨à¥à¤
+à¤à¤¸ à¤ªà¥à¤ à¤¤à¤ à¤ªà¤¹à¥à¤à¤ à¤à¥ à¤²à¤¿à¤ à¤ªà¥à¤°à¤®à¤¾à¤£à¤¨ à¤à¥ à¤à¤µà¤¶à¥à¤¯à¤à¤¤à¤¾ à¤¹à¥à¤¤à¥ à¤¹à¥. à¤à¤ª à¤¸à¤¾à¤à¤¨ à¤à¤¨ à¤à¤°à¤¨à¥ à¤¯à¤¾ à¤¨à¤¿à¤°à¥à¤¦à¥à¤¶à¤¿à¤à¤¾à¤à¤ à¤à¥ à¤¬à¤¦à¤²à¤¨à¥ à¤à¤¾ à¤ªà¥à¤°à¤¯à¤¾à¤¸ à¤à¤° à¤¸à¤à¤¤à¥ à¤¹à¥à¤.
+à¤à¤¸ à¤ªà¥à¤ à¤¤à¤ à¤ªà¤¹à¥à¤à¤ à¤à¥ à¤²à¤¿à¤ à¤ªà¥à¤°à¤®à¤¾à¤£à¤¨ à¤à¥ à¤à¤µà¤¶à¥à¤¯à¤à¤¤à¤¾ à¤¹à¥à¤¤à¥ à¤¹à¥. à¤à¤ª à¤¨à¤¿à¤°à¥à¤¦à¥à¤¶à¤¿à¤à¤¾à¤à¤ à¤à¥ à¤¬à¤¦à¤²à¤¨à¥ à¤à¤¾ à¤ªà¥à¤°à¤¯à¤¾à¤¸ à¤à¤° à¤¸à¤à¤¤à¥ à¤¹à¥à¤.
+General
+How is Microsoft Copilot Chat different from Microsoft Copilot?
+Microsoft Copilot Chat is an AI prompt and response experience that's grounded in the web and powered by large language models (LLMs). Copilot Chat is automatically included and available to organizations that have a Microsoft 365 subscription.
+By contrast, Microsoft Copilot is licensed by your work organization. It includes features that can help end users and admins do even more with work tasks, like reasoning over both web-based (internet) and work-based (Microsoft Graph) data. Learn more about the differences between Microsoft Copilot Chat and Microsoft Copilot.
+How are Microsoft Copilot Chat and Microsoft Copilot different from Microsoft Copilot?
+Microsoft Copilot Chat (grounded in the web) and Microsoft Copilot (grounded in the web and work data) are for work and education. Users access them from the Microsoft Copilot app or on the web after signing in with their Entra account. Microsoft Copilot is for personal use. Users access it using a personal account (MSA). Learn more about how to ensure users in your organization access Copilot Chat for work or education.
+Can Copilot Chat access Microsoft Graph data?
+If a user doesn't have a Microsoft 365 Copilot license, Copilot Chat can't access the user's shared enterprise data, individual data, or external data indexed via Microsoft Graph connectors. Users can, however, choose to upload files directly in Copilot Chat. Additionally, if their organization enables metering through Copilot Studio, users can access agents in Copilot Chat that provide focused grounding on specific SharePoint sites, shared tenant files, or third-party data. Copilot Studio offers an easy way to create agents with knowledge grounding from specific sources, including shared Microsoft 365 data like SharePoint files.
+Agents for Copilot Chat users
+Are agents on by default?
+Agents that access SharePoint or Graph connector content are billed based on metered consumption. Agents utilizing metered consumption are off by default. Admins are required to set up a Copilot Studio subscription before using these agents. These agents are governed through your Copilot and Power Platform configurations.
+Declarative agents that are grounded in instructions and public websites are available at no additional cost. These agents don't have access to tenant data. The availability of these agents adheres to your previous configurations when managing agents.
+Copilot Chat users are able to access agents in the store based on their existing store settings for Teams and Microsoft 365 apps. Based on these settings, agents that are available at no additional cost could be on and available by default.
+Learn more about Agents for Microsoft Copilot.
+How do I enable agents that are billed based on metered consumption?
+For detailed information, see Enable agents.
+Who can create agents that are discoverable in Copilot Chat?
+For detailed information, see Build agents.
+What knowledge sources can agents access in Copilot Chat?
+Agents in Copilot Chat access shared Enterprise data and external data indexed via Microsoft Graph connectors, as configured by IT Admins in the Microsoft 365 admin center.
+How can I manage agents?
+For detailed information, see Manage agents.
+Enterprise data protection (EDP)
+What is enterprise data protection (EDP)?
+For users signed in with a Microsoft Entra account, Microsoft Copilot Chat offers enterprise data protection (EDP).
+Enterprise data protection (EDP) refers to controls and commitments, under the Data Protection Addendum (DPA) and the Product Terms, that apply to customer data for users of Microsoft Copilot and Microsoft Copilot Chat. The use of the term EDP is not meant to limit the benefits offered under the DPA and Product Terms.
+To learn more about enterprise data protection, visit https://aka.ms/EDPLearn.
+Managing Copilot Chat
+What actions do IT admins need to take to gain access to enterprise data protection (EDP) in Copilot Chat?
+Microsoft Copilot Chat offers enterprise data protection (EDP) to users who sign in with a Microsoft Entra accountâno IT admin action is required.
+To ensure people across your organization have easy access to Copilot Chat and can benefit from its security and experience updates, we recommend that your users have Microsoft Copilot Chat pinned to their navigation bar. You can also pin the Microsoft Copilot app to the Windows taskbar. If Microsoft Copilot Chat is pinned, it appears in the Microsoft Copilot app, Microsoft Teams, and Outlook. The option to change the pinning settings for Copilot Chat can be found under Settings on the Copilot Control System page in the Microsoft 365 admin center. (Global Admin or AI Admin permissions required).
+Microsoft Copilot Chat is pinned by default in the navigation bar of the Microsoft Copilot app, Teams, and Outlook for most users who are eligible for Copilot Chat across the web, mobile, and desktop.
+Where can I learn more about pinning settings for Copilot Chat?
+For more information on managing the pinning settings for Microsoft Copilot Chat in the Microsoft 365 app, Microsoft Teams, and Outlook, see How to pin Microsoft Copilot Chat in the Microsoft Copilot app, Microsoft Teams, and Outlook.
+How can I ensure that users in my network access Copilot Chat?
+For detailed information, see How to ensure users access Copilot Chat.
+What IPs do I need to allow in my network for Microsoft Copilot Chat to work?
+For detailed information, see Network requirements.
+How can I prevent access to Microsoft Copilot Chat for my users?
+For instructions, see Remove access to Microsoft Copilot Chat.
+Access and availability
+Where can my users access Microsoft Copilot Chat?
+For details, see Where to access Microsoft Copilot Chat.
+Are there any restrictions on the types of users who can access Microsoft Copilot Chat?
+Students under age 13 aren't eligible. To help ensure appropriate access for students aged 13 and older, admins must take additional steps to manage deployment: Microsoft Copilot Chat for Students 13+ | Microsoft Community Hub.
+Can I use Copilot Chat with any browser?
+Copilot Chat supports Microsoft Edge and other major non-Microsoft browsers like Chrome, Firefox, and Safari. The Copilot Chat sidepane experience is available only in Microsoft Edge.
+In which regions is Microsoft Copilot Chat available?
+Copilot Chat is available in many regions worldwide. However, it is not currently accessible in certain markets. Access may be possible for some organizations through an account support escalation process, subject to approval. For more information, see International availability.
+Is Copilot Chat accessible via API?
+No, we don't offer an API. Customers interested in extending Copilot Chat with agents should look at Microsoft Copilot and Microsoft Copilot Studio.
+Privacy, protections, and compliance
+Are prompts and responses in Copilot Chat logged?
+With enterprise data protection (EDP), prompts and responses are logged, retained, and available for audit, eDiscovery, and advanced Microsoft Purview capabilities. The specific controls vary depending on the underlying subscription plan. For more information on EDP, visit Enterprise data protection for prompts and responses.
+Are prompts and responses in Copilot Chat used to train foundation models?
+No, prompts and responses aren't used to train foundation models under enterprise data protection.
+Since Microsoft Copilot Chat is built on OpenAI's ChatGPT models, does Copilot Chat share any information with OpenAI?
+No, your data is not available to OpenAI or used to train OpenAI models. Learn more about how Microsoft protects user and organizational data.
+How are web search queries handled in Copilot Chat?
+For information on web search queries in Copilot Chat, see Privacy and security of generated web search queries.
+For information on how to manage web search queries, see Managing web search queries in Microsoft Copilot Chat.
+Does Copilot Chat work with Bing SafeSearch settings?
+Yes, Copilot Chat works with all Bing SafeSearch settings, including Strict.
+Does Microsoft Copilot Chat fall under the terms of the Data Protection Addendum (DPA)?
+The use of Microsoft Copilot and Microsoft Copilot Chat, as used by organizations, are covered by the terms of the Data Protection Addendum (DPA) and Product Terms, with Microsoft acting as a data processor.
+To learn more about enterprise data protection, visit https://aka.ms/EDPLearn.
+How can I prevent sensitive internal content from being summarized using Copilot Chat in Microsoft Edge for Business?
+Edge for Business comes with native capabilities for enforcing Data Loss Prevention (DLP) policies. To learn more about DLP when using Copilot Chat in Microsoft Edge for Business, visit How Data Loss Prevention is enforced with Copilot Chat in Edge.
+Could I be at risk of copyright infringement by using material generated by Copilot Chat?
+Microsoft's Copilot Copyright Commitment defends customers against third-party intellectual property claims arising from the customer's use and distribution of the output content generated by Microsoft's Copilot services. For content copyright concerns, see our Customer Copyright Commitment.
+Does Copilot Chat offer EU Data Boundary (EUDB) compliance?
+Yes. For more information, see details of the EUDB commitment.
+Does Copilot Chat support HIPAA compliance?
+Microsoft Copilot Chat supports the BAA and HIPAA compliance for prompts and responses for properly configured implementations. HIPAA compliance does not apply to web search queries as they are not covered by the DPA and BAA.
+Does Copilot Chat support FERPA compliance for education?
+Microsoft Copilot Chat supports FERPA compliance for prompts and responses for properly configured implementations. FERPA compliance does not apply to web search queries as they are not covered by the DPA.
+Report a concern
+We work diligently to protect our users from harmful content and conduct, but we can't do it alone. You can report a concern here. Your reports help us identify where online content or user conduct has violated our policies or terms for Microsoft services.
+When you report content or conduct to Microsoft, we review it and act against it if it violates our policies or terms.
+If you have technical support concerns, visit Microsoft Support. If you have a privacy concern, you can Report a Privacy concern.
+You can also click the "thumbs up" or "thumbs down" buttons at the bottom of a Copilot Chat response. Clicking these buttons tells us whether you were generally satisfied or dissatisfied with Copilot Chat's response. Your click then opens a window that allows you to share more details about your experience.
+Features
+What features are available in Copilot Chat?
+Microsoft Copilot Chat introduces new features on a regular basis. The following features are available in Copilot Chat across the web, mobile, and desktop except as indicated:
+- Copilot Pages: Takes Copilot Chat-generated content and puts it in a dynamic, persistent canvas where users can edit it, add to it, share it, and work on it with others in real time. Learn more about Copilot Pages. SharePoint license required.
+- File upload: Lets users upload files like Word docs, Excel files, and PDFs to prompt Copilot Chat to reason over it as part of its response. Standard access and file upload limits apply.
+- Image generation: Create an AI-generated image by describing it. Standard access and image generation limits apply.
+- Previous chats: Lets users access previous chats for reference or to continue the chat.
+- Agents: Agents use AI to automate and execute business processes, working alongside or on behalf of a person, team, or organization. Agents range from simple prompt-and-response agents to more advanced, fully autonomous agents. Additionally, Word, PowerPoint, and Excel agents allow users to turn ideas into polished documents, spreadsheets, and presentations directly in Copilot Chat.
+- Contextual prompt suggestions (Copilot Chat in Edge): References open pages within Microsoft Edge to help users create more relevant prompts.
+- Page summarization (Copilot Chat in Edge): Lets users summarize an open webpage or PDF in Edge.
+- Code interpreter: Copilot Chat uses the Python programming language to help users perform complex data analysis such as coding, visualization, and math.
+- Image upload: Lets users take photos, upload images, or copy and paste images into Copilot Chat to use in a prompt.
+- Dictation: Lets users input prompts by using the microphone.
+- Read aloud: Lets users listen to Copilot Chat's responses to their prompts.
+- Real-time voice: Lets users converse with Copilot using their voice in real time. Note that real-time voice is available for licensed Microsoft Copilot users only.
+Note
+Chat experiences in Word, Excel, and PowerPoint vary depending on your tenant configuration and license. Learn more in the Microsoft Copilot overview.
+Upcoming features:
+- Rewrite (Copilot Chat in Edge, release TBD): Lets users edit typed text for tone, format, and length within an open page in Microsoft Edge. The previous policy settings for Rewrite will be removed until this feature is made available again. See Copilot Chat in Edge.
+Note
+Copilot features are introduced using a safe deployment model, gradually rolling out to a subset of users within a tenant before expanding across the organization.
+How does Copilot Chat handle uploaded files?
+Microsoft Copilot Chat can analyze the content of files you upload into the chat box. This means Copilot Chat can provide new insights when working with PowerPoint presentations, PDFs, Excel spreadsheets, and more. To upload a file, select the "(+) Add content" button in the chat box or drag and drop a file into the chat box. You can do things like ask Copilot Chat questions about the uploaded file, ask it to summarize files like PDFs or Word docs, run data analysis or visualizations, and more. Standard access and file upload limits apply.
+Uploaded files are stored in a user's OneDrive for Business. Users can delete uploaded files at any time.
+Per enterprise data protection promises, uploaded files aren't used to train the model.
+Microsoft Copilot Chat vs. Microsoft Copilot
+What's the difference between Microsoft Copilot Chat and Microsoft Copilot?
+For detailed information, see Differences between Microsoft Copilot Chat and Microsoft Copilot.
+Also see Which Copilot is right for me or my organization?
+Using Copilot Chat
+Outside of ensuring that students and faculty sign in with their Microsoft Entra ID, what else is recommended to prepare education institutions for Copilot Chat?
+Controls in the Microsoft admin center allow you to validate your school type and apply age group classifications to your users. Copilot Chat is available for students aged 13 and older. To help ensure appropriate access, admins must take additional steps to manage deployment: Microsoft Copilot Chat for Students 13+ | Microsoft Community Hub.
+What's the best way to verify the accuracy of information provided by Copilot Chat?
+Copilot Chat answers complex questions by distilling information from multiple web sources into a single response. Copilot Chat provides linked citations to these answers so the user can further explore and research as they would with traditional search.
+I need help getting my users started on Copilot Chat. What should I do next?
+Copilot Chat adoption materials are available here.
+Are there advertisements in Microsoft Copilot Chat when users are signed in with their Microsoft Entra ID?
+No. Copilot Chat offers enterprise data protection and a simplified, ad-free experience for work and education.

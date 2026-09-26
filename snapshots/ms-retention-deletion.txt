@@ -1,0 +1,16 @@
+Note
+Access to this page requires authorization. You can try signing in or changing directories.
+Access to this page requires authorization. You can try changing directories.
+Microsoft has a Data Handling Standard policy for Microsoft 365 that specifies how long customer data is retained after deletion. Generally, customer data is deleted in two scenarios:
+- Active Deletion: The tenant has an active subscription and a user or administrator deletes data, or administrators delete a user.
+- Passive Deletion: The tenant subscription ends.
+Data retention
+For each of these deletion scenarios, the following table shows the maximum data retention period, by data category and classification:
+| Data Category | Data Classification | Description | Examples | Retention Period |
+|---|---|---|---|---|
+| Customer Data | Customer Content | Content directly provided or created by admins and users Includes all text, sound, video, image files, and software created and stored in Microsoft data centers when using the services in Microsoft 365 | Examples of the most commonly used Microsoft 365 applications that allow users to author data include Word, Excel, PowerPoint, Outlook, and OneNote Customer content also includes customer-owned or provided secrets (passwords, certificates, encryption keys, storage keys) | Active Deletion Scenario: at most 30 days Passive Deletion Scenario: at most 180 days |
+| Customer Data | End User Identifiable Information (EUII) | Data that identifies or could be used to identify the user of a Microsoft service. EUII doesn't contain Customer content | User name or display name (DOMAIN\UserName) User principal name (name@domain) User-specific IP addresses | Active Deletion Scenario: at most 180 days (only a tenant administrator action) Passive Deletion Scenario: at most 180 days |
+| Personal Data (data not included in Customer Data) | End User Pseudonymous Identifiers (EUPI) | An identifier created by Microsoft tied to the user of a Microsoft service. When combined with other information, such as a mapping table, EUPI identifies the end user EUPI doesn't contain information uploaded or created by the customer | User GUIDs, PUIDs, or SIDs Session IDs | Active Deletion Scenario: at most 30 days Passive Deletion Scenario: at most 180 days |
+Subscription retention
+During an active subscription, a subscriber can access, extract, or delete customer data stored in Microsoft 365. If a paid subscription ends or is terminated, Microsoft retains customer data stored in Microsoft 365 in a limited-function account for 90 days to enable the subscriber to extract the data. After the 90-day retention period ends, Microsoft disables the account and deletes the customer data. No more than 180 days after expiration or termination of a subscription to Microsoft 365, Microsoft disables the account and deletes all customer data from the account. Once the maximum retention period for any data elapses, the data is rendered commercially unrecoverable.
+For a free trial, your account moves into a grace status for 30 days in most countries and regions. During this grace period, you can purchase Microsoft 365. If you decide not to buy Microsoft 365, you can either cancel your trial or let the grace period expire, and your trial account information and data is deleted.

@@ -1,0 +1,62 @@
+Configure SSO and domain verification
+Verify your company domain and connect your corporate identity provider to your Mistral organization.
+- Add a DNS record to prove domain ownership
+- Enable email-domain authentication for automatic team onboarding
+- Configure SAML SSO with your IdP (Okta, Azure AD, or similar)
+Once complete, team members sign in with their corporate credentials instead of separate passwords.
+Time to complete: ~20 minutes
+Prerequisites
+- An Enterprise plan (SAML SSO requires Enterprise; domain verification works on Team+)
+- Admin role in your Mistral organization
+- Access to your company's DNS records (for domain verification)
+- Access to your identity provider admin console (Okta, Azure AD, Ping Identity, or similar)
+Step 1: Verify your domain
+Domain verification proves you own your company's email domain. This enables email-domain authentication and SSO.
+- Navigate to Administration › Settings in the Admin Panel›Admin panel ↗.
+- Under Domain verification, click Add domain.
+- Enter your domain: for example, acme.com .
+- We generate a DNS TXT record. Copy the record value.
+- Add the TXT record to your domain's DNS configuration:
+Type: TXT
+Name: _mistral-verification
+Value: mistral-verify=abc123xyz...
+- Click Verify. DNS propagation can take up to 48 hours but typically finishes within 15 minutes.
+You can confirm the TXT record is live before clicking Verify by running: dig TXT _mistral-verification.acme.com
+Step 2: Enable email-domain authentication (optional)
+Once your domain is verified, you can allow anyone with a matching email address to automatically join your organization: no individual invitations needed.
+- Navigate to Administration › Settings in the Admin Panel›Admin panel ↗.
+- Under Email domain authentication, toggle it on.
+- Select the default role for auto-joined users: Member (recommended).
+When enabled, any user who signs up with an @acme.com email is automatically added to your organization as a Member.
+Only enable this if you want all employees with your domain email to have automatic access. If you prefer manual control, skip this step and invite users individually.
+Step 3: Configure SAML SSO
+SAML SSO lets team members sign in through your corporate identity provider instead of a separate password.
+- Navigate to Administration › Settings in the Admin Panel›Admin panel ↗.
+- Under SAML SSO, click Configure.
+- We provide two values to enter in your IdP:
+| Field | Value |
+|---|---|
+| ACS URL (Assertion Consumer Service) | Provided by Mistral: copy from the settings page |
+| Entity ID (Audience URI) | Provided by Mistral: copy from the settings page |
+- In your IdP (Okta, Azure AD, etc.), create a new SAML application and paste the ACS URL and Entity ID.
+- Configure attribute mapping in your IdP:
+| IdP attribute | Mistral attribute |
+|---|---|
+| | Name ID (email format) |
+| First name | firstName |
+| Last name | lastName |
+- Copy the IdP metadata URL (or download the metadata XML) from your IdP.
+- Back in the settings page, paste the metadata URL and click Save.
+Step 4: Test SSO login
+- Open a private/incognito browser window.
+- Open Vibe ↗ or Studio ↗.
+- Click Sign in with SSO and enter your company email.
+- Your IdP login page opens.
+- After authenticating, you land in your Mistral dashboard with your organization selected.
+If the login fails, verify the ACS URL and Entity ID match exactly between Mistral and your IdP. Check that the Name ID format is set to email.
+Verify
+Your SSO is configured correctly if:
+- The domain shows Verified in Organization Settings
+- Team members can sign in via your IdP without a separate Mistral password
+- New users who sign in via SSO are automatically added to your organization
+- User names (first and last) appear correctly from the IdP attribute mapping

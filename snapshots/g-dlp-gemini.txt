@@ -1,0 +1,41 @@
+Supported editions for this feature: Frontline Standard and Frontline Plus, Enterprise Standard and Enterprise Plus, Education Fundamentals, Education Standard, and Education Plus; Enterprise Essentials Plus. Compare your edition
+DLP for Gemini gives you control over what users can access in Gemini. This restricts Gemini from accessing sensitive resources and reduces the security risks of AI.
+You can restrict access to Google Drive data only. Support for more Google Workspace data types will be added in future updates.
+How does DLP for Gemini work?
+DLP for Gemini can check the sources that Gemini accesses to generate content for users and for AI-powered steps in Studio flows. It covers Workspace data that Gemini finds, resources specified by the user, and linked resources in prompts.
+DLP for Gemini in practice
+- You define data protection rules. These rules define which content is sensitive and should be protected.
+- DLP scans content for data protection rule violations that trigger DLP incidents.
+- DLP enforces the rules you defined. If the rule is violated, actions are triggered.
+- You are alerted to data protection rule violations.
+Supported services, and content limits
+DLP for Gemini lets you restrict Google Drive access for specific services, including the Gemini app, Gemini in Workspace, Gemini Notebook, Personal Intelligence in Workspace, and Workspace Studio.
+Any services not explicitly mentioned, such as Gemini Enterprise or Gemini in Chrome, are not subject to these Google Drive access restrictions under the Gemini DLP rule.
+For content limits, go to View DLP content and rule size limits.
+Understand DLP actions
+When sensitive content is found, your rule can enforce an action in the following table.
+If you have similar rules with different response actions, the stricter action prevails. For example, if one rule only audits when a Social Security Number (SSN) is found in a source Gemini wants to use and another rule blocks Gemini from using SSNs, Gemini can't use that source.
+| Action | Description |
+|---|---|
+| Block data access | Stops Gemini from using the source to generate its response. The event is logged. |
+| Audit only | Allows Gemini to proceed without interruption and logs the event. |
+Understand DLP conditions
+When you create a data protection rule, you can specify conditions that define what content or activity to scan for. You can use predefined data types, such as Social Security Number or credit card number. Or, create your own custom content detectors. You can also combine multiple conditions using AND, OR, or NOT operators.
+For details, go to the following articles:
+- How to use predefined content detectors
+- Create a custom detector
+- Data protection rules with nested condition operators
+| Content type | Where to scan | What to scan for | Details & use |
+|---|---|---|---|
+| All Gemini interactions | Google Drive | Matches predefined data type Matches regular expression Matches words from | Scans the user-entered text, direct-linked sources, and Workspace data sources that Gemini finds to generate a response for all Gemini interactions, including user chats and AI-powered steps in Studio flows. |
+| Workspace Studio interactions | Google Drive | Matches predefined data type Matches regular expression Matches words from | Scans the Workspace data sources that Gemini finds in Studio flows, and the resources provided to Gemini during the Studio flow. |
+Create a rule
+After you determine what you want your rule to do, you create the rule. For details, go to Create data protection rules.
+Common use cases
+The following table provides examples of how to combine conditions (what is checked), and a specific action (the enforcement) to define your DLP policy. To use this table, you must:
+- Select an action.
+- Map condition values to the corresponding options.
+| Use case | Action | Condition |
+|---|---|---|
+| Block Gemini from accessing sensitive Drive resources for AI grounding | Block data access | Content type: All Gemini interactions Where to scan: Google Drive What to scan for: Classification label Label: Sensitivity Label value: NTK |
+| Block Gemini from accessing the Drive resource if content includes Social Security numbers | Block data access | Content type: Workspace Studio interactions Where to scan: Google Drive What to scan for: Matches predefined data type Data Type: United States - Social Security Number |

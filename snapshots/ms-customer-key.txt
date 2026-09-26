@@ -1,0 +1,44 @@
+Note
+Access to this page requires authorization. You can try signing in or changing directories.
+Access to this page requires authorization. You can try changing directories.
+Microsoft 365 provides baseline, volume-level encryption through BitLocker and Distributed Key Manager (DKM). Windows 365 Enterprise and Business Cloud PC disks are encrypted using Azure Storage server-side encryption (SSE).
+To give you more control, Microsoft 365 also offers an added layer of encryption for your content through Customer Key. This content includes data from Microsoft Exchange, SharePoint, OneDrive, Teams, and Windows 365 Cloud PCs (Enterprise), including Windowsâ¯365 Frontline Dedicated and Shared modes.
+BitLocker isnât supported as an encryption option for Windows 365 Cloud PCs. For details, see Using Windows 10 virtual machines in Intune.
+Important
+Microsoft recommends that you use roles with the fewest permissions. Minimizing the number of users with the Global Administrator role helps improve security for your organization. Learn more about Microsoft Purview roles and permissions.
+How service encryption, BitLocker, SSE, and Customer Key work together
+Your Microsoft 365 data is always encrypted at rest using BitLocker and Distributed Key Manager (DKM). For details, see How Exchange secures your email secrets.
+Customer Key adds extra protection against unauthorized access to your data. It complements BitLocker disk encryption and server-side encryption (SSE) in Microsoft data centers. Customer Key helps you meet compliance or regulatory requirements by letting you control the root encryption keys at the application level.
+You explicitly authorize Microsoft 365 to use your encryption keys to deliver value-added services like eDiscovery, anti-malware, anti-spam, and search indexing. Microsoft 365 uses these keys to encrypt your data at rest, as described in the Online Services Terms (OST).
+Customer Key with hybrid deployments
+Customer Key encrypts only data at rest in the cloud. It doesnât protect on-premises mailboxes or files. To protect on-premises data, use a separate method like BitLocker.
+Learn about data encryption policies
+A data encryption policy (DEP) defines the encryption hierarchy. Services use this hierarchy to encrypt data with both the keys you manage and the availability key that Microsoft protects. You create a DEP using PowerShell cmdlets, then assign it to encrypt application data.
+Customer Key supports three types of DEPs. Each type uses different cmdlets and protects a different kind of data:
+DEP for Multiple Microsoft 365 workloads
+These DEPs encrypt data across several Microsoft 365 workloads for all users in the tenant:
+- Windows 365 Cloud PCs (Enterprise), including Frontline Dedicated and Shared modes (details)
+- Teams: Chat messages, media messages, calls/meeting recordings (in Teams storage), notifications, Cortana suggestions, status messages
+- Microsoft 365 Copilot interactions
+- Exchange: User/signal information and mailboxes not covered by a mailbox DEP
+- Microsoft Purview Information Protection: EDM data (schemas, rule packages, salts), sensitivity label configurations
+Note
+For EDM and Teams, the DEP encrypts new data from assignment. For Exchange, it encrypts all existing and new data.
+Not encrypted by multi-workload DEPs (protected by other methods):
+- SharePoint and OneDrive data (use SharePoint DEP)
+- Teams files and recordings saved in SharePoint/OneDrive
+- Teams Live Events, Viva Engage, Planner
+You can create multiple DEPs per tenant but assign only one at a time. Encryption begins automatically after assignment.
+DEPs for Exchange mailboxes
+Mailbox DEPs give you more control over individual Exchange Online mailboxes. You can use them to encrypt data in UserMailbox, MailUser, Group, PublicFolder, and Shared mailboxes.
+You can have up to 50 active mailbox DEPs per tenant. You can assign one DEP to multiple mailboxes, but only one DEP per mailbox.
+By default, Exchange mailboxes are encrypted using Microsoft-managed keys. When you assign a Customer Key DEP, the service rewraps existing encrypted mailboxes on next access. Unencrypted mailboxes are marked for a move, with encryption occurring after the move completes. For details on move priorities, see Move requests in the Microsoft 365 service.
+You can later refresh the DEP or assign a different one as described in Manage Customer Key for Office 365.
+Each mailbox must meet licensing requirements to use Customer Key. For more info, see Prerequisites.
+You can assign DEPs to shared, public folder, and group mailboxes as long as your tenant meets the licensing requirements for user mailboxes. You donât need separate licenses for non-user-specific mailboxes.
+You can also request that Microsoft purge specific DEPs when leaving the service. Revoking access to your keys triggers deletion of the availability key, resulting in cryptographic deletion of your data. For details, see Revoke your keys and start the data purge path process.
+DEP for SharePoint and OneDrive
+This DEP encrypts content stored in SharePoint and OneDrive, including Teams files stored in SharePoint. Multi-geo tenants can create one DEP per geo; single-geo tenants can create one DEP. For setup instructions, see Set up Customer Key.
+Encryption ciphers used by Customer Key
+Customer Key uses different encryption ciphers to protect keys, as shown in the following diagrams.
+The key hierarchy used for DEPs that encrypt data across multiple Microsoft 365 workloads is similar to the one used for individual Exchange mailboxes. The corresponding Microsoft 365 Workload Key replaces the Mailbox Key.
