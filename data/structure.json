@@ -23,6 +23,10 @@
       "name": "OpenAI",
       "color": "#5A4A9C",
       "color_dark": "#A796E0"
+    },
+    {
+      "id": "mi",
+      "name": "Mistral"
     }
   ],
   "groups": [
@@ -202,7 +206,11 @@
       "label": "Hinta ja vähimmäissitoumus",
       "hint": "Listahinta per käyttäjä, vähimmäismäärät ja sitoumus. Tietoturvaominaisuudet ovat usein vain kalliimmissa tasoissa.",
       "added": "2026-09-25",
-      "status_labels": {"y": "✓ Julkinen hinta", "p": "◐ Osittain julkinen", "n": "✕ Vain tarjouksesta"}
+      "status_labels": {
+        "y": "✓ Julkinen hinta",
+        "p": "◐ Osittain julkinen",
+        "n": "✕ Vain tarjouksesta"
+      }
     },
     {
       "id": "ip_indemnity",
@@ -289,6 +297,20 @@
       "plan": "ChatGPT Enterprise",
       "meta": "Hinta neuvoteltava",
       "added": "2026-09-25"
+    },
+    {
+      "id": "m_vibe_team",
+      "vendor": "mi",
+      "plan": "Vibe Team",
+      "meta": "Ent. Le Chat Team; julkinen hinta",
+      "added": "2026-09-26"
+    },
+    {
+      "id": "m_vibe_enterprise",
+      "vendor": "mi",
+      "plan": "Vibe Enterprise",
+      "meta": "Pilvi, yksityinen pilvi tai oma asennus; solut koskevat Mistralin pilveä",
+      "added": "2026-09-26"
     }
   ]
 }

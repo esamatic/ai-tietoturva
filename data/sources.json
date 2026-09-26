@@ -295,5 +295,455 @@
     "type": "secondary",
     "monitor": false,
     "selector": ""
+  },
+  {
+    "id": "eu-gpai",
+    "vendor": "",
+    "title": "Euroopan komissio: GPAI-käytännesäännöt ja allekirjoittajat",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-incident",
+    "vendor": "ms",
+    "title": "Microsoft Learn: Customer notification process (security incidents)",
+    "url": "https://learn.microsoft.com/en-us/training/modules/audit-incident-management/customer-notification-process",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "ms-retention-deletion",
+    "vendor": "ms",
+    "title": "Microsoft: Data retention, deletion and destruction in Microsoft 365",
+    "url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-customer-key",
+    "vendor": "ms",
+    "title": "Microsoft Purview: Customer Key overview",
+    "url": "https://learn.microsoft.com/en-us/purview/customer-key-overview",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-purview-ai",
+    "vendor": "ms",
+    "title": "Microsoft Purview protections for Microsoft Copilot",
+    "url": "https://learn.microsoft.com/en-us/purview/ai-microsoft-purview",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-copilot-faq",
+    "vendor": "ms",
+    "title": "Microsoft: Frequently asked questions about Copilot Chat",
+    "url": "https://learn.microsoft.com/hi-in/copilot/faq",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-chat-license",
+    "vendor": "ms",
+    "title": "Microsoft Support: Copilot Chat with or without a Copilot license",
+    "url": "https://support.microsoft.com/en-US/copilot-microsoft365-chat",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mc-label-dlp",
+    "vendor": "ms",
+    "title": "Message Center MC1234661: DLP blocks Copilot on labeled files",
+    "url": "https://mc.merill.net/message/MC1234661",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mc-web-dlp",
+    "vendor": "ms",
+    "title": "Message Center MC1263277: DLP for Copilot web search",
+    "url": "https://mc.merill.net/message/MC1263277",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-cloud-dpa",
+    "vendor": "go",
+    "title": "Google: Cloud Data Processing Addendum (myös Workspace)",
+    "url": "https://cloud.google.com/terms/data-processing-addendum",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-vault-gemini",
+    "vendor": "go",
+    "title": "Workspace Updates: Vault retention and holds for Gemini app (6/2026)",
+    "url": "https://workspaceupdates.googleblog.com/2026/06/google-vault-now-supports-retention-rules-and-litigation-holds-for-Gemini-app.html",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-vault",
+    "vendor": "go",
+    "title": "Google Vault overview",
+    "url": "https://knowledge.workspace.google.com/vault/getting-started/vault-overview",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-dlp-gemini",
+    "vendor": "go",
+    "title": "Google Workspace: About DLP for Gemini",
+    "url": "https://knowledge.workspace.google.com/admin/security/about-dlp-for-gemini",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-labels-dlp",
+    "vendor": "go",
+    "title": "Google Workspace: Classification labels with DLP rules",
+    "url": "https://knowledge.workspace.google.com/admin/security/apply-classification-labels-to-drive-files-automatically-with-dlp-rules",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-privacyhub-dlp",
+    "vendor": "go",
+    "title": "Google Workspace Privacy Hub: DLP ja Gemini",
+    "url": "https://knowledge.workspace.google.com/admin/gemini/generative-ai-in-google-workspace-privacy-hub",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-indemnity",
+    "vendor": "go",
+    "title": "Google Cloud: Generative AI indemnification (2023)",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/protecting-customers-with-generative-ai-indemnification",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-dpa",
+    "vendor": "an",
+    "title": "Anthropic: Data Processing Addendum",
+    "url": "https://www.anthropic.com/legal/data-processing-addendum",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-subprocessors",
+    "vendor": "an",
+    "title": "Anthropic: Subprocessors",
+    "url": "https://www.anthropic.com/subprocessors",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-export",
+    "vendor": "an",
+    "title": "Anthropic: Export your organization's data",
+    "url": "https://support.claude.com/en/articles/13346720-export-your-organization-s-data",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-compliance-partners",
+    "vendor": "an",
+    "title": "Claude Blog: Compliance API security partners",
+    "url": "https://claude.com/blog/compliance-api-security-partners",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-netskope-claude",
+    "vendor": "an",
+    "title": "Netskope: Real-time DLP for Claude Enterprise (8/2026)",
+    "url": "https://www.netskope.com/blog/netskope-integrates-real-time-agentless-dlp-for-claude-enterprise",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-proskauer-anthropic",
+    "vendor": "an",
+    "title": "Proskauer: Anthropic copyright indemnity (Commercial Terms)",
+    "url": "https://www.proskauer.com/blog/anthropic-joins-the-party-offers-copyright-shield-to-enterprise-ai-customers",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-proskauer-openai-team",
+    "vendor": "oa",
+    "title": "Proskauer: ChatGPT Team and Copyright Shield",
+    "url": "https://newmedialaw.proskauer.com/author/jmollod/page/2/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-proskauer-openai-shield",
+    "vendor": "oa",
+    "title": "Proskauer: OpenAI Copyright Shield (Enterprise ja API)",
+    "url": "https://newmedialaw.proskauer.com/tag/ip-indemnity/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "o-dpa",
+    "vendor": "oa",
+    "title": "OpenAI: Data Processing Addendum",
+    "url": "https://openai.com/en-GB/policies/data-processing-addendum/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "x-conductatlas-openai",
+    "vendor": "oa",
+    "title": "ConductAtlas: OpenAI DPA, breach notification",
+    "url": "https://conductatlas.com/platform/openai/openai-data-processing-addendum/security-incident-notification/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "o-export-help",
+    "vendor": "oa",
+    "title": "OpenAI Help: Exporting your ChatGPT history and data",
+    "url": "https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "x-netskope-openai",
+    "vendor": "oa",
+    "title": "Netskope: ChatGPT Enterprise Compliance API integration",
+    "url": "https://www.netskope.com/blog/streamline-compliance-and-strengthen-data-protection-using-netskopes-integration-with-the-chatgpt-enterprise-compliance-api",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-purview-substack",
+    "vendor": "",
+    "title": "C. McDowell: Extending Purview into Claude and ChatGPT Enterprise",
+    "url": "https://calebamcdowell.substack.com/p/extending-purview-into-enterprise",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-layer3-pricing",
+    "vendor": "",
+    "title": "Layer3 Labs: Gemini vs Copilot vs Claude for Business (2026)",
+    "url": "https://www.layer3labs.io/comparisons/gemini-vs-copilot-vs-claude-for-business",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-kemeny",
+    "vendor": "",
+    "title": "Kemeny: ChatGPT Business vs Claude Team vs Gemini vs Copilot (9/2026)",
+    "url": "https://www.kemeny.ai/chatgpt-business-compare",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-techinsider",
+    "vendor": "",
+    "title": "Tech Insider: Claude vs ChatGPT vs Gemini Enterprise (2026)",
+    "url": "https://tech-insider.org/chatgpt-vs-claude-vs-gemini-enterprise-2026/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-aipricing",
+    "vendor": "",
+    "title": "AI Pricing Guru: AI subscription pricing",
+    "url": "https://www.aipricing.guru/subscriptions/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mi-residency-help",
+    "vendor": "mi",
+    "title": "Mistral Help: Where do you store my data?",
+    "url": "https://help.mistral.ai/en/articles/347629-where-do-you-store-my-data-or-my-organization-s-data",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-certs",
+    "vendor": "mi",
+    "title": "Mistral Help: SOC 2 and ISO 27001",
+    "url": "https://help.mistral.ai/en/articles/347638-do-you-have-soc-2-or-iso-27001-certification",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-privacy-controls",
+    "vendor": "mi",
+    "title": "Mistral Docs: Privacy and data controls",
+    "url": "https://docs.mistral.ai/admin/monitor-comply/privacy-data-controls",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mi-sso",
+    "vendor": "mi",
+    "title": "Mistral Docs: SAML single sign-on",
+    "url": "https://docs.mistral.ai/admin/set-up-organization/sign-in-method/saml-sso",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-sso-quickstart",
+    "vendor": "mi",
+    "title": "Mistral Docs: Configure SSO and domain verification",
+    "url": "https://docs.mistral.ai/admin/quickstarts/configure-sso",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-admin",
+    "vendor": "mi",
+    "title": "Mistral Docs: Admin overview",
+    "url": "https://docs.mistral.ai/admin/overview",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-users",
+    "vendor": "mi",
+    "title": "Mistral Docs: User management",
+    "url": "https://docs.mistral.ai/admin/identity-access/user-management",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-audit",
+    "vendor": "mi",
+    "title": "Mistral Docs: Audit logs",
+    "url": "https://docs.mistral.ai/admin/monitor-comply/audit-logs/overview",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-dpa",
+    "vendor": "mi",
+    "title": "Mistral AI: Data Processing Addendum",
+    "url": "https://legal.mistral.ai/terms/data-processing-addendum",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-enterprise-news",
+    "vendor": "mi",
+    "title": "Mistral: Introducing Le Chat Enterprise (2025)",
+    "url": "https://mistral.ai/news/le-chat-enterprise/",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-conductatlas-mistral",
+    "vendor": "mi",
+    "title": "ConductAtlas: Mistral AI DPA analysis",
+    "url": "https://conductatlas.com/platform/mistral-ai/mistral-ai-data-processing-addendum/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-conductatlas-mistral-del",
+    "vendor": "mi",
+    "title": "ConductAtlas: Mistral DPA, deletion after termination",
+    "url": "https://conductatlas.com/platform/mistral-ai/mistral-ai-data-processing-addendum/provision/CA-P-061979/mistral-ai-deletes-or-returns-personal-data-after-termination/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mi-waimakers",
+    "vendor": "mi",
+    "title": "WAIMAKERS: Mistral AI – AI Data Security & GDPR Guide",
+    "url": "https://www.waimakers.com/en/resources/ai-data-security/mistral-ai",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-costbench-mistral",
+    "vendor": "mi",
+    "title": "CostBench: Mistral AI pricing (7/2026)",
+    "url": "https://costbench.com/software/ai-chatbots/mistral/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-teamazing",
+    "vendor": "mi",
+    "title": "teamazing: Mistral Le Chat Enterprise review (9/2026)",
+    "url": "https://www.teamazing.com/blog/mistral-le-chat-enterprise-review/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-enterprisedna",
+    "vendor": "ms",
+    "title": "Enterprise DNA: Copilot outages and SLA (6/2026)",
+    "url": "https://enterprisedna.co/resources/news/microsoft-copilot-outages-no-sla-enterprise-ai-reliability-june-2026",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "x-pureai",
+    "vendor": "mi",
+    "title": "PureAI Labs: Mistral Le Chat review (5/2026)",
+    "url": "https://pureailabs.com/ai-assistants/mistral-ai-le-chat-review/",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
   }
 ]
