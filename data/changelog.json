@@ -1,5 +1,1093 @@
 [
   {
+    "date": "2026-09-26",
+    "ref": "Hakukierros 9/2026",
+    "summary": "Hakukierros 9/2026: Mistral lisätty, viisi uutta riviä tutkittu ja aukkoja paikattu.",
+    "changes": [
+      {
+        "kind": "source",
+        "key": "eu-gpai",
+        "text": "Euroopan komissio: GPAI-käytännesäännöt ja allekirjoittajat"
+      },
+      {
+        "kind": "source",
+        "key": "ms-incident",
+        "text": "Microsoft Learn: Customer notification process (security incidents)"
+      },
+      {
+        "kind": "source",
+        "key": "ms-retention-deletion",
+        "text": "Microsoft: Data retention, deletion and destruction in Microsoft 365"
+      },
+      {
+        "kind": "source",
+        "key": "ms-customer-key",
+        "text": "Microsoft Purview: Customer Key overview"
+      },
+      {
+        "kind": "source",
+        "key": "ms-purview-ai",
+        "text": "Microsoft Purview protections for Microsoft Copilot"
+      },
+      {
+        "kind": "source",
+        "key": "ms-copilot-faq",
+        "text": "Microsoft: Frequently asked questions about Copilot Chat"
+      },
+      {
+        "kind": "source",
+        "key": "ms-chat-license",
+        "text": "Microsoft Support: Copilot Chat with or without a Copilot license"
+      },
+      {
+        "kind": "source",
+        "key": "mc-label-dlp",
+        "text": "Message Center MC1234661: DLP blocks Copilot on labeled files"
+      },
+      {
+        "kind": "source",
+        "key": "mc-web-dlp",
+        "text": "Message Center MC1263277: DLP for Copilot web search"
+      },
+      {
+        "kind": "source",
+        "key": "g-cloud-dpa",
+        "text": "Google: Cloud Data Processing Addendum (myös Workspace)"
+      },
+      {
+        "kind": "source",
+        "key": "g-vault-gemini",
+        "text": "Workspace Updates: Vault retention and holds for Gemini app (6/2026)"
+      },
+      {
+        "kind": "source",
+        "key": "g-vault",
+        "text": "Google Vault overview"
+      },
+      {
+        "kind": "source",
+        "key": "g-dlp-gemini",
+        "text": "Google Workspace: About DLP for Gemini"
+      },
+      {
+        "kind": "source",
+        "key": "g-labels-dlp",
+        "text": "Google Workspace: Classification labels with DLP rules"
+      },
+      {
+        "kind": "source",
+        "key": "g-privacyhub-dlp",
+        "text": "Google Workspace Privacy Hub: DLP ja Gemini"
+      },
+      {
+        "kind": "source",
+        "key": "g-indemnity",
+        "text": "Google Cloud: Generative AI indemnification (2023)"
+      },
+      {
+        "kind": "source",
+        "key": "a-dpa",
+        "text": "Anthropic: Data Processing Addendum"
+      },
+      {
+        "kind": "source",
+        "key": "a-subprocessors",
+        "text": "Anthropic: Subprocessors"
+      },
+      {
+        "kind": "source",
+        "key": "a-export",
+        "text": "Anthropic: Export your organization's data"
+      },
+      {
+        "kind": "source",
+        "key": "a-compliance-partners",
+        "text": "Claude Blog: Compliance API security partners"
+      },
+      {
+        "kind": "source",
+        "key": "x-netskope-claude",
+        "text": "Netskope: Real-time DLP for Claude Enterprise (8/2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-proskauer-anthropic",
+        "text": "Proskauer: Anthropic copyright indemnity (Commercial Terms)"
+      },
+      {
+        "kind": "source",
+        "key": "x-proskauer-openai-team",
+        "text": "Proskauer: ChatGPT Team and Copyright Shield"
+      },
+      {
+        "kind": "source",
+        "key": "x-proskauer-openai-shield",
+        "text": "Proskauer: OpenAI Copyright Shield (Enterprise ja API)"
+      },
+      {
+        "kind": "source",
+        "key": "o-dpa",
+        "text": "OpenAI: Data Processing Addendum"
+      },
+      {
+        "kind": "source",
+        "key": "x-conductatlas-openai",
+        "text": "ConductAtlas: OpenAI DPA, breach notification"
+      },
+      {
+        "kind": "source",
+        "key": "o-export-help",
+        "text": "OpenAI Help: Exporting your ChatGPT history and data"
+      },
+      {
+        "kind": "source",
+        "key": "x-netskope-openai",
+        "text": "Netskope: ChatGPT Enterprise Compliance API integration"
+      },
+      {
+        "kind": "source",
+        "key": "x-purview-substack",
+        "text": "C. McDowell: Extending Purview into Claude and ChatGPT Enterprise"
+      },
+      {
+        "kind": "source",
+        "key": "x-layer3-pricing",
+        "text": "Layer3 Labs: Gemini vs Copilot vs Claude for Business (2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-kemeny",
+        "text": "Kemeny: ChatGPT Business vs Claude Team vs Gemini vs Copilot (9/2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-techinsider",
+        "text": "Tech Insider: Claude vs ChatGPT vs Gemini Enterprise (2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-aipricing",
+        "text": "AI Pricing Guru: AI subscription pricing"
+      },
+      {
+        "kind": "source",
+        "key": "mi-residency-help",
+        "text": "Mistral Help: Where do you store my data?"
+      },
+      {
+        "kind": "source",
+        "key": "mi-certs",
+        "text": "Mistral Help: SOC 2 and ISO 27001"
+      },
+      {
+        "kind": "source",
+        "key": "mi-privacy-controls",
+        "text": "Mistral Docs: Privacy and data controls"
+      },
+      {
+        "kind": "source",
+        "key": "mi-sso",
+        "text": "Mistral Docs: SAML single sign-on"
+      },
+      {
+        "kind": "source",
+        "key": "mi-sso-quickstart",
+        "text": "Mistral Docs: Configure SSO and domain verification"
+      },
+      {
+        "kind": "source",
+        "key": "mi-admin",
+        "text": "Mistral Docs: Admin overview"
+      },
+      {
+        "kind": "source",
+        "key": "mi-users",
+        "text": "Mistral Docs: User management"
+      },
+      {
+        "kind": "source",
+        "key": "mi-audit",
+        "text": "Mistral Docs: Audit logs"
+      },
+      {
+        "kind": "source",
+        "key": "mi-dpa",
+        "text": "Mistral AI: Data Processing Addendum"
+      },
+      {
+        "kind": "source",
+        "key": "mi-enterprise-news",
+        "text": "Mistral: Introducing Le Chat Enterprise (2025)"
+      },
+      {
+        "kind": "source",
+        "key": "x-conductatlas-mistral",
+        "text": "ConductAtlas: Mistral AI DPA analysis"
+      },
+      {
+        "kind": "source",
+        "key": "x-conductatlas-mistral-del",
+        "text": "ConductAtlas: Mistral DPA, deletion after termination"
+      },
+      {
+        "kind": "source",
+        "key": "mi-waimakers",
+        "text": "WAIMAKERS: Mistral AI – AI Data Security & GDPR Guide"
+      },
+      {
+        "kind": "source",
+        "key": "x-costbench-mistral",
+        "text": "CostBench: Mistral AI pricing (7/2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-teamazing",
+        "text": "teamazing: Mistral Le Chat Enterprise review (9/2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-enterprisedna",
+        "text": "Enterprise DNA: Copilot outages and SLA (6/2026)"
+      },
+      {
+        "kind": "source",
+        "key": "x-pureai",
+        "text": "PureAI Labs: Mistral Le Chat review (5/2026)"
+      },
+      {
+        "kind": "column",
+        "key": "m_vibe_team",
+        "text": "Vibe Team"
+      },
+      {
+        "kind": "column",
+        "key": "m_vibe_enterprise",
+        "text": "Vibe Enterprise"
+      },
+      {
+        "kind": "new",
+        "key": "training|m_vibe_team",
+        "to": "y",
+        "text": "Team-keskusteluja ei käytetä koulutukseen oletuksena, ja admin hallitsee asetusta. Toissijainen lähde väittää päinvastaista; palautteen mukana lähetetty sisältö voidaan käyttää.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "training|m_vibe_enterprise",
+        "to": "y",
+        "text": "Ei oletuksena; Enterprise-organisaatiot on poissuljettu koulutuksesta. Palautteen mukana lähetetty sisältö on erillinen tapaus.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dpa|m_vibe_team",
+        "to": "p",
+        "text": "DPA ja SCC:t, Mistral käsittelijänä. DPA sallii Mistralin toimia rekisterinpitäjänä mm. mallikoulutuksessa (ellei poissuljettu) ja väärinkäytösten moderoinnissa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "certifications|m_vibe_team",
+        "to": "y",
+        "text": "SOC 2 Type II, ISO 27001 ja ISO 27701; raportit Trust Centerin kautta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|m_vibe_team",
+        "to": "p",
+        "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|m_vibe_team",
+        "to": "y",
+        "text": "Mistral on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "provider_access|m_vibe_team",
+        "to": "p",
+        "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "storage_eu|m_vibe_team",
+        "to": "y",
+        "text": "Data tallennetaan oletuksena EU:ssa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "jurisdiction|m_vibe_team",
+        "to": "y",
+        "text": "Ranskalainen yhtiö: EU-lainsäädäntö, ei yhdysvaltalaista emoyhtiötä. EU:n ulkopuoliset alihankkijat SCC:illä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "visibility|m_vibe_team",
+        "to": "p",
+        "text": "Käyttäjän lataamat tiedostot, kirjastot ja konnektorit; konnektoridata haetaan tarvittaessa eikä sitä tallenneta pysyvästi.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|m_vibe_team",
+        "to": "u",
+        "text": "Natiivia DLP:tä tai DLP-integraatioita ei löytynyt dokumentaatiosta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "agents|m_vibe_team",
+        "to": "u",
+        "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ip_indemnity|m_vibe_team",
+        "to": "u",
+        "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|m_vibe_team",
+        "to": "p",
+        "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dpa|m_vibe_enterprise",
+        "to": "p",
+        "text": "DPA ja SCC:t, Mistral käsittelijänä. DPA sallii Mistralin toimia rekisterinpitäjänä mm. mallikoulutuksessa (ellei poissuljettu) ja väärinkäytösten moderoinnissa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "certifications|m_vibe_enterprise",
+        "to": "y",
+        "text": "SOC 2 Type II, ISO 27001 ja ISO 27701; raportit Trust Centerin kautta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|m_vibe_enterprise",
+        "to": "p",
+        "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|m_vibe_enterprise",
+        "to": "y",
+        "text": "Mistral on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "provider_access|m_vibe_enterprise",
+        "to": "p",
+        "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "storage_eu|m_vibe_enterprise",
+        "to": "y",
+        "text": "Data tallennetaan oletuksena EU:ssa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "jurisdiction|m_vibe_enterprise",
+        "to": "y",
+        "text": "Ranskalainen yhtiö: EU-lainsäädäntö, ei yhdysvaltalaista emoyhtiötä. EU:n ulkopuoliset alihankkijat SCC:illä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "visibility|m_vibe_enterprise",
+        "to": "p",
+        "text": "Käyttäjän lataamat tiedostot, kirjastot ja konnektorit; konnektoridata haetaan tarvittaessa eikä sitä tallenneta pysyvästi.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|m_vibe_enterprise",
+        "to": "u",
+        "text": "Natiivia DLP:tä tai DLP-integraatioita ei löytynyt dokumentaatiosta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "agents|m_vibe_enterprise",
+        "to": "u",
+        "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ip_indemnity|m_vibe_enterprise",
+        "to": "u",
+        "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|m_vibe_enterprise",
+        "to": "p",
+        "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "retention|m_vibe_team",
+        "to": "p",
+        "text": "Organisaatiotason chat-säilytyskäytäntö (automaattinen poisto 30 pv–1 v tai ei koskaan); saatavuus Team-tasolla tarkistettava. ZDR ei koske chat-tuotetta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "retention|m_vibe_enterprise",
+        "to": "y",
+        "text": "Organisaatiotason chat-säilytyskäytäntö (automaattinen poisto 30 pv–1 v tai ei koskaan). ZDR ei koske chat-tuotetta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "data_egress|m_vibe_team",
+        "to": "p",
+        "text": "Osa ominaisuuksista voi siirtää dataa tilapäisesti EU:n ulkopuolisille alihankkijoille (SCC:t). Konnektoridataa ei tallenneta pysyvästi.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "data_egress|m_vibe_enterprise",
+        "to": "p",
+        "text": "Kuten Teamissa, mutta Enterprise voi kytkeä osan EU:n ulkopuolisia siirtoja vaativista ominaisuuksista pois organisaatiotasolla.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "inference_eu|m_vibe_team",
+        "to": "p",
+        "text": "Käsittely oletuksena EU:ssa, mutta ominaisuuskohtaisia tilapäisiä siirtoja EU:n ulkopuolelle voi tapahtua.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "inference_eu|m_vibe_enterprise",
+        "to": "p",
+        "text": "EU oletuksena; osa EU:n ulkopuolisia siirtoja vaativista ominaisuuksista kytkettävissä pois. Yksityinen pilvi tai oma asennus mahdollinen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "identity|m_vibe_team",
+        "to": "n",
+        "text": "Vain domain-vahvistus; SAML SSO vaatii Enterprisen, eikä SCIM ole vielä yleisesti saatavilla.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "identity|m_vibe_enterprise",
+        "to": "p",
+        "text": "SAML SSO (esim. Entra ID, Google, Okta); SCIM ei vielä yleisesti saatavilla.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "rbac|m_vibe_team",
+        "to": "p",
+        "text": "Organisaatioroolit (Admin, Member, Billing), ryhmät ja työtilat.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "rbac|m_vibe_enterprise",
+        "to": "p",
+        "text": "Organisaatioroolit, ryhmät ja työtilat sekä organisaatiotason yksityisyysasetukset.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "audit|m_vibe_team",
+        "to": "n",
+        "text": "Audit-lokit vain Enterprise-tasolla.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "audit|m_vibe_enterprise",
+        "to": "p",
+        "text": "Audit-lokit (kirjautumiset, hallintatoimet, keskustelujen luonti ja poisto), mutta lokien vienti ei ole tuettu.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "personal_accounts|m_vibe_team",
+        "to": "p",
+        "text": "Domain-vahvistus ja automaattinen liittäminen sähköpostidomainin perusteella.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "personal_accounts|m_vibe_enterprise",
+        "to": "p",
+        "text": "Domain-vahvistus; SSO ohjaa domainin käyttäjät yrityksen IdP:hen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "cmk|m_vibe_team",
+        "to": "u",
+        "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "cmk|m_vibe_enterprise",
+        "to": "u",
+        "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa; oma asennus on vaihtoehto täyteen avainten hallintaan.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|m_vibe_team",
+        "to": "y",
+        "text": "24,99 $/käyttäjä/kk (ilman veroja).",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|m_vibe_enterprise",
+        "to": "n",
+        "text": "Vain tarjouksesta; raportoitu lähtötaso n. 20 000 $/kk.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "sla|m_vibe_team",
+        "to": "u",
+        "text": "Ei mainittua SLA:ta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "sla|m_vibe_enterprise",
+        "to": "p",
+        "text": "Räätälöidyt SLA:t sopimuksella.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|ms_copilot_chat",
+        "to": "y",
+        "text": "Viipymättä ja viimeistään 72 tunnin kuluessa (DPA); ilmoitus Message Centeriin ja adminille.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|ms_copilot_chat",
+        "to": "y",
+        "text": "Microsoft on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin, samoin Copilotin mallitoimittajat OpenAI ja Anthropic.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|ms_copilot_chat",
+        "to": "y",
+        "text": "Sopimuksen päätyttyä data säilyy 90 pv rajoitetussa tilassa vientiä varten ja poistetaan viimeistään 180 pv:n kuluttua. Copilot-vuorovaikutukset vietävissä eDiscoveryllä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|ms_copilot",
+        "to": "y",
+        "text": "Viipymättä ja viimeistään 72 tunnin kuluessa (DPA); ilmoitus Message Centeriin ja adminille.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|ms_copilot",
+        "to": "y",
+        "text": "Microsoft on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin, samoin Copilotin mallitoimittajat OpenAI ja Anthropic.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|ms_copilot",
+        "to": "y",
+        "text": "Sopimuksen päätyttyä data säilyy 90 pv rajoitetussa tilassa vientiä varten ja poistetaan viimeistään 180 pv:n kuluttua. Copilot-vuorovaikutukset vietävissä eDiscoveryllä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|g_workspace_business",
+        "to": "p",
+        "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|g_workspace_business",
+        "to": "y",
+        "text": "Google on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|g_workspace_enterprise",
+        "to": "p",
+        "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|g_workspace_enterprise",
+        "to": "y",
+        "text": "Google on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|g_gemini_enterprise",
+        "to": "p",
+        "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|g_gemini_enterprise",
+        "to": "y",
+        "text": "Google on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|a_claude_team",
+        "to": "y",
+        "text": "Viipymättä ja viimeistään 48 tunnin kuluessa (DPA).",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|a_claude_team",
+        "to": "y",
+        "text": "Anthropic on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|a_claude_team",
+        "to": "y",
+        "text": "Pääomistaja voi viedä organisaation keskustelut itsepalveluna. Sopimuksen päättyessä data palautetaan pyynnöstä ja poistetaan 30 pv:n kuluessa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|a_claude_enterprise",
+        "to": "y",
+        "text": "Viipymättä ja viimeistään 48 tunnin kuluessa (DPA).",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|a_claude_enterprise",
+        "to": "y",
+        "text": "Anthropic on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|a_claude_enterprise",
+        "to": "y",
+        "text": "Pääomistaja voi viedä organisaation keskustelut itsepalveluna. Sopimuksen päättyessä data palautetaan pyynnöstä ja poistetaan 30 pv:n kuluessa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|o_chatgpt_business",
+        "to": "p",
+        "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|o_chatgpt_business",
+        "to": "y",
+        "text": "OpenAI on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "incident_notification|o_chatgpt_enterprise",
+        "to": "p",
+        "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "ai_act|o_chatgpt_enterprise",
+        "to": "y",
+        "text": "OpenAI on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|ms_copilot_chat",
+        "to": "y",
+        "text": "Purview DLP voi estää arkaluonteisten kehotteiden käytön web-hauissa; luottamuksellisuusluokitukset rajaavat pääsyä salattuun sisältöön.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|ms_copilot",
+        "to": "y",
+        "text": "Purview DLP estää Copilotia käsittelemästä luokiteltuja tiedostoja kaikissa tallennuspaikoissa ja arkaluonteisia kehotteita; vastaus perii tiukimman luokituksen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|g_workspace_business",
+        "to": "n",
+        "text": "DLP for Gemini ja luokitustunnisteisiin perustuva DLP ovat saatavilla vain Enterprise- ja vastaavissa editioissa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|g_workspace_enterprise",
+        "to": "y",
+        "text": "DLP for Gemini estää Geminiä käyttämästä arkaluonteisia Drive-tiedostoja (toistaiseksi vain Drive-data); luokitukset ja IRM rajaavat pääsyä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|g_gemini_enterprise",
+        "to": "n",
+        "text": "Workspacen DLP for Gemini -säännöt eivät koske Gemini Enterprise -sovellusta; muut Cloud-kontrollit arvioitava erikseen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|a_claude_team",
+        "to": "n",
+        "text": "Ei natiivia DLP:tä eikä Compliance API:a DLP-integraatioille.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|a_claude_enterprise",
+        "to": "p",
+        "text": "Ei natiivia DLP:tä. Compliance API vie sisällön DLP-työkaluihin (28 kumppania, mm. Purview, Netskope), ja inference hooks mahdollistaa tarkastuksen ennen mallia.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|o_chatgpt_business",
+        "to": "n",
+        "text": "Ei Compliance API:a, joten DLP-integraatiot eivät ole käytettävissä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "dlp|o_chatgpt_enterprise",
+        "to": "p",
+        "text": "Ei natiivia DLP:tä; Compliance API -integraatiot (esim. Netskope, Purview) mahdollistavat tarkastuksen jälkikäteen.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|ms_copilot_chat",
+        "to": "y",
+        "text": "Sisältyy Microsoft 365 -tilaukseen ilman lisämaksua; työdataa käyttävät agentit ovat maksullisia.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|ms_copilot",
+        "to": "y",
+        "text": "30 $/käyttäjä/kk (vuosisitoumus) Microsoft 365 -lisenssin päälle; pk-versio Copilot Business 21 $ (18 $ kampanja 2026 loppuun).",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|g_workspace_business",
+        "to": "y",
+        "text": "Gemini sisältyy: Business Starter n. 7 $, Standard 14 $ ja Plus 22 $/käyttäjä/kk (vuosisitoumus).",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|g_workspace_enterprise",
+        "to": "u",
+        "text": "Ei selvitetty; Enterprise-editioiden hinta tarkistettava Googlelta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|g_gemini_enterprise",
+        "to": "p",
+        "text": "Business 21 $ ja Standard 30 $/käyttäjä/kk; Plus vain tarjouksesta.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|a_claude_team",
+        "to": "y",
+        "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella (Standard); Premium-paikat kalliimpia.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|a_claude_enterprise",
+        "to": "p",
+        "text": "20 $/käyttäjä/kk (vuosilaskutus) ja lisäksi käyttö API-hinnoin.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|o_chatgpt_business",
+        "to": "y",
+        "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "pricing|o_chatgpt_enterprise",
+        "to": "n",
+        "text": "Ei julkista hintaa; raportoidut tarjoukset n. 45–75 $/käyttäjä/kk ja vähimmäismäärä 150 käyttäjää.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|g_workspace_business",
+        "to": "p",
+        "text": "Vienti sopimuskauden aikana; poisto 30 pv palautusjakson jälkeen, viimeistään 180 pv. Gemini-keskustelujen Vault-vienti vain Business Plus -editiossa.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|g_workspace_enterprise",
+        "to": "y",
+        "text": "Vienti sopimuskauden aikana, myös Vaultilla; poisto 30 pv palautusjakson jälkeen, viimeistään 180 pv.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|g_gemini_enterprise",
+        "to": "p",
+        "text": "Cloud DPA: vienti sopimuskauden aikana ja poisto viimeistään 180 pv sopimuksen päätyttyä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|o_chatgpt_business",
+        "to": "n",
+        "text": "Ei itsepalveluvientiä työtilasta eikä Compliance API:a. DPA:n mukaan data poistetaan tai palautetaan sopimuksen päättyessä.",
+        "reason": ""
+      },
+      {
+        "kind": "new",
+        "key": "exit|o_chatgpt_enterprise",
+        "to": "p",
+        "text": "Ei itsepalveluvientiä; data saatavissa Compliance API:n kautta. Poisto tai palautus sopimuksen päättyessä.",
+        "reason": ""
+      },
+      {
+        "kind": "text",
+        "key": "retention|g_workspace_business",
+        "from": "p",
+        "to": "p",
+        "text": "Vault-säilytys ja -pidot Gemini-sovellukselle vain Business Plus -editiossa (6/2026 alkaen); Starter ja Standard ilman Vaultia.",
+        "reason": "Hakukierros 9/2026: Vaultin Gemini-tuki ja editiot varmistettu."
+      },
+      {
+        "kind": "status",
+        "key": "retention|g_workspace_enterprise",
+        "from": "p",
+        "to": "y",
+        "text": "Vault-säilytyssäännöt, litigation hold ja eDiscovery Gemini-sovellukselle; eivät koske muiden sovellusten sisäisiä Gemini-toimintoja.",
+        "reason": "Hakukierros 9/2026: Vaultin Gemini-tuki varmistettu."
+      },
+      {
+        "kind": "text",
+        "key": "audit|g_workspace_business",
+        "from": "p",
+        "to": "p",
+        "text": "Vault (ja siten Gemini-keskustelujen eDiscovery) vain Business Plus -editiossa.",
+        "reason": "Hakukierros 9/2026: Editiorajaus varmistettu."
+      },
+      {
+        "kind": "text",
+        "key": "audit|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Vault-haku ja -vienti Gemini-keskusteluille, Vaultin oma audit-loki ja DLP for Gemini.",
+        "reason": "Hakukierros 9/2026: Lähteet lisätty."
+      },
+      {
+        "kind": "status",
+        "key": "visibility|ms_copilot_chat",
+        "from": "p",
+        "to": "y",
+        "text": "Ilman Copilot-lisenssiä ei pääsyä Graph-dataan: vain web ja käyttäjän lataamat tiedostot. Työdataa käyttävät agentit ovat maksullisia.",
+        "reason": "Hakukierros 9/2026: Microsoftin FAQ vahvistaa, ettei Copilot Chat ilman lisenssiä pääse Graph-dataan."
+      },
+      {
+        "kind": "text",
+        "key": "visibility|g_workspace_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Kaikki, mihin käyttäjällä on pääsy. IRM, CSE ja DLP for Gemini voivat estää pääsyn arkaluonteisiin Drive-tiedostoihin.",
+        "reason": "Hakukierros 9/2026: Rajauskeinot varmistettu Googlen dokumentaatiosta."
+      },
+      {
+        "kind": "text",
+        "key": "cmk|ms_copilot_chat",
+        "from": "p",
+        "to": "p",
+        "text": "Purview Customer Key kattaa myös Copilot-vuorovaikutukset (multi-workload DEP); vaatii Customer Key -lisensoinnin.",
+        "reason": "Hakukierros 9/2026: Customer Keyn kattavuus Copilot-datalle varmistettu."
+      },
+      {
+        "kind": "text",
+        "key": "cmk|ms_copilot",
+        "from": "p",
+        "to": "p",
+        "text": "Purview Customer Key kattaa myös Copilot-vuorovaikutukset (multi-workload DEP); vaatii Customer Key -lisensoinnin.",
+        "reason": "Hakukierros 9/2026: Customer Keyn kattavuus Copilot-datalle varmistettu."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|g_workspace_business",
+        "from": "p",
+        "to": "y",
+        "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+        "reason": "Hakukierros 9/2026: Lähde löytyi (2023, tuotenimet muuttuneet)."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|g_workspace_enterprise",
+        "from": "p",
+        "to": "y",
+        "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+        "reason": "Hakukierros 9/2026: Lähde löytyi (2023, tuotenimet muuttuneet)."
+      },
+      {
+        "kind": "text",
+        "key": "ip_indemnity|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Koulutusdatan vastuusitoumus koskee kaikkia Googlen generatiivisia palveluita; tuotetun sisällön vastuun kattavuus Gemini Enterprisessa tarkistettava.",
+        "reason": "Hakukierros 9/2026: Lähde löytyi, kattavuus epäselvä."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|a_claude_team",
+        "from": "p",
+        "to": "y",
+        "text": "Kaupallisten ehtojen vastuu: Anthropic puolustaa asiakasta maksullisen käytön ja outputin loukkausväitteitä vastaan; poikkeuksia mm. asiakkaan muokkauksille.",
+        "reason": "Hakukierros 9/2026: Commercial Terms -vastuu vahvistettu."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|a_claude_enterprise",
+        "from": "p",
+        "to": "y",
+        "text": "Kaupallisten ehtojen vastuu: Anthropic puolustaa asiakasta maksullisen käytön ja outputin loukkausväitteitä vastaan; poikkeuksia mm. asiakkaan muokkauksille.",
+        "reason": "Hakukierros 9/2026: Commercial Terms -vastuu vahvistettu."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|o_chatgpt_business",
+        "from": "u",
+        "to": "y",
+        "text": "Copyright Shield kattaa Business Termsin piirissä olevat palvelut, myös Businessin (ent. Team).",
+        "reason": "Hakukierros 9/2026: Toissijainen lähde vahvistaa kattavuuden Team/Business-tasolle."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|o_chatgpt_enterprise",
+        "from": "p",
+        "to": "y",
+        "text": "Copyright Shield: OpenAI puolustaa asiakasta tekijänoikeusvaateissa.",
+        "reason": "Hakukierros 9/2026: Lähde lisätty."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|a_claude_team",
+        "from": "p",
+        "to": "p",
+        "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|a_claude_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|g_workspace_business",
+        "from": "y",
+        "to": "y",
+        "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|ms_copilot_chat",
+        "from": "p",
+        "to": "p",
+        "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
+        "reason": "Hakukierros 9/2026: Web-haun DLP-kontrolli lisätty."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|ms_copilot",
+        "from": "p",
+        "to": "p",
+        "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
+        "reason": "Hakukierros 9/2026: Web-haun DLP-kontrolli lisätty."
+      },
+      {
+        "kind": "status",
+        "key": "sla|ms_copilot_chat",
+        "from": "p",
+        "to": "n",
+        "text": "Ei Copilot-kohtaista rahallisesti taattua SLA:ta; Microsoft 365:n 99,9 %:n SLA koskee mm. Exchangea, SharePointia ja Teamsia.",
+        "reason": "Hakukierros 9/2026: Toissijainen lähde: Copilot ei kuulu M365:n rahallisesti taattuun SLA:han."
+      },
+      {
+        "kind": "status",
+        "key": "sla|ms_copilot",
+        "from": "p",
+        "to": "n",
+        "text": "Ei Copilot-kohtaista rahallisesti taattua SLA:ta; Microsoft 365:n 99,9 %:n SLA koskee mm. Exchangea, SharePointia ja Teamsia.",
+        "reason": "Hakukierros 9/2026: Toissijainen lähde: Copilot ei kuulu M365:n rahallisesti taattuun SLA:han."
+      }
+    ]
+  },
+  {
     "date": "2026-09-25",
     "ref": "",
     "summary": "Rivistön uudistus: kynnysehdot ja erottelevat tekijät erotettu; SSO ja SCIM yhdistetty; kolme riviä rajattu uudelleen (varmistettava); salaus- ja prompt injection -rivit poistettu; lainkäyttöalue sarakekohtaiseksi; viisi uutta riviä.",

@@ -59,6 +59,32 @@
     "history": [],
     "verify": true
   },
+  "agents|m_vibe_enterprise": {
+    "status": "u",
+    "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+    "sources": [
+      {
+        "id": "mi-enterprise-news",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "agents|m_vibe_team": {
+    "status": "u",
+    "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+    "sources": [
+      {
+        "id": "mi-enterprise-news",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "agents|ms_copilot": {
     "status": "y",
     "text": "Admin hyväksyy agentit ja Graph-konnektorit.",
@@ -115,6 +141,149 @@
     "history": [],
     "verify": true
   },
+  "ai_act|a_claude_enterprise": {
+    "status": "y",
+    "text": "Anthropic on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|a_claude_team": {
+    "status": "y",
+    "text": "Anthropic on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|g_gemini_enterprise": {
+    "status": "y",
+    "text": "Google on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|g_workspace_business": {
+    "status": "y",
+    "text": "Google on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|g_workspace_enterprise": {
+    "status": "y",
+    "text": "Google on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|m_vibe_enterprise": {
+    "status": "y",
+    "text": "Mistral on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|m_vibe_team": {
+    "status": "y",
+    "text": "Mistral on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|ms_copilot": {
+    "status": "y",
+    "text": "Microsoft on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin, samoin Copilotin mallitoimittajat OpenAI ja Anthropic.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|ms_copilot_chat": {
+    "status": "y",
+    "text": "Microsoft on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin, samoin Copilotin mallitoimittajat OpenAI ja Anthropic.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|o_chatgpt_business": {
+    "status": "y",
+    "text": "OpenAI on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ai_act|o_chatgpt_enterprise": {
+    "status": "y",
+    "text": "OpenAI on allekirjoittanut EU:n GPAI-käytännesäännöt kaikilta osin.",
+    "sources": [
+      {
+        "id": "eu-gpai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "audit|a_claude_enterprise": {
     "status": "y",
     "text": "Audit-lokit ja Compliance API ohjelmalliseen hakuun.",
@@ -160,21 +329,83 @@
   },
   "audit|g_workspace_business": {
     "status": "p",
-    "text": "Admin-konsolin lokit; laajemmat compliance-työkalut ylemmissä editioissa.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Vault (ja siten Gemini-keskustelujen eDiscovery) vain Business Plus -editiossa.",
+    "sources": [
+      {
+        "id": "g-vault-gemini",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Admin-konsolin lokit; laajemmat compliance-työkalut ylemmissä editioissa.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Editiorajaus varmistettu."
+      }
+    ]
   },
   "audit|g_workspace_enterprise": {
     "status": "y",
-    "text": "Audit-lokit, Vault ja DLP.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Vault-haku ja -vienti Gemini-keskusteluille, Vaultin oma audit-loki ja DLP for Gemini.",
+    "sources": [
+      {
+        "id": "g-vault",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-vault-gemini",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-dlp-gemini",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "y",
+        "text": "Audit-lokit, Vault ja DLP.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Lähteet lisätty."
+      }
+    ]
+  },
+  "audit|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Audit-lokit (kirjautumiset, hallintatoimet, keskustelujen luonti ja poisto), mutta lokien vienti ei ole tuettu.",
+    "sources": [
+      {
+        "id": "mi-audit",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "audit|m_vibe_team": {
+    "status": "n",
+    "text": "Audit-lokit vain Enterprise-tasolla.",
+    "sources": [
+      {
+        "id": "mi-audit",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
   },
   "audit|ms_copilot": {
     "status": "y",
@@ -314,6 +545,32 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "certifications|m_vibe_enterprise": {
+    "status": "y",
+    "text": "SOC 2 Type II, ISO 27001 ja ISO 27701; raportit Trust Centerin kautta.",
+    "sources": [
+      {
+        "id": "mi-certs",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "certifications|m_vibe_team": {
+    "status": "y",
+    "text": "SOC 2 Type II, ISO 27001 ja ISO 27701; raportit Trust Centerin kautta.",
+    "sources": [
+      {
+        "id": "mi-certs",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "certifications|ms_copilot": {
     "status": "y",
     "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018.",
@@ -431,22 +688,73 @@
     "history": [],
     "verify": true
   },
+  "cmk|m_vibe_enterprise": {
+    "status": "u",
+    "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa; oma asennus on vaihtoehto täyteen avainten hallintaan.",
+    "sources": [
+      {
+        "id": "x-pureai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "cmk|m_vibe_team": {
+    "status": "u",
+    "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa.",
+    "sources": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "cmk|ms_copilot": {
     "status": "p",
-    "text": "M365 Customer Key (lisälisenssi).",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "text": "Purview Customer Key kattaa myös Copilot-vuorovaikutukset (multi-workload DEP); vaatii Customer Key -lisensoinnin.",
+    "sources": [
+      {
+        "id": "ms-customer-key",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "M365 Customer Key (lisälisenssi).",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Customer Keyn kattavuus Copilot-datalle varmistettu."
+      }
+    ],
     "verify": true
   },
   "cmk|ms_copilot_chat": {
     "status": "p",
-    "text": "M365 Customer Key (lisälisenssi); kattavuus Copilot-datalle kannattaa tarkistaa.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "text": "Purview Customer Key kattaa myös Copilot-vuorovaikutukset (multi-workload DEP); vaatii Customer Key -lisensoinnin.",
+    "sources": [
+      {
+        "id": "ms-customer-key",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "M365 Customer Key (lisälisenssi); kattavuus Copilot-datalle kannattaa tarkistaa.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Customer Keyn kattavuus Copilot-datalle varmistettu."
+      }
+    ],
     "verify": true
   },
   "cmk|o_chatgpt_business": {
@@ -477,21 +785,57 @@
   },
   "data_egress|a_claude_enterprise": {
     "status": "p",
-    "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+    "sources": [
+      {
+        "id": "a-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "a-subprocessors",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      }
+    ]
   },
   "data_egress|a_claude_team": {
     "status": "p",
-    "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+    "sources": [
+      {
+        "id": "a-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "a-subprocessors",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      }
+    ]
   },
   "data_egress|g_gemini_enterprise": {
     "status": "p",
@@ -504,49 +848,143 @@
   },
   "data_egress|g_workspace_business": {
     "status": "y",
-    "text": "Googlen omat mallit omalla infrastruktuurilla.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "y",
+        "text": "Googlen omat mallit omalla infrastruktuurilla.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      }
+    ]
   },
   "data_egress|g_workspace_enterprise": {
     "status": "y",
-    "text": "Googlen omat mallit omalla infrastruktuurilla.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "y",
+        "text": "Googlen omat mallit omalla infrastruktuurilla.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
+      }
+    ]
+  },
+  "data_egress|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Kuten Teamissa, mutta Enterprise voi kytkeä osan EU:n ulkopuolisia siirtoja vaativista ominaisuuksista pois organisaatiotasolla.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "data_egress|m_vibe_team": {
+    "status": "p",
+    "text": "Osa ominaisuuksista voi siirtää dataa tilapäisesti EU:n ulkopuolisille alihankkijoille (SCC:t). Konnektoridataa ei tallenneta pysyvästi.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
   },
   "data_egress|ms_copilot": {
     "status": "p",
-    "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
+    "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mc-web-dlp",
+        "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Web-haun DLP-kontrolli lisätty."
+      }
+    ]
   },
   "data_egress|ms_copilot_chat": {
     "status": "p",
-    "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
+    "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mc-web-dlp",
+        "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Web-haun DLP-kontrolli lisätty."
+      }
+    ]
   },
   "data_egress|o_chatgpt_business": {
     "status": "p",
@@ -575,6 +1013,168 @@
     "changed": "2026-09-25",
     "history": [],
     "verify": true
+  },
+  "dlp|a_claude_enterprise": {
+    "status": "p",
+    "text": "Ei natiivia DLP:tä. Compliance API vie sisällön DLP-työkaluihin (28 kumppania, mm. Purview, Netskope), ja inference hooks mahdollistaa tarkastuksen ennen mallia.",
+    "sources": [
+      {
+        "id": "a-compliance-partners",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-netskope-claude",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|a_claude_team": {
+    "status": "n",
+    "text": "Ei natiivia DLP:tä eikä Compliance API:a DLP-integraatioille.",
+    "sources": [
+      {
+        "id": "a-pricing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|g_gemini_enterprise": {
+    "status": "n",
+    "text": "Workspacen DLP for Gemini -säännöt eivät koske Gemini Enterprise -sovellusta; muut Cloud-kontrollit arvioitava erikseen.",
+    "sources": [
+      {
+        "id": "g-dlp-gemini",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [],
+    "verify": true
+  },
+  "dlp|g_workspace_business": {
+    "status": "n",
+    "text": "DLP for Gemini ja luokitustunnisteisiin perustuva DLP ovat saatavilla vain Enterprise- ja vastaavissa editioissa.",
+    "sources": [
+      {
+        "id": "g-dlp-gemini",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-labels-dlp",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|g_workspace_enterprise": {
+    "status": "y",
+    "text": "DLP for Gemini estää Geminiä käyttämästä arkaluonteisia Drive-tiedostoja (toistaiseksi vain Drive-data); luokitukset ja IRM rajaavat pääsyä.",
+    "sources": [
+      {
+        "id": "g-dlp-gemini",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-privacyhub-dlp",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|m_vibe_enterprise": {
+    "status": "u",
+    "text": "Natiivia DLP:tä tai DLP-integraatioita ei löytynyt dokumentaatiosta.",
+    "sources": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|m_vibe_team": {
+    "status": "u",
+    "text": "Natiivia DLP:tä tai DLP-integraatioita ei löytynyt dokumentaatiosta.",
+    "sources": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|ms_copilot": {
+    "status": "y",
+    "text": "Purview DLP estää Copilotia käsittelemästä luokiteltuja tiedostoja kaikissa tallennuspaikoissa ja arkaluonteisia kehotteita; vastaus perii tiukimman luokituksen.",
+    "sources": [
+      {
+        "id": "mc-label-dlp",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mc-web-dlp",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "ms-purview-ai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|ms_copilot_chat": {
+    "status": "y",
+    "text": "Purview DLP voi estää arkaluonteisten kehotteiden käytön web-hauissa; luottamuksellisuusluokitukset rajaavat pääsyä salattuun sisältöön.",
+    "sources": [
+      {
+        "id": "mc-web-dlp",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "ms-purview-ai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|o_chatgpt_business": {
+    "status": "n",
+    "text": "Ei Compliance API:a, joten DLP-integraatiot eivät ole käytettävissä.",
+    "sources": [
+      {
+        "id": "o-pricing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dlp|o_chatgpt_enterprise": {
+    "status": "p",
+    "text": "Ei natiivia DLP:tä; Compliance API -integraatiot (esim. Netskope, Purview) mahdollistavat tarkastuksen jälkikäteen.",
+    "sources": [
+      {
+        "id": "x-netskope-openai",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-purview-substack",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
   },
   "dpa|a_claude_enterprise": {
     "status": "y",
@@ -641,6 +1241,40 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "dpa|m_vibe_enterprise": {
+    "status": "p",
+    "text": "DPA ja SCC:t, Mistral käsittelijänä. DPA sallii Mistralin toimia rekisterinpitäjänä mm. mallikoulutuksessa (ellei poissuljettu) ja väärinkäytösten moderoinnissa.",
+    "sources": [
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-conductatlas-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "dpa|m_vibe_team": {
+    "status": "p",
+    "text": "DPA ja SCC:t, Mistral käsittelijänä. DPA sallii Mistralin toimia rekisterinpitäjänä mm. mallikoulutuksessa (ellei poissuljettu) ja väärinkäytösten moderoinnissa.",
+    "sources": [
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-conductatlas-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "dpa|ms_copilot": {
     "status": "y",
     "text": "Microsoft DPA ja Product Terms; Microsoft on käsittelijä.",
@@ -699,6 +1333,185 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
+    "history": []
+  },
+  "exit|a_claude_enterprise": {
+    "status": "y",
+    "text": "Pääomistaja voi viedä organisaation keskustelut itsepalveluna. Sopimuksen päättyessä data palautetaan pyynnöstä ja poistetaan 30 pv:n kuluessa.",
+    "sources": [
+      {
+        "id": "a-export",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "a-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|a_claude_team": {
+    "status": "y",
+    "text": "Pääomistaja voi viedä organisaation keskustelut itsepalveluna. Sopimuksen päättyessä data palautetaan pyynnöstä ja poistetaan 30 pv:n kuluessa.",
+    "sources": [
+      {
+        "id": "a-export",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "a-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Cloud DPA: vienti sopimuskauden aikana ja poisto viimeistään 180 pv sopimuksen päätyttyä.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|g_workspace_business": {
+    "status": "p",
+    "text": "Vienti sopimuskauden aikana; poisto 30 pv palautusjakson jälkeen, viimeistään 180 pv. Gemini-keskustelujen Vault-vienti vain Business Plus -editiossa.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-vault-gemini",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|g_workspace_enterprise": {
+    "status": "y",
+    "text": "Vienti sopimuskauden aikana, myös Vaultilla; poisto 30 pv palautusjakson jälkeen, viimeistään 180 pv.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-vault-gemini",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+    "sources": [
+      {
+        "id": "x-conductatlas-mistral-del",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|m_vibe_team": {
+    "status": "p",
+    "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+    "sources": [
+      {
+        "id": "x-conductatlas-mistral-del",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|ms_copilot": {
+    "status": "y",
+    "text": "Sopimuksen päätyttyä data säilyy 90 pv rajoitetussa tilassa vientiä varten ja poistetaan viimeistään 180 pv:n kuluttua. Copilot-vuorovaikutukset vietävissä eDiscoveryllä.",
+    "sources": [
+      {
+        "id": "ms-retention-deletion",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "ms-privacy",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|ms_copilot_chat": {
+    "status": "y",
+    "text": "Sopimuksen päätyttyä data säilyy 90 pv rajoitetussa tilassa vientiä varten ja poistetaan viimeistään 180 pv:n kuluttua. Copilot-vuorovaikutukset vietävissä eDiscoveryllä.",
+    "sources": [
+      {
+        "id": "ms-retention-deletion",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "ms-privacy",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|o_chatgpt_business": {
+    "status": "n",
+    "text": "Ei itsepalveluvientiä työtilasta eikä Compliance API:a. DPA:n mukaan data poistetaan tai palautetaan sopimuksen päättyessä.",
+    "sources": [
+      {
+        "id": "o-export-help",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "o-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "exit|o_chatgpt_enterprise": {
+    "status": "p",
+    "text": "Ei itsepalveluvientiä; data saatavissa Compliance API:n kautta. Poisto tai palautus sopimuksen päättyessä.",
+    "sources": [
+      {
+        "id": "o-export-help",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "o-pricing",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "o-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": []
   },
   "identity|a_claude_enterprise": {
@@ -761,6 +1574,40 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "identity|m_vibe_enterprise": {
+    "status": "p",
+    "text": "SAML SSO (esim. Entra ID, Google, Okta); SCIM ei vielä yleisesti saatavilla.",
+    "sources": [
+      {
+        "id": "mi-sso",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-admin",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "identity|m_vibe_team": {
+    "status": "n",
+    "text": "Vain domain-vahvistus; SAML SSO vaatii Enterprisen, eikä SCIM ole vielä yleisesti saatavilla.",
+    "sources": [
+      {
+        "id": "mi-sso-quickstart",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-admin",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "identity|ms_copilot": {
     "status": "y",
     "text": "Entra ID: SSO ja SCIM; Copilotille voi tehdä omat, tiukemmat Conditional Access -politiikat.",
@@ -811,6 +1658,165 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
+    "history": []
+  },
+  "incident_notification|a_claude_enterprise": {
+    "status": "y",
+    "text": "Viipymättä ja viimeistään 48 tunnin kuluessa (DPA).",
+    "sources": [
+      {
+        "id": "a-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|a_claude_team": {
+    "status": "y",
+    "text": "Viipymättä ja viimeistään 48 tunnin kuluessa (DPA).",
+    "sources": [
+      {
+        "id": "a-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|g_workspace_business": {
+    "status": "p",
+    "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|g_workspace_enterprise": {
+    "status": "p",
+    "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+    "sources": [
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+    "sources": [
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-conductatlas-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|m_vibe_team": {
+    "status": "p",
+    "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+    "sources": [
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-conductatlas-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|ms_copilot": {
+    "status": "y",
+    "text": "Viipymättä ja viimeistään 72 tunnin kuluessa (DPA); ilmoitus Message Centeriin ja adminille.",
+    "sources": [
+      {
+        "id": "ms-incident",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|ms_copilot_chat": {
+    "status": "y",
+    "text": "Viipymättä ja viimeistään 72 tunnin kuluessa (DPA); ilmoitus Message Centeriin ja adminille.",
+    "sources": [
+      {
+        "id": "ms-incident",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|o_chatgpt_business": {
+    "status": "p",
+    "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+    "sources": [
+      {
+        "id": "o-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-conductatlas-openai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "incident_notification|o_chatgpt_enterprise": {
+    "status": "p",
+    "text": "Viipymättä (without undue delay); DPA:ssa ei kiinteää tuntirajaa.",
+    "sources": [
+      {
+        "id": "o-dpa",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-conductatlas-openai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": []
   },
   "inference_eu|a_claude_enterprise": {
@@ -882,6 +1888,36 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "inference_eu|m_vibe_enterprise": {
+    "status": "p",
+    "text": "EU oletuksena; osa EU:n ulkopuolisia siirtoja vaativista ominaisuuksista kytkettävissä pois. Yksityinen pilvi tai oma asennus mahdollinen.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-pureai",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "inference_eu|m_vibe_team": {
+    "status": "p",
+    "text": "Käsittely oletuksena EU:ssa, mutta ominaisuuskohtaisia tilapäisiä siirtoja EU:n ulkopuolelle voi tapahtua.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "inference_eu|ms_copilot": {
     "status": "p",
     "text": "Kuten Copilot Chatissa. Kytke Anthropic-mallit pois, jos EU-käsittely on ehdoton.",
@@ -935,49 +1971,138 @@
     "history": []
   },
   "ip_indemnity|a_claude_enterprise": {
-    "status": "p",
-    "text": "Kaupallisten ehtojen tekijänoikeusvastuu; laajuus neuvoteltavissa.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "status": "y",
+    "text": "Kaupallisten ehtojen vastuu: Anthropic puolustaa asiakasta maksullisen käytön ja outputin loukkausväitteitä vastaan; poikkeuksia mm. asiakkaan muokkauksille.",
+    "sources": [
+      {
+        "id": "x-proskauer-anthropic",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Kaupallisten ehtojen tekijänoikeusvastuu; laajuus neuvoteltavissa.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Commercial Terms -vastuu vahvistettu."
+      }
+    ]
   },
   "ip_indemnity|a_claude_team": {
-    "status": "p",
-    "text": "Kaupallisten ehtojen tekijänoikeusvastuu.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "status": "y",
+    "text": "Kaupallisten ehtojen vastuu: Anthropic puolustaa asiakasta maksullisen käytön ja outputin loukkausväitteitä vastaan; poikkeuksia mm. asiakkaan muokkauksille.",
+    "sources": [
+      {
+        "id": "x-proskauer-anthropic",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Kaupallisten ehtojen tekijänoikeusvastuu.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Commercial Terms -vastuu vahvistettu."
+      }
+    ]
   },
   "ip_indemnity|g_gemini_enterprise": {
     "status": "p",
-    "text": "Google Cloudin generatiivisen AI:n vastuusitoumus.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "text": "Koulutusdatan vastuusitoumus koskee kaikkia Googlen generatiivisia palveluita; tuotetun sisällön vastuun kattavuus Gemini Enterprisessa tarkistettava.",
+    "sources": [
+      {
+        "id": "g-indemnity",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Google Cloudin generatiivisen AI:n vastuusitoumus.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Lähde löytyi, kattavuus epäselvä."
+      }
+    ],
     "verify": true
   },
   "ip_indemnity|g_workspace_business": {
-    "status": "p",
-    "text": "Googlen generatiivisen AI:n vastuusitoumus Workspace-asiakkaille.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "status": "y",
+    "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+    "sources": [
+      {
+        "id": "g-indemnity",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Googlen generatiivisen AI:n vastuusitoumus Workspace-asiakkaille.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Lähde löytyi (2023, tuotenimet muuttuneet)."
+      }
+    ],
     "verify": true
   },
   "ip_indemnity|g_workspace_enterprise": {
-    "status": "p",
-    "text": "Googlen generatiivisen AI:n vastuusitoumus Workspace-asiakkaille.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "status": "y",
+    "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+    "sources": [
+      {
+        "id": "g-indemnity",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Googlen generatiivisen AI:n vastuusitoumus Workspace-asiakkaille.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Lähde löytyi (2023, tuotenimet muuttuneet)."
+      }
+    ],
     "verify": true
+  },
+  "ip_indemnity|m_vibe_enterprise": {
+    "status": "u",
+    "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
+    "sources": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "ip_indemnity|m_vibe_team": {
+    "status": "u",
+    "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
+    "sources": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
   },
   "ip_indemnity|ms_copilot": {
     "status": "y",
@@ -1006,22 +2131,51 @@
     "history": []
   },
   "ip_indemnity|o_chatgpt_business": {
-    "status": "u",
-    "text": "Copyright Shield; kattavuus Businessille epäselvä.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "status": "y",
+    "text": "Copyright Shield kattaa Business Termsin piirissä olevat palvelut, myös Businessin (ent. Team).",
+    "sources": [
+      {
+        "id": "x-proskauer-openai-team",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "u",
+        "text": "Copyright Shield; kattavuus Businessille epäselvä.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Toissijainen lähde vahvistaa kattavuuden Team/Business-tasolle."
+      }
+    ],
     "verify": true
   },
   "ip_indemnity|o_chatgpt_enterprise": {
-    "status": "p",
-    "text": "Copyright Shield.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "status": "y",
+    "text": "Copyright Shield: OpenAI puolustaa asiakasta tekijänoikeusvaateissa.",
+    "sources": [
+      {
+        "id": "x-proskauer-openai-shield",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Copyright Shield.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Lähde lisätty."
+      }
+    ]
   },
   "jurisdiction|a_claude_enterprise": {
     "status": "p",
@@ -1106,6 +2260,40 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|m_vibe_enterprise": {
+    "status": "y",
+    "text": "Ranskalainen yhtiö: EU-lainsäädäntö, ei yhdysvaltalaista emoyhtiötä. EU:n ulkopuoliset alihankkijat SCC:illä.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-teamazing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "jurisdiction|m_vibe_team": {
+    "status": "y",
+    "text": "Ranskalainen yhtiö: EU-lainsäädäntö, ei yhdysvaltalaista emoyhtiötä. EU:n ulkopuoliset alihankkijat SCC:illä.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-teamazing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": []
   },
   "jurisdiction|ms_copilot": {
@@ -1226,6 +2414,36 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "personal_accounts|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Domain-vahvistus; SSO ohjaa domainin käyttäjät yrityksen IdP:hen.",
+    "sources": [
+      {
+        "id": "mi-sso",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-sso-quickstart",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "personal_accounts|m_vibe_team": {
+    "status": "p",
+    "text": "Domain-vahvistus ja automaattinen liittäminen sähköpostidomainin perusteella.",
+    "sources": [
+      {
+        "id": "mi-sso-quickstart",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "personal_accounts|ms_copilot": {
     "status": "y",
     "text": "Entra- ja tenant-rajaukset.",
@@ -1275,6 +2493,156 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
+    "history": []
+  },
+  "pricing|a_claude_enterprise": {
+    "status": "p",
+    "text": "20 $/käyttäjä/kk (vuosilaskutus) ja lisäksi käyttö API-hinnoin.",
+    "sources": [
+      {
+        "id": "x-techinsider",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-layer3-pricing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|a_claude_team": {
+    "status": "y",
+    "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella (Standard); Premium-paikat kalliimpia.",
+    "sources": [
+      {
+        "id": "x-kemeny",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-aipricing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Business 21 $ ja Standard 30 $/käyttäjä/kk; Plus vain tarjouksesta.",
+    "sources": [
+      {
+        "id": "x-techinsider",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|g_workspace_business": {
+    "status": "y",
+    "text": "Gemini sisältyy: Business Starter n. 7 $, Standard 14 $ ja Plus 22 $/käyttäjä/kk (vuosisitoumus).",
+    "sources": [
+      {
+        "id": "x-layer3-pricing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|g_workspace_enterprise": {
+    "status": "u",
+    "text": "Ei selvitetty; Enterprise-editioiden hinta tarkistettava Googlelta.",
+    "sources": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|m_vibe_enterprise": {
+    "status": "n",
+    "text": "Vain tarjouksesta; raportoitu lähtötaso n. 20 000 $/kk.",
+    "sources": [
+      {
+        "id": "x-teamazing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|m_vibe_team": {
+    "status": "y",
+    "text": "24,99 $/käyttäjä/kk (ilman veroja).",
+    "sources": [
+      {
+        "id": "x-costbench-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|ms_copilot": {
+    "status": "y",
+    "text": "30 $/käyttäjä/kk (vuosisitoumus) Microsoft 365 -lisenssin päälle; pk-versio Copilot Business 21 $ (18 $ kampanja 2026 loppuun).",
+    "sources": [
+      {
+        "id": "x-layer3-pricing",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "x-aipricing",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|ms_copilot_chat": {
+    "status": "y",
+    "text": "Sisältyy Microsoft 365 -tilaukseen ilman lisämaksua; työdataa käyttävät agentit ovat maksullisia.",
+    "sources": [
+      {
+        "id": "ms-chat-license",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|o_chatgpt_business": {
+    "status": "y",
+    "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella.",
+    "sources": [
+      {
+        "id": "x-kemeny",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "pricing|o_chatgpt_enterprise": {
+    "status": "n",
+    "text": "Ei julkista hintaa; raportoidut tarjoukset n. 45–75 $/käyttäjä/kk ja vähimmäismäärä 150 käyttäjää.",
+    "sources": [
+      {
+        "id": "x-techinsider",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": []
   },
   "provider_access|a_claude_enterprise": {
@@ -1344,6 +2712,34 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "provider_access|m_vibe_enterprise": {
+    "status": "p",
+    "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+    "sources": [
+      {
+        "id": "x-conductatlas-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [],
+    "verify": true
+  },
+  "provider_access|m_vibe_team": {
+    "status": "p",
+    "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+    "sources": [
+      {
+        "id": "x-conductatlas-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": [],
     "verify": true
   },
@@ -1462,6 +2858,44 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "rbac|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Organisaatioroolit, ryhmät ja työtilat sekä organisaatiotason yksityisyysasetukset.",
+    "sources": [
+      {
+        "id": "mi-users",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-admin",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "rbac|m_vibe_team": {
+    "status": "p",
+    "text": "Organisaatioroolit (Admin, Member, Billing), ryhmät ja työtilat.",
+    "sources": [
+      {
+        "id": "mi-users",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-admin",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
   "rbac|ms_copilot": {
     "status": "y",
     "text": "Admin rajaa agentit, web-haun ja kolmannen osapuolen mallit (Anthropic, OpenAI).",
@@ -1567,19 +3001,86 @@
   },
   "retention|g_workspace_business": {
     "status": "p",
-    "text": "Perustason hallinta. Laajempi säilytys ja eDiscovery (Vault) ylemmissä editioissa.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "text": "Vault-säilytys ja -pidot Gemini-sovellukselle vain Business Plus -editiossa (6/2026 alkaen); Starter ja Standard ilman Vaultia.",
+    "sources": [
+      {
+        "id": "g-vault-gemini",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Perustason hallinta. Laajempi säilytys ja eDiscovery (Vault) ylemmissä editioissa.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Vaultin Gemini-tuki ja editiot varmistettu."
+      }
+    ]
   },
   "retention|g_workspace_enterprise": {
+    "status": "y",
+    "text": "Vault-säilytyssäännöt, litigation hold ja eDiscovery Gemini-sovellukselle; eivät koske muiden sovellusten sisäisiä Gemini-toimintoja.",
+    "sources": [
+      {
+        "id": "g-vault-gemini",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-vault",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Vault ja säilytyskäytännöt käytössä; Gemini-keskustelujen kattavuus kannattaa tarkistaa.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Vaultin Gemini-tuki varmistettu."
+      }
+    ]
+  },
+  "retention|m_vibe_enterprise": {
+    "status": "y",
+    "text": "Organisaatiotason chat-säilytyskäytäntö (automaattinen poisto 30 pv–1 v tai ei koskaan). ZDR ei koske chat-tuotetta.",
+    "sources": [
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-waimakers",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "retention|m_vibe_team": {
     "status": "p",
-    "text": "Vault ja säilytyskäytännöt käytössä; Gemini-keskustelujen kattavuus kannattaa tarkistaa.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "text": "Organisaatiotason chat-säilytyskäytäntö (automaattinen poisto 30 pv–1 v tai ei koskaan); saatavuus Team-tasolla tarkistettava. ZDR ei koske chat-tuotetta.",
+    "sources": [
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-waimakers",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": [],
     "verify": true
   },
@@ -1705,22 +3206,73 @@
     "history": [],
     "verify": true
   },
-  "sla|ms_copilot": {
+  "sla|m_vibe_enterprise": {
     "status": "p",
-    "text": "M365-palvelutasosopimus.",
+    "text": "Räätälöidyt SLA:t sopimuksella.",
+    "sources": [
+      {
+        "id": "x-costbench-mistral",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "sla|m_vibe_team": {
+    "status": "u",
+    "text": "Ei mainittua SLA:ta.",
     "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "sla|ms_copilot": {
+    "status": "n",
+    "text": "Ei Copilot-kohtaista rahallisesti taattua SLA:ta; Microsoft 365:n 99,9 %:n SLA koskee mm. Exchangea, SharePointia ja Teamsia.",
+    "sources": [
+      {
+        "id": "x-enterprisedna",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "M365-palvelutasosopimus.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Toissijainen lähde: Copilot ei kuulu M365:n rahallisesti taattuun SLA:han."
+      }
+    ],
     "verify": true
   },
   "sla|ms_copilot_chat": {
-    "status": "p",
-    "text": "M365-palvelutasosopimus.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
+    "status": "n",
+    "text": "Ei Copilot-kohtaista rahallisesti taattua SLA:ta; Microsoft 365:n 99,9 %:n SLA koskee mm. Exchangea, SharePointia ja Teamsia.",
+    "sources": [
+      {
+        "id": "x-enterprisedna",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "M365-palvelutasosopimus.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Toissijainen lähde: Copilot ei kuulu M365:n rahallisesti taattuun SLA:han."
+      }
+    ],
     "verify": true
   },
   "sla|o_chatgpt_business": {
@@ -1818,6 +3370,32 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
+    "history": []
+  },
+  "storage_eu|m_vibe_enterprise": {
+    "status": "y",
+    "text": "Data tallennetaan oletuksena EU:ssa.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "storage_eu|m_vibe_team": {
+    "status": "y",
+    "text": "Data tallennetaan oletuksena EU:ssa.",
+    "sources": [
+      {
+        "id": "mi-residency-help",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
     "history": []
   },
   "storage_eu|ms_copilot": {
@@ -1958,6 +3536,41 @@
     "changed": "2026-09-25",
     "history": []
   },
+  "training|m_vibe_enterprise": {
+    "status": "y",
+    "text": "Ei oletuksena; Enterprise-organisaatiot on poissuljettu koulutuksesta. Palautteen mukana lähetetty sisältö on erillinen tapaus.",
+    "sources": [
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-waimakers",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "training|m_vibe_team": {
+    "status": "y",
+    "text": "Team-keskusteluja ei käytetä koulutukseen oletuksena, ja admin hallitsee asetusta. Toissijainen lähde väittää päinvastaista; palautteen mukana lähetetty sisältö voidaan käyttää.",
+    "sources": [
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "mi-waimakers",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [],
+    "verify": true
+  },
   "training|ms_copilot": {
     "status": "y",
     "text": "Ei. Myöskään Graph-kautta haettua dataa ei käytetä koulutukseen.",
@@ -2076,17 +3689,65 @@
   },
   "visibility|g_workspace_enterprise": {
     "status": "p",
-    "text": "Kaikki, mihin käyttäjällä on pääsy. CSE-salattuun sisältöön Gemini ei pääse.",
+    "text": "Kaikki, mihin käyttäjällä on pääsy. IRM, CSE ja DLP for Gemini voivat estää pääsyn arkaluonteisiin Drive-tiedostoihin.",
     "sources": [
       {
         "id": "x-strac-gemini",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-privacyhub-dlp",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "g-dlp-gemini",
+        "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Kaikki, mihin käyttäjällä on pääsy. CSE-salattuun sisältöön Gemini ei pääse.",
+        "sources": [
+          {
+            "id": "x-strac-gemini",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Rajauskeinot varmistettu Googlen dokumentaatiosta."
+      }
+    ]
+  },
+  "visibility|m_vibe_enterprise": {
+    "status": "p",
+    "text": "Käyttäjän lataamat tiedostot, kirjastot ja konnektorit; konnektoridata haetaan tarvittaessa eikä sitä tallenneta pysyvästi.",
+    "sources": [
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
+  },
+  "visibility|m_vibe_team": {
+    "status": "p",
+    "text": "Käyttäjän lataamat tiedostot, kirjastot ja konnektorit; konnektoridata haetaan tarvittaessa eikä sitä tallenneta pysyvästi.",
+    "sources": [
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": []
   },
   "visibility|ms_copilot": {
     "status": "p",
@@ -2102,13 +3763,31 @@
     "history": []
   },
   "visibility|ms_copilot_chat": {
-    "status": "p",
-    "text": "Pääasiassa web ja käyttäjän antama tai avaama sisältö; laajempi työdata agenttien kautta.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
+    "status": "y",
+    "text": "Ilman Copilot-lisenssiä ei pääsyä Graph-dataan: vain web ja käyttäjän lataamat tiedostot. Työdataa käyttävät agentit ovat maksullisia.",
+    "sources": [
+      {
+        "id": "ms-copilot-faq",
+        "accessed": "2026-09-26"
+      },
+      {
+        "id": "ms-chat-license",
+        "accessed": "2026-09-26"
+      }
+    ],
+    "verified": "2026-09-26",
+    "changed": "2026-09-26",
+    "history": [
+      {
+        "status": "p",
+        "text": "Pääasiassa web ja käyttäjän antama tai avaama sisältö; laajempi työdata agenttien kautta.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-25",
+        "until": "2026-09-26",
+        "reason": "Hakukierros 9/2026: Microsoftin FAQ vahvistaa, ettei Copilot Chat ilman lisenssiä pääse Graph-dataan."
+      }
+    ]
   },
   "visibility|o_chatgpt_business": {
     "status": "p",
