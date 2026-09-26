@@ -1,4 +1,120 @@
 {
+  "agents|a_claude_enterprise": {
+    "status": "y",
+    "text": "Kuten Teamissa ja lisäksi RBAC.",
+    "sources": [
+      {
+        "id": "a-pricing",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|a_claude_team": {
+    "status": "y",
+    "text": "Admin-kontrollit etä- ja paikallisille konnektoreille.",
+    "sources": [
+      {
+        "id": "a-pricing",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|g_gemini_enterprise": {
+    "status": "y",
+    "text": "Agenttien hallinta; omat ADK-agentit Std/Plus-editioissa.",
+    "sources": [
+      {
+        "id": "g-ge-softprom",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|g_workspace_business": {
+    "status": "y",
+    "text": "Admin rajaa ominaisuudet ja integraatiot.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|g_workspace_enterprise": {
+    "status": "y",
+    "text": "Admin rajaa ominaisuudet ja integraatiot.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|ms_copilot": {
+    "status": "y",
+    "text": "Admin hyväksyy agentit ja Graph-konnektorit.",
+    "sources": [
+      {
+        "id": "ms-privacy",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|ms_copilot_chat": {
+    "status": "y",
+    "text": "Admin hyväksyy agentit (Integrated apps); näkee oikeudet ja ehdot.",
+    "sources": [
+      {
+        "id": "ms-privacy",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|o_chatgpt_business": {
+    "status": "p",
+    "text": "Admin hallitsee sovelluksia; ei connector registryä.",
+    "sources": [
+      {
+        "id": "o-pricing",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "agents|o_chatgpt_enterprise": {
+    "status": "y",
+    "text": "Connector registry ja RBAC.",
+    "sources": [
+      {
+        "id": "o-pricing",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
   "audit|a_claude_enterprise": {
     "status": "y",
     "text": "Audit-lokit ja Compliance API ohjelmalliseen hakuun.",
@@ -359,112 +475,106 @@
     "changed": "2026-09-25",
     "history": []
   },
-  "connectors|a_claude_enterprise": {
-    "status": "y",
-    "text": "Kuten Teamissa ja lisäksi RBAC.",
-    "sources": [
-      {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|a_claude_team": {
-    "status": "y",
-    "text": "Admin-kontrollit etä- ja paikallisille konnektoreille.",
-    "sources": [
-      {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|g_gemini_enterprise": {
-    "status": "y",
-    "text": "Agenttien hallinta; omat ADK-agentit Std/Plus-editioissa.",
-    "sources": [
-      {
-        "id": "g-ge-softprom",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|g_workspace_business": {
-    "status": "y",
-    "text": "Admin rajaa ominaisuudet ja integraatiot.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Admin rajaa ominaisuudet ja integraatiot.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|ms_copilot": {
-    "status": "y",
-    "text": "Admin hyväksyy agentit ja Graph-konnektorit.",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|ms_copilot_chat": {
-    "status": "y",
-    "text": "Admin hyväksyy agentit (Integrated apps); näkee oikeudet ja ehdot.",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "connectors|o_chatgpt_business": {
+  "data_egress|a_claude_enterprise": {
     "status": "p",
-    "text": "Admin hallitsee sovelluksia; ei connector registryä.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
+    "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
+    "sources": [],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
-  "connectors|o_chatgpt_enterprise": {
+  "data_egress|a_claude_team": {
+    "status": "p",
+    "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "data_egress|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Omat mallit; kolmansien osapuolten agentit ja konnektorit arvioitava erikseen.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "data_egress|g_workspace_business": {
     "status": "y",
-    "text": "Connector registry ja RBAC.",
+    "text": "Googlen omat mallit omalla infrastruktuurilla.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "data_egress|g_workspace_enterprise": {
+    "status": "y",
+    "text": "Googlen omat mallit omalla infrastruktuurilla.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "data_egress|ms_copilot": {
+    "status": "p",
+    "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
     "sources": [
       {
-        "id": "o-pricing",
+        "id": "ms-privacy",
         "accessed": "2026-09-25"
       }
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
+  },
+  "data_egress|ms_copilot_chat": {
+    "status": "p",
+    "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
+    "sources": [
+      {
+        "id": "ms-privacy",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "data_egress|o_chatgpt_business": {
+    "status": "p",
+    "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
+    "sources": [
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "data_egress|o_chatgpt_enterprise": {
+    "status": "p",
+    "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
+    "sources": [
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
   },
   "dpa|a_claude_enterprise": {
     "status": "y",
@@ -591,12 +701,12 @@
     "changed": "2026-09-25",
     "history": []
   },
-  "encryption_basic|a_claude_enterprise": {
+  "identity|a_claude_enterprise": {
     "status": "y",
-    "text": "AES-256 levossa, TLS 1.2+ siirrossa.",
+    "text": "SSO, domain capture ja SCIM.",
     "sources": [
       {
-        "id": "x-readai",
+        "id": "a-pricing",
         "accessed": "2026-09-25"
       }
     ],
@@ -604,12 +714,12 @@
     "changed": "2026-09-25",
     "history": []
   },
-  "encryption_basic|a_claude_team": {
-    "status": "y",
-    "text": "AES-256 levossa, TLS 1.2+ siirrossa.",
+  "identity|a_claude_team": {
+    "status": "p",
+    "text": "SSO ja domain-vahvistus, mutta ei SCIM:iä: poistuneet käyttäjät poistetaan käsin.",
     "sources": [
       {
-        "id": "x-readai",
+        "id": "a-pricing",
         "accessed": "2026-09-25"
       }
     ],
@@ -617,198 +727,91 @@
     "changed": "2026-09-25",
     "history": []
   },
-  "encryption_basic|g_gemini_enterprise": {
-    "status": "y",
-    "text": "Google Cloudin vakiosalaus.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "encryption_basic|g_workspace_business": {
-    "status": "y",
-    "text": "Googlen vakiosalaus.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "encryption_basic|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Googlen vakiosalaus.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "encryption_basic|ms_copilot": {
-    "status": "y",
-    "text": "Sama kuin M365:ssä.",
+  "identity|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Useita IdP:itä, myös Entra ID. Käyttäjähallinnan integraatiot Std/Plus-editioissa; Business rajallisempi.",
     "sources": [
       {
-        "id": "ms-privacy",
+        "id": "g-ge-digicloud",
         "accessed": "2026-09-25"
       },
       {
-        "id": "ms-edp",
+        "id": "g-ge-softprom",
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "encryption_basic|ms_copilot_chat": {
-    "status": "y",
-    "text": "TLS, IPsec, BitLocker, tiedostokohtainen salaus.",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "encryption_basic|o_chatgpt_business": {
-    "status": "y",
-    "text": "AES-256 levossa, TLS 1.2 siirrossa.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "encryption_basic|o_chatgpt_enterprise": {
-    "status": "y",
-    "text": "AES-256 levossa, TLS 1.2 siirrossa.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|a_claude_enterprise": {
-    "status": "p",
-    "text": "Sama kuin Teamissa: liputettu sisältö voidaan tarkastaa ja säilyttää enintään 2 v.",
-    "sources": [
-      {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|a_claude_team": {
-    "status": "p",
-    "text": "Trust & safety voi tarkastaa liputettua sisältöä. Rikkomuksiksi liputettu data säilyy enintään 2 v.",
-    "sources": [
-      {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|g_gemini_enterprise": {
-    "status": "p",
-    "text": "Cloud-ehdot. Access Transparency näyttää Googlen pääsyt (Std/Plus, US/EU-alueet).",
-    "sources": [
-      {
-        "id": "g-ge-controls",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|g_workspace_business": {
-    "status": "y",
-    "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
-    "sources": [
-      {
-        "id": "g-aiprivacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
-    "sources": [
-      {
-        "id": "g-aiprivacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|ms_copilot": {
-    "status": "y",
-    "text": "Sama kuin Copilot Chatissa: ei abuse monitoring -ihmistarkastusta.",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|ms_copilot_chat": {
-    "status": "y",
-    "text": "Copilot on jättäytynyt pois Azure OpenAI:n abuse monitoringista, joka sisältää ihmistarkastuksen.",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|o_chatgpt_business": {
-    "status": "p",
-    "text": "Väärinkäytösvalvonta sisältää määräaikaisen kopion prompteista ja vastauksista, joka säilytetään USA:ssa.",
-    "sources": [
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "human_review|o_chatgpt_enterprise": {
-    "status": "p",
-    "text": "Valtuutettu henkilöstö voi käsitellä väärinkäytösepäilyjä ja tukipyyntöjä.",
-    "sources": [],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
     "history": [],
     "verify": true
+  },
+  "identity|g_workspace_business": {
+    "status": "y",
+    "text": "Google-identiteetti tai SAML-federointi, 2SV; käyttäjien synkronointi hakemistosta.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "identity|g_workspace_enterprise": {
+    "status": "y",
+    "text": "Google-identiteetti tai SAML-federointi, kontekstitietoinen pääsy; hakemistosynkronointi.",
+    "sources": [],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "identity|ms_copilot": {
+    "status": "y",
+    "text": "Entra ID: SSO ja SCIM; Copilotille voi tehdä omat, tiukemmat Conditional Access -politiikat.",
+    "sources": [
+      {
+        "id": "x-epc",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "identity|ms_copilot_chat": {
+    "status": "y",
+    "text": "Entra ID: SSO, Conditional Access, MFA ja SCIM-provisiointi.",
+    "sources": [
+      {
+        "id": "x-epc",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "identity|o_chatgpt_business": {
+    "status": "p",
+    "text": "SAML SSO, MFA ja domain-vahvistus, mutta ei SCIM:iä.",
+    "sources": [
+      {
+        "id": "o-pricing",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "identity|o_chatgpt_enterprise": {
+    "status": "y",
+    "text": "SAML SSO, SCIM ja globaali admin-konsoli.",
+    "sources": [
+      {
+        "id": "o-pricing",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
   },
   "inference_eu|a_claude_enterprise": {
     "status": "n",
@@ -1020,9 +1023,145 @@
     "history": [],
     "verify": true
   },
-  "jurisdiction|*": {
+  "jurisdiction|a_claude_enterprise": {
     "status": "p",
-    "text": "Kaikki neljä ovat yhdysvaltalaisia yhtiöitä, joihin sovelletaan CLOUD Actia, vaikka data olisi EU:ssa. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin. DPF:n kestävyys EU-tuomioistuimessa on avoin kysymys.",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|a_claude_team": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|g_workspace_business": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|g_workspace_enterprise": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|ms_copilot": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|ms_copilot_chat": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|o_chatgpt_business": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "sources": [
+      {
+        "id": "x-sonomos-claude",
+        "accessed": "2026-09-25"
+      },
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": []
+  },
+  "jurisdiction|o_chatgpt_enterprise": {
+    "status": "p",
+    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
         "id": "x-sonomos-claude",
@@ -1138,12 +1277,12 @@
     "changed": "2026-09-25",
     "history": []
   },
-  "prompt_injection|a_claude_enterprise": {
-    "status": "u",
-    "text": "Mallitason suojaukset; Enterprise listaa inference hooks -ominaisuuden.",
+  "provider_access|a_claude_enterprise": {
+    "status": "p",
+    "text": "Sama kuin Teamissa: liputettu sisältö voidaan tarkastaa ja säilyttää enintään 2 v.",
     "sources": [
       {
-        "id": "a-pricing",
+        "id": "a-waimakers",
         "accessed": "2026-09-25"
       }
     ],
@@ -1152,30 +1291,37 @@
     "history": [],
     "verify": true
   },
-  "prompt_injection|a_claude_team": {
-    "status": "u",
-    "text": "Mallitason suojaukset; asiakkaan konfiguroitavia kontrolleja niukasti dokumentoitu.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "prompt_injection|g_gemini_enterprise": {
+  "provider_access|a_claude_team": {
     "status": "p",
-    "text": "Std/Plus: VPC-SC rajaa datan vuotamista; muut kontrollit Cloud-tasolla.",
+    "text": "Trust & safety voi tarkastaa liputettua sisältöä. Rikkomuksiksi liputettu data säilyy enintään 2 v.",
     "sources": [
       {
-        "id": "g-ge-digicloud",
+        "id": "a-waimakers",
         "accessed": "2026-09-25"
       }
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
-  "prompt_injection|g_workspace_business": {
+  "provider_access|g_gemini_enterprise": {
+    "status": "p",
+    "text": "Cloud-ehdot. Access Transparency näyttää Googlen pääsyt (Std/Plus, US/EU-alueet).",
+    "sources": [
+      {
+        "id": "g-ge-controls",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "provider_access|g_workspace_business": {
     "status": "y",
-    "text": "Epäsuoran prompt injectionin torjunta, DLP-kontrollit.",
+    "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
     "sources": [
       {
         "id": "g-aiprivacy",
@@ -1184,11 +1330,12 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
-  "prompt_injection|g_workspace_enterprise": {
+  "provider_access|g_workspace_enterprise": {
     "status": "y",
-    "text": "Epäsuoran prompt injectionin torjunta, DLP-kontrollit.",
+    "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
     "sources": [
       {
         "id": "g-aiprivacy",
@@ -1197,11 +1344,12 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
-  "prompt_injection|ms_copilot": {
+  "provider_access|ms_copilot": {
     "status": "y",
-    "text": "Jailbreak- ja XPIA-luokittimet.",
+    "text": "Sama kuin Copilot Chatissa: ei abuse monitoring -ihmistarkastusta.",
     "sources": [
       {
         "id": "ms-privacy",
@@ -1210,11 +1358,12 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
-  "prompt_injection|ms_copilot_chat": {
+  "provider_access|ms_copilot_chat": {
     "status": "y",
-    "text": "Jailbreak- ja XPIA-luokittimet; eivät kaikissa skenaarioissa.",
+    "text": "Copilot on jättäytynyt pois Azure OpenAI:n abuse monitoringista, joka sisältää ihmistarkastuksen.",
     "sources": [
       {
         "id": "ms-privacy",
@@ -1223,28 +1372,31 @@
     ],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
-  "prompt_injection|o_chatgpt_business": {
-    "status": "u",
-    "text": "Mallitason suojaukset; asiakkaan konfiguroitavia kontrolleja niukasti dokumentoitu.",
+  "provider_access|o_chatgpt_business": {
+    "status": "p",
+    "text": "Väärinkäytösvalvonta sisältää määräaikaisen kopion prompteista ja vastauksista, joka säilytetään USA:ssa.",
+    "sources": [
+      {
+        "id": "o-waimakers",
+        "accessed": "2026-09-25"
+      }
+    ],
+    "verified": "2026-09-25",
+    "changed": "2026-09-25",
+    "history": [],
+    "verify": true
+  },
+  "provider_access|o_chatgpt_enterprise": {
+    "status": "p",
+    "text": "Valtuutettu henkilöstö voi käsitellä väärinkäytösepäilyjä ja tukipyyntöjä.",
     "sources": [],
     "verified": "2026-09-25",
     "changed": "2026-09-25",
-    "history": []
-  },
-  "prompt_injection|o_chatgpt_enterprise": {
-    "status": "u",
-    "text": "Mallitason suojaukset; connector registry rajaa integraatioita.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
+    "history": [],
+    "verify": true
   },
   "rbac|a_claude_enterprise": {
     "status": "y",
@@ -1495,104 +1647,6 @@
     "changed": "2026-09-25",
     "history": []
   },
-  "scim|a_claude_enterprise": {
-    "status": "y",
-    "text": "Kyllä.",
-    "sources": [
-      {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|a_claude_team": {
-    "status": "n",
-    "text": "Ei.",
-    "sources": [
-      {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|g_gemini_enterprise": {
-    "status": "p",
-    "text": "IdP-integraatiot Std/Plus-editioissa; Business rajallisempi.",
-    "sources": [
-      {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": [],
-    "verify": true
-  },
-  "scim|g_workspace_business": {
-    "status": "y",
-    "text": "Google-hakemisto / synkronointi.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Google-hakemisto / synkronointi.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|ms_copilot": {
-    "status": "y",
-    "text": "Entra ID.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|ms_copilot_chat": {
-    "status": "y",
-    "text": "Entra ID.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|o_chatgpt_business": {
-    "status": "n",
-    "text": "Ei.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "scim|o_chatgpt_enterprise": {
-    "status": "y",
-    "text": "Kyllä.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
   "sla|a_claude_enterprise": {
     "status": "u",
     "text": "SLA ei julkinen.",
@@ -1685,117 +1739,6 @@
   "sla|o_chatgpt_enterprise": {
     "status": "y",
     "text": "SLA:t ja 24/7-tuki kelpoisille asiakkaille.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|a_claude_enterprise": {
-    "status": "y",
-    "text": "SSO, domain-vahvistus ja domain capture.",
-    "sources": [
-      {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|a_claude_team": {
-    "status": "y",
-    "text": "SSO ja domain-vahvistus.",
-    "sources": [
-      {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|g_gemini_enterprise": {
-    "status": "y",
-    "text": "Useita IdP:itä, myös Entra ID.",
-    "sources": [
-      {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "g-ge-softprom",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|g_workspace_business": {
-    "status": "y",
-    "text": "Google-identiteetti tai SAML-federointi, 2SV.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Google-identiteetti tai SAML-federointi, kontekstitietoinen pääsy.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|ms_copilot": {
-    "status": "y",
-    "text": "Entra ID; Copilotille voi tehdä omat, tiukemmat CA-politiikat.",
-    "sources": [
-      {
-        "id": "x-epc",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|ms_copilot_chat": {
-    "status": "y",
-    "text": "Entra ID natiivisti; Conditional Access, MFA.",
-    "sources": [
-      {
-        "id": "x-epc",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|o_chatgpt_business": {
-    "status": "y",
-    "text": "SAML SSO, MFA ja domain-vahvistus.",
-    "sources": [
-      {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "sso|o_chatgpt_enterprise": {
-    "status": "y",
-    "text": "SAML SSO, domain-vahvistus, globaali admin-konsoli.",
     "sources": [
       {
         "id": "o-pricing",
@@ -1933,98 +1876,6 @@
         "id": "o-residency",
         "accessed": "2026-09-25"
       },
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|a_claude_enterprise": {
-    "status": "p",
-    "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|a_claude_team": {
-    "status": "p",
-    "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|g_gemini_enterprise": {
-    "status": "p",
-    "text": "Omat mallit; kolmansien osapuolten agentit ja konnektorit arvioitava erikseen.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|g_workspace_business": {
-    "status": "y",
-    "text": "Googlen omat mallit omalla infrastruktuurilla.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Googlen omat mallit omalla infrastruktuurilla.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|ms_copilot": {
-    "status": "p",
-    "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|ms_copilot_chat": {
-    "status": "p",
-    "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
-    "sources": [
-      {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|o_chatgpt_business": {
-    "status": "p",
-    "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
-    "sources": [
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-25",
-    "history": []
-  },
-  "subprocessors|o_chatgpt_enterprise": {
-    "status": "p",
-    "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
-    "sources": [
       {
         "id": "o-waimakers",
         "accessed": "2026-09-25"

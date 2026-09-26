@@ -7,8 +7,20 @@
     "EU-käsittely on suurin ero. Microsoftin EU Data Boundary ei kata Anthropic-malleja; Googlella alueellinen käsittely vaatii ylimmät editiot ja maksaa ominaisuuksia; OpenAI tarjoaa EU-tallennuksen ja osittaisen EU-inferenssin vain Enterprisessa; Anthropicin omat palvelut käsittelevät dataa USA:ssa tai globaalisti.",
     "Tallennus ja käsittely ovat eri asioita: lokit, turvallisuusvalvonta ja osa ominaisuuksista voivat jäädä alueellisen lupauksen ulkopuolelle.",
     "Integroidut avustajat (Microsoft Copilot, Gemini Workspacessa) näkevät kaiken, mihin käyttäjällä on oikeus. Jako-oikeudet kannattaa siivota ennen käyttöönottoa.",
-    "Kaikki neljä ovat yhdysvaltalaisia yhtiöitä, joihin sovelletaan CLOUD Actia, vaikka data olisi EU:ssa.",
-    "Sertifikaatin laajuus kannattaa tarkistaa lisenssitasolla: esimerkiksi OpenAI listaa ISO-sertifikaatit vain Enterpriselle."
+    "Kaikki nykyiset tarjoajat ovat yhdysvaltalaisia yhtiöitä, joihin sovelletaan CLOUD Actia, vaikka data olisi EU:ssa.",
+    "Sertifikaatin laajuus kannattaa tarkistaa lisenssitasolla: esimerkiksi OpenAI listaa ISO-sertifikaatit vain Enterpriselle.",
+    "Salaus siirrossa ja levossa on kaikilla vakiona, eikä sitä siksi vertailla erikseen.",
+    "Matriisi vertaa tietoturvaa ja tietosuojaa. Sopivuus organisaation nykyiseen ympäristöön (esim. M365 vai Google Workspace) ratkaisee käytännössä usein, mutta se ei ole mukana tässä vertailussa."
   ],
-  "disclaimer": "Hankinnan apuväline, ei oikeudellinen arvio. Merkinnät kuvaavat dokumentoituja ominaisuuksia, eivät sitä, onko ne otettu käyttöön tai kattaako sopimus ne."
+  "disclaimer": "Hankinnan apuväline, ei oikeudellinen arvio. Merkinnät kuvaavat dokumentoituja ominaisuuksia, eivät sitä, onko ne otettu käyttöön tai kattaako sopimus ne.",
+  "tiers": {
+    "threshold": {
+      "label": "Kynnysehdot",
+      "description": "Näiden pitää täyttyä. Puute sulkee vaihtoehdon pois tai vaatii erillisen riskiarvion."
+    },
+    "differentiator": {
+      "label": "Erottelevat tekijät",
+      "description": "Näissä tarjoajat ja lisenssitasot eroavat. Painota oman käyttötapauksen mukaan."
+    }
+  }
 }
