@@ -1,258 +1,260 @@
 {
   "_run": {
-    "changed": 0,
-    "date": "2026-09-28",
+    "changed": 2,
+    "date": "2026-09-29",
     "failed": 2,
     "monitored": 42
   },
   "a-certs": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "a-dpa": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "a-export": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "a-pricing": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "a-residency": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "a-retention": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "a-subprocessors": {
     "error": "liian vähän tekstiä (1 merkkiä); todennäköisesti esto tai JS-sivu",
-    "failures": 3,
-    "last_checked": "2026-09-28"
+    "failures": 4,
+    "last_checked": "2026-09-29"
   },
   "eu-gpai": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_change": "2026-09-29",
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-aiprivacy": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-cloud-dpa": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-data-regions": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-dlp-gemini": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-ge-controls": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-ge-locations": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-privacyhub": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-privacyhub-dlp": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-vault": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "g-zdr": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_change": "2026-09-29",
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-admin": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-audit": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-certs": {
     "error": "liian vähän tekstiä (181 merkkiä); todennäköisesti esto tai JS-sivu",
-    "failures": 3,
-    "last_checked": "2026-09-28"
+    "failures": 4,
+    "last_checked": "2026-09-29"
   },
   "mi-dpa": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-residency-help": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-sso": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-sso-quickstart": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "mi-users": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-anthropic-subproc": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-chat-license": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-chat-privacy": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-copilot-faq": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-customer-key": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-edp": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-privacy": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-purview-ai": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "ms-retention-deletion": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-business-data": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-dpa": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-export-help": {
     "baseline": "2026-09-26",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-help-ent": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-pricing": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-residency": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   },
   "o-residency-help": {
     "baseline": "2026-09-25",
     "failures": 0,
-    "last_checked": "2026-09-28",
-    "last_ok": "2026-09-28"
+    "last_checked": "2026-09-29",
+    "last_ok": "2026-09-29"
   }
 }
