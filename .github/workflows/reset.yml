@@ -1,0 +1,49 @@
+name: Nollaa historia
+
+# Tyhjentää muutoslokin ja solujen aiemmat arvot sekä asettaa lähtöpäivän.
+# Solujen sisältö ja lähteet säilyvät. Avaa pull requestin, jonka voi vielä hylätä.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Kirjoita NOLLAA vahvistukseksi'
+        required: true
+        type: string
+      date:
+        description: 'Lähtöpäivä VVVV-KK-PP (tyhjä = tänään)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  reset:
+    if: inputs.confirm == 'NOLLAA'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BASE_DATE: ${{ inputs.date }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Nollaa
+        run: |
+          if [ -n "$BASE_DATE" ]; then python scripts/reset_history.py --date "$BASE_DATE" | tee out.txt
+          else python scripts/reset_history.py | tee out.txt; fi
+      - run: python scripts/validate.py
+      - name: Avaa pull request
+        run: |
+          branch="reset/history-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add data
+          git commit -m "Reset page history to a clean baseline"
+          git push origin "$branch"
+          { echo "Muutoshistorian nollaus. Solujen sisältö ja lähteet säilyvät."; echo; echo '```'; cat out.txt; echo '```'; } > pr_body.md
+          gh pr create --title "Nollaa muutoshistoria" --body-file pr_body.md

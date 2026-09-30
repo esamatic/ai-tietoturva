@@ -1,0 +1,25 @@
+name: Lähde- tai korjausehdotus
+description: Anna yksi tai useampi URL. Automaatio tekee tutkimuspaketin, jolla Claude päivittää lähteen tukemat solut.
+title: "Lähde-ehdotus: "
+labels: [korjaus]
+body:
+  - type: textarea
+    id: urls
+    attributes:
+      label: URL-osoitteet
+      description: Yksi URL per rivi.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: Mitä lähde koskee
+      description: >-
+        Valinnainen rajaus: tarjoaja, lisenssi ja/tai rivi, esim. "ChatGPT Enterprise, Tallennus EU:ssa"
+        tai "Mistral". Tyhjänä Claude selvittää itse, mihin soluihin lähde liittyy.
+  - type: textarea
+    id: note
+    attributes:
+      label: Huomio
+      description: Valinnainen. Mitä lähteessä mielestäsi sanotaan tai mikä matriisissa on väärin.
