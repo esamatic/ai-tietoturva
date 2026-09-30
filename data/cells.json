@@ -29,35 +29,95 @@
   },
   "agents|g_gemini_enterprise": {
     "status": "y",
-    "text": "Agenttien hallinta; omat ADK-agentit Std/Plus-editioissa.",
+    "text": "Valmiit ja no-code-agentit kaikissa editioissa; omat ADK- ja kolmansien osapuolten agentit sekä Antigravity-kehitystyökalut vain Std/Plus. Admin jakaa agentit käyttäjille tai ryhmille ja rajaa niiden pääsyn sovelluksiin ja dataan.",
     "sources": [
       {
-        "id": "g-ge-softprom",
-        "accessed": "2026-09-25"
+        "id": "g-ge-editions-pricing",
+        "accessed": "2026-09-30",
+        "note": "Omat ja kolmansien osapuolten agentit sekä Antigravity Std/Plus-editioissa; agenttien pääsyn hallinta ja valvonta"
+      },
+      {
+        "id": "g-ge-share-agents",
+        "accessed": "2026-09-30",
+        "note": "Agenttien jakaminen käyttäjä-, ryhmä- tai organisaatiotasolla"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "y",
+        "text": "Agenttien hallinta; omat ADK-agentit Std/Plus-editioissa.",
+        "sources": [
+          {
+            "id": "g-ge-softprom",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla ja tarkennettu; verify poistettu."
+      }
+    ]
   },
   "agents|g_workspace_business": {
     "status": "y",
-    "text": "Admin rajaa ominaisuudet ja integraatiot.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "text": "Admin rajaa OU:ittain tai ryhmittäin Gemini-sovelluksen, sen yhteydet Workspace-, muihin Google- ja kolmansien osapuolten sovelluksiin (esim. GitHub) sekä Gemini in Chromen.",
+    "sources": [
+      {
+        "id": "g-gemini-app-admin",
+        "accessed": "2026-09-30",
+        "note": "Gemini-sovellus OU/ryhmäkohtaisesti päälle tai pois; Gemini in Chrome estettävissä GeminiSettings-käytännöllä"
+      },
+      {
+        "id": "g-gemini-app-connected",
+        "accessed": "2026-09-30",
+        "note": "Workspace-, muiden Google- ja ei-Google-sovellusten yhteydet adminin hallinnassa"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "y",
+        "text": "Admin rajaa ominaisuudet ja integraatiot.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ja tarkennettu."
+      }
+    ]
   },
   "agents|g_workspace_enterprise": {
     "status": "y",
-    "text": "Admin rajaa ominaisuudet ja integraatiot.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "text": "Admin rajaa OU:ittain tai ryhmittäin Gemini-sovelluksen, sen yhteydet Workspace-, muihin Google- ja kolmansien osapuolten sovelluksiin (esim. GitHub) sekä Gemini in Chromen.",
+    "sources": [
+      {
+        "id": "g-gemini-app-admin",
+        "accessed": "2026-09-30",
+        "note": "Gemini-sovellus OU/ryhmäkohtaisesti päälle tai pois; Gemini in Chrome estettävissä"
+      },
+      {
+        "id": "g-gemini-app-connected",
+        "accessed": "2026-09-30",
+        "note": "Sovellusyhteydet adminin hallinnassa"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "y",
+        "text": "Admin rajaa ominaisuudet ja integraatiot.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ja tarkennettu."
+      }
+    ]
   },
   "agents|m_vibe_enterprise": {
     "status": "u",
@@ -176,7 +236,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -189,7 +249,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -202,7 +262,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -312,33 +372,78 @@
   },
   "audit|g_gemini_enterprise": {
     "status": "p",
-    "text": "Std/Plus: Cloud Audit Logs. Business: rajallinen hallinta.",
+    "text": "Std/Plus: Cloud Audit Logs, myös Model Armorin Data Access -lokit. Business: käyttö ei näy Admin Consolen raporteissa tai lokeissa, eikä keskusteluja voi auditoida Vaultissa.",
     "sources": [
       {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
+        "id": "g-ge-business-manage",
+        "accessed": "2026-09-30",
+        "note": "Business: käyttö ei sisälly Admin Consolen raportteihin tai lokeihin; ei Vault-auditointia"
       },
       {
-        "id": "g-innfactory-ge",
-        "accessed": "2026-09-25"
+        "id": "g-ge-model-armor",
+        "accessed": "2026-09-30",
+        "note": "Data Access -audit-lokit Model Armorin seulontapäätöksille"
+      },
+      {
+        "id": "g-ge-digicloud",
+        "accessed": "2026-09-25",
+        "note": "Cloud Audit Logs Std/Plus-editioissa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Std/Plus: Cloud Audit Logs. Business: rajallinen hallinta.",
+        "sources": [
+          {
+            "id": "g-ge-digicloud",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-innfactory-ge",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Business-edition lokituksen puute vahvistettu ensisijaisesta lähteestä ja tarkennettu."
+      }
+    ]
   },
   "audit|g_workspace_business": {
     "status": "p",
-    "text": "Vault (ja siten Gemini-keskustelujen eDiscovery) vain Business Plus -editiossa.",
+    "text": "Gemini-toimintojen audit-lokit (käyttäjä, sovellus, toiminto) Reports API:lla ja audit-työkalulla kaikissa editioissa; keskustelujen sisällön haku ja eDiscovery (Vault) vain Business Plus -editiossa.",
     "sources": [
       {
+        "id": "g-gemini-audit-logs",
+        "accessed": "2026-09-30",
+        "note": "Gemini-audit-lokit Reports API:ssa ja audit-työkalussa kaikille Workspace-asiakkaille; security investigation tool vain Enterprise-editioissa"
+      },
+      {
         "id": "g-vault-gemini",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-30",
+        "note": "Vault Gemini-sovellukselle vain Business Plus -editiossa"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Vault (ja siten Gemini-keskustelujen eDiscovery) vain Business Plus -editiossa.",
+        "sources": [
+          {
+            "id": "g-vault-gemini",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty kaikissa editioissa saatavilla olevat Gemini-audit-lokit."
+      }
+    ]
   },
   "audit|g_workspace_enterprise": {
     "status": "y",
@@ -357,7 +462,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -478,52 +583,113 @@
     "history": []
   },
   "certifications|g_gemini_enterprise": {
-    "status": "y",
-    "text": "Google Cloud -kehys (ISO 27001/27017/27018, SOC, FedRAMP).",
+    "status": "p",
+    "text": "Std/Plus: ISO 27001/27017/27018/27701, SOC 1/2/3, PCI DSS, BSI C5, HIPAA ja FedRAMP tuotekohtaisen scopen mukaan; Antigravity ei kuulu niihin. Business-editiolle sopimus takaa vain ISO 27001:n tai vastaavan, eikä laajempaa scopea ole dokumentoitu.",
     "sources": [
       {
-        "id": "x-csharp",
-        "accessed": "2026-09-25"
+        "id": "g-ge-controls",
+        "accessed": "2026-09-30",
+        "note": "Std/Plus-editioiden sertifikaattilista; Antigravity ei tue ISO-, SOC- eikä FedRAMP-sertifikaatteja"
+      },
+      {
+        "id": "g-dpa-processor",
+        "accessed": "2026-09-30",
+        "note": "Google DPA 7.4: Google ylläpitää ISO 27001 -sertifikaattia tai muita sopivia toimia"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
+    "history": [
+      {
+        "status": "y",
+        "text": "Google Cloud -kehys (ISO 27001/27017/27018, SOC, FedRAMP).",
+        "sources": [
+          {
+            "id": "x-csharp",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Ensisijainen lähde vahvisti Std/Plus-sertifikaatit; Business-editiota ei mainita ja sen DPA takaa vain ISO 27001:n, joten tila y→p."
+      }
+    ],
     "verify": true
   },
   "certifications|g_workspace_business": {
     "status": "y",
-    "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA.",
+    "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA. Gemini Notebook ja Gemini in Chrome eivät kuulu sertifiointien piiriin.",
     "sources": [
       {
         "id": "g-privacyhub",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-30",
+        "note": "Geminin sertifikaatit listattu; Gemini Notebook ja Gemini in Chrome eivät tue ISO-, SOC-, HIPAA- tai FedRAMP-vaatimuksia"
       },
       {
-        "id": "g-aiprivacy",
-        "accessed": "2026-09-25"
+        "id": "g-gemini-app-admin",
+        "accessed": "2026-09-30",
+        "note": "Compliance-taulukko: Business-editioiden Gemini-sovellus kattaa mm. BSI C5:n; Gemini in Chrome ei kuulu sertifikaatteihin"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA.",
+        "sources": [
+          {
+            "id": "g-privacyhub",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-aiprivacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty rajaus: Gemini Notebook ja Gemini in Chrome jäävät sertifikaattien ulkopuolelle."
+      }
+    ]
   },
   "certifications|g_workspace_enterprise": {
     "status": "y",
-    "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA.",
+    "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA. Gemini Notebook ja Gemini in Chrome eivät kuulu sertifiointien piiriin.",
     "sources": [
       {
         "id": "g-privacyhub",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-30",
+        "note": "Geminin sertifikaatit listattu; Gemini Notebook ja Gemini in Chrome eivät tue ISO-, SOC-, HIPAA- tai FedRAMP-vaatimuksia"
       },
       {
-        "id": "g-aiprivacy",
-        "accessed": "2026-09-25"
+        "id": "g-gemini-app-admin",
+        "accessed": "2026-09-30",
+        "note": "Compliance-taulukko Enterprise-editioille; Gemini in Chrome ei kuulu sertifikaatteihin"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA.",
+        "sources": [
+          {
+            "id": "g-privacyhub",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-aiprivacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty rajaus: Gemini Notebook ja Gemini in Chrome jäävät sertifikaattien ulkopuolelle."
+      }
+    ]
   },
   "certifications|m_vibe_enterprise": {
     "status": "y",
@@ -647,26 +813,42 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
   "cmk|g_workspace_business": {
     "status": "n",
     "text": "Ei.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-cse",
+        "accessed": "2026-09-30",
+        "note": "Client-side encryption vain Enterprise Plus-, Frontline Plus- ja Education-editioissa"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
   "cmk|g_workspace_enterprise": {
     "status": "p",
     "text": "Client-side encryption (Enterprise Plus); Gemini ei käsittele CSE-salattua sisältöä.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-cse",
+        "accessed": "2026-09-30",
+        "note": "CSE Enterprise Plus -editiossa; avaimet asiakkaan avainpalvelussa"
+      },
+      {
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Google-järjestelmillä ei ole teknistä pääsyä CSE-sisältöön, joten CSE rajaa Geminin pääsyä"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": []
   },
   "cmk|m_vibe_enterprise": {
     "status": "u",
@@ -779,38 +961,113 @@
   },
   "data_egress|g_gemini_enterprise": {
     "status": "p",
-    "text": "Omat mallit; kolmansien osapuolten agentit ja konnektorit arvioitava erikseen.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "text": "Omat mallit. Kolmansien osapuolten agentit, konnektorit ja palvelut ovat omien ehtojensa alaisia (Business-ehdot ja Google DPA rajaavat ne pois), ja Google Search -grounding kirjaa väliaikaisesti osan asiakasdatasta ja toimii vain global-alueella.",
+    "sources": [
+      {
+        "id": "g-ge-business-terms",
+        "accessed": "2026-09-30",
+        "note": "Connected Services: kolmansien osapuolten tarjoamat palvelut omien ehtojensa alaisia, Google ei vastaa niistä"
+      },
+      {
+        "id": "g-dpa-processor",
+        "accessed": "2026-09-30",
+        "note": "5.4: DPA ei koske Additional Product -palveluihin siirtyvää dataa"
+      },
+      {
+        "id": "g-ge-residency",
+        "accessed": "2026-09-30",
+        "note": "Search-grounding vain global-alueella ja kirjaa väliaikaisesti osan asiakasdatasta"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Omat mallit; kolmansien osapuolten agentit ja konnektorit arvioitava erikseen.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      }
+    ]
   },
   "data_egress|g_workspace_business": {
     "status": "y",
-    "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+    "text": "Googlen omat mallit; Search-grounding pysyy CDPA:n piirissä. Kolmansien osapuolten sovellukset (esim. GitHub) Gemini-sovelluksessa ovat eri ehtojen alaisia, mutta admin voi estää ne; uudesta alihankkijasta ilmoitetaan 30 pv etukäteen.",
     "sources": [
       {
         "id": "g-cloud-dpa",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-30",
+        "note": "CDPA 11.4: ilmoitus uudesta alihankkijasta 30 pv etukäteen ja irtisanomisoikeus"
+      },
+      {
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Search-grounding käsitellään CDPA:n mukaisesti; kolmansien osapuolten sovellukset eri ehdoin"
+      },
+      {
+        "id": "g-gemini-app-connected",
+        "accessed": "2026-09-30",
+        "note": "Admin hallitsee myös ei-Google-sovellusten, kuten GitHubin, käyttöä Geminissä"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+        "sources": [
+          {
+            "id": "g-cloud-dpa",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty kolmansien osapuolten sovellusten eri ehdot ja Search-groundingin sopimusperusta."
+      }
+    ]
   },
   "data_egress|g_workspace_enterprise": {
     "status": "y",
-    "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+    "text": "Googlen omat mallit; Search-grounding pysyy CDPA:n piirissä. Kolmansien osapuolten sovellukset (esim. GitHub) Gemini-sovelluksessa ovat eri ehtojen alaisia, mutta admin voi estää ne; uudesta alihankkijasta ilmoitetaan 30 pv etukäteen.",
     "sources": [
       {
         "id": "g-cloud-dpa",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-30",
+        "note": "CDPA 11.4: ilmoitus uudesta alihankkijasta 30 pv etukäteen ja irtisanomisoikeus"
+      },
+      {
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Search-grounding käsitellään CDPA:n mukaisesti; kolmansien osapuolten sovellukset eri ehdoin"
+      },
+      {
+        "id": "g-gemini-app-connected",
+        "accessed": "2026-09-30",
+        "note": "Admin hallitsee myös ei-Google-sovellusten käyttöä Geminissä"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Googlen omat mallit. Uudesta alihankkijasta ilmoitetaan 30 pv etukäteen, ja asiakas voi irtisanoa sopimuksen.",
+        "sources": [
+          {
+            "id": "g-cloud-dpa",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty kolmansien osapuolten sovellusten eri ehdot ja Search-groundingin sopimusperusta."
+      }
+    ]
   },
   "data_egress|m_vibe_enterprise": {
     "status": "p",
@@ -935,17 +1192,38 @@
     "history": []
   },
   "dlp|g_gemini_enterprise": {
-    "status": "n",
-    "text": "Workspacen DLP for Gemini -säännöt eivät koske Gemini Enterprise -sovellusta; muut Cloud-kontrollit arvioitava erikseen.",
+    "status": "p",
+    "text": "Model Armor ja Sensitive Data Protection -mallit seulovat kehotteet ja vastaukset, ja arkaluonteista dataa sisältävät vastaukset estetään (ei maskausta). Workspacen DLP for Gemini ja luokitustunnisteet eivät koske Gemini Enterpriseä.",
     "sources": [
       {
+        "id": "g-ge-model-armor",
+        "accessed": "2026-09-30",
+        "note": "Model Armor seuloo kehotteet ja vastaukset; SDP-suodattimen laukaisevat vastaukset estetään, dataa ei maskata"
+      },
+      {
         "id": "g-dlp-gemini",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-30",
+        "note": "DLP for Gemini -säännöt eivät koske Gemini Enterpriseä eikä Gemini in Chromea"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
+    "history": [
+      {
+        "status": "n",
+        "text": "Workspacen DLP for Gemini -säännöt eivät koske Gemini Enterprise -sovellusta; muut Cloud-kontrollit arvioitava erikseen.",
+        "sources": [
+          {
+            "id": "g-dlp-gemini",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tila n→p: Model Armor ja SDP tarjoavat kehotteiden ja vastausten tietovuodon eston. Verify, koska Business-edition kattavuus on epäselvä."
+      }
+    ],
     "verify": true
   },
   "dlp|g_workspace_business": {
@@ -961,7 +1239,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -978,7 +1256,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1094,42 +1372,97 @@
   },
   "dpa|g_gemini_enterprise": {
     "status": "y",
-    "text": "Google Cloud DPA (CDPA).",
+    "text": "Std/Plus: Google Cloud DPA (CDPA). Business-edition: Googlen yleiset käyttöehdot, Business Edition -lisäehdot ja Google Data Processing Addendum; Google on käsittelijä molemmissa.",
     "sources": [
       {
-        "id": "g-zdr",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "CDPA koskee GCP-sopimuksella hankittuja Std/Plus-editioita"
+      },
+      {
+        "id": "g-ge-business-terms",
+        "accessed": "2026-09-30",
+        "note": "Business-editioon sovelletaan Googlen käyttöehtoja ja lisäehtoja, ja sisältöä käsitellään Google DPA:n mukaisesti; ehdot eivät koske GCP-palveluita"
+      },
+      {
+        "id": "g-dpa-processor",
+        "accessed": "2026-09-30",
+        "note": "Google DPA 5.1.1: Google on käsittelijä"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Google Cloud DPA (CDPA).",
+        "sources": [
+          {
+            "id": "g-zdr",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty Business-edition erillinen sopimuspohja; aiempi lähde (ZDR-sivu) ei kattanut Business-editiota."
+      }
+    ]
   },
   "dpa|g_workspace_business": {
     "status": "y",
-    "text": "Workspace DPA ja SCC:t.",
+    "text": "Cloud Data Processing Addendum (CDPA, ent. Workspace Data Processing Amendment): Google on käsittelijä; EU-siirrot DPF:n tai SCC:iden nojalla.",
     "sources": [
       {
-        "id": "x-sonomos-gemini",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "CDPA 4.1: Google käsittelijä; liite 3: siirrot vaihtoehtoisen siirtoratkaisun (DPF) tai SCC:iden nojalla; korvaa Workspacen aiemman Data Processing Amendmentin"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Workspace DPA ja SCC:t.",
+        "sources": [
+          {
+            "id": "x-sonomos-gemini",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu CDPA:lla; sopimuksen nykyinen nimi (CDPA) päivitetty."
+      }
+    ]
   },
   "dpa|g_workspace_enterprise": {
     "status": "y",
-    "text": "Workspace DPA ja SCC:t.",
+    "text": "Cloud Data Processing Addendum (CDPA, ent. Workspace Data Processing Amendment): Google on käsittelijä; EU-siirrot DPF:n tai SCC:iden nojalla.",
     "sources": [
       {
-        "id": "x-sonomos-gemini",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "CDPA 4.1: Google käsittelijä; liite 3: siirrot DPF:n tai SCC:iden nojalla"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Workspace DPA ja SCC:t.",
+        "sources": [
+          {
+            "id": "x-sonomos-gemini",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu CDPA:lla; sopimuksen nykyinen nimi (CDPA) päivitetty."
+      }
+    ]
   },
   "dpa|m_vibe_enterprise": {
     "status": "p",
@@ -1261,16 +1594,36 @@
   },
   "exit|g_gemini_enterprise": {
     "status": "p",
-    "text": "Cloud DPA: vienti sopimuskauden aikana ja poisto viimeistään 180 pv sopimuksen päätyttyä.",
+    "text": "Std/Plus (CDPA): vienti sopimuskauden aikana ja poisto 30 pv palautusjakson jälkeen, viimeistään 180 pv. Business (Google DPA): poisto kohtuullisen pian ilman sovittua enimmäisaikaa, eikä vientityökaluja ole dokumentoitu.",
     "sources": [
       {
         "id": "g-cloud-dpa",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-30",
+        "note": "CDPA 6.2 ja 9.1: vienti sopimuskaudella, poisto enintään 180 pv palautusjakson jälkeen"
+      },
+      {
+        "id": "g-dpa-processor",
+        "accessed": "2026-09-30",
+        "note": "Google DPA 6.2: poisto niin pian kuin kohtuudella mahdollista, ilman enimmäisaikaa"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Cloud DPA: vienti sopimuskauden aikana ja poisto viimeistään 180 pv sopimuksen päätyttyä.",
+        "sources": [
+          {
+            "id": "g-cloud-dpa",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty Business-edition heikommat poisto- ja vientiehdot."
+      }
+    ]
   },
   "exit|g_workspace_business": {
     "status": "p",
@@ -1285,7 +1638,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1302,7 +1655,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1432,35 +1785,92 @@
   },
   "identity|g_gemini_enterprise": {
     "status": "p",
-    "text": "Useita IdP:itä, myös Entra ID. Käyttäjähallinnan integraatiot Std/Plus-editioissa; Business rajallisempi.",
+    "text": "Std/Plus: Google-identiteetti tai Workforce Identity Federation (OIDC/SAML, esim. Entra ID, Okta) ja SCIM-provisiointi WIF:n kautta (API alpha-vaiheessa). Business: Google-tili tai tuettu ulkoinen IdP; automaattisesta käyttäjähallinnasta ei ole dokumentaatiota.",
     "sources": [
       {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
+        "id": "g-ge-idp",
+        "accessed": "2026-09-30",
+        "note": "Kolmannen osapuolen IdP:t (Entra ID, AD FS, Okta) Workforce Identity Federationin kautta"
       },
       {
-        "id": "g-ge-softprom",
-        "accessed": "2026-09-25"
+        "id": "g-wif-scim",
+        "accessed": "2026-09-30",
+        "note": "SCIM-tenantti WIF:ssä Entra ID:lle; suositeltu mappaus Gemini Enterpriselle; v1alpha1-rajapinta"
+      },
+      {
+        "id": "g-ge-business-terms",
+        "accessed": "2026-09-30",
+        "note": "Business: kirjautuminen Google-tilillä tai tuetulla kolmannen osapuolen IdP:llä"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Useita IdP:itä, myös Entra ID. Käyttäjähallinnan integraatiot Std/Plus-editioissa; Business rajallisempi.",
+        "sources": [
+          {
+            "id": "g-ge-digicloud",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-ge-softprom",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla ja tarkennettu; verify poistettu."
+      }
+    ]
   },
   "identity|g_workspace_business": {
     "status": "y",
     "text": "Google-identiteetti tai SAML-federointi, 2SV; käyttäjien synkronointi hakemistosta.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-sso",
+        "accessed": "2026-09-30",
+        "note": "SAML- ja OIDC-pohjainen SSO kolmannen osapuolen IdP:llä"
+      },
+      {
+        "id": "g-sso-editions",
+        "accessed": "2026-09-30",
+        "note": "Kolmannen osapuolen SSO saatavilla kaikissa Business- ja Enterprise-editioissa"
+      },
+      {
+        "id": "g-directory-sync",
+        "accessed": "2026-09-30",
+        "note": "Käyttäjien ja ryhmien synkronointi AD:stä tai Entra ID:stä (beta)"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
   "identity|g_workspace_enterprise": {
     "status": "y",
     "text": "Google-identiteetti tai SAML-federointi, kontekstitietoinen pääsy; hakemistosynkronointi.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-sso",
+        "accessed": "2026-09-30",
+        "note": "SAML- ja OIDC-pohjainen SSO kolmannen osapuolen IdP:llä"
+      },
+      {
+        "id": "g-directory-sync",
+        "accessed": "2026-09-30",
+        "note": "Käyttäjien ja ryhmien synkronointi AD:stä tai Entra ID:stä (beta)"
+      },
+      {
+        "id": "g-ws-pricing",
+        "accessed": "2026-09-30",
+        "note": "Context-aware access Enterprise-editioiden ominaisuutena"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1578,16 +1988,36 @@
   },
   "incident_notification|g_gemini_enterprise": {
     "status": "p",
-    "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+    "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Sama ehto CDPA:ssa (Std/Plus) ja Business-edition Google DPA:ssa; ilmoitus asiakkaan määrittämään sähköpostiosoitteeseen.",
     "sources": [
       {
         "id": "g-cloud-dpa",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-30",
+        "note": "CDPA 7.2.1 ja 13: ilmoitus viipymättä Notification Email Addressiin"
+      },
+      {
+        "id": "g-dpa-processor",
+        "accessed": "2026-09-30",
+        "note": "Google DPA 7.2.1 ja 7.2.3: ilmoitus viipymättä asiakkaan nimeämään osoitteeseen tai muulla suoralla yhteydellä"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Ilmoitus Admin Consolessa määritettyyn osoitteeseen.",
+        "sources": [
+          {
+            "id": "g-cloud-dpa",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty Business-edition sopimusperusta (Google DPA); ilmoitusaika sama."
+      }
+    ]
   },
   "incident_notification|g_workspace_business": {
     "status": "p",
@@ -1598,7 +2028,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1611,7 +2041,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1737,31 +2167,52 @@
   },
   "inference_eu|g_gemini_enterprise": {
     "status": "p",
-    "text": "Std/Plus: käsittely EU multi-regionissa. Ei päde, kun Google Search -grounding on päällä.",
+    "text": "Std/Plus: perustoiminnot ja useimmat mallit käsitellään EU multi-regionissa. Gemini 3.1 Pro, videogenerointi, Nano Banana Pro ja Google Search -grounding toimivat vain global-alueella; Business-editiossa ei alueellista käsittelyä.",
     "sources": [
       {
-        "id": "g-ge-locations",
-        "accessed": "2026-09-25"
+        "id": "g-ge-residency",
+        "accessed": "2026-09-30",
+        "note": "MLP EU multi-regionissa; Gemini 3.1 Pro ei tuettu EU:ssa, video ja Nano Banana Pro vain global"
       },
       {
-        "id": "g-ge-controls",
-        "accessed": "2026-09-25"
+        "id": "g-ge-business-manage",
+        "accessed": "2026-09-30",
+        "note": "Business-edition ei tue data regions -asetuksia"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Std/Plus: käsittely EU multi-regionissa. Ei päde, kun Google Search -grounding on päällä.",
+        "sources": [
+          {
+            "id": "g-ge-locations",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-ge-controls",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lisätty EU-käsittelyn ulkopuolelle jäävät mallit ja ominaisuudet sekä Business-edition puute."
+      }
+    ]
   },
   "inference_eu|g_workspace_business": {
     "status": "n",
     "text": "Käsittely globaalisti.",
     "sources": [
       {
-        "id": "g-innfactory",
-        "accessed": "2026-09-25"
+        "id": "g-data-regions-compare",
+        "accessed": "2026-09-30",
+        "note": "Business-editioissa ei data region processing -käytäntöjä eikä advanced settings -asetuksia"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1770,11 +2221,17 @@
     "text": "Alueellinen Gemini-käsittely vain Enterprise Plus / Assured Controls. Monialueominaisuudet ovat oletuksena päällä; niiden poisto vie mm. Deep Researchin ja kuvageneroinnin.",
     "sources": [
       {
-        "id": "g-innfactory",
-        "accessed": "2026-09-25"
+        "id": "g-data-regions",
+        "accessed": "2026-09-30",
+        "note": "Advanced settings: Enterprise Plus, Frontline Plus tai Data Regions -lisäosa; globaalit ominaisuudet oletuksena päällä, poisto vie mm. Deep Researchin ja kuvageneroinnin"
+      },
+      {
+        "id": "g-data-regions-compare",
+        "accessed": "2026-09-30",
+        "note": "Käsittelyn aluekäytännöt vain Enterprise Plus -editiossa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1888,44 +2345,107 @@
   },
   "ip_indemnity|g_gemini_enterprise": {
     "status": "p",
-    "text": "Koulutusdatan vastuusitoumus koskee kaikkia Googlen generatiivisia palveluita; tuotetun sisällön vastuun kattavuus Gemini Enterprisessa tarkistettava.",
+    "text": "Gemini Enterprise ja NotebookLM Enterprise ovat katettujen palvelujen listalla (Cloud-sopimus, Std/Plus). Business-edition on Googlen yleisten ehtojen alainen, eikä sitoumuksen ulottumista siihen ole dokumentoitu.",
     "sources": [
       {
-        "id": "g-indemnity",
-        "accessed": "2026-09-26"
+        "id": "g-indemnified-services",
+        "accessed": "2026-09-30",
+        "note": "Gemini Enterprise ja NotebookLM Enterprise GCP:n katettujen palvelujen listalla"
+      },
+      {
+        "id": "g-ge-business-terms",
+        "accessed": "2026-09-30",
+        "note": "Business-ehdot eivät koske GCP-palveluita"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
+    "history": [
+      {
+        "status": "p",
+        "text": "Koulutusdatan vastuusitoumus koskee kaikkia Googlen generatiivisia palveluita; tuotetun sisällön vastuun kattavuus Gemini Enterprisessa tarkistettava.",
+        "sources": [
+          {
+            "id": "g-indemnity",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tuotetun sisällön kattavuus vahvistettu Std/Plus-editioille; tarkennettu Business-edition epäselvyys."
+      }
+    ],
     "verify": true
   },
   "ip_indemnity|g_workspace_business": {
-    "status": "y",
-    "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+    "status": "p",
+    "text": "Googlen generatiivisen AI:n vastuusitoumus kattaa Gemini in Workspacen (Gmail, Docs ym.) ja Vidsin; Gemini-sovellusta ja Gemini Notebookia ei mainita katettujen palvelujen listalla. Edellyttää vastuullista käyttöä.",
     "sources": [
       {
+        "id": "g-indemnified-services",
+        "accessed": "2026-09-30",
+        "note": "Workspacesta katettuina vain Gemini in Workspace ja Google Vids"
+      },
+      {
         "id": "g-indemnity",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "Kaksiosainen sitoumus ja vastuullisen käytön edellytys"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
+    "history": [
+      {
+        "status": "y",
+        "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+        "sources": [
+          {
+            "id": "g-indemnity",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tila y→p: katettujen palvelujen lista ei nimeä Gemini-sovellusta eikä Gemini Notebookia. Verify, koska kattavuuden tulkinta on epävarma."
+      }
+    ],
     "verify": true
   },
   "ip_indemnity|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+    "status": "p",
+    "text": "Googlen generatiivisen AI:n vastuusitoumus kattaa Gemini in Workspacen (Gmail, Docs ym.) ja Vidsin; Gemini-sovellusta ja Gemini Notebookia ei mainita katettujen palvelujen listalla. Edellyttää vastuullista käyttöä.",
     "sources": [
       {
+        "id": "g-indemnified-services",
+        "accessed": "2026-09-30",
+        "note": "Workspacesta katettuina vain Gemini in Workspace ja Google Vids"
+      },
+      {
         "id": "g-indemnity",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "Kaksiosainen sitoumus ja vastuullisen käytön edellytys"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
+    "history": [
+      {
+        "status": "y",
+        "text": "Googlen kaksiosainen vastuusitoumus (koulutusdata ja tuotettu sisältö) Workspacen generatiiviselle AI:lle; edellyttää vastuullista käyttöä.",
+        "sources": [
+          {
+            "id": "g-indemnity",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tila y→p: katettujen palvelujen lista ei nimeä Gemini-sovellusta eikä Gemini Notebookia. Verify, koska kattavuuden tulkinta on epävarma."
+      }
+    ],
     "verify": true
   },
   "ip_indemnity|m_vibe_enterprise": {
@@ -2036,15 +2556,17 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "Std/Plus: siirrot DPF:n tai SCC:iden nojalla"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "g-dpa-processor",
+        "accessed": "2026-09-30",
+        "note": "Business: Google sertifioitu DPF:ään, SCC:t varalla; käsittely missä tahansa Googlen toimipaikassa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2053,15 +2575,12 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "10.1: dataa voidaan käsitellä missä tahansa Googlen toimipaikassa; liite 3: siirrot DPF:n tai SCC:iden nojalla"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2070,15 +2589,12 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "10.1: dataa voidaan käsitellä missä tahansa Googlen toimipaikassa; liite 3: siirrot DPF:n tai SCC:iden nojalla"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2212,25 +2728,57 @@
   },
   "personal_accounts|g_gemini_enterprise": {
     "status": "p",
-    "text": "Hallinnoidut tilit Cloud-organisaatiossa.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "text": "Std/Plus: pääsy organisaation IdP:n tai Cloud-organisaation kautta. Business: työntekijät voivat rekisteröityä itse yritysosoitteella ja perustaa oman tiimin, joten hajanaiset tilit on koottava kutsuilla.",
+    "sources": [
+      {
+        "id": "g-ge-business-manage",
+        "accessed": "2026-09-30",
+        "note": "Käyttäjät voivat rekisteröityä itse; myöhemmin rekisteröityneillä on oma tilinsä ja tiimeihin liitytään kutsulla"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Hallinnoidut tilit Cloud-organisaatiossa.",
+        "sources": [],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lähteetön solu; lisätty Business-edition itserekisteröinnin riski."
+      }
+    ]
   },
   "personal_accounts|g_workspace_business": {
     "status": "p",
     "text": "Hallinnoidut tilit; kuluttaja-Geminin esto selain- ja verkkopolitiikoilla.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-block-consumer",
+        "accessed": "2026-09-30",
+        "note": "Kuluttajatilien esto Chrome-käytännöllä tai X-GoogApps-Allowed-Domains-otsakkeella"
+      },
+      {
+        "id": "g-gemini-app-admin",
+        "accessed": "2026-09-30",
+        "note": "Lisenssittömät käyttäjät käyttävät Geminiä kuluttajaehdoin vain, jos admin sallii"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|g_workspace_enterprise": {
     "status": "p",
     "text": "Kuten Business-editioissa.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-block-consumer",
+        "accessed": "2026-09-30",
+        "note": "Kuluttajatilien esto Chrome-käytännöllä tai verkko-otsakkeella"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2351,16 +2899,31 @@
   },
   "pricing|g_gemini_enterprise": {
     "status": "p",
-    "text": "Business 21 $ ja Standard 30 $/käyttäjä/kk; Plus vain tarjouksesta.",
+    "text": "Business 21 $/käyttäjä/kk (enint. 300 käyttäjää); Standard/Plus alkaen 30 $, tarkka Plus-hinta tarjouksesta. Rajatusti saatavilla Pay-as-you-go (ei istuinmaksua, käyttöperusteinen, väh. 20 käyttäjää) ja Frontline-lisäosa.",
     "sources": [
       {
-        "id": "x-techinsider",
-        "accessed": "2026-09-26"
+        "id": "g-ge-editions-pricing",
+        "accessed": "2026-09-30",
+        "note": "Editiot ja hinnat: Business 21 $, Standard/Plus alkaen 30 $, Pay-as-you-go 0 $ istuinmaksu, Frontline lisäosana"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Business 21 $ ja Standard 30 $/käyttäjä/kk; Plus vain tarjouksesta.",
+        "sources": [
+          {
+            "id": "x-techinsider",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty uudet Pay-as-you-go- ja Frontline-vaihtoehdot."
+      }
+    ]
   },
   "pricing|g_workspace_business": {
     "status": "y",
@@ -2371,17 +2934,37 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
   "pricing|g_workspace_enterprise": {
-    "status": "u",
-    "text": "Ei selvitetty; Enterprise-editioiden hinta tarkistettava Googlelta.",
-    "sources": [],
-    "verified": "2026-09-26",
+    "status": "n",
+    "text": "Enterprise Standard ja Plus vain tarjouksesta, ei käyttäjämäärärajoja; Gemini sisältyy. Jälleenmyyjän listahinta Enterprise Standardille, n. 27 $/käyttäjä/kk vuosisitoumuksella, on viitteellinen.",
+    "sources": [
+      {
+        "id": "g-ws-pricing",
+        "accessed": "2026-09-30",
+        "note": "Enterprise: Contact sales; ei minimi- tai maksimikäyttäjämäärää"
+      },
+      {
+        "id": "x-canagon-pricing",
+        "accessed": "2026-09-30",
+        "note": "Jälleenmyyjän hinnasto: Enterprise Standard 27 $/kk vuosisitoumuksella"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "u",
+        "text": "Ei selvitetty; Enterprise-editioiden hinta tarkistettava Googlelta.",
+        "sources": [],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tila u→n (vain tarjouksesta) ensisijaisen hinnastosivun perusteella."
+      }
+    ]
   },
   "pricing|m_vibe_enterprise": {
     "status": "n",
@@ -2495,45 +3078,105 @@
   },
   "provider_access|g_gemini_enterprise": {
     "status": "p",
-    "text": "Cloud-ehdot. Access Transparency näyttää Googlen pääsyt (Std/Plus, US/EU-alueet).",
+    "text": "Std/Plus: Access Transparency näyttää Googlen pääsyt, mutta vain US/EU-alueilla, ei Google Search -groundingin kanssa eikä Antigravityssa. Business-editiolle vastaavaa kontrollia ei ole dokumentoitu.",
     "sources": [
       {
         "id": "g-ge-controls",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-30",
+        "note": "AXT ei tuettu global-alueella eikä Search-groundingin kanssa; Antigravity ei tue AXT:tä"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Cloud-ehdot. Access Transparency näyttää Googlen pääsyt (Std/Plus, US/EU-alueet).",
+        "sources": [
+          {
+            "id": "g-ge-controls",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Vahvistettu ensisijaisesta lähteestä; lisätty Search-grounding- ja Antigravity-poikkeukset sekä Business-edition puute."
+      }
+    ]
   },
   "provider_access|g_workspace_business": {
-    "status": "y",
-    "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
+    "status": "p",
+    "text": "Googlen henkilöstö saa käsitellä dataa vain välttämättömiin tehtäviin, eikä sisältöä tarkasteta ihmisvoimin koulutusta varten. Business-editioissa ei ole Access Transparency- eikä Access Approvals -kontrolleja, joten pääsyä ei voi seurata eikä estää.",
     "sources": [
       {
-        "id": "g-aiprivacy",
-        "accessed": "2026-09-25"
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "CDPA 7.1.2: pääsy asiakasdataan vain ohjeiden noudattamiseksi välttämättömin osin"
+      },
+      {
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Sisältöä ei tarkasteta ihmisvoimin eikä käytetä koulutukseen ilman lupaa"
+      },
+      {
+        "id": "g-access-approvals-gemini",
+        "accessed": "2026-09-30",
+        "note": "Access Transparency vaatii Enterprise Plus -lisenssin, Access Approvals Assured Controls -lisäosan"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "y",
+        "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
+        "sources": [
+          {
+            "id": "g-aiprivacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tila y→p: pääsyn näkyvyys- ja hyväksyntäkontrollit eivät ole saatavilla Business-editioissa."
+      }
+    ]
   },
   "provider_access|g_workspace_enterprise": {
-    "status": "y",
-    "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
+    "status": "p",
+    "text": "Enterprise Plus: Access Transparency lokittaa Googlen henkilöstön pääsyt myös Gemini-kehotteisiin ja -vastauksiin. Pääsyn ennakkohyväksyntä (Access Approvals) vaatii Assured Controls -lisäosan; Enterprise Standardissa ei kumpaakaan.",
     "sources": [
       {
-        "id": "g-aiprivacy",
-        "accessed": "2026-09-25"
+        "id": "g-access-approvals-gemini",
+        "accessed": "2026-09-30",
+        "note": "Gemini-data kuuluu Access Transparencyn, Access Managementin ja Access Approvalsin piiriin; editio- ja lisäosavaatimukset"
+      },
+      {
+        "id": "g-cloud-dpa",
+        "accessed": "2026-09-30",
+        "note": "CDPA 7.1.2: henkilöstön pääsy vain välttämättömiin tehtäviin"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "y",
+        "text": "Google: dataa ei tarkasteta ihmisvoimin ilman lupaa.",
+        "sources": [
+          {
+            "id": "g-aiprivacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Tila y→p: asiakkaan hyväksyntä pääsylle edellyttää lisäosaa, ja näkyvyys vain Enterprise Plus -editiossa."
+      }
+    ]
   },
   "provider_access|m_vibe_enterprise": {
     "status": "p",
@@ -2642,26 +3285,62 @@
   },
   "rbac|g_gemini_enterprise": {
     "status": "y",
-    "text": "Std/Plus: VPC Service Controls estää pääsyn luottamattomista verkoista.",
+    "text": "Std/Plus: agenttien käyttö rajataan käyttäjille, ryhmille tai WIF-ryhmille IAM-roolein, ja ominaisuuksia (esim. mallit ja kuvageneraattori) kytketään sovellustasolla; VPC-SC rajaa verkkopääsyä. Business: hallinta Services Admin -roolilla, rajatummin.",
     "sources": [
       {
-        "id": "g-ge-controls",
-        "accessed": "2026-09-25"
+        "id": "g-ge-share-agents",
+        "accessed": "2026-09-30",
+        "note": "Agenttien jakaminen käyttäjille, ryhmille, WIF-ryhmille tai koko organisaatiolle IAM-roolein"
       },
       {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
+        "id": "g-ge-residency",
+        "accessed": "2026-09-30",
+        "note": "Mallit ja kuvageneraattorit kytkettävissä päälle tai pois web-sovelluksen asetuksista"
+      },
+      {
+        "id": "g-ge-controls",
+        "accessed": "2026-09-30",
+        "note": "VPC Service Controls Std/Plus-editioissa"
+      },
+      {
+        "id": "g-ge-business-manage",
+        "accessed": "2026-09-30",
+        "note": "Business: hallinta vaatii Services Admin -roolin tai Gemini Enterprise -hallintaoikeuden"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Std/Plus: VPC Service Controls estää pääsyn luottamattomista verkoista.",
+        "sources": [
+          {
+            "id": "g-ge-controls",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-ge-digicloud",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Solu arvioi aiemmin vain verkkorajausta; lisätty rivin rajauksen mukainen ryhmäkohtainen pääsynhallinta ensisijaisista lähteistä."
+      }
+    ]
   },
   "rbac|g_workspace_business": {
     "status": "y",
     "text": "Ominaisuuksien rajaus organisaatioyksiköittäin ja ryhmittäin.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "sources": [
+      {
+        "id": "g-gemini-app-admin",
+        "accessed": "2026-09-30",
+        "note": "Gemini-sovelluksen käyttö ja asetukset rajattavissa OU:n tai konfiguraatioryhmän mukaan"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2674,7 +3353,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2808,16 +3487,41 @@
   },
   "retention|g_gemini_enterprise": {
     "status": "p",
-    "text": "Hallinta Cloud-projektin kautta; auditointi ja CMEK Std/Plus-editioissa.",
+    "text": "Std/Plus: hallinta Cloud-projektissa ja CMEK US/EU-alueilla; Google poistaa käyttäjän pyytämän datan 60 päivässä. Business: ei Vault-säilytystä, eikä admin voi estää käyttäjiä poistamasta keskusteluja.",
     "sources": [
       {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
+        "id": "g-ge-security",
+        "accessed": "2026-09-30",
+        "note": "Käyttäjän pyytämä data poistetaan 60 päivässä"
+      },
+      {
+        "id": "g-ge-controls",
+        "accessed": "2026-09-30",
+        "note": "CMEK vain US/EU multi-region -rajapinnoissa"
+      },
+      {
+        "id": "g-ge-business-manage",
+        "accessed": "2026-09-30",
+        "note": "Business: adminit eivät voi auditoida tai asettaa säilytystä keskusteluille eivätkä estää poistoa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Hallinta Cloud-projektin kautta; auditointi ja CMEK Std/Plus-editioissa.",
+        "sources": [
+          {
+            "id": "g-ge-digicloud",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty Business-edition säilytysrajoitukset ja 60 pv:n poistoaika."
+      }
+    ]
   },
   "retention|g_workspace_business": {
     "status": "p",
@@ -2828,7 +3532,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2845,7 +3549,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2977,34 +3681,84 @@
   },
   "sla|g_gemini_enterprise": {
     "status": "p",
-    "text": "Julkaistu Cloud-SLA.",
+    "text": "Std/Plus: julkaistu SLA, Assistant-chat 99,5 % ja haku 99,9 % hyvityksin. Business-editiolle ei ole dokumentoitu SLA:ta.",
     "sources": [
       {
-        "id": "g-innfactory-ge",
-        "accessed": "2026-09-25"
+        "id": "g-ge-sla",
+        "accessed": "2026-09-30",
+        "note": "Stream Assist (chat) 99,5 %, Search 99,9 %; koskee GCP-sopimusta"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Julkaistu Cloud-SLA.",
+        "sources": [
+          {
+            "id": "g-innfactory-ge",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty SLA-tasot ja Business-edition puute."
+      }
+    ]
   },
   "sla|g_workspace_business": {
     "status": "p",
-    "text": "Workspace SLA.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "text": "Workspace SLA 99,9 % hyvityksin kattaa mm. Gmailin, Docsin ja Driven, mutta ei Gemini-sovellusta, Gemini Notebookia eikä Studiota.",
+    "sources": [
+      {
+        "id": "g-ws-sla",
+        "accessed": "2026-09-30",
+        "note": "Covered Services -luettelo 31.8.2026: ei Gemini-sovellusta, Gemini Notebookia eikä Studiota"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Workspace SLA.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu; lisätty SLA:n kattavuusraja."
+      }
+    ]
   },
   "sla|g_workspace_enterprise": {
     "status": "p",
-    "text": "Workspace SLA.",
-    "sources": [],
-    "verified": "2026-09-25",
+    "text": "Workspace SLA 99,9 % hyvityksin kattaa mm. Gmailin, Docsin ja Driven, mutta ei Gemini-sovellusta, Gemini Notebookia eikä Studiota. Enterprise-editioissa Enhanced Support, päivitettävissä Premiumiin.",
+    "sources": [
+      {
+        "id": "g-ws-sla",
+        "accessed": "2026-09-30",
+        "note": "Covered Services -luettelo ei sisällä Gemini-sovellusta, Gemini Notebookia eikä Studiota"
+      },
+      {
+        "id": "g-ws-pricing",
+        "accessed": "2026-09-30",
+        "note": "Enterprise sisältää Enhanced Supportin; päivitys Premium-tukeen maksullinen"
+      }
+    ],
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Workspace SLA.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu; lisätty SLA:n kattavuusraja ja tukitaso."
+      }
+    ]
   },
   "sla|m_vibe_enterprise": {
     "status": "p",
@@ -3109,48 +3863,118 @@
   },
   "storage_eu|g_gemini_enterprise": {
     "status": "p",
-    "text": "Std/Plus: EU multi-region. Business: ei dokumentoitu.",
+    "text": "Std/Plus: EU multi-region levossa olevalle datalle; poikkeuksia ovat mm. Gemini 3.1 Pro, videogenerointi, Nano Banana Pro ja Google Search -grounding, jotka toimivat vain global-alueella. Business-edition ei tue data regions -asetuksia.",
     "sources": [
       {
-        "id": "g-ge-locations",
-        "accessed": "2026-09-25"
+        "id": "g-ge-residency",
+        "accessed": "2026-09-30",
+        "note": "At-rest DRZ EU multi-regionissa; ominaisuuskohtaiset rajoitukset taulukossa"
       },
       {
-        "id": "g-ge-controls",
-        "accessed": "2026-09-25"
+        "id": "g-ge-business-manage",
+        "accessed": "2026-09-30",
+        "note": "Business-edition ei tue data regions -asetuksia"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Std/Plus: EU multi-region. Business: ei dokumentoitu.",
+        "sources": [
+          {
+            "id": "g-ge-locations",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "g-ge-controls",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Business-edition vahvistettu ilman data regions -tukea; lisätty EU-alueen ulkopuolelle jäävät ominaisuudet; verify poistettu."
+      }
+    ]
   },
   "storage_eu|g_workspace_business": {
     "status": "p",
-    "text": "Data regions levossa olevalle datalle saatavilla osassa editioita.",
+    "text": "Business Standard ja Plus: koko organisaation data region -käytäntö (EU) kattaa myös Gemini-kehotteet ja -vastaukset levossa; Business Starterissa ei. Gemini Notebook, lokit ja välimuisti jäävät piirin ulkopuolelle.",
     "sources": [
       {
-        "id": "g-innfactory",
-        "accessed": "2026-09-25"
+        "id": "g-data-regions-compare",
+        "accessed": "2026-09-30",
+        "note": "Yhden levossa olevan datan aluekäytännön voi asettaa Business Standardissa ja Plussassa, ei Starterissa"
+      },
+      {
+        "id": "g-data-regions-coverage",
+        "accessed": "2026-09-30",
+        "note": "Gemini App ja Workspace with Gemini: kehotteet ja vastaukset katettu; lokit ja välimuisti eivät"
+      },
+      {
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Data region -asetukset eivät koske Gemini Notebookin dataa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": [
+      {
+        "status": "p",
+        "text": "Data regions levossa olevalle datalle saatavilla osassa editioita.",
+        "sources": [
+          {
+            "id": "g-innfactory",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; tarkennettu editiot ja poikkeukset, verify poistettu."
+      }
+    ]
   },
   "storage_eu|g_workspace_enterprise": {
     "status": "y",
-    "text": "Data regions.",
+    "text": "Data regions (EU) kattaa myös Gemini-kehotteet ja -vastaukset; Enterprise Standard koko organisaatiolle, Enterprise Plus myös OU- ja ryhmäkohtaisesti. Gemini Notebook, lokit ja välimuisti jäävät piirin ulkopuolelle.",
     "sources": [
       {
-        "id": "g-innfactory",
-        "accessed": "2026-09-25"
+        "id": "g-data-regions-compare",
+        "accessed": "2026-09-30",
+        "note": "Enterprise Standard: yksi käytäntö; Enterprise Plus: OU-/ryhmäkohtaiset käytännöt"
+      },
+      {
+        "id": "g-data-regions-coverage",
+        "accessed": "2026-09-30",
+        "note": "Gemini-kehotteet ja -vastaukset katettu; lokit ja välimuisti eivät"
+      },
+      {
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Data region -asetukset eivät koske Gemini Notebookin dataa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "y",
+        "text": "Data regions.",
+        "sources": [
+          {
+            "id": "g-innfactory",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty editioerot ja poikkeukset."
+      }
+    ]
   },
   "storage_eu|m_vibe_enterprise": {
     "status": "y",
@@ -3282,11 +4106,12 @@
     "text": "Ei. Dataa ei käytetä Googlen eikä muiden asiakkaiden malleihin.",
     "sources": [
       {
-        "id": "g-ge-digicloud",
-        "accessed": "2026-09-25"
+        "id": "g-ge-editions-pricing",
+        "accessed": "2026-09-30",
+        "note": "FAQ: Business-, Standard- ja Plus-editioiden kehotteita, vastauksia tai muuta dataa ei käytetä Googlen tai muiden asiakkaiden mallien koulutukseen"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3299,7 +4124,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3312,7 +4137,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3446,26 +4271,42 @@
     "text": "Konnektoreiden kautta myös M365 ja muut SaaS-palvelut, käyttäjän oikeuksin.",
     "sources": [
       {
-        "id": "g-ge-softprom",
-        "accessed": "2026-09-25"
+        "id": "g-ge-editions-pricing",
+        "accessed": "2026-09-30",
+        "note": "Konnektorit mm. Google Driveen, OneDriveen, SharePointiin, HubSpotiin ja Jiraan"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
   "visibility|g_workspace_business": {
     "status": "p",
-    "text": "Kaikki Gmailissa ja Drivessa, mihin käyttäjällä on pääsy.",
+    "text": "Kaikki Gmailissa, Drivessa, Kalenterissa ja Chatissa, mihin käyttäjällä on pääsy (Workspace Intelligence); admin voi kytkeä yksittäisiä lähteitä pois.",
     "sources": [
       {
-        "id": "x-strac-gemini",
-        "accessed": "2026-09-25"
+        "id": "g-privacyhub",
+        "accessed": "2026-09-30",
+        "note": "Workspace Intelligence hakee Gmailista, Drivesta, Kalenterista ja Chatista käyttäjän oikeuksin; admin voi poistaa lähteitä käytöstä"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
-    "history": []
+    "history": [
+      {
+        "status": "p",
+        "text": "Kaikki Gmailissa ja Drivessa, mihin käyttäjällä on pääsy.",
+        "sources": [
+          {
+            "id": "x-strac-gemini",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-09-30",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty Kalenteri, Chat ja adminin lähdekohtainen rajaus."
+      }
+    ]
   },
   "visibility|g_workspace_enterprise": {
     "status": "p",
@@ -3484,7 +4325,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-09-30",
     "changed": "2026-09-30",
     "history": []
   },
