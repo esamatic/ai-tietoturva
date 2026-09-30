@@ -9,7 +9,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -23,7 +23,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -37,7 +37,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -46,7 +46,7 @@
     "text": "Admin rajaa ominaisuudet ja integraatiot.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -55,7 +55,7 @@
     "text": "Admin rajaa ominaisuudet ja integraatiot.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -69,7 +69,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "agents|m_vibe_team": {
@@ -82,7 +82,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "agents|ms_copilot": {
@@ -95,7 +95,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -109,7 +109,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -123,7 +123,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -137,7 +137,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -151,7 +151,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|a_claude_team": {
@@ -164,7 +164,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|g_gemini_enterprise": {
@@ -177,7 +177,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|g_workspace_business": {
@@ -190,7 +190,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|g_workspace_enterprise": {
@@ -203,7 +203,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|m_vibe_enterprise": {
@@ -216,7 +216,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|m_vibe_team": {
@@ -229,7 +229,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|ms_copilot": {
@@ -242,7 +242,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|ms_copilot_chat": {
@@ -255,7 +255,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|o_chatgpt_business": {
@@ -268,7 +268,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ai_act|o_chatgpt_enterprise": {
@@ -281,7 +281,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|a_claude_enterprise": {
@@ -294,7 +294,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|a_claude_team": {
@@ -307,7 +307,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|g_gemini_enterprise": {
@@ -324,7 +324,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|g_workspace_business": {
@@ -337,18 +337,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Admin-konsolin lokit; laajemmat compliance-työkalut ylemmissä editioissa.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Editiorajaus varmistettu."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "audit|g_workspace_enterprise": {
     "status": "y",
@@ -368,18 +358,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "y",
-        "text": "Audit-lokit, Vault ja DLP.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Lähteet lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "audit|m_vibe_enterprise": {
     "status": "p",
@@ -391,7 +371,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|m_vibe_team": {
@@ -404,7 +384,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|ms_copilot": {
@@ -421,7 +401,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|ms_copilot_chat": {
@@ -434,7 +414,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|o_chatgpt_business": {
@@ -447,7 +427,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "audit|o_chatgpt_enterprise": {
@@ -460,7 +440,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|a_claude_enterprise": {
@@ -477,7 +457,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|a_claude_team": {
@@ -494,7 +474,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|g_gemini_enterprise": {
@@ -507,7 +487,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -525,7 +505,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|g_workspace_enterprise": {
@@ -542,7 +522,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|m_vibe_enterprise": {
@@ -555,7 +535,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|m_vibe_team": {
@@ -568,7 +548,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|ms_copilot": {
@@ -581,7 +561,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|ms_copilot_chat": {
@@ -594,7 +574,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|o_chatgpt_business": {
@@ -607,7 +587,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "certifications|o_chatgpt_enterprise": {
@@ -620,7 +600,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|a_claude_enterprise": {
@@ -633,7 +613,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -647,7 +627,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|g_gemini_enterprise": {
@@ -668,7 +648,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|g_workspace_business": {
@@ -676,7 +656,7 @@
     "text": "Ei.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|g_workspace_enterprise": {
@@ -684,7 +664,7 @@
     "text": "Client-side encryption (Enterprise Plus); Gemini ei käsittele CSE-salattua sisältöä.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -698,7 +678,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|m_vibe_team": {
@@ -706,7 +686,7 @@
     "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|ms_copilot": {
@@ -719,18 +699,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "M365 Customer Key (lisälisenssi).",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Customer Keyn kattavuus Copilot-datalle varmistettu."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "cmk|ms_copilot_chat": {
@@ -743,18 +713,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "M365 Customer Key (lisälisenssi); kattavuus Copilot-datalle kannattaa tarkistaa.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Customer Keyn kattavuus Copilot-datalle varmistettu."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "cmk|o_chatgpt_business": {
@@ -767,7 +727,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "cmk|o_chatgpt_enterprise": {
@@ -780,7 +740,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "data_egress|a_claude_enterprise": {
@@ -797,18 +757,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "data_egress|a_claude_team": {
     "status": "p",
@@ -824,25 +774,15 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Alihankkijalista Trust Centerissä; konnektorit arvioitava erikseen.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "data_egress|g_gemini_enterprise": {
     "status": "p",
     "text": "Omat mallit; kolmansien osapuolten agentit ja konnektorit arvioitava erikseen.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -856,18 +796,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "y",
-        "text": "Googlen omat mallit omalla infrastruktuurilla.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "data_egress|g_workspace_enterprise": {
     "status": "y",
@@ -879,18 +809,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "y",
-        "text": "Googlen omat mallit omalla infrastruktuurilla.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: DPA:n alihankkijaehdot lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "data_egress|m_vibe_enterprise": {
     "status": "p",
@@ -902,7 +822,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "data_egress|m_vibe_team": {
@@ -919,7 +839,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "data_egress|ms_copilot": {
@@ -936,23 +856,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
-        "sources": [
-          {
-            "id": "ms-privacy",
-            "accessed": "2026-09-25"
-          }
-        ],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Web-haun DLP-kontrolli lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "data_egress|ms_copilot_chat": {
     "status": "p",
@@ -968,23 +873,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "OpenAI ja Anthropic alihankkijoina; Anthropic-mallit admin voi kytkeä pois (lisäehdot).",
-        "sources": [
-          {
-            "id": "ms-privacy",
-            "accessed": "2026-09-25"
-          }
-        ],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Web-haun DLP-kontrolli lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "data_egress|o_chatgpt_business": {
     "status": "p",
@@ -996,7 +886,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -1010,7 +900,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -1028,7 +918,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|a_claude_team": {
@@ -1041,7 +931,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|g_gemini_enterprise": {
@@ -1054,7 +944,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -1072,7 +962,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|g_workspace_enterprise": {
@@ -1089,7 +979,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|m_vibe_enterprise": {
@@ -1097,7 +987,7 @@
     "text": "Natiivia DLP:tä tai DLP-integraatioita ei löytynyt dokumentaatiosta.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|m_vibe_team": {
@@ -1105,7 +995,7 @@
     "text": "Natiivia DLP:tä tai DLP-integraatioita ei löytynyt dokumentaatiosta.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|ms_copilot": {
@@ -1126,7 +1016,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|ms_copilot_chat": {
@@ -1143,7 +1033,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|o_chatgpt_business": {
@@ -1156,7 +1046,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dlp|o_chatgpt_enterprise": {
@@ -1173,7 +1063,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|a_claude_enterprise": {
@@ -1186,7 +1076,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|a_claude_team": {
@@ -1199,7 +1089,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|g_gemini_enterprise": {
@@ -1212,7 +1102,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|g_workspace_business": {
@@ -1225,7 +1115,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|g_workspace_enterprise": {
@@ -1238,7 +1128,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|m_vibe_enterprise": {
@@ -1255,7 +1145,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|m_vibe_team": {
@@ -1272,7 +1162,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|ms_copilot": {
@@ -1285,7 +1175,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|ms_copilot_chat": {
@@ -1302,7 +1192,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|o_chatgpt_business": {
@@ -1315,7 +1205,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "dpa|o_chatgpt_enterprise": {
@@ -1332,7 +1222,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|a_claude_enterprise": {
@@ -1349,7 +1239,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|a_claude_team": {
@@ -1366,7 +1256,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|g_gemini_enterprise": {
@@ -1379,7 +1269,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|g_workspace_business": {
@@ -1396,7 +1286,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|g_workspace_enterprise": {
@@ -1413,7 +1303,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|m_vibe_enterprise": {
@@ -1426,7 +1316,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|m_vibe_team": {
@@ -1439,7 +1329,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|ms_copilot": {
@@ -1456,7 +1346,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|ms_copilot_chat": {
@@ -1473,7 +1363,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|o_chatgpt_business": {
@@ -1490,7 +1380,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "exit|o_chatgpt_enterprise": {
@@ -1511,7 +1401,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|a_claude_enterprise": {
@@ -1524,7 +1414,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|a_claude_team": {
@@ -1537,7 +1427,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|g_gemini_enterprise": {
@@ -1554,7 +1444,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -1563,7 +1453,7 @@
     "text": "Google-identiteetti tai SAML-federointi, 2SV; käyttäjien synkronointi hakemistosta.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|g_workspace_enterprise": {
@@ -1571,7 +1461,7 @@
     "text": "Google-identiteetti tai SAML-federointi, kontekstitietoinen pääsy; hakemistosynkronointi.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|m_vibe_enterprise": {
@@ -1588,7 +1478,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|m_vibe_team": {
@@ -1605,7 +1495,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|ms_copilot": {
@@ -1618,7 +1508,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|ms_copilot_chat": {
@@ -1631,7 +1521,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|o_chatgpt_business": {
@@ -1644,7 +1534,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "identity|o_chatgpt_enterprise": {
@@ -1657,7 +1547,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|a_claude_enterprise": {
@@ -1670,7 +1560,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|a_claude_team": {
@@ -1683,7 +1573,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|g_gemini_enterprise": {
@@ -1696,7 +1586,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|g_workspace_business": {
@@ -1709,7 +1599,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|g_workspace_enterprise": {
@@ -1722,7 +1612,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|m_vibe_enterprise": {
@@ -1739,7 +1629,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|m_vibe_team": {
@@ -1756,7 +1646,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|ms_copilot": {
@@ -1769,7 +1659,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|ms_copilot_chat": {
@@ -1782,7 +1672,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|o_chatgpt_business": {
@@ -1799,7 +1689,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "incident_notification|o_chatgpt_enterprise": {
@@ -1816,7 +1706,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|a_claude_enterprise": {
@@ -1829,7 +1719,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|a_claude_team": {
@@ -1842,7 +1732,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|g_gemini_enterprise": {
@@ -1859,7 +1749,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|g_workspace_business": {
@@ -1872,7 +1762,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|g_workspace_enterprise": {
@@ -1885,7 +1775,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|m_vibe_enterprise": {
@@ -1902,7 +1792,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|m_vibe_team": {
@@ -1915,7 +1805,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|ms_copilot": {
@@ -1928,7 +1818,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|ms_copilot_chat": {
@@ -1941,7 +1831,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|o_chatgpt_business": {
@@ -1954,7 +1844,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "inference_eu|o_chatgpt_enterprise": {
@@ -1967,7 +1857,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "ip_indemnity|a_claude_enterprise": {
@@ -1980,18 +1870,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Kaupallisten ehtojen tekijänoikeusvastuu; laajuus neuvoteltavissa.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Commercial Terms -vastuu vahvistettu."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "ip_indemnity|a_claude_team": {
     "status": "y",
@@ -2003,18 +1883,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Kaupallisten ehtojen tekijänoikeusvastuu.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Commercial Terms -vastuu vahvistettu."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "ip_indemnity|g_gemini_enterprise": {
     "status": "p",
@@ -2026,18 +1896,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Google Cloudin generatiivisen AI:n vastuusitoumus.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Lähde löytyi, kattavuus epäselvä."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "ip_indemnity|g_workspace_business": {
@@ -2050,18 +1910,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Googlen generatiivisen AI:n vastuusitoumus Workspace-asiakkaille.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Lähde löytyi (2023, tuotenimet muuttuneet)."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "ip_indemnity|g_workspace_enterprise": {
@@ -2074,18 +1924,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Googlen generatiivisen AI:n vastuusitoumus Workspace-asiakkaille.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Lähde löytyi (2023, tuotenimet muuttuneet)."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "ip_indemnity|m_vibe_enterprise": {
@@ -2093,7 +1933,7 @@
     "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ip_indemnity|m_vibe_team": {
@@ -2101,7 +1941,7 @@
     "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "ip_indemnity|ms_copilot": {
@@ -2114,7 +1954,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "ip_indemnity|ms_copilot_chat": {
@@ -2127,7 +1967,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "ip_indemnity|o_chatgpt_business": {
@@ -2140,18 +1980,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "u",
-        "text": "Copyright Shield; kattavuus Businessille epäselvä.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Toissijainen lähde vahvistaa kattavuuden Team/Business-tasolle."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "ip_indemnity|o_chatgpt_enterprise": {
@@ -2164,18 +1994,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Copyright Shield.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Lähde lisätty."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "jurisdiction|a_claude_enterprise": {
     "status": "p",
@@ -2191,7 +2011,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|a_claude_team": {
@@ -2208,7 +2028,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|g_gemini_enterprise": {
@@ -2225,7 +2045,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|g_workspace_business": {
@@ -2242,7 +2062,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|g_workspace_enterprise": {
@@ -2259,7 +2079,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|m_vibe_enterprise": {
@@ -2276,7 +2096,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|m_vibe_team": {
@@ -2293,7 +2113,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|ms_copilot": {
@@ -2310,7 +2130,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|ms_copilot_chat": {
@@ -2327,7 +2147,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|o_chatgpt_business": {
@@ -2344,7 +2164,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "jurisdiction|o_chatgpt_enterprise": {
@@ -2361,7 +2181,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|a_claude_enterprise": {
@@ -2374,7 +2194,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|a_claude_team": {
@@ -2387,7 +2207,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|g_gemini_enterprise": {
@@ -2395,7 +2215,7 @@
     "text": "Hallinnoidut tilit Cloud-organisaatiossa.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|g_workspace_business": {
@@ -2403,7 +2223,7 @@
     "text": "Hallinnoidut tilit; kuluttaja-Geminin esto selain- ja verkkopolitiikoilla.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|g_workspace_enterprise": {
@@ -2411,7 +2231,7 @@
     "text": "Kuten Business-editioissa.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|m_vibe_enterprise": {
@@ -2428,7 +2248,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|m_vibe_team": {
@@ -2441,7 +2261,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|ms_copilot": {
@@ -2449,7 +2269,7 @@
     "text": "Entra- ja tenant-rajaukset.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|ms_copilot_chat": {
@@ -2462,7 +2282,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|o_chatgpt_business": {
@@ -2475,7 +2295,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "personal_accounts|o_chatgpt_enterprise": {
@@ -2492,7 +2312,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|a_claude_enterprise": {
@@ -2509,7 +2329,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|a_claude_team": {
@@ -2526,7 +2346,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|g_gemini_enterprise": {
@@ -2539,7 +2359,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|g_workspace_business": {
@@ -2552,7 +2372,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|g_workspace_enterprise": {
@@ -2560,7 +2380,7 @@
     "text": "Ei selvitetty; Enterprise-editioiden hinta tarkistettava Googlelta.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|m_vibe_enterprise": {
@@ -2573,7 +2393,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|m_vibe_team": {
@@ -2586,7 +2406,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|ms_copilot": {
@@ -2603,7 +2423,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|ms_copilot_chat": {
@@ -2616,7 +2436,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|o_chatgpt_business": {
@@ -2629,7 +2449,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "pricing|o_chatgpt_enterprise": {
@@ -2642,7 +2462,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "provider_access|a_claude_enterprise": {
@@ -2655,7 +2475,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2669,7 +2489,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2683,7 +2503,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2697,7 +2517,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2711,7 +2531,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2725,7 +2545,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2739,7 +2559,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2753,7 +2573,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2767,7 +2587,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2781,7 +2601,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2790,7 +2610,7 @@
     "text": "Valtuutettu henkilöstö voi käsitellä väärinkäytösepäilyjä ja tukipyyntöjä.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -2804,7 +2624,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|a_claude_team": {
@@ -2817,7 +2637,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|g_gemini_enterprise": {
@@ -2834,7 +2654,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|g_workspace_business": {
@@ -2842,7 +2662,7 @@
     "text": "Ominaisuuksien rajaus organisaatioyksiköittäin ja ryhmittäin.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|g_workspace_enterprise": {
@@ -2855,7 +2675,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|m_vibe_enterprise": {
@@ -2876,7 +2696,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|m_vibe_team": {
@@ -2893,7 +2713,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|ms_copilot": {
@@ -2906,7 +2726,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|ms_copilot_chat": {
@@ -2919,7 +2739,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|o_chatgpt_business": {
@@ -2932,7 +2752,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "rbac|o_chatgpt_enterprise": {
@@ -2945,7 +2765,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|a_claude_enterprise": {
@@ -2966,7 +2786,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|a_claude_team": {
@@ -2983,7 +2803,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|g_gemini_enterprise": {
@@ -2996,7 +2816,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|g_workspace_business": {
@@ -3009,18 +2829,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Perustason hallinta. Laajempi säilytys ja eDiscovery (Vault) ylemmissä editioissa.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Vaultin Gemini-tuki ja editiot varmistettu."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "retention|g_workspace_enterprise": {
     "status": "y",
@@ -3036,18 +2846,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Vault ja säilytyskäytännöt käytössä; Gemini-keskustelujen kattavuus kannattaa tarkistaa.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Vaultin Gemini-tuki varmistettu."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "retention|m_vibe_enterprise": {
     "status": "y",
@@ -3063,7 +2863,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|m_vibe_team": {
@@ -3080,7 +2880,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3094,7 +2894,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|ms_copilot_chat": {
@@ -3111,7 +2911,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|o_chatgpt_business": {
@@ -3128,7 +2928,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "retention|o_chatgpt_enterprise": {
@@ -3145,7 +2945,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "sla|a_claude_enterprise": {
@@ -3158,7 +2958,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3172,7 +2972,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "sla|g_gemini_enterprise": {
@@ -3185,7 +2985,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "sla|g_workspace_business": {
@@ -3193,7 +2993,7 @@
     "text": "Workspace SLA.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3202,7 +3002,7 @@
     "text": "Workspace SLA.",
     "sources": [],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3216,7 +3016,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "sla|m_vibe_team": {
@@ -3224,7 +3024,7 @@
     "text": "Ei mainittua SLA:ta.",
     "sources": [],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "sla|ms_copilot": {
@@ -3237,18 +3037,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "M365-palvelutasosopimus.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Toissijainen lähde: Copilot ei kuulu M365:n rahallisesti taattuun SLA:han."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "sla|ms_copilot_chat": {
@@ -3261,18 +3051,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "M365-palvelutasosopimus.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Toissijainen lähde: Copilot ei kuulu M365:n rahallisesti taattuun SLA:han."
-      }
-    ],
+    "changed": "2026-09-30",
+    "history": [],
     "verify": true
   },
   "sla|o_chatgpt_business": {
@@ -3285,7 +3065,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "sla|o_chatgpt_enterprise": {
@@ -3298,7 +3078,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|a_claude_enterprise": {
@@ -3311,7 +3091,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|a_claude_team": {
@@ -3324,7 +3104,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|g_gemini_enterprise": {
@@ -3341,7 +3121,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3355,7 +3135,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3369,7 +3149,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|m_vibe_enterprise": {
@@ -3382,7 +3162,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|m_vibe_team": {
@@ -3395,7 +3175,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|ms_copilot": {
@@ -3408,7 +3188,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|ms_copilot_chat": {
@@ -3421,7 +3201,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "storage_eu|o_chatgpt_business": {
@@ -3438,7 +3218,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3460,7 +3240,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|a_claude_enterprise": {
@@ -3477,7 +3257,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|a_claude_team": {
@@ -3494,7 +3274,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|g_gemini_enterprise": {
@@ -3507,7 +3287,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|g_workspace_business": {
@@ -3520,7 +3300,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|g_workspace_enterprise": {
@@ -3533,7 +3313,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|m_vibe_enterprise": {
@@ -3550,7 +3330,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|m_vibe_team": {
@@ -3567,7 +3347,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": [],
     "verify": true
   },
@@ -3581,7 +3361,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|ms_copilot_chat": {
@@ -3598,7 +3378,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|o_chatgpt_business": {
@@ -3615,7 +3395,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "training|o_chatgpt_enterprise": {
@@ -3632,7 +3412,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|a_claude_enterprise": {
@@ -3645,7 +3425,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|a_claude_team": {
@@ -3658,7 +3438,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|g_gemini_enterprise": {
@@ -3671,7 +3451,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|g_workspace_business": {
@@ -3684,7 +3464,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|g_workspace_enterprise": {
@@ -3705,23 +3485,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Kaikki, mihin käyttäjällä on pääsy. CSE-salattuun sisältöön Gemini ei pääse.",
-        "sources": [
-          {
-            "id": "x-strac-gemini",
-            "accessed": "2026-09-25"
-          }
-        ],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Rajauskeinot varmistettu Googlen dokumentaatiosta."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "visibility|m_vibe_enterprise": {
     "status": "p",
@@ -3733,7 +3498,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|m_vibe_team": {
@@ -3746,7 +3511,7 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|ms_copilot": {
@@ -3759,7 +3524,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|ms_copilot_chat": {
@@ -3776,18 +3541,8 @@
       }
     ],
     "verified": "2026-09-26",
-    "changed": "2026-09-26",
-    "history": [
-      {
-        "status": "p",
-        "text": "Pääasiassa web ja käyttäjän antama tai avaama sisältö; laajempi työdata agenttien kautta.",
-        "sources": [],
-        "verify": true,
-        "from": "2026-09-25",
-        "until": "2026-09-26",
-        "reason": "Hakukierros 9/2026: Microsoftin FAQ vahvistaa, ettei Copilot Chat ilman lisenssiä pääse Graph-dataan."
-      }
-    ]
+    "changed": "2026-09-30",
+    "history": []
   },
   "visibility|o_chatgpt_business": {
     "status": "p",
@@ -3799,7 +3554,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   },
   "visibility|o_chatgpt_enterprise": {
@@ -3812,7 +3567,7 @@
       }
     ],
     "verified": "2026-09-25",
-    "changed": "2026-09-25",
+    "changed": "2026-09-30",
     "history": []
   }
 }
