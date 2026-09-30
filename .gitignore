@@ -2,3 +2,4 @@ site/
 out/
 __pycache__/
 .venv/
+snapshots/

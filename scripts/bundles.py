@@ -10,7 +10,7 @@ import json
 
 from common import SPAN_COL, key
 
-MAX_DIFF_CHARS = 20000
+MAX_DIFF_CHARS = 4000  # issues are public: keep excerpts short, Claude fetches the page itself
 FENCE = "~~~~"  # tilde fence so that ``` inside the payload cannot break it
 
 RECAP = """Vastaa noudattaen projektin ohjeita (prompts/project_instructions.md). Lyhyesti:

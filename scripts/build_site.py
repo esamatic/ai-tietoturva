@@ -6,12 +6,12 @@ import json
 import os
 import sys
 
-from common import ROOT, SNAPSHOTS, load_all, today
+from common import LEGACY_STATUS, ROOT, STATUS_FILE, load_all, today
 
 
 def main() -> int:
     data = load_all()
-    status_path = SNAPSHOTS / "_status.json"
+    status_path = STATUS_FILE if STATUS_FILE.exists() else LEGACY_STATUS
     data["monitor"] = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
     data["generated"] = today()
     data["repo"] = os.environ.get("GITHUB_REPOSITORY", "")

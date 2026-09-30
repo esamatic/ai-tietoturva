@@ -18,6 +18,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - name: Tarkista asetukset
+        env:
+          REPO: ${{ vars.SNAPSHOTS_REPO }}
+          HAS_TOKEN: ${{ secrets.SNAPSHOTS_TOKEN != '' }}
+        run: |
+          if [ -z "$REPO" ] || [ "$HAS_TOKEN" != "true" ]; then
+            echo "::error::Aseta repository variable SNAPSHOTS_REPO ja secret SNAPSHOTS_TOKEN (ks. README)."
+            exit 1
+          fi
+      - name: Hae snapshotit (yksityinen repo)
+        uses: actions/checkout@v5
+        with:
+          repository: ${{ vars.SNAPSHOTS_REPO }}
+          token: ${{ secrets.SNAPSHOTS_TOKEN }}
+          path: snapshots
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -27,13 +42,24 @@ jobs:
         run: python scripts/monitor.py
         env:
           GH_TOKEN: ${{ github.token }}
-      - name: Tallenna snapshotit
-        # Päivittäinen commit (_status.json) pitää myös ajastuksen elossa:
+          SNAPSHOT_DIR: ${{ github.workspace }}/snapshots
+      - name: Tallenna snapshotit (yksityinen repo)
+        working-directory: snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Seuranta $(date -u +%F)"
+            git push
+          fi
+      - name: Tallenna seurannan tila (julkinen repo)
+        # Päivittäinen commit pitää myös ajastuksen elossa:
         # GitHub pysäyttää ajastetut workflowt, jos repossa ei ole toimintaa 60 päivään.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots
+          git add status
           if ! git diff --cached --quiet; then
             git commit -m "Seuranta $(date -u +%F)"
             git push

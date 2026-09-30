@@ -17,7 +17,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import bundles
-from common import SNAPSHOTS, gh, load_all, out_path, today
+from common import LEGACY_STATUS, SNAPSHOTS, STATUS_FILE, gh, load_all, out_path, today
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/126.0 Safari/537.36 ai-security-matrix-monitor")
@@ -30,6 +30,7 @@ LABELS = {
     "uusi-ominaisuus": ("5319e7", "Lomake: uusi seurattava ominaisuus"),
     "uusi-lisenssi": ("5319e7", "Lomake: uusi lisenssi"),
     "uusi-lahde": ("5319e7", "Lomake: uusi seurattava lähde"),
+    "korjaus": ("fbca04", "Lomake: lähde- tai korjausehdotus"),
 }
 
 
@@ -92,9 +93,11 @@ def open_or_comment(title: str, label: str, body: str) -> None:
 
 def main() -> int:
     data = load_all()
-    SNAPSHOTS.mkdir(exist_ok=True)
-    status_path = SNAPSHOTS / "_status.json"
+    SNAPSHOTS.mkdir(parents=True, exist_ok=True)
+    STATUS_FILE.parent.mkdir(exist_ok=True)
+    status_path = STATUS_FILE if STATUS_FILE.exists() else LEGACY_STATUS
     status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
+    status_path = STATUS_FILE
     now = today()
     monitored = [s for s in data["sources"] if s.get("monitor")]
     ensure_labels()
@@ -139,7 +142,7 @@ def main() -> int:
         st["last_change"] = now
         n_cells = sum(1 for c in data["cells"].values() if any(s["id"] == src["id"] for s in c.get("sources", [])))
         body = (f"Seurattu lähde **[{src['title']}]({src['url']})** muuttui ({now}).\n"
-                f"Lähteeseen viittaa {n_cells} solua. Snapshotin muutos näkyy tämän päivän seurantacommitissa.\n\n"
+                f"Lähteeseen viittaa {n_cells} solua. Koko sivun versiot tallentuvat yksityiseen snapshot-repoon.\n\n"
                 + bundles.source_change(src, diff, data))
         open_or_comment(f"Lähdemuutos: {src['id']}", "lahdemuutos", body)
         print(f"CHANGED {src['id']}")

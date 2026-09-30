@@ -51,9 +51,19 @@ Tarjoajien värit ovat datassa (`color`, `color_dark`). Uusi tarjoaja saa värin
 | `data/sources.json` | kaikki lähteet; `monitor: true` = päivittäisessä seurannassa, `selector` = CSS-rajaus |
 | `data/changelog.json` | muutosloki |
 | `data/meta.json` | otsikko, huomiot, muutosikkunan pituus |
-| `snapshots/` | seurattujen sivujen poimittu teksti ja seurannan tila; git-historia toimii todisteena |
+| `status/monitor.json` | seurannan tila (tarkistuspäivät, muutokset, virheet); julkinen |
+| *(yksityinen repo)* | seurattujen sivujen poimittu teksti; git-historia toimii todisteena muutoksista |
 
 Koko leveyden rivin solun sarake on `*` (tuettu, mutta tällä hetkellä sellaisia rivejä ei ole).
+
+## Snapshotit yksityisessä repossa
+
+Seurattujen sivujen koko teksti tallennetaan erilliseen yksityiseen repoon, koska kolmansien osapuolten tekstiä ei kannata julkaista. Seuranta tarvitsee:
+
+- **Repository variable** `SNAPSHOTS_REPO`, esim. `käyttäjä/ai-tietoturva-snapshots` (Settings → Secrets and variables → Actions → Variables).
+- **Repository secret** `SNAPSHOTS_TOKEN`: fine-grained token, jolla on vain tähän yksityiseen repoon *Contents: Read and write* -oikeus. Tokenilla on vanhenemispäivä; uusi se ajoissa, muuten seuranta pysähtyy virheeseen.
+
+Issueihin tulee vain lyhyt ote muutoksesta (enintään 4 000 merkkiä).
 
 ## Paikallinen kehitys
 
@@ -61,7 +71,7 @@ Koko leveyden rivin solun sarake on `*` (tuettu, mutta tällä hetkellä sellais
 pip install -r requirements.txt
 python scripts/validate.py
 python scripts/build_site.py          # → site/index.html
-DRY_RUN=1 python scripts/monitor.py   # gh-komennot vain tulostetaan
+SNAPSHOT_DIR=/tmp/snap DRY_RUN=1 python scripts/monitor.py   # gh-komennot vain tulostetaan
 ```
 
 ## Tiedossa olevat rajoitukset

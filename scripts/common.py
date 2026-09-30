@@ -12,7 +12,10 @@ from urllib.parse import urlsplit
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-SNAPSHOTS = ROOT / "snapshots"
+# Snapshots (full page texts) live in a private repo checked out here; only the status is public.
+SNAPSHOTS = pathlib.Path(os.environ.get("SNAPSHOT_DIR", ROOT / "snapshots"))
+STATUS_FILE = ROOT / "status" / "monitor.json"
+LEGACY_STATUS = ROOT / "snapshots" / "_status.json"
 OUT = ROOT / "out"
 
 STATUS_LABELS = {"y": "✓ Hyvä", "p": "◐ Osittain", "n": "✕ Heikko", "u": "? Ei tiedossa"}
