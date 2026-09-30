@@ -745,5 +745,239 @@
     "type": "secondary",
     "monitor": false,
     "selector": ""
+  },
+  {
+    "id": "g-ge-editions-pricing",
+    "vendor": "go",
+    "title": "Google Cloud: Gemini Enterprise app – editions, pricing and FAQ",
+    "url": "https://cloud.google.com/gemini-enterprise",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-residency",
+    "vendor": "go",
+    "title": "Google Cloud: Data residency for Gemini Enterprise Standard and Plus",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/docs/locations",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-business-terms",
+    "vendor": "go",
+    "title": "Gemini Enterprise – Business Edition Additional Terms of Service",
+    "url": "https://cloud.google.com/terms/gemini-enterprise/business",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-dpa-processor",
+    "vendor": "go",
+    "title": "Google Data Processing Addendum for Products where Google is a Data Processor",
+    "url": "https://business.safety.google/processorterms/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-business-manage",
+    "vendor": "go",
+    "title": "Google Workspace Help: Manage your Gemini Enterprise – Business edition subscription",
+    "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-enterprise/manage-your-gemini-enterprise-business-edition-subscription",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-gemini-app-admin",
+    "vendor": "go",
+    "title": "Google Workspace Help: Turn the Gemini App on or off",
+    "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-gemini-app-connected",
+    "vendor": "go",
+    "title": "Google Workspace Help: Control Gemini App access to Workspace services",
+    "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-google-apps-in-gemini-on-or-off",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-access-approvals-gemini",
+    "vendor": "go",
+    "title": "Workspace Updates: Gemini app data in Access Transparency, Access Management and Access Approvals",
+    "url": "https://workspaceupdates.googleblog.com/2025/10/gemini-data-included-access-transparency-management-approvals.html",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-data-regions-compare",
+    "vendor": "go",
+    "title": "Google Workspace Help: Compare data region features across editions",
+    "url": "https://knowledge.workspace.google.com/admin/compliance/compare-data-region-features-across-google-workspace-editions",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-data-regions-coverage",
+    "vendor": "go",
+    "title": "Google Workspace Help: Data covered by data regions",
+    "url": "https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-security",
+    "vendor": "go",
+    "title": "Google Cloud: Gemini Enterprise security overview",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/docs/security-overview",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-sso",
+    "vendor": "go",
+    "title": "Google Workspace Help: Setting up SSO",
+    "url": "https://knowledge.workspace.google.com/admin/apps/setting-up-sso",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-sso-editions",
+    "vendor": "go",
+    "title": "Workspace Updates: SSO profiles for multiple third-party identity providers",
+    "url": "https://workspaceupdates.googleblog.com/2022/05/sso-profiles-for-multiple-3p-identity-providers.html",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-directory-sync",
+    "vendor": "go",
+    "title": "Google Workspace Help: Get started with Directory Sync",
+    "url": "https://support.google.com/a/answer/10616183",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-idp",
+    "vendor": "go",
+    "title": "Google Cloud: Gemini Enterprise – Configure identity provider",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-wif-scim",
+    "vendor": "go",
+    "title": "Google Cloud IAM: Configure SCIM in Microsoft Entra ID",
+    "url": "https://docs.cloud.google.com/iam/docs/configure-scim-ms-entra",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-share-agents",
+    "vendor": "go",
+    "title": "Google Cloud: Gemini Enterprise – Share agents",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-model-armor",
+    "vendor": "go",
+    "title": "Google Cloud: Enable Model Armor in Gemini Enterprise",
+    "url": "https://docs.cloud.google.com/agentspace/docs/enable-model-armor",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-gemini-audit-logs",
+    "vendor": "go",
+    "title": "Workspace Updates: Gemini audit logs in Reporting API and investigation tools",
+    "url": "https://workspaceupdates.googleblog.com/2025/07/gemini-audit-logs-reporting-api-audit-and-security-invesitgation-tools.html",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-block-consumer",
+    "vendor": "go",
+    "title": "Google Workspace Help: Block access to consumer accounts",
+    "url": "https://knowledge.workspace.google.com/admin/security/block-access-to-consumer-accounts",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-cse",
+    "vendor": "go",
+    "title": "Google Workspace Help: About client-side encryption",
+    "url": "https://knowledge.workspace.google.com/admin/security/about-client-side-encryption",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-ws-pricing",
+    "vendor": "go",
+    "title": "Google Workspace: Pricing plans",
+    "url": "https://workspace.google.com/pricing",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "x-canagon-pricing",
+    "vendor": "go",
+    "title": "Canagon: Google Workspace pricing (reseller)",
+    "url": "https://www.canagon.com/products/google-workspace/pricing",
+    "type": "secondary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "g-indemnified-services",
+    "vendor": "go",
+    "title": "Google Cloud: Generative AI Indemnified Services",
+    "url": "https://cloud.google.com/terms/generative-ai-indemnified-services",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ws-sla",
+    "vendor": "go",
+    "title": "Google Workspace Service Level Agreement",
+    "url": "https://workspace.google.com/terms/sla/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "g-ge-sla",
+    "vendor": "go",
+    "title": "Gemini Enterprise Service Level Agreement",
+    "url": "https://cloud.google.com/terms/gemini-enterprise/sla",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
   }
 ]

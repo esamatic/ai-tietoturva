@@ -1,6 +1,439 @@
 [
   {
     "date": "2026-09-30",
+    "ref": "#17",
+    "summary": "Googlen täysi tarkistus: Gemini Enterprise Business -edition erillinen sopimuspohja ja hallintarajoitukset, Workspacen palveluntarjoajan pääsyn, SLA:n ja tekijänoikeusvastuun kattavuusrajat, EU-sijainnin poikkeukset ja uudet hintamallit päivitetty ensisijaisista lähteistä.",
+    "changes": [
+      {
+        "kind": "source",
+        "key": "g-ge-editions-pricing",
+        "text": "Google Cloud: Gemini Enterprise app – editions, pricing and FAQ"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-residency",
+        "text": "Google Cloud: Data residency for Gemini Enterprise Standard and Plus"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-business-terms",
+        "text": "Gemini Enterprise – Business Edition Additional Terms of Service"
+      },
+      {
+        "kind": "source",
+        "key": "g-dpa-processor",
+        "text": "Google Data Processing Addendum for Products where Google is a Data Processor"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-business-manage",
+        "text": "Google Workspace Help: Manage your Gemini Enterprise – Business edition subscription"
+      },
+      {
+        "kind": "source",
+        "key": "g-gemini-app-admin",
+        "text": "Google Workspace Help: Turn the Gemini App on or off"
+      },
+      {
+        "kind": "source",
+        "key": "g-gemini-app-connected",
+        "text": "Google Workspace Help: Control Gemini App access to Workspace services"
+      },
+      {
+        "kind": "source",
+        "key": "g-access-approvals-gemini",
+        "text": "Workspace Updates: Gemini app data in Access Transparency, Access Management and Access Approvals"
+      },
+      {
+        "kind": "source",
+        "key": "g-data-regions-compare",
+        "text": "Google Workspace Help: Compare data region features across editions"
+      },
+      {
+        "kind": "source",
+        "key": "g-data-regions-coverage",
+        "text": "Google Workspace Help: Data covered by data regions"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-security",
+        "text": "Google Cloud: Gemini Enterprise security overview"
+      },
+      {
+        "kind": "source",
+        "key": "g-sso",
+        "text": "Google Workspace Help: Setting up SSO"
+      },
+      {
+        "kind": "source",
+        "key": "g-sso-editions",
+        "text": "Workspace Updates: SSO profiles for multiple third-party identity providers"
+      },
+      {
+        "kind": "source",
+        "key": "g-directory-sync",
+        "text": "Google Workspace Help: Get started with Directory Sync"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-idp",
+        "text": "Google Cloud: Gemini Enterprise – Configure identity provider"
+      },
+      {
+        "kind": "source",
+        "key": "g-wif-scim",
+        "text": "Google Cloud IAM: Configure SCIM in Microsoft Entra ID"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-share-agents",
+        "text": "Google Cloud: Gemini Enterprise – Share agents"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-model-armor",
+        "text": "Google Cloud: Enable Model Armor in Gemini Enterprise"
+      },
+      {
+        "kind": "source",
+        "key": "g-gemini-audit-logs",
+        "text": "Workspace Updates: Gemini audit logs in Reporting API and investigation tools"
+      },
+      {
+        "kind": "source",
+        "key": "g-block-consumer",
+        "text": "Google Workspace Help: Block access to consumer accounts"
+      },
+      {
+        "kind": "source",
+        "key": "g-cse",
+        "text": "Google Workspace Help: About client-side encryption"
+      },
+      {
+        "kind": "source",
+        "key": "g-ws-pricing",
+        "text": "Google Workspace: Pricing plans"
+      },
+      {
+        "kind": "source",
+        "key": "x-canagon-pricing",
+        "text": "Canagon: Google Workspace pricing (reseller)"
+      },
+      {
+        "kind": "source",
+        "key": "g-indemnified-services",
+        "text": "Google Cloud: Generative AI Indemnified Services"
+      },
+      {
+        "kind": "source",
+        "key": "g-ws-sla",
+        "text": "Google Workspace Service Level Agreement"
+      },
+      {
+        "kind": "source",
+        "key": "g-ge-sla",
+        "text": "Gemini Enterprise Service Level Agreement"
+      },
+      {
+        "kind": "text",
+        "key": "dpa|g_workspace_business",
+        "from": "y",
+        "to": "y",
+        "text": "Cloud Data Processing Addendum (CDPA, ent. Workspace Data Processing Amendment): Google on käsittelijä; EU-siirrot DPF:n tai SCC:iden nojalla.",
+        "reason": "Toissijainen lähde korvattu CDPA:lla; sopimuksen nykyinen nimi (CDPA) päivitetty."
+      },
+      {
+        "kind": "text",
+        "key": "dpa|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Cloud Data Processing Addendum (CDPA, ent. Workspace Data Processing Amendment): Google on käsittelijä; EU-siirrot DPF:n tai SCC:iden nojalla.",
+        "reason": "Toissijainen lähde korvattu CDPA:lla; sopimuksen nykyinen nimi (CDPA) päivitetty."
+      },
+      {
+        "kind": "text",
+        "key": "dpa|g_gemini_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Std/Plus: Google Cloud DPA (CDPA). Business-edition: Googlen yleiset käyttöehdot, Business Edition -lisäehdot ja Google Data Processing Addendum; Google on käsittelijä molemmissa.",
+        "reason": "Lisätty Business-edition erillinen sopimuspohja; aiempi lähde (ZDR-sivu) ei kattanut Business-editiota."
+      },
+      {
+        "kind": "text",
+        "key": "certifications|g_workspace_business",
+        "from": "y",
+        "to": "y",
+        "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA. Gemini Notebook ja Gemini in Chrome eivät kuulu sertifiointien piiriin.",
+        "reason": "Lisätty rajaus: Gemini Notebook ja Gemini in Chrome jäävät sertifikaattien ulkopuolelle."
+      },
+      {
+        "kind": "text",
+        "key": "certifications|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Gemini: SOC 1/2/3, ISO 9001, 27001, 27017, 27018, 27701, 42001, BSI C5, FedRAMP High, HIPAA. Gemini Notebook ja Gemini in Chrome eivät kuulu sertifiointien piiriin.",
+        "reason": "Lisätty rajaus: Gemini Notebook ja Gemini in Chrome jäävät sertifikaattien ulkopuolelle."
+      },
+      {
+        "kind": "status",
+        "key": "certifications|g_gemini_enterprise",
+        "from": "y",
+        "to": "p",
+        "text": "Std/Plus: ISO 27001/27017/27018/27701, SOC 1/2/3, PCI DSS, BSI C5, HIPAA ja FedRAMP tuotekohtaisen scopen mukaan; Antigravity ei kuulu niihin. Business-editiolle sopimus takaa vain ISO 27001:n tai vastaavan, eikä laajempaa scopea ole dokumentoitu.",
+        "reason": "Ensisijainen lähde vahvisti Std/Plus-sertifikaatit; Business-editiota ei mainita ja sen DPA takaa vain ISO 27001:n, joten tila y→p."
+      },
+      {
+        "kind": "text",
+        "key": "incident_notification|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Viipymättä (promptly and without undue delay); ei kiinteää tuntirajaa. Sama ehto CDPA:ssa (Std/Plus) ja Business-edition Google DPA:ssa; ilmoitus asiakkaan määrittämään sähköpostiosoitteeseen.",
+        "reason": "Lisätty Business-edition sopimusperusta (Google DPA); ilmoitusaika sama."
+      },
+      {
+        "kind": "status",
+        "key": "provider_access|g_workspace_business",
+        "from": "y",
+        "to": "p",
+        "text": "Googlen henkilöstö saa käsitellä dataa vain välttämättömiin tehtäviin, eikä sisältöä tarkasteta ihmisvoimin koulutusta varten. Business-editioissa ei ole Access Transparency- eikä Access Approvals -kontrolleja, joten pääsyä ei voi seurata eikä estää.",
+        "reason": "Tila y→p: pääsyn näkyvyys- ja hyväksyntäkontrollit eivät ole saatavilla Business-editioissa."
+      },
+      {
+        "kind": "status",
+        "key": "provider_access|g_workspace_enterprise",
+        "from": "y",
+        "to": "p",
+        "text": "Enterprise Plus: Access Transparency lokittaa Googlen henkilöstön pääsyt myös Gemini-kehotteisiin ja -vastauksiin. Pääsyn ennakkohyväksyntä (Access Approvals) vaatii Assured Controls -lisäosan; Enterprise Standardissa ei kumpaakaan.",
+        "reason": "Tila y→p: asiakkaan hyväksyntä pääsylle edellyttää lisäosaa, ja näkyvyys vain Enterprise Plus -editiossa."
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: Access Transparency näyttää Googlen pääsyt, mutta vain US/EU-alueilla, ei Google Search -groundingin kanssa eikä Antigravityssa. Business-editiolle vastaavaa kontrollia ei ole dokumentoitu.",
+        "reason": "Vahvistettu ensisijaisesta lähteestä; lisätty Search-grounding- ja Antigravity-poikkeukset sekä Business-edition puute."
+      },
+      {
+        "kind": "text",
+        "key": "retention|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: hallinta Cloud-projektissa ja CMEK US/EU-alueilla; Google poistaa käyttäjän pyytämän datan 60 päivässä. Business: ei Vault-säilytystä, eikä admin voi estää käyttäjiä poistamasta keskusteluja.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty Business-edition säilytysrajoitukset ja 60 pv:n poistoaika."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|g_workspace_business",
+        "from": "y",
+        "to": "y",
+        "text": "Googlen omat mallit; Search-grounding pysyy CDPA:n piirissä. Kolmansien osapuolten sovellukset (esim. GitHub) Gemini-sovelluksessa ovat eri ehtojen alaisia, mutta admin voi estää ne; uudesta alihankkijasta ilmoitetaan 30 pv etukäteen.",
+        "reason": "Lisätty kolmansien osapuolten sovellusten eri ehdot ja Search-groundingin sopimusperusta."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Googlen omat mallit; Search-grounding pysyy CDPA:n piirissä. Kolmansien osapuolten sovellukset (esim. GitHub) Gemini-sovelluksessa ovat eri ehtojen alaisia, mutta admin voi estää ne; uudesta alihankkijasta ilmoitetaan 30 pv etukäteen.",
+        "reason": "Lisätty kolmansien osapuolten sovellusten eri ehdot ja Search-groundingin sopimusperusta."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Omat mallit. Kolmansien osapuolten agentit, konnektorit ja palvelut ovat omien ehtojensa alaisia (Business-ehdot ja Google DPA rajaavat ne pois), ja Google Search -grounding kirjaa väliaikaisesti osan asiakasdatasta ja toimii vain global-alueella.",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "storage_eu|g_workspace_business",
+        "from": "p",
+        "to": "p",
+        "text": "Business Standard ja Plus: koko organisaation data region -käytäntö (EU) kattaa myös Gemini-kehotteet ja -vastaukset levossa; Business Starterissa ei. Gemini Notebook, lokit ja välimuisti jäävät piirin ulkopuolelle.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; tarkennettu editiot ja poikkeukset, verify poistettu."
+      },
+      {
+        "kind": "text",
+        "key": "storage_eu|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Data regions (EU) kattaa myös Gemini-kehotteet ja -vastaukset; Enterprise Standard koko organisaatiolle, Enterprise Plus myös OU- ja ryhmäkohtaisesti. Gemini Notebook, lokit ja välimuisti jäävät piirin ulkopuolelle.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty editioerot ja poikkeukset."
+      },
+      {
+        "kind": "text",
+        "key": "storage_eu|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: EU multi-region levossa olevalle datalle; poikkeuksia ovat mm. Gemini 3.1 Pro, videogenerointi, Nano Banana Pro ja Google Search -grounding, jotka toimivat vain global-alueella. Business-edition ei tue data regions -asetuksia.",
+        "reason": "Business-edition vahvistettu ilman data regions -tukea; lisätty EU-alueen ulkopuolelle jäävät ominaisuudet; verify poistettu."
+      },
+      {
+        "kind": "text",
+        "key": "inference_eu|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: perustoiminnot ja useimmat mallit käsitellään EU multi-regionissa. Gemini 3.1 Pro, videogenerointi, Nano Banana Pro ja Google Search -grounding toimivat vain global-alueella; Business-editiossa ei alueellista käsittelyä.",
+        "reason": "Lisätty EU-käsittelyn ulkopuolelle jäävät mallit ja ominaisuudet sekä Business-edition puute."
+      },
+      {
+        "kind": "text",
+        "key": "identity|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: Google-identiteetti tai Workforce Identity Federation (OIDC/SAML, esim. Entra ID, Okta) ja SCIM-provisiointi WIF:n kautta (API alpha-vaiheessa). Business: Google-tili tai tuettu ulkoinen IdP; automaattisesta käyttäjähallinnasta ei ole dokumentaatiota.",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla ja tarkennettu; verify poistettu."
+      },
+      {
+        "kind": "text",
+        "key": "rbac|g_gemini_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Std/Plus: agenttien käyttö rajataan käyttäjille, ryhmille tai WIF-ryhmille IAM-roolein, ja ominaisuuksia (esim. mallit ja kuvageneraattori) kytketään sovellustasolla; VPC-SC rajaa verkkopääsyä. Business: hallinta Services Admin -roolilla, rajatummin.",
+        "reason": "Solu arvioi aiemmin vain verkkorajausta; lisätty rivin rajauksen mukainen ryhmäkohtainen pääsynhallinta ensisijaisista lähteistä."
+      },
+      {
+        "kind": "status",
+        "key": "dlp|g_gemini_enterprise",
+        "from": "n",
+        "to": "p",
+        "text": "Model Armor ja Sensitive Data Protection -mallit seulovat kehotteet ja vastaukset, ja arkaluonteista dataa sisältävät vastaukset estetään (ei maskausta). Workspacen DLP for Gemini ja luokitustunnisteet eivät koske Gemini Enterpriseä.",
+        "reason": "Tila n→p: Model Armor ja SDP tarjoavat kehotteiden ja vastausten tietovuodon eston. Verify, koska Business-edition kattavuus on epäselvä."
+      },
+      {
+        "kind": "text",
+        "key": "audit|g_workspace_business",
+        "from": "p",
+        "to": "p",
+        "text": "Gemini-toimintojen audit-lokit (käyttäjä, sovellus, toiminto) Reports API:lla ja audit-työkalulla kaikissa editioissa; keskustelujen sisällön haku ja eDiscovery (Vault) vain Business Plus -editiossa.",
+        "reason": "Lisätty kaikissa editioissa saatavilla olevat Gemini-audit-lokit."
+      },
+      {
+        "kind": "text",
+        "key": "audit|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: Cloud Audit Logs, myös Model Armorin Data Access -lokit. Business: käyttö ei näy Admin Consolen raporteissa tai lokeissa, eikä keskusteluja voi auditoida Vaultissa.",
+        "reason": "Business-edition lokituksen puute vahvistettu ensisijaisesta lähteestä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "visibility|g_workspace_business",
+        "from": "p",
+        "to": "p",
+        "text": "Kaikki Gmailissa, Drivessa, Kalenterissa ja Chatissa, mihin käyttäjällä on pääsy (Workspace Intelligence); admin voi kytkeä yksittäisiä lähteitä pois.",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty Kalenteri, Chat ja adminin lähdekohtainen rajaus."
+      },
+      {
+        "kind": "text",
+        "key": "personal_accounts|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: pääsy organisaation IdP:n tai Cloud-organisaation kautta. Business: työntekijät voivat rekisteröityä itse yritysosoitteella ja perustaa oman tiimin, joten hajanaiset tilit on koottava kutsuilla.",
+        "reason": "Lähteetön solu; lisätty Business-edition itserekisteröinnin riski."
+      },
+      {
+        "kind": "text",
+        "key": "agents|g_workspace_business",
+        "from": "y",
+        "to": "y",
+        "text": "Admin rajaa OU:ittain tai ryhmittäin Gemini-sovelluksen, sen yhteydet Workspace-, muihin Google- ja kolmansien osapuolten sovelluksiin (esim. GitHub) sekä Gemini in Chromen.",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "agents|g_workspace_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Admin rajaa OU:ittain tai ryhmittäin Gemini-sovelluksen, sen yhteydet Workspace-, muihin Google- ja kolmansien osapuolten sovelluksiin (esim. GitHub) sekä Gemini in Chromen.",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "agents|g_gemini_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Valmiit ja no-code-agentit kaikissa editioissa; omat ADK- ja kolmansien osapuolten agentit sekä Antigravity-kehitystyökalut vain Std/Plus. Admin jakaa agentit käyttäjille tai ryhmille ja rajaa niiden pääsyn sovelluksiin ja dataan.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla ja tarkennettu; verify poistettu."
+      },
+      {
+        "kind": "status",
+        "key": "pricing|g_workspace_enterprise",
+        "from": "u",
+        "to": "n",
+        "text": "Enterprise Standard ja Plus vain tarjouksesta, ei käyttäjämäärärajoja; Gemini sisältyy. Jälleenmyyjän listahinta Enterprise Standardille, n. 27 $/käyttäjä/kk vuosisitoumuksella, on viitteellinen.",
+        "reason": "Tila u→n (vain tarjouksesta) ensisijaisen hinnastosivun perusteella."
+      },
+      {
+        "kind": "text",
+        "key": "pricing|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Business 21 $/käyttäjä/kk (enint. 300 käyttäjää); Standard/Plus alkaen 30 $, tarkka Plus-hinta tarjouksesta. Rajatusti saatavilla Pay-as-you-go (ei istuinmaksua, käyttöperusteinen, väh. 20 käyttäjää) ja Frontline-lisäosa.",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty uudet Pay-as-you-go- ja Frontline-vaihtoehdot."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|g_workspace_business",
+        "from": "y",
+        "to": "p",
+        "text": "Googlen generatiivisen AI:n vastuusitoumus kattaa Gemini in Workspacen (Gmail, Docs ym.) ja Vidsin; Gemini-sovellusta ja Gemini Notebookia ei mainita katettujen palvelujen listalla. Edellyttää vastuullista käyttöä.",
+        "reason": "Tila y→p: katettujen palvelujen lista ei nimeä Gemini-sovellusta eikä Gemini Notebookia. Verify, koska kattavuuden tulkinta on epävarma."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|g_workspace_enterprise",
+        "from": "y",
+        "to": "p",
+        "text": "Googlen generatiivisen AI:n vastuusitoumus kattaa Gemini in Workspacen (Gmail, Docs ym.) ja Vidsin; Gemini-sovellusta ja Gemini Notebookia ei mainita katettujen palvelujen listalla. Edellyttää vastuullista käyttöä.",
+        "reason": "Tila y→p: katettujen palvelujen lista ei nimeä Gemini-sovellusta eikä Gemini Notebookia. Verify, koska kattavuuden tulkinta on epävarma."
+      },
+      {
+        "kind": "text",
+        "key": "ip_indemnity|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Gemini Enterprise ja NotebookLM Enterprise ovat katettujen palvelujen listalla (Cloud-sopimus, Std/Plus). Business-edition on Googlen yleisten ehtojen alainen, eikä sitoumuksen ulottumista siihen ole dokumentoitu.",
+        "reason": "Tuotetun sisällön kattavuus vahvistettu Std/Plus-editioille; tarkennettu Business-edition epäselvyys."
+      },
+      {
+        "kind": "text",
+        "key": "sla|g_workspace_business",
+        "from": "p",
+        "to": "p",
+        "text": "Workspace SLA 99,9 % hyvityksin kattaa mm. Gmailin, Docsin ja Driven, mutta ei Gemini-sovellusta, Gemini Notebookia eikä Studiota.",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu; lisätty SLA:n kattavuusraja."
+      },
+      {
+        "kind": "text",
+        "key": "sla|g_workspace_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Workspace SLA 99,9 % hyvityksin kattaa mm. Gmailin, Docsin ja Driven, mutta ei Gemini-sovellusta, Gemini Notebookia eikä Studiota. Enterprise-editioissa Enhanced Support, päivitettävissä Premiumiin.",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu; lisätty SLA:n kattavuusraja ja tukitaso."
+      },
+      {
+        "kind": "text",
+        "key": "sla|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus: julkaistu SLA, Assistant-chat 99,5 % ja haku 99,9 % hyvityksin. Business-editiolle ei ole dokumentoitu SLA:ta.",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty SLA-tasot ja Business-edition puute."
+      },
+      {
+        "kind": "text",
+        "key": "exit|g_gemini_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Std/Plus (CDPA): vienti sopimuskauden aikana ja poisto 30 pv palautusjakson jälkeen, viimeistään 180 pv. Business (Google DPA): poisto kohtuullisen pian ilman sovittua enimmäisaikaa, eikä vientityökaluja ole dokumentoitu.",
+        "reason": "Lisätty Business-edition heikommat poisto- ja vientiehdot."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
     "ref": "",
     "changes": [],
     "summary": "Lähtötilanne. Muutoksia seurataan tästä päivästä alkaen."
