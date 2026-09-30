@@ -315,7 +315,7 @@ document.getElementById('log').innerHTML = D.changelog.slice(0, 40).map(e => {
       const what = ch.kind === "status" ? `${lbl(r, ch.from)} → ${lbl(r, ch.to)}` : ch.kind === "new" ? `uusi: ${lbl(r, ch.to)}` : "teksti päivitetty";
       return `<li>${esc(rowLabel[r] || r)} / ${esc(colLabel[c] || c)}: ${what}</li>`;
     }
-    const kind = {row:"Uusi rivi", column:"Uusi sarake", source:"Uusi lähde"}[ch.kind] || ch.kind;
+    const kind = {row:"Uusi rivi", column:"Uusi sarake", source:"Uusi lähde", row_update:"Rivi päivitetty", column_update:"Sarake päivitetty"}[ch.kind] || ch.kind;
     return `<li>${kind}: ${esc(ch.text)}</li>`;
   }).join("");
   const ref = e.ref && D.repo ? ` <a href="https://github.com/${esc(D.repo)}/issues/${esc(e.ref.replace("#",""))}">${esc(e.ref)}</a>` : (e.ref ? ` ${esc(e.ref)}` : "");

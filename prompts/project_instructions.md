@@ -58,8 +58,20 @@ Kentät:
 - Ryhmät: `baseline` (kynnysehdot), `data_access`, `location`, `access`, `encryption`, `llm` (agentit ja integraatiot), `commercial`.
 - Koko leveyden rivillä sarake on `"*"` (tällä hetkellä sellaisia ei ole).
 - `unchanged` (valinnainen).
+- `source_ops` (valinnainen): olemassa olevien lähteiden ylläpito.
+  - `{"op": "update", "id": ..., "url"/"title"/"type"/"monitor"/"selector"/"vendor": ...}` korjaa lähteen tiedot, esim. siirtyneen URL:n. Seuranta aloittaa uudesta URL:sta uuden vertailupohjan eikä raportoi koko sivua muutoksena.
+  - `{"op": "merge", "from": ..., "into": ...}` yhdistää saman sivun kaksoiskappaleet: kaikki `from`-viittaukset siirtyvät `into`-lähteeseen ja `from` poistetaan.
+  - `{"op": "remove", "id": ...}` poistaa lähteen, johon mikään solu ei viittaa. Käytössä olevaa lähdettä ei voi poistaa.
+- `column_updates` ja `row_updates` (valinnainen): olemassa olevan sarakkeen `plan`/`meta` tai rivin `label`/`hint` korjaus, esim. `{"id": "g_gemini_enterprise", "meta": "...", "reason": "..."}`.
+
+Automaatio hoitaa itse:
+- Lähde, johon mikään solu ei patchin jälkeen enää viittaa, poistetaan automaattisesti, ellei se ole patchin `sources`-listassa (listaa se sinne, jos se pitää säilyttää seurannassa ilman soluviittausta).
+- Uuden lähteen `vendor` päätellään sitä käyttävistä soluista. Anna se silti, jos tiedät; tuntematon vendor hylätään kirjoitusvirheenä. Usean tarjoajan yhteinen lähde saa tyhjän vendorin.
+- Saman issuen peräkkäiset patch-kommentit kootaan samaan pull requestiin, joten myöhempi patch voi viitata aiemman patchin lähteisiin.
+
+Täydessä tarkistuksessa siivoa myös tarjoajan lähdeluettelo: paketti näyttää, montako solua kuhunkin lähteeseen viittaa.
 
 Tunnisteissa käytetään vain pieniä kirjaimia, numeroita, alaviivaa ja väliviivaa. `accessed` on päivä, jona haet lähteen, muodossa VVVV-KK-PP.
 
 Palauta patchissa vain muuttuneet ja uudet solut sekä `unchanged`-lista. Älä toista koskemattomia soluja.
-Jos patch on hyvin pitkä (yli noin 40 solua), jaa se useaan patchiin, joista jokaisella on oma BEGIN-PATCH/END-PATCH-lohko, ja pyydä käyttäjää liittämään ne erillisinä kommentteina.
+Palauta patch yhtenä lohkona, jos se on alle noin 60 000 merkkiä (GitHub-kommentin raja on 65 536 merkkiä). Vain sitä pidemmän patchin voi jakaa useaan lohkoon; pyydä silloin käyttäjää liittämään ne järjestyksessä erillisinä kommentteina samaan issueen.

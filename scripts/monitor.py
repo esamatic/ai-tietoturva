@@ -99,6 +99,14 @@ def main() -> int:
     status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
     status_path = STATUS_FILE
     now = today()
+    # Sources removed from data: drop their snapshots and status so nothing stale is kept.
+    known = {s["id"] for s in data["sources"]}
+    for old_snap in SNAPSHOTS.glob("*.txt"):
+        if not old_snap.stem.startswith("_") and old_snap.stem not in known:
+            old_snap.unlink()
+            print(f"REMOVED {old_snap.stem}")
+    for sid in [k for k in status if not k.startswith("_") and k not in known]:
+        status.pop(sid)
     monitored = [s for s in data["sources"] if s.get("monitor")]
     ensure_labels()
     changed = failed = 0
@@ -128,6 +136,13 @@ def main() -> int:
 
         st.update({"last_ok": now, "failures": 0})
         st.pop("error", None)
+        if st.get("url") and st["url"] != src["url"] and snap.exists():
+            # The source now points to a different page: start a new baseline instead of reporting a diff.
+            snap.write_text(text, encoding="utf-8")
+            st.update({"url": src["url"], "baseline": now})
+            print(f"REBASELINE {src['id']}")
+            continue
+        st["url"] = src["url"]
         if not snap.exists():
             snap.write_text(text, encoding="utf-8")
             st["baseline"] = now

@@ -20,7 +20,10 @@ RECAP = """Vastaa noudattaen projektin ohjeita (prompts/project_instructions.md)
 - Muuta tekstiä vain, jos tila tai lähteen sisältö muuttui. Perustele muutos kentässä reason.
 - Solut, jotka tarkistit ja jotka pitävät yhä paikkansa, listaa kenttään unchanged.
 - Jos et pysty varmistamaan asiaa, käytä tilaa u tai merkitse verify: true. Älä arvaa.
-- Rivin hint kertoo, mitä rivillä arvioidaan; pysy sen rajauksessa."""
+- Rivin hint kertoo, mitä rivillä arvioidaan; pysy sen rajauksessa.
+- Ylläpito: vanhentuneet tai päällekkäiset lähteet source_ops-kentällä (update/merge/remove), sarakkeiden ja rivien tekstit column_updates- ja row_updates-kentillä. Lähteet, joihin mikään solu ei patchin jälkeen viittaa, poistuvat automaattisesti.
+- Uuden lähteen vendor päätellään sitä käyttävistä soluista; anna se silti, jos tiedät.
+- Pitkän patchin voi jakaa useaan kommenttiin samassa issuessa: ne kootaan samaan pull requestiin järjestyksessä."""
 
 
 def _resolve_sources(cell: dict, sources_by_id: dict) -> list[dict]:
@@ -32,12 +35,14 @@ def _resolve_sources(cell: dict, sources_by_id: dict) -> list[dict]:
     return out
 
 
-def _cell_view(k: str, cell: dict | None, sources_by_id: dict) -> dict:
+def _cell_view(k: str, cell: dict | None, sources_by_id: dict, compact: bool = False) -> dict:
+    """compact: sources as "id (accessed)" only; use when the bundle lists the sources separately."""
     row, col = k.split("|", 1)
     if cell is None:
         return {"row": row, "col": col, "status": None, "text": "(ei vielä tutkittu)"}
-    view = {"row": row, "col": col, "status": cell["status"], "text": cell["text"],
-            "sources": _resolve_sources(cell, sources_by_id)}
+    srcs = ([f'{x["id"]} ({x.get("accessed", "")})' for x in cell.get("sources", [])] if compact
+            else _resolve_sources(cell, sources_by_id))
+    view = {"row": row, "col": col, "status": cell["status"], "text": cell["text"], "sources": srcs}
     if cell.get("verify"):
         view["verify"] = True
     return view
@@ -48,9 +53,23 @@ def _columns_view(columns: list[dict], vendors: dict) -> list[dict]:
             for c in columns]
 
 
-def _known_sources(sources: list[dict], vendor_ids: set[str] | None = None) -> list[dict]:
-    return [{"id": s["id"], "url": s["url"], "type": s["type"]}
-            for s in sources if vendor_ids is None or s.get("vendor") in vendor_ids]
+def _known_sources(sources: list[dict], vendor_ids: set[str] | None = None,
+                   cells: dict | None = None) -> list[dict]:
+    """Sources of the given vendors; with cells, also how many cells cite each one."""
+    counts: dict[str, int] = {}
+    for c in (cells or {}).values():
+        for x in c.get("sources", []):
+            counts[x["id"]] = counts.get(x["id"], 0) + 1
+    out = []
+    for s in sources:
+        if vendor_ids is not None and s.get("vendor") not in vendor_ids:
+            continue
+        item = {"id": s["id"], "url": s["url"], "type": s["type"]}
+        if cells is not None:
+            item.update({"title": s.get("title", ""), "viittauksia": counts.get(s["id"], 0),
+                         "seuranta": bool(s.get("monitor"))})
+        out.append(item)
+    return out
 
 
 def _wrap(title: str, body_parts: list[str]) -> str:
@@ -124,7 +143,7 @@ def full_research(vendor_id: str, data: dict, col_ids: list[str] | None = None) 
     vendors = {v["id"]: v["name"] for v in st["vendors"]}
     cols = [c for c in st["columns"] if c["vendor"] == vendor_id and (col_ids is None or c["id"] in col_ids)]
     sources_by_id = {s["id"]: s for s in data["sources"]}
-    views = [_cell_view(key(r["id"], c["id"]), cells.get(key(r["id"], c["id"])), sources_by_id)
+    views = [_cell_view(key(r["id"], c["id"]), cells.get(key(r["id"], c["id"])), sources_by_id, compact=True)
              for r in st["rows"] if not r.get("span") for c in cols]
     unsourced = sum(1 for v in views if v.get("status") and v["status"] != "u" and not v.get("sources"))
     unresearched = sum(1 for v in views if v.get("status") is None)
@@ -135,8 +154,12 @@ def full_research(vendor_id: str, data: dict, col_ids: list[str] | None = None) 
         f"({unresearched} kpl), lähteettömät solut ({unsourced} kpl) ja verify-merkityt. (3) Ehdota seurattaviksi lähteiksi keskeiset ensisijaiset sivut.",
         f"Sarakkeet:\n{_json(_columns_view(cols, vendors))}",
         f"Rivit:\n{_json([{'row': r['id'], 'label': r['label'], 'hint': r.get('hint', '')} for r in st['rows'] if not r.get('span')])}",
-        f"Nykyiset solut:\n{_json(views)}",
-        f"Tarjoajan tunnetut lähteet:\n{_json(_known_sources(data['sources'], {vendor_id}))}",
+        f"Nykyiset solut (lähteiden url:t ja otsikot alempana):\n{_json(views)}",
+        f"Tarjoajan tunnetut lähteet (viittauksia = monessako solussa lähde on käytössä):\n"
+        f"{_json(_known_sources(data['sources'], {vendor_id}, cells))}",
+        "(4) Siivoa lähdeluettelo source_ops-kentällä: poista (remove) lähteet, joihin mikään solu ei viittaa ja "
+        "joita ei tarvita seurantaan; yhdistä (merge) saman sivun kaksoiskappaleet; korjaa (update) siirtyneet URL:t. "
+        "Jos sarakkeen plan tai meta on vanhentunut, korjaa se column_updates-kentällä.",
     ]
     return _wrap(f"Täysi tarkistus: {vendors[vendor_id]}", parts)
 

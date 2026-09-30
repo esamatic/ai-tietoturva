@@ -8,6 +8,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  actions: write   # automaattiyhdistämisen jälkeinen julkaisu (gh workflow run)
 
 concurrency:
   group: patch-${{ github.event.issue.number }}
@@ -24,33 +25,69 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       ISSUE: ${{ github.event.issue.number }}
-      COMMENT_ID: ${{ github.event.comment.id }}
       ISSUE_TITLE: ${{ github.event.issue.title }}
+      BASE: ${{ github.event.repository.default_branch }}
+      # Repository variable AUTO_MERGE=true yhdistää PR:n ja julkaisee sivun heti.
+      AUTO_MERGE: ${{ vars.AUTO_MERGE }}
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Valitse haara
+        # Saman issuen myöhemmät patchit lisätään samaan avoimeen PR:ään, joten ne
+        # näkevät aiempien patchien lähteet ja solut ilman välissä tehtävää yhdistämistä.
+        id: branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="patch/issue-${ISSUE}"
+          pr=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$pr" ]; then
+            git fetch origin "$branch"
+            git switch "$branch"
+            # Tuo mainin uudet muutokset mukaan, jotta PR pysyy yhdistettävänä.
+            git merge --no-edit "origin/${BASE}" || { git merge --abort; echo "::warning::main ei yhdisty haaraan; jatketaan ilman."; }
+          else
+            git switch -c "$branch"
+          fi
+          echo "name=$branch" >> "$GITHUB_OUTPUT"
+          echo "pr=$pr" >> "$GITHUB_OUTPUT"
       - name: Validoi ja sovella
         id: apply
         # Kommentti luetaan tapahtumatiedostosta datana; sitä ei interpoloida komentoihin.
         run: python scripts/apply_patch.py --event "$GITHUB_EVENT_PATH"
-      - name: Avaa pull request
+      - name: Commit ja pull request
         if: steps.apply.outputs.ok == 'true'
+        env:
+          BRANCH: ${{ steps.branch.outputs.name }}
+          PR: ${{ steps.branch.outputs.pr }}
         run: |
           python scripts/validate.py
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          branch="patch/issue-${ISSUE}-${COMMENT_ID}"
-          git switch -c "$branch"
           git add data
           git commit -m "Päivitys issuesta #${ISSUE}"
-          git push origin "$branch"
-          url=$(gh pr create --base "${{ github.event.repository.default_branch }}" --head "$branch" \
-                --title "Päivitys: ${ISSUE_TITLE}" --body-file out/pr_body.md)
-          gh issue comment "$ISSUE" --body "Pull request avattu: $url"
+          if [ -n "$PR" ]; then
+            git push origin "$BRANCH"
+            gh pr comment "$PR" --body-file out/pr_body.md
+            url=$(gh pr view "$PR" --json url --jq .url)
+            gh issue comment "$ISSUE" --body "Patch lisätty avoimeen pull requestiin: $url"
+          else
+            # Suljetun PR:n vanha haara korvataan.
+            git push --force origin "$BRANCH"
+            url=$(gh pr create --base "$BASE" --head "$BRANCH" \
+                  --title "Päivitys: ${ISSUE_TITLE}" --body-file out/pr_body.md)
+            gh issue comment "$ISSUE" --body "Pull request avattu: $url"
+          fi
+          if [ "$AUTO_MERGE" = "true" ]; then
+            gh pr merge "$url" --merge --delete-branch
+            # GITHUB_TOKENin tekemä yhdistäminen ei laukaise push-tapahtumaa, joten julkaisu käynnistetään erikseen.
+            gh workflow run publish.yml --ref "$BASE"
+            gh issue comment "$ISSUE" --body "Yhdistetty automaattisesti (AUTO_MERGE) ja julkaisu käynnistetty."
+          fi
       - name: Raportoi virhe
         if: steps.apply.outputs.ok != 'true'
         run: gh issue comment "$ISSUE" --body-file out/error.md

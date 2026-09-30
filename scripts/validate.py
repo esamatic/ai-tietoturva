@@ -23,6 +23,8 @@ def main() -> int:
     errors += [f"sarake {c['id']}: tuntematon vendor {c['vendor']}" for c in st["columns"] if c["vendor"] not in vendors]
     errors += [f"rivi {r['id']}: tuntematon group {r['group']}" for r in st["rows"] if r["group"] not in groups]
     errors += [f"lähde {s['id']}: tyyppi {s.get('type')!r}" for s in sources if s.get("type") not in SOURCE_TYPES]
+    errors += [f"lähde {s['id']}: tuntematon vendor {s['vendor']!r}" for s in sources
+               if s.get("vendor") and s["vendor"] not in vendors]
     errors += [f"ryhmä {g['id']}: tier {g['tier']!r}" for g in st["groups"] if "tier" in g and g["tier"] not in TIERS]
 
     for r in st["rows"]:
@@ -52,6 +54,11 @@ def main() -> int:
     missing = sum(1 for r in st["rows"] for col in ([SPAN_COL] if r.get("span") else cols) if f"{r['id']}|{col}" not in cells)
     if missing:
         warnings.append(f"{missing} solua ei ole vielä tutkittu")
+
+    cited = {s["id"] for c in cells.values() for s in c.get("sources", [])}
+    idle = [s["id"] for s in sources if s["id"] not in cited]
+    if idle:
+        print(f"Tieto: {len(idle)} lähdettä ilman soluviittauksia (siivotaan täysissä tarkistuksissa): {', '.join(idle)}")
 
     for e in errors:
         print("VIRHE:", e)

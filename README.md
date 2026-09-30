@@ -30,9 +30,9 @@ Tarjoajien värit ovat datassa (`color`, `color_dark`). Uusi tarjoaja saa värin
 
 ## Käyttö
 
-**Lähde muuttui.** Seuranta avaa issuen *Lähdemuutos: &lt;lähde&gt;*, jossa on diff ja kopioitava paketti. Liitä paketti Claude-projektin keskusteluun, ja liitä Clauden koko vastaus issueen kommentiksi. Workflow poimii `BEGIN-PATCH … END-PATCH`-lohkon, validoi sen ja avaa pull requestin, jonka taulukko näyttää jokaisen muutoksen. Yhdistä PR, niin sivu päivittyy. Jos validointi epäonnistuu, virheet tulevat kommenttina ja voit pyytää Claudelta korjatun version.
+**Lähde muuttui.** Seuranta avaa issuen *Lähdemuutos: &lt;lähde&gt;*, jossa on diff ja kopioitava paketti. Liitä paketti Claude-projektin keskusteluun, ja liitä Clauden koko vastaus issueen kommentiksi. Workflow poimii `BEGIN-PATCH … END-PATCH`-lohkon, validoi sen ja avaa pull requestin, jonka taulukko näyttää jokaisen muutoksen. Yhdistä PR, niin sivu päivittyy. Jos validointi epäonnistuu, virheet tulevat kommenttina ja voit pyytää Claudelta korjatun version. Saman issuen myöhemmät patch-kommentit (korjaukset tai pitkän patchin jatko-osat) lisätään samaan avoimeen PR:ään.
 
-**Uusi seurattava ominaisuus (rivi), lisenssi (sarake) tai lähde.** Avaa issue vastaavalla lomakkeella. Workflow avaa PR:n, joka lisää kohteen, ja kommentoi issueen tutkimuspaketin. Yhdistä PR ensin; uudet solut näkyvät sivulla tilassa *Ei vielä tutkittu* ja rivillä lukee, mistä päivästä alkaen sitä on seurattu. Tutki sitten paketilla ja liitä vastaus samaan issueen.
+**Uusi seurattava ominaisuus (rivi), lisenssi (sarake) tai lähde.** Avaa issue vastaavalla lomakkeella. Workflow avaa PR:n, joka lisää kohteen, ja kommentoi issueen tutkimuspaketin. Tutki kohde paketilla ja liitä vastaus samaan issueen: patch lisätään samaan PR:ään, joten sitä ei tarvitse yhdistää välissä. Jos yhdistät PR:n ennen tutkimusta, uudet solut näkyvät sivulla tilassa *Ei vielä tutkittu* ja rivillä lukee, mistä päivästä alkaen sitä on seurattu.
 
 **Lähde- tai korjausehdotus.** Sivun jokaisessa solussa on ✎-linkki, joka avaa lomakkeen valmiiksi täytettynä kyseiselle solulle. Voit myös avata issuen suoraan lomakkeella *Lähde- tai korjausehdotus* ja anna yksi tai useampi URL, halutessasi rajauksella (esim. "ChatGPT Enterprise, Tallennus EU:ssa"). Automaatio kommentoi tutkimuspaketin, jolla Claude selvittää, mitä soluja lähde tukee, ja palauttaa patchin tavalliseen tapaan.
 
@@ -79,6 +79,8 @@ SNAPSHOT_DIR=/tmp/snap DRY_RUN=1 python scripts/monitor.py   # gh-komennot vain 
 - **Bottiesto ja JavaScript-sivut.** Osa sivuista palauttaa esto- tai tyhjän sivun. Tällainen haku ei koskaan ylikirjoita snapshotia, ja kolmen peräkkäisen epäonnistumisen jälkeen avautuu issue *Seurantavirhe*. Korjaus on yleensä `selector`, toinen URL tai `monitor: false`.
 - **Kosmeettiset muutokset.** Ilman valitsinta myös navigaation tai päivämäärien muutokset näkyvät. Lisää lähteelle `selector` (esim. `main`, `article`).
 - **Seuranta näkee vain seuratut sivut.** Uudet dokumentit ja lisenssit löytyvät täysissä tarkistuksissa.
+- **Ylläpito patcheilla.** Patch voi myös korjata olemassa olevia lähteitä (`source_ops`: update, merge, remove) sekä sarakkeiden ja rivien tekstejä (`column_updates`, `row_updates`). Lähde, johon mikään solu ei patchin jälkeen viittaa, poistuu automaattisesti, ja seuranta siivoaa poistettujen lähteiden snapshotit. Täyden tarkistuksen paketti näyttää, montako solua kuhunkin lähteeseen viittaa, joten siivous tapahtuu tarkistusten yhteydessä.
+- **Automaattinen yhdistäminen (valinnainen).** Repository variable `AUTO_MERGE=true` (*Settings → Secrets and variables → Actions → Variables*) yhdistää validoidun patchin PR:n heti ja julkaisee sivun. Silloin ihmisen tekemä PR-tarkastus jää pois; muutosloki ja git-historia säilyvät, ja virheellisen muutoksen voi perua uudella patchilla tai revertillä.
 - **Tietoturva.** Patch hyväksytään vain repon omistajan kommenteista, ja kommentti käsitellään pelkkänä JSON-datana. PR-tarkastus on toinen suojakerros.
 
 Tämä on hankinnan apuväline, ei oikeudellinen arvio.

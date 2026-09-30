@@ -41,7 +41,7 @@ jobs:
           python scripts/validate.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          branch="intake/issue-${ISSUE}"
+          branch="patch/issue-${ISSUE}"   # sama haara kuin apply.yml: jatkopatchit tulevat samaan PR:ään
           git switch -c "$branch"
           git add data
           git commit -m "Uusi kohde issuesta #${ISSUE}"
