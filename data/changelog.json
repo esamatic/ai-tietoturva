@@ -2,6 +2,19 @@
   {
     "date": "2026-09-30",
     "ref": "#17",
+    "summary": "Googlen lähdeluettelon siivous: vanhentuneet ja käyttämättömät lähteet poistettu, Privacy Hubin kaksoiskappale yhdistetty ja Gemini Enterprisen editiot päivitetty sarakkeen kuvaukseen.",
+    "changes": [
+      {
+        "kind": "column_update",
+        "key": "g_gemini_enterprise",
+        "text": "Gemini Enterprise (erillinen) (Business (≤300) vs. Standard / Plus; myös Pay-as-you-go ja Frontline-lisäosa)",
+        "reason": "Uudet editiot Googlen hinnastosivulla (tarkistettu 2026-09-30)."
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "ref": "#17",
     "summary": "Googlen täysi tarkistus: Gemini Enterprise Business -edition erillinen sopimuspohja ja hallintarajoitukset, Workspacen palveluntarjoajan pääsyn, SLA:n ja tekijänoikeusvastuun kattavuusrajat, EU-sijainnin poikkeukset ja uudet hintamallit päivitetty ensisijaisista lähteistä.",
     "changes": [
       {

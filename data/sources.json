@@ -72,42 +72,6 @@
     "selector": ""
   },
   {
-    "id": "g-ge-locations",
-    "vendor": "go",
-    "title": "Google Cloud: Data residency for Gemini Enterprise Standard and Plus",
-    "url": "https://docs.cloud.google.com/agentspace/docs/locations",
-    "type": "primary",
-    "monitor": true,
-    "selector": ""
-  },
-  {
-    "id": "g-zdr",
-    "vendor": "go",
-    "title": "Google Cloud: Gemini Enterprise Agent Platform and zero data retention",
-    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
-    "type": "primary",
-    "monitor": true,
-    "selector": ""
-  },
-  {
-    "id": "g-innfactory",
-    "vendor": "go",
-    "title": "innFactory: CompanyGPT vs. Google Gemini (data regions)",
-    "url": "https://innfactory.ai/en/services/companygpt/vs-gemini/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "g-innfactory-ge",
-    "vendor": "go",
-    "title": "innFactory: Gemini Enterprise – tuotesivu",
-    "url": "https://innfactory.de/en/cloud/gcp/products/gemini-enterprise/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
     "id": "g-ge-digicloud",
     "vendor": "go",
     "title": "Digicloud: Gemini security and compliance FAQ",
@@ -130,24 +94,6 @@
     "vendor": "go",
     "title": "Strac: Gemini Data Privacy (2026)",
     "url": "https://www.strac.io/blog/gemini-data-privacy",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-sonomos-gemini",
-    "vendor": "go",
-    "title": "Sonomos: Is Gemini GDPR Compliant? (2026)",
-    "url": "https://sonomos.ai/blog/is-gemini-gdpr-compliant-2026/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-csharp",
-    "vendor": "go",
-    "title": "C# Corner: Does Google use my data to train Gemini Enterprise?",
-    "url": "https://www.c-sharpcorner.com/article/does-google-use-my-data-to-train-gemini-enterprise-ai",
     "type": "secondary",
     "monitor": false,
     "selector": ""
@@ -420,15 +366,6 @@
     "url": "https://knowledge.workspace.google.com/admin/security/apply-classification-labels-to-drive-files-automatically-with-dlp-rules",
     "type": "primary",
     "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "g-privacyhub-dlp",
-    "vendor": "go",
-    "title": "Google Workspace Privacy Hub: DLP ja Gemini",
-    "url": "https://knowledge.workspace.google.com/admin/gemini/generative-ai-in-google-workspace-privacy-hub",
-    "type": "primary",
-    "monitor": true,
     "selector": ""
   },
   {
