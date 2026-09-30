@@ -43,7 +43,7 @@
   },
   "a-subprocessors": {
     "error": "liian vähän tekstiä (1 merkkiä); todennäköisesti esto tai JS-sivu",
-    "failures": 1,
+    "failures": 2,
     "last_checked": "2026-09-30"
   },
   "eu-gpai": {
@@ -126,7 +126,7 @@
   },
   "mi-certs": {
     "error": "liian vähän tekstiä (181 merkkiä); todennäköisesti esto tai JS-sivu",
-    "failures": 1,
+    "failures": 2,
     "last_checked": "2026-09-30"
   },
   "mi-dpa": {
