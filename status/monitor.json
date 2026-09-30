@@ -2,8 +2,8 @@
   "_run": {
     "changed": 0,
     "date": "2026-09-30",
-    "failed": 2,
-    "monitored": 42
+    "failed": 0,
+    "monitored": 40
   },
   "a-certs": {
     "baseline": "2026-09-30",
