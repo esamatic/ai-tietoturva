@@ -181,9 +181,9 @@ document.getElementById('title').textContent = D.meta.title;
 document.getElementById('desc').textContent = D.meta.description;
 document.getElementById('disclaimer').textContent = D.meta.disclaimer || "";
 document.getElementById('legend2').textContent =
-  "Tila on arvio tietoturvan ja hankinnan kannalta, ei kyllä/ei-vastaus rivin kysymykseen: esimerkiksi koulutusrivillä ✓ Hyvä tarkoittaa, ettei dataa käytetä koulutukseen. " +
-  `Oranssi reunus = solu muuttunut viimeisen ${WINDOW} päivän aikana (aiempi arvo avattavissa). ` +
-  "Lähdelinkit: sininen = ensisijainen lähde, kursiivi = toissijainen. Vie osoitin linkin päälle nähdäksesi otsikon ja hakupäivän.";
+  "Tila on arvio tietoturvan ja hankinnan kannalta, ei kyllä/ei-vastaus rivin kysymykseen, ellei rivillä ole omaa asteikkoa: esimerkiksi koulutusrivillä ✓ Hyvä tarkoittaa, ettei dataa käytetä koulutukseen. " +
+  `Oranssi reunus = arvio muuttunut viimeisen ${WINDOW} päivän aikana (aiempi arvo avattavissa). ` +
+  "Lähdelinkit: sininen = ensisijainen lähde, kursiivi = toissijainen. Tietokoneella lähteen otsikko ja hakupäivä näkyvät, kun viet osoittimen linkin päälle.";
 
 const all = Object.entries(CELLS);
 const unsourced = all.filter(([,c]) => c.status !== "u" && !c.sources.length).length;
@@ -193,7 +193,7 @@ const run = MON._run || {};
 document.getElementById('facts').innerHTML = [
   `Data päivitetty <b>${fmt(lastData)}</b>`,
   run.date ? `Lähteet tarkistettu <b>${fmt(run.date)}</b> (${run.monitored} seurattua${run.failed ? `, <span class="err">${run.failed} epäonnistui</span>` : ""})` : "Seuranta ei ole vielä ajanut",
-  `<b>${all.length}</b> solua, <b>${unsourced}</b> ilman lähdettä, <b>${verify}</b> varmistettavaa`
+  `<b>${all.length}</b> arviota, joista <b>${unsourced}</b> ilman lähdettä ja <b>${verify}</b> merkitty varmistettaviksi`
 ].map(x => `<li>${x}</li>`).join("");
 
 document.getElementById('notes').innerHTML = (D.meta.notes || []).map(n => `<li>${esc(n)}</li>`).join("");
@@ -216,10 +216,10 @@ function colLabelOf(colId) {
   return c ? `${VEND[c.vendor] || c.vendor} ${c.plan}` : colId;
 }
 if (FORM) document.getElementById('fixall').innerHTML =
-  `Löysitkö virheen tai paremman lähteen? <a href="${esc(FORM)}" target="_blank" rel="noopener">Ehdota korjausta</a> tai käytä solun ✎-linkkiä.`;
+  `Löysitkö virheen tai paremman lähteen? <a href="${esc(FORM)}" target="_blank" rel="noopener">Ehdota korjausta</a> tai käytä arvion ✎-linkkiä (vaatii GitHub-tunnuksen).`;
 
 function srcLinks(cell, rowId, colId) {
-  const fix = FORM ? `<a class="fix" href="${esc(fixUrl(rowId, colId))}" target="_blank" rel="noopener" title="Ehdota korjausta tai lähdettä tähän soluun">✎ korjaa</a>` : "";
+  const fix = FORM ? `<a class="fix" href="${esc(fixUrl(rowId, colId))}" target="_blank" rel="noopener" title="Ehdota korjausta tai lähdettä tähän arvioon">✎ korjaa</a>` : "";
   if (!cell.sources.length) return fix ? `<span class="srcs">${fix}</span>` : "";
   return '<span class="srcs">' + cell.sources.map((s, i) => {
     const src = SRC[s.id] || {url:"#", title:s.id, type:""};
@@ -326,7 +326,7 @@ document.getElementById('log').innerHTML = D.changelog.slice(0, 40).map(e => {
 const usage = {};
 for (const [, c] of all) for (const s of c.sources) usage[s.id] = (usage[s.id] || 0) + 1;
 document.getElementById('sources').innerHTML =
-  "<thead><tr><th>Lähde</th><th>Tyyppi</th><th>Soluja</th><th>Seuranta</th></tr></thead><tbody>" +
+  "<thead><tr><th>Lähde</th><th>Tyyppi</th><th>Arvioita</th><th>Seuranta</th></tr></thead><tbody>" +
   D.sources.map(s => {
     const m = MON[s.id] || {};
     let mon = "ei seurannassa";

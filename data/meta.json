@@ -1,16 +1,16 @@
 {
-  "title": "Pilvipohjaisten AI-avustajien tietoturvamatriisi",
-  "description": "Yrityslisenssien vertailu tietoturvan ja tietosuojan näkökulmasta.",
+  "title": "Tekoälyavustajat yrityskäytössä – tietoturva- ja tietosuojavertailu",
+  "description": "Yrityslisenssit rinnakkain alustavan tarjoajavalinnan tueksi. Jokaisella tiedolla on lähde, ja lähteitä seurataan päivittäin. Tiedot on koottu tekoälyavusteisesti ja tarkistettu käsin.",
   "change_window_days": 45,
   "notes": [
-    "Koulutus ei enää erottele tarjoajia: kaikki lupaavat yrityslisensseissä, ettei asiakasdataa käytetä koulutukseen oletuksena. Suurin käytännön riski on työ henkilökohtaisilla kuluttajatileillä.",
-    "EU-käsittely on suurin ero. Microsoftin EU Data Boundary ei kata Anthropic-malleja; Googlella alueellinen käsittely vaatii ylimmät editiot ja maksaa ominaisuuksia; OpenAI tarjoaa EU-tallennuksen ja osittaisen EU-inferenssin vain Enterprisessa; Anthropicin omat palvelut käsittelevät dataa USA:ssa tai globaalisti.",
+    "Koulutus ei juuri erottele tarjoajia: yrityslisensseissä asiakasdataa ei käytetä koulutukseen oletuksena. Poikkeus on Mistral Team, josta lähteet ovat ristiriidassa. Suurin käytännön riski on työ henkilökohtaisilla kuluttajatileillä.",
+    "EU-käsittely on suurin ero. Mistralilla data tallennetaan ja käsitellään oletuksena EU:ssa. Microsoftin EU Data Boundary ei kata Anthropic-malleja; Googlella alueellinen käsittely vaatii ylimmät editiot ja vie osan ominaisuuksista; OpenAI tarjoaa EU-tallennuksen ja osittaisen EU-inferenssin vain Enterprisessa; Anthropicin omat palvelut käsittelevät dataa USA:ssa tai globaalisti.",
     "Tallennus ja käsittely ovat eri asioita: lokit, turvallisuusvalvonta ja osa ominaisuuksista voivat jäädä alueellisen lupauksen ulkopuolelle.",
     "Integroidut avustajat (Microsoft Copilot, Gemini Workspacessa) näkevät kaiken, mihin käyttäjällä on oikeus. Jako-oikeudet kannattaa siivota ennen käyttöönottoa.",
-    "Kaikki nykyiset tarjoajat ovat yhdysvaltalaisia yhtiöitä, joihin sovelletaan CLOUD Actia, vaikka data olisi EU:ssa.",
+    "Microsoft, Google, Anthropic ja OpenAI ovat yhdysvaltalaisia yhtiöitä, joihin sovelletaan CLOUD Actia, vaikka data olisi EU:ssa. Mistral on ranskalainen.",
     "Sertifikaatin laajuus kannattaa tarkistaa lisenssitasolla: esimerkiksi OpenAI listaa ISO-sertifikaatit vain Enterpriselle.",
     "Salaus siirrossa ja levossa on kaikilla vakiona, eikä sitä siksi vertailla erikseen.",
-    "Matriisi vertaa tietoturvaa ja tietosuojaa. Sopivuus organisaation nykyiseen ympäristöön (esim. M365 vai Google Workspace) ratkaisee käytännössä usein, mutta se ei ole mukana tässä vertailussa."
+    "Vertailu kattaa tietoturvan ja tietosuojan. Sopivuus organisaation nykyiseen ympäristöön (esim. M365 vai Google Workspace) ratkaisee käytännössä usein, mutta se ei ole mukana tässä vertailussa."
   ],
   "disclaimer": "Hankinnan apuväline, ei oikeudellinen arvio. Merkinnät kuvaavat dokumentoituja ominaisuuksia, eivät sitä, onko ne otettu käyttöön tai kattaako sopimus ne.",
   "tiers": {
