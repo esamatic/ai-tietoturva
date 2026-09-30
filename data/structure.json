@@ -267,7 +267,7 @@
       "id": "g_gemini_enterprise",
       "vendor": "go",
       "plan": "Gemini Enterprise (erillinen)",
-      "meta": "Business (≤300) vs. Standard / Plus",
+      "meta": "Business (≤300) vs. Standard / Plus; myös Pay-as-you-go ja Frontline-lisäosa",
       "added": "2026-09-30"
     },
     {
