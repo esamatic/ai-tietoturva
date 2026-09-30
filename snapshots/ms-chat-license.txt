@@ -1,0 +1,20 @@
+Copilot Chat is available to Microsoft business users. The features you can use depend on whether your admin has assigned you a Microsoft Copilot add-on license.
+Note
+To use Copilot Chat you need to sign in with your Microsoft 365 account and have a qualifying Microsoft 365 business or enterprise subscription.
+Copilot Chat with or without an add-on license
+| Feature | Without a Microsoft Copilot license (Copilot Chat only) | With a Microsoft Copilot license |
+|---|---|---|
+| AI model access | Standard access | Priority access |
+| Web data reasoning | Yes | Yes |
+| Work data reasoning (Work IQ) | Limited (uploaded files) | Full (meetings, emails, chats, files, and more) |
+| Access to agents | Limited (no advanced agents) | Extensive use (including advanced agents like Researcher, Analyst, and custom agents) |
+| Security | Enterprise grade | Enterprise grade |
+| Copilot studio access | Pay-as-you-go | Included |
+| Priority | Standard (may be limited during peak times) | Priority (faster, more reliable) |
+| Copilot in Outlook | Included | Included |
+| Copilot in Microsoft 365 apps | Depends on your label | Included |
+For additional information about what you have access to with Copilot sign into copilot.cloud.microsoft check what label is assigned to you.
+A label of Copilot Chat (Basic), M365 Copilot (Basic), or M365 Copilot (Premium) appears under your name.
+This label indicates where you can access Copilot directly. Learn more about labels and what they mean in What Copilot license do I have.
+Copilot help for IT admins
+If you're an admin and want to learn more about setting up Copilot Chat in your organization, see the following:

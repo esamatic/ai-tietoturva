@@ -1,0 +1,94 @@
+Note
+Access to this page requires authorization. You can try signing in or changing directories.
+Access to this page requires authorization. You can try changing directories.
+Use Microsoft Purview to mitigate and manage the risks associated with AI usage, and implement corresponding protection and governance controls.
+The following sections on this page provide an overview of Data Security Posture Management for AI and the Microsoft Purview capabilities that provide additional data security and compliance controls to accelerate your organization's adoption of Copilots and agents, and other generative AI apps.
+In some Microsoft Purview solutions, you might see the supported AI apps grouped by the following category names:
+- Copilot experiences and agents or Microsoft Copilot experiences for supported Copilots and agents that include:
+- Microsoft 365 Copilot
+- Security Copilot
+- Copilot in Fabric
+- Copilot Studio
+- Enterprise AI apps for non-Copilot AI apps and agents connected to your organization through Entra registration, data connectors, Microsoft Foundry, and other methods, and include:
+- Microsoft Foundry
+- Entra-registered AI apps
+- Anthropic Claude (Enterprise)
+- ChatGPT Enterprise
+- Other AI apps that are detected through browser activity and categorized as "Generative AI" in the Defender for Cloud Apps catalog. This category can include AI apps and agents from the other two categories but also uniquely includes AI apps and agents from third-party LLMs, such as:
+- ChatGPT
+- Google Gemini
+- Microsoft Copilot (consumer version)
+- DeepSeek
+For a breakdown of Microsoft Purview security and compliance supported capabilities for AI interactions by app, see the additional pages identified in the following table. Where these AI apps support agents, they inherit the same security and compliance capabilities as their parent AI app. However, for a quick summary, see Use Microsoft Purview to manage data security & compliance for AI agents.
+| Copilot experiences and agents | Enterprise AI apps | Other AI apps |
+|---|---|---|
+| Microsoft 365 Copilot & Microsoft 365 Copilot Chat | Entra-registered AI apps | Other AI apps |
+| Microsoft 365 Copilot Cowork | Microsoft Foundry | |
+| Microsoft Security Copilot | ChatGPT Enterprise | |
+| Copilot in Fabric | Anthropic Claude (Enterprise) | |
+| Microsoft Copilot Studio | | |
+| Microsoft Facilitator | | |
+| Channel Agent in Teams | | |
+For a list of supported Microsoft Purview security and compliance supported capabilities for Microsoft Agent 365, see Use Microsoft Purview to manage data security & compliance for Microsoft Agent 365.
+If you're new to Microsoft Purview, you might also find an overview of the product helpful: Learn about Microsoft Purview.
+DSPM and DSPM for AI (classic)
+Use Data Security Posture Management or Data Security Posture Management for AI (classic) as your front door to discover, secure, and apply compliance controls for AI usage across your enterprise. Both DSPM versions use existing controls from Microsoft Purview information protection and compliance management with easy-to-use graphical tools and reports to quickly gain insights into AI use within your organization. With personalized recommendations, and one-click policies help you protect your data and comply with regulatory requirements.
+Microsoft Purview strengthens information protection for AI apps
+Because of the power and speed AI can proactively surface content, generative AI amplifies the problem and risk of oversharing or leaking data. Learn how information protection capabilities from Microsoft Purview can help to strengthen your existing data security solutions.
+Sensitivity labels and AI interactions
+AI apps that Microsoft Purview support use existing controls to ensure that data stored in your tenant is never returned to the user or used by a large language model (LLM) if the user doesn't have access to that data. When the data has sensitivity labels from your organization applied to the content, there's an extra layer of protection:
+- When a file is open in Word, Excel, PowerPoint, or similarly an email or calendar event is open in Outlook, the sensitivity of the data is displayed to users in the app with the label name and content markings (such as header or footer text) that have been configured for the label. Loop components and pages also support the same sensitivity labels.
+- When the sensitivity label applies encryption, users must have the EXTRACT usage right, as well as VIEW, for the AI apps to return the data.
+- This protection extends to data stored outside your Microsoft 365 tenant when it's open in an Office app (data in use). For example, local storage, network shares, and cloud storage.
+Tip
+If you haven't already, we recommend you enable sensitivity labels for SharePoint and OneDrive and also familiarize yourself with the file types and label configurations that these services can process. When sensitivity labels aren't enabled for these services, the encrypted files that Copilot and agents can access are limited to data in use from Office apps on Windows.
+For instructions, see Enable sensitivity labels for Office files in SharePoint and OneDrive.
+If you're not already using sensitivity labels, see Get started with sensitivity labels.
+Encryption without sensitivity labels and AI interactions
+Even if a sensitivity label isn't applied to content, services and products might use the encryption capabilities from the Azure Rights Management service. As a result, AI apps can still check for the VIEW and EXTRACT usage rights before returning data and links to a user, but there's no automatic inheritance of protection for new items.
+Tip
+You'll get the best user experience when you always use sensitivity labels to protect your data, and encryption is applied by a label.
+Examples of products and services that can use the encryption capabilities from the Azure Rights Management service without sensitivity labels:
+- Microsoft Purview Message Encryption
+- Microsoft Information Rights Management (IRM)
+- Microsoft Rights Management connector
+- Microsoft Rights Management SDK
+For other encryption methods that don't use the Azure Rights Management service:
+- S/MIME protected emails won't be returned by Copilot, and Copilot isn't available in Outlook when an S/MIME protected email is open.
+- Password-protected documents can't be accessed by AI apps unless they're already opened by the user in the same app (data in use). Passwords aren't inherited by a destination item.
+As with other Microsoft 365 services, such as eDiscovery and search, items encrypted with Microsoft Purview Customer Key or your own root key (BYOK) are supported and eligible to be returned by Copilot.
+Data loss prevention and AI interactions
+Microsoft Purview Data Loss Prevention (DLP) helps you identify sensitive items across Microsoft 365 services and endpoints, monitor them, and helps protect against leakage of those items. It uses deep content inspection and contextual analysis to identify sensitive items and it enforces policies to protect sensitive data such as financial records, health information, or intellectual property.
+Windows computers that are onboarded to Microsoft Purview can be configured for Endpoint data loss prevention (DLP) policies that warn or block users from sharing sensitive information with third-party generative AI sites that are accessed via a browser. For example, a user is prevented from pasting credit card numbers into ChatGPT, or they see a warning that they can override. For more information about the supported DLP actions and which platforms support them, see the first two rows in the table from Endpoint activities you can monitor and take action on.
+Insider Risk Management and AI interactions
+Microsoft Purview Insider Risk Management helps you detect, investigate, and mitigate internal risks such as IP theft, data leakage, and security violations. It leverages machine learning models and various signals from Microsoft 365 and third-party indicators to identify potential malicious or inadvertent insider activities. The solution includes privacy controls like pseudonymization and role-based access, ensuring user-level privacy while enabling risk analysts to take appropriate actions.
+Use the Risky AI usage policy template to detect risky usage that includes prompt injection attacks and accessing protected materials. Insights from these signals are integrated into Microsoft Defender XDR to provide a comprehensive view of AI-related risks.
+Data classification and AI interactions
+Microsoft Purview data classification provides a comprehensive framework for identifying and tagging sensitive data across various Microsoft services, including Office 365, Dynamics 365, and Azure. Classifying data is often the first step to ensure compliance with data protection regulations and safeguard against unauthorized access, alteration, or destruction. You can use built-in system classifications or create your own.
+Sensitive information types and trainable classifiers can be used to find sensitive data in user prompts and responses when they use AI apps. The resulting information then surfaces in Microsoft Purview Reports overview and activity explorer in DSPM for AI and the AI activities tab in activity explorer from the preview version of DSPM.
+Microsoft Purview supports compliance management for AI apps
+Interactions using supported AI apps can be monitored for each user in your tenant. As such, together with data classification, you can use Microsoft Purview's auditing, communication compliance, eDiscovery with content search, and automatic retention and deletion capabilities from Data Lifecycle Management to manage this AI usage.
+Auditing and AI interactions
+Microsoft Purview Audit solutions provide comprehensive tools for searching and managing audit records of activities performed across various Microsoft services by users and admins, and help organizations to effectively respond to security events, forensic investigations, internal investigations, and compliance obligations.
+Like other activities, prompts and responses are captured in the unified audit log. Events include how and when users interact with the AI app, and can include in which Microsoft 365 service the activity took place, and references to the files stored in Microsoft 365 that were accessed during the interaction. If these files have a sensitivity label applied, that's also captured.
+These events flow into activity explorer in the AI activities tab in the current version of DSPM and in DSPM for AI, where the data from prompts and responses can be displayed. You can also use the Audit solution from the Microsoft Purview portal to search and find these auditing events.
+For more information, see Audit logs for Copilot and AI activities.
+Communication compliance and AI interactions
+Microsoft Purview Communication Compliance provides tools to help you detect and manage regulatory compliance and business conduct violations across various communication channels, which include user prompts and responses for AI apps. It's designed with privacy by default, pseudonymizing usernames and incorporating role-based access controls. The solution helps identify and remediate inappropriate communications, such as sharing sensitive information, harassment, threats, and adult content.
+To learn more about using communication compliance policies for AI apps, see Configure a communication compliance policy to detect for generative AI interactions.
+eDiscovery with content search and AI interactions
+Microsoft Purview eDiscovery lets you identify and deliver electronic information that can be used as evidence in legal cases. The eDiscovery tools in Microsoft Purview support searching for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Viva Engage teams. You can then prevent the information from deletion and export the information.
+Because user prompts and responses for AI apps are stored in a user's mailbox, you can create a case and use search when a user's mailbox is selected as the source for a search query. For example, select and retrieve this data from the source mailbox by selecting from the query builder Add condition > Type > Contains any of > Edit > Copilot activity. This query condition includes all Copilot and other AI application activity.
+After the search is refined, you can export the results or add to a review set. You can review and export information directly from the review set.
+For more information about identifying and deleting user AI interaction data, see Search for and delete Copilot data in eDiscovery.
+Data Lifecycle Management and AI interactions
+Microsoft Purview Data Lifecycle Management provides tools and capabilities to manage the lifecycle of organizational data by retaining necessary content and deleting unnecessary content. These tools ensure compliance with business, legal, and regulatory requirements.
+Use retention policies to automatically retain or delete user prompts and responses for AI apps. For detailed information about this retention works, see Learn about retention for Copilot & AI apps.
+As with all retention policies and holds, if more than one policy for the same location applies to a user, the principles of retention resolve any conflicts. For example, the data is retained for the longest duration of all the applied retention policies or eDiscovery holds.
+Compliance Manager and AI interactions
+Microsoft Purview Compliance Manager is a solution that helps you automatically assess and manage compliance across your multicloud environment. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+To help you keep compliant with AI regulations, Compliance Manager provides regulatory templates to help you assess, implement, and strengthen your compliance requirements for all generative AI apps. For example, monitoring AI interactions and preventing data loss in AI applications. For more information, see Assessments for AI regulations.
+Other documentation to help you secure and manage generative AI apps
+Blog post announcement: Accelerate AI adoption with next-gen security and governance capabilities
+Microsoft 365 Copilot:
+Related resources:
