@@ -88,6 +88,8 @@ table.m{border-collapse:separate;border-spacing:0;min-width:100%;font-size:.83re
 .srcs a{display:inline-block;margin-right:6px;color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--muted)}
 .srcs a.primary{color:var(--ms);border-bottom-color:var(--ms)}
 .srcs a.secondary{font-style:italic}
+.srcs a.fix{color:var(--muted);border-bottom:none;opacity:.75}
+.srcs a.fix:hover,.srcs a.fix:focus-visible{opacity:1;text-decoration:underline}
 details.prev{margin-top:5px;font-size:.74rem;color:var(--muted)}
 details.prev summary{cursor:pointer}
 details.prev p{margin:3px 0 0}
@@ -113,6 +115,7 @@ a{color:var(--ms)}
   <h1 id="title"></h1>
   <p class="lede" id="desc"></p>
   <ul class="facts" id="facts"></ul>
+  <p class="small" id="fixall"></p>
 </header>
 
 <div class="controls">
@@ -200,16 +203,32 @@ const vendorsInUse = [...new Set(S.columns.map(c => c.vendor))];
 document.getElementById('filters').innerHTML = '<span class="small">Näytä:</span>' + vendorsInUse.map(v =>
   `<button data-v="${esc(v)}" style="--vc:${vc(v)}" aria-pressed="true">${esc(VEND[v] || v)}</button>`).join("");
 
-function srcLinks(cell) {
-  if (!cell.sources.length) return "";
+// correction form, prefilled for one cell (needs the repo name, which the build adds on GitHub)
+const FORM = D.repo ? `https://github.com/${D.repo}/issues/new?template=4-lahde-ehdotus.yml` : "";
+const fixUrl = (rowId, colId) => {
+  const r = (ROW[rowId] || {}).label || rowId;
+  const c = colId === "*" ? "" : colLabelOf(colId);
+  const scope = c ? `${c}, ${r}` : r;
+  return `${FORM}&title=${encodeURIComponent("Lähde-ehdotus: " + scope)}&scope=${encodeURIComponent(scope)}`;
+};
+function colLabelOf(colId) {
+  const c = S.columns.find(x => x.id === colId);
+  return c ? `${VEND[c.vendor] || c.vendor} ${c.plan}` : colId;
+}
+if (FORM) document.getElementById('fixall').innerHTML =
+  `Löysitkö virheen tai paremman lähteen? <a href="${esc(FORM)}" target="_blank" rel="noopener">Ehdota korjausta</a> tai käytä solun ✎-linkkiä.`;
+
+function srcLinks(cell, rowId, colId) {
+  const fix = FORM ? `<a class="fix" href="${esc(fixUrl(rowId, colId))}" target="_blank" rel="noopener" title="Ehdota korjausta tai lähdettä tähän soluun">✎ korjaa</a>` : "";
+  if (!cell.sources.length) return fix ? `<span class="srcs">${fix}</span>` : "";
   return '<span class="srcs">' + cell.sources.map((s, i) => {
     const src = SRC[s.id] || {url:"#", title:s.id, type:""};
     const tip = `${src.title} (${src.type === "primary" ? "ensisijainen" : "toissijainen"}, haettu ${fmt(s.accessed)})${s.note ? " – " + s.note : ""}`;
     return `<a class="${esc(src.type)}" href="${esc(src.url)}" target="_blank" rel="noopener" title="${esc(tip)}">[${i+1}] ${esc(src.title.split(":")[0])}</a>`;
-  }).join("") + "</span>";
+  }).join("") + fix + "</span>";
 }
 
-function cellHtml(rowId, cell, colspan) {
+function cellHtml(rowId, colId, cell, colspan) {
   const span = colspan ? ` colspan="${colspan}" data-span="1"` : "";
   if (!cell) return `<td class="cell x"${span}><span class="st s-x">– Ei vielä tutkittu</span></td>`;
   const chg = isChanged(cell);
@@ -223,7 +242,7 @@ function cellHtml(rowId, cell, colspan) {
     const h = cell.history[0];
     prev = `<details class="prev"><summary>Aiempi arvo: ${lbl(rowId, h.status)}</summary><p>${esc(h.text)}</p><p>Voimassa ${fmt(h.from)}–${fmt(h.until)}. Syy muutokseen: ${esc(h.reason)}</p></details>`;
   }
-  return `<td class="cell${chg ? " chg" : ""}"${span}><span class="st s-${cell.status}">${lbl(rowId, cell.status)}</span>${b}<br>${esc(cell.text)}${srcLinks(cell)}${prev}</td>`;
+  return `<td class="cell${chg ? " chg" : ""}"${span}><span class="st s-${cell.status}">${lbl(rowId, cell.status)}</span>${b}<br>${esc(cell.text)}${srcLinks(cell, rowId, colId)}${prev}</td>`;
 }
 
 function build() {
@@ -253,8 +272,8 @@ function build() {
       const cells = r.span ? [CELLS[`${r.id}|*`]] : S.columns.map(c => CELLS[`${r.id}|${c.id}`]);
       const changed = cells.some(isChanged) ? "1" : "";
       h += `<tr data-row="${esc(r.id)}" data-group-of="${esc(g.id)}" data-tier-of="${t}" data-changed="${changed}"><th scope="row" class="rowh">${esc(r.label)}${r.hint ? `<small>${esc(r.hint)}</small>` : ""}${scale}${tracked}</th>`;
-      if (r.span) h += cellHtml(r.id, cells[0], S.columns.length);
-      else S.columns.forEach((c, i) => { h += cellHtml(r.id, cells[i]).replace("<td ", `<td data-v="${esc(c.vendor)}" `); });
+      if (r.span) h += cellHtml(r.id, "*", cells[0], S.columns.length);
+      else S.columns.forEach((c, i) => { h += cellHtml(r.id, c.id, cells[i]).replace("<td ", `<td data-v="${esc(c.vendor)}" `); });
       h += "</tr>";
     }
   }
