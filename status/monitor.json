@@ -1,0 +1,258 @@
+{
+  "_run": {
+    "changed": 0,
+    "date": "2026-09-30",
+    "failed": 2,
+    "monitored": 42
+  },
+  "a-certs": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "a-dpa": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "a-export": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "a-pricing": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "a-residency": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "a-retention": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "a-subprocessors": {
+    "error": "liian vähän tekstiä (1 merkkiä); todennäköisesti esto tai JS-sivu",
+    "failures": 1,
+    "last_checked": "2026-09-30"
+  },
+  "eu-gpai": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-aiprivacy": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-cloud-dpa": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-data-regions": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-dlp-gemini": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-ge-controls": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-ge-locations": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-privacyhub": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-privacyhub-dlp": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-vault": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "g-zdr": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-admin": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-audit": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-certs": {
+    "error": "liian vähän tekstiä (181 merkkiä); todennäköisesti esto tai JS-sivu",
+    "failures": 1,
+    "last_checked": "2026-09-30"
+  },
+  "mi-dpa": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-residency-help": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-sso": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-sso-quickstart": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "mi-users": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-anthropic-subproc": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-chat-license": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-chat-privacy": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-copilot-faq": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-customer-key": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-edp": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-privacy": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-purview-ai": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "ms-retention-deletion": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-business-data": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-dpa": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-export-help": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-help-ent": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-pricing": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-residency": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  },
+  "o-residency-help": {
+    "baseline": "2026-09-30",
+    "failures": 0,
+    "last_checked": "2026-09-30",
+    "last_ok": "2026-09-30"
+  }
+}
