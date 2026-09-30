@@ -455,7 +455,7 @@
     "title": "Anthropic: Subprocessors",
     "url": "https://www.anthropic.com/subprocessors",
     "type": "primary",
-    "monitor": true,
+    "monitor": false,
     "selector": ""
   },
   {
@@ -608,7 +608,7 @@
     "title": "Mistral Help: SOC 2 and ISO 27001",
     "url": "https://help.mistral.ai/en/articles/347638-do-you-have-soc-2-or-iso-27001-certification",
     "type": "primary",
-    "monitor": true,
+    "monitor": false,
     "selector": ""
   },
   {
