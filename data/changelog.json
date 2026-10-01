@@ -1,6 +1,181 @@
 [
   {
     "date": "2026-10-01",
+    "ref": "#24",
+    "summary": "Anthropicin täysi tarkistus: Enterprisen asiakkaan hallinnoimat avaimet vahvistettu, Teamin agenttien oletusasetukset ja rajaukset arvioitu, palveluntarjoajan pääsy, säilytys, sopimusosapuoli ja hinnat päivitetty ensisijaisista lähteistä.",
+    "changes": [
+      {
+        "kind": "source",
+        "key": "a-commercial-terms",
+        "text": "Anthropic: Commercial Terms of Service"
+      },
+      {
+        "kind": "source",
+        "key": "a-covered-models",
+        "text": "Anthropic: Data retention practices for Covered Models"
+      },
+      {
+        "kind": "source",
+        "key": "a-custom-retention",
+        "text": "Anthropic: Configure custom data retention controls for Enterprise plans"
+      },
+      {
+        "kind": "source",
+        "key": "a-enterprise-plan",
+        "text": "Anthropic: What is the Enterprise plan?"
+      },
+      {
+        "kind": "source",
+        "key": "a-cmek",
+        "text": "Anthropic: What are customer-managed encryption keys (CMEK)?"
+      },
+      {
+        "kind": "source",
+        "key": "a-cmek-docs",
+        "text": "Claude Platform Docs: Customer-managed encryption keys"
+      },
+      {
+        "kind": "source",
+        "key": "a-cowork-admin",
+        "text": "Anthropic: Use Claude Cowork on Team and Enterprise plans"
+      },
+      {
+        "kind": "source",
+        "key": "a-chrome-admin",
+        "text": "Anthropic: Claude in Chrome admin controls"
+      },
+      {
+        "kind": "source",
+        "key": "a-browser-setup",
+        "text": "Anthropic: Set up browser use in Claude Cowork for Team and Enterprise plans"
+      },
+      {
+        "kind": "source",
+        "key": "a-rbac",
+        "text": "Anthropic: Set up role-based permissions on Enterprise plans"
+      },
+      {
+        "kind": "column_update",
+        "key": "a_claude_enterprise",
+        "text": "Claude Enterprise (Itsepalveluna väh. 20, myynnin kautta väh. 50 käyttäjää)",
+        "reason": "Vähimmäismäärät vahvistettu Enterprise-ohjeartikkelista (2026-10-01)."
+      },
+      {
+        "kind": "text",
+        "key": "dpa|a_claude_team",
+        "from": "y",
+        "to": "y",
+        "text": "DPA; Anthropic on käsittelijä. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, Limited, ja sovellettava laki on Irlannin.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty ETA-sopimusosapuoli ja sovellettava laki."
+      },
+      {
+        "kind": "text",
+        "key": "dpa|a_claude_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "DPA; Anthropic on käsittelijä. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, Limited, ja sovellettava laki on Irlannin.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty ETA-sopimusosapuoli ja sovellettava laki."
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|a_claude_team",
+        "from": "p",
+        "to": "p",
+        "text": "Ihmistarkastus tapahtuu, kun automaattinen trust & safety -järjestelmä liputtaa sisällön; liputetut syötteet ja vastaukset säilyvät enintään 2 v ja luokitukset 7 v. Mythos-luokan malleissa tarkastus on rajattu pieneen tarkastajajoukkoon ja jokainen pääsy kirjataan muuttumattomaan lokiin. Asiakas ei voi hyväksyä tai estää tarkastusta.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|a_claude_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Kuten Teamissa: ihmistarkastus liputetulle sisällölle, säilytys enintään 2 v, eikä asiakas voi estää tarkastusta. Kelpoisille organisaatioille on tarjolla access transparency -lokit, ja Mythos-luokan malleissa jokainen pääsy kirjataan muuttumattomaan lokiin.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; lisätty access transparency -lokit."
+      },
+      {
+        "kind": "text",
+        "key": "retention|a_claude_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Mukautettava säilytys (väh. 30 pv) chateille ja projekteille, muutokset audit-lokissa; ei koske Claude Designia, Claude Tagia eikä Claude Code on the web -pohjaisia ominaisuuksia. Compliance API ohjelmalliseen hakuun. Mythos-luokan malleilla 30 pv säilytys myös ZDR-sopimuksissa 9.6.2026 alkaen.",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla; lisätty säilytysasetusten ominaisuusrajaukset."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|a_claude_team",
+        "from": "p",
+        "to": "p",
+        "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Kolmansien osapuolten ominaisuudet, kuten konnektorit, eivät kuulu palveluun, eikä Anthropic vastaa niistä. Web-haku ja MCP ohittavat koodin suorituksen verkkorajaukset.",
+        "reason": "Lisätty kolmansien osapuolten ominaisuuksien vastuurajaus ja verkkorajausten poikkeukset ensisijaisista lähteistä."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|a_claude_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Kolmansien osapuolten ominaisuudet, kuten konnektorit, eivät kuulu palveluun, eikä Anthropic vastaa niistä. Web-haku ja MCP ohittavat koodin suorituksen verkkorajaukset.",
+        "reason": "Lisätty kolmansien osapuolten ominaisuuksien vastuurajaus ja verkkorajausten poikkeukset ensisijaisista lähteistä."
+      },
+      {
+        "kind": "text",
+        "key": "jurisdiction|a_claude_team",
+        "from": "p",
+        "to": "p",
+        "text": "Yhdysvaltalainen emoyhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, mutta data tallennetaan USA:ssa ja siirrot nojaavat SCC:ihin.",
+        "reason": "Aiemmat lähteet olivat toissijaisia ja osin muita tarjoajia koskevia; korvattu Anthropicin ehdoilla ja tarkennettu siirtoperuste."
+      },
+      {
+        "kind": "text",
+        "key": "jurisdiction|a_claude_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Yhdysvaltalainen emoyhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, mutta data tallennetaan USA:ssa ja siirrot nojaavat SCC:ihin.",
+        "reason": "Aiemmat lähteet olivat toissijaisia ja osin muita tarjoajia koskevia; korvattu Anthropicin ehdoilla ja tarkennettu siirtoperuste."
+      },
+      {
+        "kind": "status",
+        "key": "cmk|a_claude_enterprise",
+        "from": "p",
+        "to": "y",
+        "text": "Kelpoisille Enterprise-organisaatioille CMEK omassa AWS KMS-, Google Cloud KMS- tai Azure Key Vault -avaimessa; avaimen käyttö näkyy asiakkaan pilven audit-lokeissa. Aiempaa dataa ei salata uudelleen, eivätkä beta-ominaisuudet (esim. Claude Security, Claude Design) välttämättä kuulu piiriin.",
+        "reason": "Tila p→y: CMEK vahvistettu ensisijaisista lähteistä; verify poistettu."
+      },
+      {
+        "kind": "status",
+        "key": "agents|a_claude_team",
+        "from": "y",
+        "to": "p",
+        "text": "Cowork ja Claude in Chrome ovat oletuksena päällä. Admin voi kytkeä ne, web-haun, koodin suorituksen verkkoyhteydet ja konnektorit pois vain koko organisaatiolta, ja selainagentille voi asettaa sallitut ja estetyt sivustot.",
+        "reason": "Tila y→p: agenttiominaisuudet ovat oletuksena päällä eikä niitä voi rajata ryhmittäin; verify poistettu."
+      },
+      {
+        "kind": "text",
+        "key": "agents|a_claude_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Kuten Teamissa, ja lisäksi mukautetut roolit ja ryhmät: Cowork, Claude in Chrome, Claude Code ja web-haku voidaan sallia vain osalle käyttäjistä. Claude in Chrome kytkeytyi 10.9.2026 oletuksena päälle, ellei sitä ollut erikseen estetty.",
+        "reason": "Verify-merkitty solu vahvistettu ja tarkennettu; lisätty oletusasetuksen muutos."
+      },
+      {
+        "kind": "text",
+        "key": "pricing|a_claude_team",
+        "from": "y",
+        "to": "y",
+        "text": "Standard-paikka 20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausittain; Premium-paikka (5x käyttö) 100 $ tai 125 $. 2–150 käyttäjää, paikkatyyppejä voi yhdistellä.",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisella; lisätty Premium-paikan hinta."
+      },
+      {
+        "kind": "text",
+        "key": "pricing|a_claude_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "20 $/käyttäjä/kk vuosilaskutuksella, ja kaikki käyttö laskutetaan lisäksi API-hinnoin ilman käyttörajoja; admin voi asettaa kulurajat. Vähintään 20 paikkaa itsepalveluna tai 50 myynnin kautta.",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla; lisätty vähimmäismäärät ja kulurajat."
+      }
+    ]
+  },
+  {
+    "date": "2026-10-01",
     "ref": "#22",
     "summary": "OpenAI:n täysi tarkistus: Businessin tekijänoikeusvastuu korjattu palveluehtojen mukaiseksi, Businessin säilytys- ja analytiikkatiedot päivitetty, palveluntarjoajan pääsy, agenttien hallinta ja datan sijainti vahvistettu ensisijaisista lähteistä sekä Businessin uusi Premium-paikka lisätty.",
     "changes": [

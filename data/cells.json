@@ -1,31 +1,81 @@
 {
   "agents|a_claude_enterprise": {
     "status": "y",
-    "text": "Kuten Teamissa ja lisäksi RBAC.",
+    "text": "Kuten Teamissa, ja lisäksi mukautetut roolit ja ryhmät: Cowork, Claude in Chrome, Claude Code ja web-haku voidaan sallia vain osalle käyttäjistä. Claude in Chrome kytkeytyi 10.9.2026 oletuksena päälle, ellei sitä ollut erikseen estetty.",
     "sources": [
       {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
+        "id": "a-rbac",
+        "accessed": "2026-10-01",
+        "note": "Mukautetut roolit ominaisuuksien rajaamiseen ryhmittäin"
+      },
+      {
+        "id": "a-chrome-admin",
+        "accessed": "2026-10-01",
+        "note": "Claude in Chromella oma roolikohtainen oikeus, erillään Coworkista"
+      },
+      {
+        "id": "a-browser-setup",
+        "accessed": "2026-10-01",
+        "note": "Enterprisessa Claude in Chrome päälle oletuksena 10.9.2026 alkaen, ellei estetty"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Kuten Teamissa ja lisäksi RBAC.",
+        "sources": [
+          {
+            "id": "a-pricing",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ja tarkennettu; lisätty oletusasetuksen muutos."
+      }
+    ]
   },
   "agents|a_claude_team": {
-    "status": "y",
-    "text": "Admin-kontrollit etä- ja paikallisille konnektoreille.",
+    "status": "p",
+    "text": "Cowork ja Claude in Chrome ovat oletuksena päällä. Admin voi kytkeä ne, web-haun, koodin suorituksen verkkoyhteydet ja konnektorit pois vain koko organisaatiolta, ja selainagentille voi asettaa sallitut ja estetyt sivustot.",
     "sources": [
       {
+        "id": "a-cowork-admin",
+        "accessed": "2026-10-01",
+        "note": "Cowork oletuksena päällä; organisaationlaajuiset kytkimet; ryhmäkohtainen rajaus vain Enterprisessa"
+      },
+      {
+        "id": "a-browser-setup",
+        "accessed": "2026-10-01",
+        "note": "Claude in Chrome oletuksena päällä Teamissa; sivustolistat"
+      },
+      {
         "id": "a-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Team: admin controls for remote and local connectors; ei roolipohjaista pääsyä"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Admin-kontrollit etä- ja paikallisille konnektoreille.",
+        "sources": [
+          {
+            "id": "a-pricing",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila y→p: agenttiominaisuudet ovat oletuksena päällä eikä niitä voi rajata ryhmittäin; verify poistettu."
+      }
+    ]
   },
   "agents|g_gemini_enterprise": {
     "status": "y",
@@ -458,7 +508,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -471,7 +521,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -681,7 +731,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -698,7 +748,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -930,18 +980,43 @@
     "history": []
   },
   "cmk|a_claude_enterprise": {
-    "status": "p",
-    "text": "Mainitaan Enterprise-ominaisuutena toissijaisissa lähteissä, ei hinnastosivulla.",
+    "status": "y",
+    "text": "Kelpoisille Enterprise-organisaatioille CMEK omassa AWS KMS-, Google Cloud KMS- tai Azure Key Vault -avaimessa; avaimen käyttö näkyy asiakkaan pilven audit-lokeissa. Aiempaa dataa ei salata uudelleen, eivätkä beta-ominaisuudet (esim. Claude Security, Claude Design) välttämättä kuulu piiriin.",
     "sources": [
       {
-        "id": "a-aiconsultancy",
-        "accessed": "2026-09-25"
+        "id": "a-cmek",
+        "accessed": "2026-10-01",
+        "note": "CMEK kelpoisille Enterprise-organisaatioille; avaimen käyttö asiakkaan pilven audit-lokeissa"
+      },
+      {
+        "id": "a-cmek-docs",
+        "accessed": "2026-10-01",
+        "note": "Organisaatiokohtainen CMEK; olemassa olevaa dataa ei salata uudelleen; beta-ominaisuuksien rajaukset"
+      },
+      {
+        "id": "a-enterprise-plan",
+        "accessed": "2026-10-01",
+        "note": "Customer-managed encryption keys Enterprise-ominaisuutena"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Mainitaan Enterprise-ominaisuutena toissijaisissa lähteissä, ei hinnastosivulla.",
+        "sources": [
+          {
+            "id": "a-aiconsultancy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila p→y: CMEK vahvistettu ensisijaisista lähteistä; verify poistettu."
+      }
+    ]
   },
   "cmk|a_claude_team": {
     "status": "n",
@@ -952,7 +1027,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1087,37 +1162,87 @@
   },
   "data_egress|a_claude_enterprise": {
     "status": "p",
-    "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+    "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Kolmansien osapuolten ominaisuudet, kuten konnektorit, eivät kuulu palveluun, eikä Anthropic vastaa niistä. Web-haku ja MCP ohittavat koodin suorituksen verkkorajaukset.",
     "sources": [
       {
         "id": "a-dpa",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "C.3: ilmoitus uudesta alihankkijasta ja 15 päivän vastustusaika"
       },
       {
-        "id": "a-subprocessors",
-        "accessed": "2026-09-26"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "A.2: Third Party Features eivät ole palvelua, Anthropic ei vastaa niistä"
+      },
+      {
+        "id": "a-cowork-admin",
+        "accessed": "2026-10-01",
+        "note": "Verkkoyhteysrajaukset eivät koske web fetchiä, web-hakua eivätkä MCP:tä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+        "sources": [
+          {
+            "id": "a-dpa",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "a-subprocessors",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty kolmansien osapuolten ominaisuuksien vastuurajaus ja verkkorajausten poikkeukset ensisijaisista lähteistä."
+      }
+    ]
   },
   "data_egress|a_claude_team": {
     "status": "p",
-    "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+    "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Kolmansien osapuolten ominaisuudet, kuten konnektorit, eivät kuulu palveluun, eikä Anthropic vastaa niistä. Web-haku ja MCP ohittavat koodin suorituksen verkkorajaukset.",
     "sources": [
       {
         "id": "a-dpa",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "C.3: ilmoitus uudesta alihankkijasta ja 15 päivän vastustusaika"
       },
       {
-        "id": "a-subprocessors",
-        "accessed": "2026-09-26"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "A.2: Third Party Features eivät ole palvelua, Anthropic ei vastaa niistä"
+      },
+      {
+        "id": "a-cowork-admin",
+        "accessed": "2026-10-01",
+        "note": "Verkkoyhteysrajaukset eivät koske web fetchiä, web-hakua eivätkä MCP:tä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Alihankkijat listattu julkisesti; uudesta ilmoitetaan etukäteen ja vastustusaika on 15 pv. Konnektorit arvioitava erikseen.",
+        "sources": [
+          {
+            "id": "a-dpa",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "a-subprocessors",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty kolmansien osapuolten ominaisuuksien vastuurajaus ja verkkorajausten poikkeukset ensisijaisista lähteistä."
+      }
+    ]
   },
   "data_egress|g_gemini_enterprise": {
     "status": "p",
@@ -1444,7 +1569,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1457,7 +1582,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1616,29 +1741,69 @@
   },
   "dpa|a_claude_enterprise": {
     "status": "y",
-    "text": "DPA; Anthropic on käsittelijä.",
+    "text": "DPA; Anthropic on käsittelijä. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, Limited, ja sovellettava laki on Irlannin.",
     "sources": [
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-dpa",
+        "accessed": "2026-10-01",
+        "note": "B.1: asiakas rekisterinpitäjä, Anthropic käsittelijä"
+      },
+      {
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "ETA-, Sveitsi- ja UK-asiakkaiden sopimuskumppani Anthropic Ireland, Limited; Irlannin laki"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "DPA; Anthropic on käsittelijä.",
+        "sources": [
+          {
+            "id": "a-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty ETA-sopimusosapuoli ja sovellettava laki."
+      }
+    ]
   },
   "dpa|a_claude_team": {
     "status": "y",
-    "text": "DPA; Anthropic on käsittelijä.",
+    "text": "DPA; Anthropic on käsittelijä. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, Limited, ja sovellettava laki on Irlannin.",
     "sources": [
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-dpa",
+        "accessed": "2026-10-01",
+        "note": "B.1: asiakas rekisterinpitäjä, Anthropic käsittelijä"
+      },
+      {
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "ETA-, Sveitsi- ja UK-asiakkaiden sopimuskumppani Anthropic Ireland, Limited; Irlannin laki"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "DPA; Anthropic on käsittelijä.",
+        "sources": [
+          {
+            "id": "a-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty ETA-sopimusosapuoli ja sovellettava laki."
+      }
+    ]
   },
   "dpa|g_gemini_enterprise": {
     "status": "y",
@@ -1849,7 +2014,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1866,7 +2031,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2044,7 +2209,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2057,7 +2222,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2247,7 +2412,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2260,7 +2425,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2422,11 +2587,17 @@
     "text": "Globaali tai US-only-inferenssi.",
     "sources": [
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-enterprise-plan",
+        "accessed": "2026-10-01",
+        "note": "Enterprise: US-only inference"
+      },
+      {
+        "id": "a-residency",
+        "accessed": "2026-10-01",
+        "note": "Inferenssialueina vain global ja us"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2435,11 +2606,17 @@
     "text": "Globaali tai USA.",
     "sources": [
       {
+        "id": "a-residency",
+        "accessed": "2026-10-01",
+        "note": "Inferenssialueina vain global ja us"
+      },
+      {
         "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-25",
+        "note": "Ei EU-inferenssiä"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2647,11 +2824,12 @@
     "text": "Kaupallisten ehtojen vastuu: Anthropic puolustaa asiakasta maksullisen käytön ja outputin loukkausväitteitä vastaan; poikkeuksia mm. asiakkaan muokkauksille.",
     "sources": [
       {
-        "id": "x-proskauer-anthropic",
-        "accessed": "2026-09-26"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "K.1 ja K.3: vastuu maksullisesta käytöstä ja outputista poikkeuksineen"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2660,11 +2838,12 @@
     "text": "Kaupallisten ehtojen vastuu: Anthropic puolustaa asiakasta maksullisen käytön ja outputin loukkausväitteitä vastaan; poikkeuksia mm. asiakkaan muokkauksille.",
     "sources": [
       {
-        "id": "x-proskauer-anthropic",
-        "accessed": "2026-09-26"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "K.1 ja K.3: vastuu maksullisesta käytöstä ja outputista poikkeuksineen"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2874,37 +3053,77 @@
   },
   "jurisdiction|a_claude_enterprise": {
     "status": "p",
-    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "text": "Yhdysvaltalainen emoyhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, mutta data tallennetaan USA:ssa ja siirrot nojaavat SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "Sopimusosapuoli Anthropic Ireland, Limited ETA-asiakkaille, muille Anthropic, PBC"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-dpa",
+        "accessed": "2026-10-01",
+        "note": "I ja Schedule 3: SCC:t osana DPA:ta, Irlannin laki"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+        "sources": [
+          {
+            "id": "x-sonomos-claude",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Aiemmat lähteet olivat toissijaisia ja osin muita tarjoajia koskevia; korvattu Anthropicin ehdoilla ja tarkennettu siirtoperuste."
+      }
+    ]
   },
   "jurisdiction|a_claude_team": {
     "status": "p",
-    "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+    "text": "Yhdysvaltalainen emoyhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. ETA-asiakkaiden sopimusosapuoli on Anthropic Ireland, mutta data tallennetaan USA:ssa ja siirrot nojaavat SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "Sopimusosapuoli Anthropic Ireland, Limited ETA-asiakkaille, muille Anthropic, PBC"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-dpa",
+        "accessed": "2026-10-01",
+        "note": "I ja Schedule 3: SCC:t osana DPA:ta, Irlannin laki"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
+        "sources": [
+          {
+            "id": "x-sonomos-claude",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Aiemmat lähteet olivat toissijaisia ja osin muita tarjoajia koskevia; korvattu Anthropicin ehdoilla ja tarkennettu siirtoperuste."
+      }
+    ]
   },
   "jurisdiction|g_gemini_enterprise": {
     "status": "p",
@@ -3062,7 +3281,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3075,7 +3294,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3253,37 +3472,72 @@
   },
   "pricing|a_claude_enterprise": {
     "status": "p",
-    "text": "20 $/käyttäjä/kk (vuosilaskutus) ja lisäksi käyttö API-hinnoin.",
+    "text": "20 $/käyttäjä/kk vuosilaskutuksella, ja kaikki käyttö laskutetaan lisäksi API-hinnoin ilman käyttörajoja; admin voi asettaa kulurajat. Vähintään 20 paikkaa itsepalveluna tai 50 myynnin kautta.",
     "sources": [
       {
-        "id": "x-techinsider",
-        "accessed": "2026-09-26"
+        "id": "a-pricing",
+        "accessed": "2026-10-01",
+        "note": "Enterprise: 20 $/paikka/kk vuosilaskutuksella ja käyttö API-hinnoin"
       },
       {
-        "id": "x-layer3-pricing",
-        "accessed": "2026-09-26"
+        "id": "a-enterprise-plan",
+        "accessed": "2026-10-01",
+        "note": "Vähimmäismäärät 20 (itsepalvelu) ja 50 (myynti); ei käyttörajoja; kulurajat"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "20 $/käyttäjä/kk (vuosilaskutus) ja lisäksi käyttö API-hinnoin.",
+        "sources": [
+          {
+            "id": "x-techinsider",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "x-layer3-pricing",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla; lisätty vähimmäismäärät ja kulurajat."
+      }
+    ]
   },
   "pricing|a_claude_team": {
     "status": "y",
-    "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella (Standard); Premium-paikat kalliimpia.",
+    "text": "Standard-paikka 20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausittain; Premium-paikka (5x käyttö) 100 $ tai 125 $. 2–150 käyttäjää, paikkatyyppejä voi yhdistellä.",
     "sources": [
       {
-        "id": "x-kemeny",
-        "accessed": "2026-09-26"
-      },
-      {
-        "id": "x-aipricing",
-        "accessed": "2026-09-26"
+        "id": "a-pricing",
+        "accessed": "2026-10-01",
+        "note": "Team Standard- ja Premium-paikkojen hinnat; 2–150 käyttäjää"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella (Standard); Premium-paikat kalliimpia.",
+        "sources": [
+          {
+            "id": "x-kemeny",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "x-aipricing",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisella; lisätty Premium-paikan hinta."
+      }
+    ]
   },
   "pricing|g_gemini_enterprise": {
     "status": "p",
@@ -3493,31 +3747,71 @@
   },
   "provider_access|a_claude_enterprise": {
     "status": "p",
-    "text": "Sama kuin Teamissa: liputettu sisältö voidaan tarkastaa ja säilyttää enintään 2 v.",
+    "text": "Kuten Teamissa: ihmistarkastus liputetulle sisällölle, säilytys enintään 2 v, eikä asiakas voi estää tarkastusta. Kelpoisille organisaatioille on tarjolla access transparency -lokit, ja Mythos-luokan malleissa jokainen pääsy kirjataan muuttumattomaan lokiin.",
     "sources": [
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-retention",
+        "accessed": "2026-10-01",
+        "note": "Liputettujen keskustelujen säilytys enintään 2 v"
+      },
+      {
+        "id": "a-covered-models",
+        "accessed": "2026-10-01",
+        "note": "Kelpoisille organisaatioille CMK ja access transparency -lokit; rajattu ja lokitettu ihmistarkastus"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Sama kuin Teamissa: liputettu sisältö voidaan tarkastaa ja säilyttää enintään 2 v.",
+        "sources": [
+          {
+            "id": "a-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; lisätty access transparency -lokit."
+      }
+    ]
   },
   "provider_access|a_claude_team": {
     "status": "p",
-    "text": "Trust & safety voi tarkastaa liputettua sisältöä. Rikkomuksiksi liputettu data säilyy enintään 2 v.",
+    "text": "Ihmistarkastus tapahtuu, kun automaattinen trust & safety -järjestelmä liputtaa sisällön; liputetut syötteet ja vastaukset säilyvät enintään 2 v ja luokitukset 7 v. Mythos-luokan malleissa tarkastus on rajattu pieneen tarkastajajoukkoon ja jokainen pääsy kirjataan muuttumattomaan lokiin. Asiakas ei voi hyväksyä tai estää tarkastusta.",
     "sources": [
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-retention",
+        "accessed": "2026-10-01",
+        "note": "Liputetut syötteet ja vastaukset säilytetään enintään 2 v, luokitukset enintään 7 v"
+      },
+      {
+        "id": "a-covered-models",
+        "accessed": "2026-10-01",
+        "note": "Ihmistarkastus vain hallitun pääsypolun kautta liputetulle sisällölle; hyväksytyt tarkastajat ja muuttumaton loki"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Trust & safety voi tarkastaa liputettua sisältöä. Rikkomuksiksi liputettu data säilyy enintään 2 v.",
+        "sources": [
+          {
+            "id": "a-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      }
+    ]
   },
   "provider_access|g_gemini_enterprise": {
     "status": "p",
@@ -3790,7 +4084,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3803,7 +4097,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3973,39 +4267,66 @@
   },
   "retention|a_claude_enterprise": {
     "status": "y",
-    "text": "Mukautettava säilytys (min. 30 pv) ja Compliance API. 9.6.2026 alkaen tietyille malliluokille 30 pv säilytys myös ZDR-sopimuksissa.",
+    "text": "Mukautettava säilytys (väh. 30 pv) chateille ja projekteille, muutokset audit-lokissa; ei koske Claude Designia, Claude Tagia eikä Claude Code on the web -pohjaisia ominaisuuksia. Compliance API ohjelmalliseen hakuun. Mythos-luokan malleilla 30 pv säilytys myös ZDR-sopimuksissa 9.6.2026 alkaen.",
     "sources": [
       {
+        "id": "a-custom-retention",
+        "accessed": "2026-10-01",
+        "note": "Vähimmäissäilytys 30 pv; rajaukset Design-, Tag-, Managed Agents- ja Claude Code on the web -ominaisuuksiin; muutokset audit-lokissa"
+      },
+      {
+        "id": "a-covered-models",
+        "accessed": "2026-10-01",
+        "note": "Covered-malleilla 30 pv säilytys ZDR-organisaatioissa 9.6.2026 alkaen"
+      },
+      {
         "id": "a-pricing",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "a-aiconsultancy",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "a-welter",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Enterprise: Custom data retention controls ja Compliance API"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Mukautettava säilytys (min. 30 pv) ja Compliance API. 9.6.2026 alkaen tietyille malliluokille 30 pv säilytys myös ZDR-sopimuksissa.",
+        "sources": [
+          {
+            "id": "a-pricing",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "a-aiconsultancy",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "a-welter",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla; lisätty säilytysasetusten ominaisuusrajaukset."
+      }
+    ]
   },
   "retention|a_claude_team": {
     "status": "p",
     "text": "Tallennetut keskustelut säilyvät poistoon asti; poistetut poistuvat taustajärjestelmistä 30 päivässä. Ei mukautettavaa säilytystä.",
     "sources": [
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-retention",
+        "accessed": "2026-10-01",
+        "note": "Keskustelut säilyvät tuotteessa; poistetut poistuvat taustajärjestelmistä 30 päivässä"
       },
       {
         "id": "a-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Custom data retention controls: Team No"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4205,7 +4526,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": [],
     "verify": true
@@ -4219,7 +4540,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4384,11 +4705,17 @@
     "text": "Ei. Työtilan data tallennetaan vain USA:ssa.",
     "sources": [
       {
+        "id": "a-residency",
+        "accessed": "2026-10-01",
+        "note": "Anthropicin ainoa tallennusalue on us (Claude Platform -dokumentaatio)"
+      },
+      {
         "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-25",
+        "note": "Team- ja Enterprise-työtilojen data USA:ssa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4397,11 +4724,17 @@
     "text": "Ei. Työtilan data tallennetaan vain USA:ssa.",
     "sources": [
       {
+        "id": "a-residency",
+        "accessed": "2026-10-01",
+        "note": "Anthropicin ainoa tallennusalue on us (Claude Platform -dokumentaatio)"
+      },
+      {
         "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-25",
+        "note": "Team- ja Enterprise-työtilojen data USA:ssa"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4656,15 +4989,17 @@
     "text": "Ei oletuksena. Poikkeus on Development Partner Program -opt-in.",
     "sources": [
       {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "B: Anthropic ei saa kouluttaa malleja asiakkaan sisällöllä"
       },
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-pricing",
+        "accessed": "2026-10-01",
+        "note": "Model training: None by default"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4673,15 +5008,17 @@
     "text": "Ei oletuksena. Poikkeus on Development Partner Program -opt-in.",
     "sources": [
       {
-        "id": "a-pricing",
-        "accessed": "2026-09-25"
+        "id": "a-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "B: Anthropic ei saa kouluttaa malleja asiakkaan sisällöllä"
       },
       {
-        "id": "a-waimakers",
-        "accessed": "2026-09-25"
+        "id": "a-pricing",
+        "accessed": "2026-10-01",
+        "note": "Model training: None by default"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4833,7 +5170,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4846,7 +5183,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
