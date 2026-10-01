@@ -225,31 +225,86 @@
   },
   "agents|o_chatgpt_business": {
     "status": "p",
-    "text": "Admin hallitsee sovelluksia; ei connector registryä.",
+    "text": "Sovellukset ja konnektorit ovat oletuksena päällä; admin päättää sallitut sovellukset ja niiden toiminnot ja vain admin voi julkaista MCP-sovelluksia. Ryhmäkohtaista rajausta (RBAC) ja connector registryä ei ole.",
     "sources": [
       {
+        "id": "o-apps-help",
+        "accessed": "2026-10-01",
+        "note": "Sovellukset oletuksena päällä Businessissa; admin hallitsee saatavuutta ja toimintoja"
+      },
+      {
+        "id": "o-devmode-help",
+        "accessed": "2026-10-01",
+        "note": "Businessissa vain admin voi käyttää developer modea ja julkaista MCP-sovelluksia"
+      },
+      {
         "id": "o-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Business: RBAC No, Connector registry No"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Admin hallitsee sovelluksia; ei connector registryä.",
+        "sources": [
+          {
+            "id": "o-pricing",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; lisätty oletusasetus."
+      }
+    ]
   },
   "agents|o_chatgpt_enterprise": {
     "status": "y",
-    "text": "Connector registry ja RBAC.",
+    "text": "Sovellukset ovat oletuksena pois; RBAC rajaa sovellukset, developer moden (MCP), agentit, Codexin ja web-haun rooleittain. Connector registry ja toimintokohtaiset sovellusluvat.",
     "sources": [
       {
+        "id": "o-apps-help",
+        "accessed": "2026-10-01",
+        "note": "Sovellukset oletuksena pois Enterprise/Edu-työtiloissa; RBAC sovelluksille"
+      },
+      {
+        "id": "o-devmode-help",
+        "accessed": "2026-10-01",
+        "note": "Enterprise/Edu-admin rajaa developer moden RBAC:lla"
+      },
+      {
+        "id": "o-ent-release-notes",
+        "accessed": "2026-10-01",
+        "note": "Sovellusten käyttöoikeudet, RBAC ja toimintojen hallinta erillisinä kontrolleina"
+      },
+      {
         "id": "o-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Enterprise: Connector registry ja RBAC"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Connector registry ja RBAC.",
+        "sources": [
+          {
+            "id": "o-pricing",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      }
+    ]
   },
   "ai_act|a_claude_enterprise": {
     "status": "y",
@@ -574,16 +629,31 @@
   },
   "audit|o_chatgpt_business": {
     "status": "n",
-    "text": "Ei Compliance API:a eikä analytiikkanäkymää.",
+    "text": "Ei Compliance API:a eikä audit-lokia; vain käyttöanalytiikka. Keskustelujen järjestelmällinen haku ja eDiscovery puuttuvat.",
     "sources": [
       {
         "id": "o-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Business: Analytics dashboard Yes, Compliance API Logs Platform No"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "n",
+        "text": "Ei Compliance API:a eikä analytiikkanäkymää.",
+        "sources": [
+          {
+            "id": "o-pricing",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Analytiikkanäkymä on hinnaston mukaan saatavilla myös Businessissa; korjattu virheellinen maininta."
+      }
+    ]
   },
   "audit|o_chatgpt_enterprise": {
     "status": "y",
@@ -842,7 +912,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -855,7 +925,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -998,7 +1068,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1011,7 +1081,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1285,31 +1355,81 @@
   },
   "data_egress|o_chatgpt_business": {
     "status": "p",
-    "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
+    "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Businessissa sovellukset ovat oletuksena päällä; admin päättää sallitut sovellukset.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-service-terms",
+        "accessed": "2026-10-01",
+        "note": "Apps and Actions: sovellukselle lähetetty data käsitellään sovelluksen ehdoin; OpenAI ei vastaa siitä"
+      },
+      {
+        "id": "o-residency-help",
+        "accessed": "2026-10-01",
+        "note": "Ulkoisiin sovelluksiin, MCP:hen ja selainpalveluun lähtevä data kolmannen osapuolen ehdoin"
+      },
+      {
+        "id": "o-apps-help",
+        "accessed": "2026-10-01",
+        "note": "Sovellukset oletuksena päällä Business-työtiloissa"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
+        "sources": [
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      }
+    ]
   },
   "data_egress|o_chatgpt_enterprise": {
     "status": "p",
-    "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
+    "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Enterprisessa sovellukset ovat oletuksena pois, ja RBAC rajaa niiden käyttöä.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-service-terms",
+        "accessed": "2026-10-01",
+        "note": "Apps and Actions: sovellukselle lähetetty data käsitellään sovelluksen ehdoin"
+      },
+      {
+        "id": "o-residency-help",
+        "accessed": "2026-10-01",
+        "note": "Ulkoisiin sovelluksiin, MCP:hen ja selainpalveluun lähtevä data kolmannen osapuolen ehdoin"
+      },
+      {
+        "id": "o-apps-help",
+        "accessed": "2026-10-01",
+        "note": "Sovellukset oletuksena pois Enterprise/Edu-työtiloissa; RBAC sovelluksille"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Sovellukset, GPT:t ja MCP-palvelimet arvioitava erikseen.",
+        "sources": [
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      }
+    ]
   },
   "dlp|a_claude_enterprise": {
     "status": "p",
@@ -1473,7 +1593,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1683,11 +1803,17 @@
     "text": "DPA; ETA-asiakkaiden sopimusosapuoli OpenAI Ireland Ltd.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-dpa",
+        "accessed": "2026-10-01",
+        "note": "OpenAI käsittelijänä; ETA- ja Sveitsi-asiakkaiden sopimusosapuoli OpenAI Ireland Ltd."
+      },
+      {
+        "id": "o-business-data",
+        "accessed": "2026-10-01",
+        "note": "DPA allekirjoitettavissa Businessille, Enterpriselle ja API:lle"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1696,15 +1822,17 @@
     "text": "DPA ja räätälöidyt ehdot; OpenAI Ireland Ltd.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-dpa",
+        "accessed": "2026-10-01",
+        "note": "OpenAI käsittelijänä; ETA-asiakkaiden sopimusosapuoli OpenAI Ireland Ltd."
       },
       {
         "id": "o-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Enterprise: custom legal terms"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1882,7 +2010,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1903,7 +2031,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2093,7 +2221,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2106,7 +2234,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2268,7 +2396,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2285,7 +2413,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2491,11 +2619,12 @@
     "text": "Ei inferenssin sijaintia.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-residency-help",
+        "accessed": "2026-10-01",
+        "note": "Inference residency vain Enterprise/Edu-asiakkaille, joilla data residency käytössä"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2504,11 +2633,12 @@
     "text": "EU GPU-inferenssi kelpoisille työtiloille; CPU-käsittely, järjestelmädata ja integraatiot voivat olla muualla.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-residency-help",
+        "accessed": "2026-10-01",
+        "note": "EU-inferenssi GPU-suoritukselle; CPU-käsittely, reititys ja integraatiot voivat olla alueen ulkopuolella"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2686,31 +2816,61 @@
     "history": []
   },
   "ip_indemnity|o_chatgpt_business": {
-    "status": "y",
-    "text": "Copyright Shield kattaa Business Termsin piirissä olevat palvelut, myös Businessin (ent. Team).",
+    "status": "n",
+    "text": "Ei. Palveluehtojen tuotetun sisällön vastuusitoumus koskee vain Enterprise-, Edu- ja Healthcare-asiakkaita; Business mainitaan ehdoissa erikseen eikä kuulu sen piiriin.",
     "sources": [
       {
-        "id": "x-proskauer-openai-team",
-        "accessed": "2026-09-26"
+        "id": "o-service-terms",
+        "accessed": "2026-10-01",
+        "note": "Kohta 3: Enterprise määritellään Enterprise, Edu ja Healthcare; output indemnity koskee Enterprise-asiakkaita"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Copyright Shield kattaa Business Termsin piirissä olevat palvelut, myös Businessin (ent. Team).",
+        "sources": [
+          {
+            "id": "x-proskauer-openai-team",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila y→n: 29.9.2026 päivitettyjen palveluehtojen mukaan vastuusitoumus ei koske Businessia; aiempi tieto perustui toissijaiseen lähteeseen."
+      }
+    ]
   },
   "ip_indemnity|o_chatgpt_enterprise": {
     "status": "y",
-    "text": "Copyright Shield: OpenAI puolustaa asiakasta tekijänoikeusvaateissa.",
+    "text": "OpenAI puolustaa asiakasta, jos tuotettu sisältö loukkaa IP-oikeuksia. Ei koske beta-ominaisuuksia, muokattua tuotosta eikä tilanteita, joissa suodattimet on ohitettu tai loukkaus olisi pitänyt tietää.",
     "sources": [
       {
-        "id": "x-proskauer-openai-shield",
-        "accessed": "2026-09-26"
+        "id": "o-service-terms",
+        "accessed": "2026-10-01",
+        "note": "Output indemnity Enterprise-asiakkaille poikkeuksineen; beta-palvelut suljettu pois"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Copyright Shield: OpenAI puolustaa asiakasta tekijänoikeusvaateissa.",
+        "sources": [
+          {
+            "id": "x-proskauer-openai-shield",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu palveluehdoilla; lisätty keskeiset poikkeukset."
+      }
+    ]
   },
   "jurisdiction|a_claude_enterprise": {
     "status": "p",
@@ -2870,15 +3030,12 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-dpa",
+        "accessed": "2026-10-01",
+        "note": "OpenAI Ireland siirtää ETA-dataa SCC:iden tai komission tietosuojan riittävyyttä koskevan päätöksen nojalla"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2887,15 +3044,12 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-dpa",
+        "accessed": "2026-10-01",
+        "note": "OpenAI Ireland siirtää ETA-dataa SCC:iden tai komission tietosuojan riittävyyttä koskevan päätöksen nojalla"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3076,7 +3230,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3093,7 +3247,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3278,29 +3432,64 @@
   },
   "pricing|o_chatgpt_business": {
     "status": "y",
-    "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella.",
+    "text": "Standard-paikka 20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausittain; Premium-paikka (5x käyttö) 100 $ tai 125 $. 2–200 käyttäjää, paikkatyyppejä voi yhdistellä.",
     "sources": [
       {
-        "id": "x-kemeny",
-        "accessed": "2026-09-26"
+        "id": "o-pricing",
+        "accessed": "2026-10-01",
+        "note": "Business Standard ja Premium -paikkojen hinnat; 2–200 työntekijää"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausilaskutuksella.",
+        "sources": [
+          {
+            "id": "x-kemeny",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty uusi Premium-paikka."
+      }
+    ]
   },
   "pricing|o_chatgpt_enterprise": {
     "status": "n",
-    "text": "Ei julkista hintaa; raportoidut tarjoukset n. 45–75 $/käyttäjä/kk ja vähimmäismäärä 150 käyttäjää.",
+    "text": "Ei julkista hintaa; raportoidut tarjoukset n. 45–75 $/käyttäjä/kk ja vähimmäismäärä 150 käyttäjää. Tarjolla myös krediitti- ja token-pohjainen hinnoittelu.",
     "sources": [
       {
+        "id": "o-pricing",
+        "accessed": "2026-10-01",
+        "note": "Enterprise: custom pricing; krediitti- ja token-pohjainen hinnoittelu saatavilla"
+      },
+      {
         "id": "x-techinsider",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "Raportoidut hinnat ja vähimmäismäärä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "n",
+        "text": "Ei julkista hintaa; raportoidut tarjoukset n. 45–75 $/käyttäjä/kk ja vähimmäismäärä 150 käyttäjää.",
+        "sources": [
+          {
+            "id": "x-techinsider",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty uudet hinnoittelumallit ensisijaisesta lähteestä."
+      }
+    ]
   },
   "provider_access|a_claude_enterprise": {
     "status": "p",
@@ -3541,26 +3730,56 @@
   },
   "provider_access|o_chatgpt_business": {
     "status": "p",
-    "text": "Väärinkäytösvalvonta sisältää määräaikaisen kopion prompteista ja vastauksista, joka säilytetään USA:ssa.",
+    "text": "OpenAI:n valtuutettu henkilöstö (tekninen tuki, väärinkäytösten tutkinta, lakivelvoitteet) ja vaitiolovelvolliset alihankkijat voivat tarkastella keskusteluja väärinkäytösten selvittämiseksi. Asiakas ei voi hyväksyä tai estää pääsyä.",
     "sources": [
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-business-data",
+        "accessed": "2026-10-01",
+        "note": "Business FAQ: pääsy keskusteluihin valtuutetulla henkilöstöllä ja kolmansien osapuolten tarkastajilla väärinkäytösten selvittämiseksi"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Väärinkäytösvalvonta sisältää määräaikaisen kopion prompteista ja vastauksista, joka säilytetään USA:ssa.",
+        "sources": [
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu korvattu ensisijaisen lähteen kuvauksella; aiempaa väitettä USA:ssa säilytettävästä kopiosta ei löytynyt ensisijaisista lähteistä."
+      }
+    ]
   },
   "provider_access|o_chatgpt_enterprise": {
     "status": "p",
-    "text": "Valtuutettu henkilöstö voi käsitellä väärinkäytösepäilyjä ja tukipyyntöjä.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "text": "Valtuutettu henkilöstö käsittelee keskusteluja vain häiriöiden selvittämiseksi, asiakkaan nimenomaisella luvalla tehtävää palautusta varten tai lain vaatiessa. Asiakkaalla ei ole hyväksyntämekanismia muuhun pääsyyn.",
+    "sources": [
+      {
+        "id": "o-business-data",
+        "accessed": "2026-10-01",
+        "note": "Enterprise FAQ: työntekijöiden pääsy keskusteluihin vain häiriöihin, luvalliseen palautukseen tai lakivelvoitteisiin"
+      }
+    ],
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Valtuutettu henkilöstö voi käsitellä väärinkäytösepäilyjä ja tukipyyntöjä.",
+        "sources": [],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ensisijaisesta lähteestä ja tarkennettu."
+      }
+    ]
   },
   "rbac|a_claude_enterprise": {
     "status": "y",
@@ -3735,7 +3954,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3748,7 +3967,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3925,20 +4144,40 @@
   },
   "retention|o_chatgpt_business": {
     "status": "p",
-    "text": "Ei mukautettavaa säilytystä. Tarkista työtilan nykyiset asetukset.",
+    "text": "Admin voi säätää säilytysaikaa; poistetut keskustelut poistuvat 30 päivässä, ellei laki tai väärinkäytösten torjunta edellytä pidempää säilytystä. Säilytyspitoja ja eDiscovery-työkaluja ei ole (Compliance API vain Enterprisessa).",
     "sources": [
       {
-        "id": "o-pricing",
-        "accessed": "2026-09-25"
+        "id": "o-business-data",
+        "accessed": "2026-10-01",
+        "note": "Business FAQ: admin voi hallita säilytysaikaa; poisto 30 päivässä poikkeuksin"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-pricing",
+        "accessed": "2026-10-01",
+        "note": "Compliance API Logs Platform vain Enterprisessa"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Ei mukautettavaa säilytystä. Tarkista työtilan nykyiset asetukset.",
+        "sources": [
+          {
+            "id": "o-pricing",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "OpenAI:n mukaan Businessin admin voi nyt säätää säilytysaikaa; aiempi teksti oli vanhentunut."
+      }
+    ]
   },
   "retention|o_chatgpt_enterprise": {
     "status": "y",
@@ -3953,7 +4192,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4123,7 +4362,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4136,7 +4375,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4335,42 +4574,82 @@
   },
   "storage_eu|o_chatgpt_business": {
     "status": "n",
-    "text": "Ei hinnaston mukaan (alueellinen tallennus osin rollautumassa).",
+    "text": "Ei. Datan sijainnin valinta on vain Enterprise- ja Edu-asiakkaille.",
     "sources": [
       {
         "id": "o-pricing",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Data residency kymmenellä alueella: Business No, Enterprise Yes"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "o-residency-help",
+        "accessed": "2026-10-01",
+        "note": "Kelpoisuus: API-asiakkaat ja uudet Enterprise/Edu-asiakkaat"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "n",
+        "text": "Ei hinnaston mukaan (alueellinen tallennus osin rollautumassa).",
+        "sources": [
+          {
+            "id": "o-pricing",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Vahvistettu ensisijaisista lähteistä; poistettu vahvistamaton maininta käyttöönotosta ja verify."
+      }
+    ]
   },
   "storage_eu|o_chatgpt_enterprise": {
     "status": "y",
-    "text": "EU ja 9 muuta aluetta, vain uusissa työtiloissa. Järjestelmä- ja tilidata on alueen ulkopuolella.",
+    "text": "EU (ETA + Sveitsi) ja 9 muuta aluetta, vain uusissa työtiloissa. Tili- ja metadata sekä sovellusten, MCP:n ja web-haun kautta kulkeva data jäävät alueen ulkopuolelle; Sites ja kolmannen osapuolen GPT:t eivät kuulu piiriin.",
     "sources": [
       {
+        "id": "o-residency-help",
+        "accessed": "2026-10-01",
+        "note": "Alueet, piiriin kuuluva sisältö, alueen ulkopuolinen data ja tukemattomat ominaisuudet"
+      },
+      {
         "id": "o-pricing",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "o-residency",
-        "accessed": "2026-09-25"
-      },
-      {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Data residency kymmenellä alueella Enterprisessa"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "EU ja 9 muuta aluetta, vain uusissa työtiloissa. Järjestelmä- ja tilidata on alueen ulkopuolella.",
+        "sources": [
+          {
+            "id": "o-pricing",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "o-residency",
+            "accessed": "2026-09-25"
+          },
+          {
+            "id": "o-waimakers",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty integraatioiden ja tukemattomien ominaisuuksien rajaukset."
+      }
+    ]
   },
   "training|a_claude_enterprise": {
     "status": "y",
@@ -4524,7 +4803,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4541,7 +4820,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4699,7 +4978,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4712,7 +4991,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   }

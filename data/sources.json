@@ -189,15 +189,6 @@
     "selector": ""
   },
   {
-    "id": "o-residency",
-    "vendor": "oa",
-    "title": "OpenAI: Expanding data residency access to business customers",
-    "url": "https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide/",
-    "type": "primary",
-    "monitor": true,
-    "selector": ""
-  },
-  {
     "id": "o-residency-help",
     "vendor": "oa",
     "title": "OpenAI Help: Data residency and inference residency for ChatGPT",
@@ -209,8 +200,8 @@
   {
     "id": "o-business-data",
     "vendor": "oa",
-    "title": "OpenAI: Business data privacy, security and compliance",
-    "url": "https://openai.com/business-data/",
+    "title": "OpenAI: Enterprise privacy at OpenAI",
+    "url": "https://openai.com/enterprise-privacy/",
     "type": "primary",
     "monitor": true,
     "selector": ""
@@ -432,24 +423,6 @@
     "selector": ""
   },
   {
-    "id": "x-proskauer-openai-team",
-    "vendor": "oa",
-    "title": "Proskauer: ChatGPT Team and Copyright Shield",
-    "url": "https://newmedialaw.proskauer.com/author/jmollod/page/2/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-proskauer-openai-shield",
-    "vendor": "oa",
-    "title": "Proskauer: OpenAI Copyright Shield (Enterprise ja API)",
-    "url": "https://newmedialaw.proskauer.com/tag/ip-indemnity/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
     "id": "o-dpa",
     "vendor": "oa",
     "title": "OpenAI: Data Processing Addendum",
@@ -471,7 +444,7 @@
     "id": "o-export-help",
     "vendor": "oa",
     "title": "OpenAI Help: Exporting your ChatGPT history and data",
-    "url": "https://help.openai.com/en/articles/7260999-how-do-i-export-my-chatgpt",
+    "url": "https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data",
     "type": "primary",
     "monitor": true,
     "selector": ""
@@ -1003,6 +976,42 @@
     "vendor": "ms",
     "title": "Microsoft Trust Center: EU Standard Contractual Clauses",
     "url": "https://www.microsoft.com/en-us/TrustCenter/Compliance/EU-Model-Clauses",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "o-service-terms",
+    "vendor": "oa",
+    "title": "OpenAI: Service terms",
+    "url": "https://openai.com/policies/service-terms/",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-apps-help",
+    "vendor": "oa",
+    "title": "OpenAI Help: Apps in ChatGPT",
+    "url": "https://help.openai.com/en/articles/11487775-apps-in-chatgpt",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "o-devmode-help",
+    "vendor": "oa",
+    "title": "OpenAI Help: Developer mode and MCP apps in ChatGPT",
+    "url": "https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "o-ent-release-notes",
+    "vendor": "oa",
+    "title": "OpenAI Help: ChatGPT Enterprise and Edu release notes",
+    "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
     "type": "primary",
     "monitor": false,
     "selector": ""
