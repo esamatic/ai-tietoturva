@@ -1,6 +1,7 @@
 {
   "title": "Tekoälyavustajat yrityskäytössä – tietoturva- ja tietosuojavertailu",
   "description": "Yrityslisenssit rinnakkain alustavan tarjoajavalinnan tueksi. Jokaisella tiedolla on lähde, ja lähteitä seurataan päivittäin. Tiedot on koottu tekoälyavusteisesti ja tarkistettu käsin.",
+  "og_image_alt": "Matriisi, jossa 11 tekoälyavustajan yrityslisenssiä Microsoftilta, Googlelta, Anthropicilta, OpenAI:lta ja Mistralilta on arvioitu 23 tietoturva- ja tietosuojakriteerillä.",
   "change_window_days": 45,
   "notes": [
     "Koulutus ei juuri erottele tarjoajia: yrityslisensseissä asiakasdataa ei käytetä koulutukseen oletuksena. Poikkeus on Mistral Team, josta lähteet ovat ristiriidassa. Suurin käytännön riski on työ henkilökohtaisilla kuluttajatileillä.",
