@@ -1,6 +1,152 @@
 [
   {
     "date": "2026-10-01",
+    "ref": "#26",
+    "summary": "Mistralin täysi tarkistus: Teamin koulutusoletus merkitty ristiriitaiseksi, tekijänoikeusvastuu, palveluntarjoajan pääsy, agenttien hallinta ja irtautuminen päivitetty uusista ehdoista ja ohjeista sekä siirtynyt dokumentaatiolähde korjattu.",
+    "changes": [
+      {
+        "kind": "source",
+        "key": "mi-training-help",
+        "text": "Mistral Help: Do you use my user data to train your AI models?"
+      },
+      {
+        "kind": "source",
+        "key": "mi-optout-help",
+        "text": "Mistral Help: Can I opt out of training?"
+      },
+      {
+        "kind": "source",
+        "key": "mi-view-help",
+        "text": "Mistral Help: Can other people view my conversations?"
+      },
+      {
+        "kind": "source",
+        "key": "mi-delete-help",
+        "text": "Mistral Help: Can I delete a chat conversation?"
+      },
+      {
+        "kind": "source",
+        "key": "mi-commercial-terms",
+        "text": "Mistral AI: Commercial Terms of Service"
+      },
+      {
+        "kind": "source",
+        "key": "mi-connectors-admin",
+        "text": "Mistral Docs: Connectors (Admin)"
+      },
+      {
+        "kind": "source",
+        "key": "mi-admin-api",
+        "text": "Mistral Docs: Admin API overview"
+      },
+      {
+        "kind": "status",
+        "key": "training|m_vibe_team",
+        "from": "y",
+        "to": "p",
+        "text": "Lähteet ovat ristiriidassa: Mistralin ohjeartikkelin (31.8.2026) mukaan muiden kuin Enterprise-tilien dataa käytetään oletuksena koulutukseen, dokumentaation mukaan Team-keskusteluja ei. Admin voi kytkeä koulutuksen pois organisaatiolta; palautteen sekä Labs- ja preview-mallien data voidaan aina käyttää.",
+        "reason": "Tila y→p: Mistralin ensisijaiset lähteet ovat ristiriidassa Teamin oletuksesta; lisätty Labs- ja preview-mallien poikkeus kaupallisista ehdoista."
+      },
+      {
+        "kind": "text",
+        "key": "training|m_vibe_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Ei oletuksena; Enterprise-organisaatiot on poissuljettu koulutuksesta, ja admin hallitsee opt-iniä. Palautteen sekä Labs- ja preview-mallien data voidaan käyttää koulutukseen asetuksista riippumatta.",
+        "reason": "Lisätty kaupallisten ehtojen Labs- ja preview-mallipoikkeus; toissijainen lähde korvattu ensisijaisilla."
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|m_vibe_team",
+        "from": "p",
+        "to": "p",
+        "text": "Mistralin henkilöstö näkee keskusteluja vain, jos käyttäjä raportoi sisältöä tukeen tai antaa palautetta (pseudonymisoituna). Automaattinen väärinkäytösmoderointi on Mistralin omaa käsittelyä, eikä asiakas voi hyväksyä tai estää pääsyä.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; ihmistarkastuksen tilanteet nyt dokumentoitu."
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|m_vibe_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Mistralin henkilöstö näkee keskusteluja vain, jos käyttäjä raportoi sisältöä tukeen tai antaa palautetta (pseudonymisoituna). Automaattinen väärinkäytösmoderointi on Mistralin omaa käsittelyä, eikä asiakas voi hyväksyä tai estää pääsyä.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; ihmistarkastuksen tilanteet nyt dokumentoitu."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|m_vibe_team",
+        "from": "p",
+        "to": "p",
+        "text": "Osa ominaisuuksista voi siirtää dataa tilapäisesti EU:n ulkopuolisille alihankkijoille (SCC:t). Konnektoridataa ei tallenneta pysyvästi. Alihankkijamuutosta voi vastustaa 10 päivän kuluessa, mutta Mistral voi silloin irtisanoa sopimuksen.",
+        "reason": "Lisätty DPA:n alihankkijamuutosten ehto (versio 27.7.2026)."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|m_vibe_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Kuten Teamissa, mutta Enterprise voi kytkeä osan EU:n ulkopuolisia siirtoja vaativista ominaisuuksista pois organisaatiotasolla. Alihankkijamuutosta voi vastustaa 10 päivän kuluessa.",
+        "reason": "Lisätty DPA:n alihankkijamuutosten ehto (versio 27.7.2026)."
+      },
+      {
+        "kind": "text",
+        "key": "audit|m_vibe_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Audit-lokit (kirjautumiset, hallintatoimet, keskustelujen luonti ja poisto); käyttöliittymästä ei voi viedä lokeja, mutta ne saa Admin API:lla (preview).",
+        "reason": "Lisätty Admin API -haku audit-lokeille."
+      },
+      {
+        "kind": "status",
+        "key": "agents|m_vibe_team",
+        "from": "u",
+        "to": "p",
+        "text": "Admin hallitsee Admin-paneelissa, mitkä konnektorit ja niiden työkalut ovat käytettävissä Vibessä organisaatio- ja työtilatasolla. Koodiagentin ja muiden agenttiominaisuuksien rajauksista ei löytynyt dokumentaatiota.",
+        "reason": "Tila u→p: konnektorien hallinta dokumentoitu ensisijaisessa lähteessä."
+      },
+      {
+        "kind": "status",
+        "key": "agents|m_vibe_enterprise",
+        "from": "u",
+        "to": "p",
+        "text": "Admin hallitsee konnektoreita ja niiden työkaluja organisaatio- ja työtilatasolla, ja hallintaa voi automatisoida Admin API:lla (preview). Koodiagentin ja muiden agenttiominaisuuksien rajauksista ei löytynyt dokumentaatiota.",
+        "reason": "Tila u→p: konnektorien hallinta dokumentoitu ensisijaisessa lähteessä."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|m_vibe_team",
+        "from": "u",
+        "to": "p",
+        "text": "Kaupallisten ehtojen mukaan Mistral puolustaa asiakasta, jos sen tuotteet loukkaavat kolmannen osapuolen IP-oikeuksia. Tuotetun sisällön kattavuutta ei sanota suoraan; poikkeuksia ovat mm. muokattu tuotos, asiakasdata ja tietoinen loukkaus.",
+        "reason": "Tila u→p: kaupallisissa ehdoissa on IP-vastuusitoumus; verify, koska tuotetun sisällön kattavuus on tulkinnanvarainen."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|m_vibe_enterprise",
+        "from": "u",
+        "to": "p",
+        "text": "Kaupallisten ehtojen mukaan Mistral puolustaa asiakasta, jos sen tuotteet loukkaavat kolmannen osapuolen IP-oikeuksia. Tuotetun sisällön kattavuutta ei sanota suoraan; poikkeuksia ovat mm. muokattu tuotos, asiakasdata ja tietoinen loukkaus. Tilauslomake voi muuttaa ehtoja.",
+        "reason": "Tila u→p: kaupallisissa ehdoissa on IP-vastuusitoumus; verify, koska tuotetun sisällön kattavuus on tulkinnanvarainen."
+      },
+      {
+        "kind": "text",
+        "key": "exit|m_vibe_team",
+        "from": "p",
+        "to": "p",
+        "text": "Vienti on tehtävä Vibestä ennen tilin päättämistä, koska sen jälkeen dataa ei välttämättä saa ulos. Mistral poistaa tai palauttaa datan omien käytäntöjensä mukaan, ja data ei ole enää saatavilla 30 päivän kuluttua.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty viennin aikaraja ja 30 päivän saatavuus."
+      },
+      {
+        "kind": "text",
+        "key": "exit|m_vibe_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Vienti on tehtävä Vibestä ennen tilin päättämistä, koska sen jälkeen dataa ei välttämättä saa ulos. Mistral poistaa tai palauttaa datan omien käytäntöjensä mukaan, ja data ei ole enää saatavilla 30 päivän kuluttua.",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty viennin aikaraja ja 30 päivän saatavuus."
+      }
+    ]
+  },
+  {
+    "date": "2026-10-01",
     "ref": "#24",
     "summary": "Anthropicin täysi tarkistus: Enterprisen asiakkaan hallinnoimat avaimet vahvistettu, Teamin agenttien oletusasetukset ja rajaukset arvioitu, palveluntarjoajan pääsy, säilytys, sopimusosapuoli ja hinnat päivitetty ensisijaisista lähteistä.",
     "changes": [

@@ -170,30 +170,65 @@
     ]
   },
   "agents|m_vibe_enterprise": {
-    "status": "u",
-    "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+    "status": "p",
+    "text": "Admin hallitsee konnektoreita ja niiden työkaluja organisaatio- ja työtilatasolla, ja hallintaa voi automatisoida Admin API:lla (preview). Koodiagentin ja muiden agenttiominaisuuksien rajauksista ei löytynyt dokumentaatiota.",
     "sources": [
       {
-        "id": "mi-enterprise-news",
-        "accessed": "2026-09-26"
+        "id": "mi-connectors-admin",
+        "accessed": "2026-10-01",
+        "note": "Konnektorien ja työkalujen käyttöoikeudet organisaatio- ja työtilatasolla"
+      },
+      {
+        "id": "mi-admin-api",
+        "accessed": "2026-10-01",
+        "note": "Admin API (preview, Enterprise) käyttäjien, ryhmien ja työtilojen hallintaan"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "u",
+        "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+        "sources": [
+          {
+            "id": "mi-enterprise-news",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila u→p: konnektorien hallinta dokumentoitu ensisijaisessa lähteessä."
+      }
+    ]
   },
   "agents|m_vibe_team": {
-    "status": "u",
-    "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+    "status": "p",
+    "text": "Admin hallitsee Admin-paneelissa, mitkä konnektorit ja niiden työkalut ovat käytettävissä Vibessä organisaatio- ja työtilatasolla. Koodiagentin ja muiden agenttiominaisuuksien rajauksista ei löytynyt dokumentaatiota.",
     "sources": [
       {
-        "id": "mi-enterprise-news",
-        "accessed": "2026-09-26"
+        "id": "mi-connectors-admin",
+        "accessed": "2026-10-01",
+        "note": "Admin hallitsee konnektoreita ja niiden työkalujen käyttöä organisaatio- ja työtilatasolla"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "u",
+        "text": "Konnektorit ja MCP-tuki; hallintakontrollien laajuus ei selvinnyt.",
+        "sources": [
+          {
+            "id": "mi-enterprise-news",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila u→p: konnektorien hallinta dokumentoitu ensisijaisessa lähteessä."
+      }
+    ]
   },
   "agents|ms_copilot": {
     "status": "y",
@@ -623,16 +658,36 @@
   },
   "audit|m_vibe_enterprise": {
     "status": "p",
-    "text": "Audit-lokit (kirjautumiset, hallintatoimet, keskustelujen luonti ja poisto), mutta lokien vienti ei ole tuettu.",
+    "text": "Audit-lokit (kirjautumiset, hallintatoimet, keskustelujen luonti ja poisto); käyttöliittymästä ei voi viedä lokeja, mutta ne saa Admin API:lla (preview).",
     "sources": [
       {
         "id": "mi-audit",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Audit-lokien sisältö; vienti ei tuettu; vain Enterprise"
+      },
+      {
+        "id": "mi-admin-api",
+        "accessed": "2026-10-01",
+        "note": "Admin API (preview, Enterprise) hakee mm. audit-lokit"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Audit-lokit (kirjautumiset, hallintatoimet, keskustelujen luonti ja poisto), mutta lokien vienti ei ole tuettu.",
+        "sources": [
+          {
+            "id": "mi-audit",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty Admin API -haku audit-lokeille."
+      }
+    ]
   },
   "audit|m_vibe_team": {
     "status": "n",
@@ -643,7 +698,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -870,7 +925,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -883,7 +938,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1090,11 +1145,12 @@
     "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa; oma asennus on vaihtoehto täyteen avainten hallintaan.",
     "sources": [
       {
-        "id": "x-pureai",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "1.1: Mistralin tuotteiden käyttö asiakkaan omalla infrastruktuurilla mahdollista"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1102,7 +1158,7 @@
     "status": "u",
     "text": "Asiakkaan hallinnoimista avaimista ei löytynyt tietoa.",
     "sources": [],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1356,33 +1412,78 @@
   },
   "data_egress|m_vibe_enterprise": {
     "status": "p",
-    "text": "Kuten Teamissa, mutta Enterprise voi kytkeä osan EU:n ulkopuolisia siirtoja vaativista ominaisuuksista pois organisaatiotasolla.",
+    "text": "Kuten Teamissa, mutta Enterprise voi kytkeä osan EU:n ulkopuolisia siirtoja vaativista ominaisuuksista pois organisaatiotasolla. Alihankkijamuutosta voi vastustaa 10 päivän kuluessa.",
     "sources": [
       {
         "id": "mi-residency-help",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Enterprise voi kytkeä EU:n ulkopuolisia siirtoja vaativia ominaisuuksia pois"
+      },
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-10-01",
+        "note": "7.2: 10 päivän vastustusaika"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Kuten Teamissa, mutta Enterprise voi kytkeä osan EU:n ulkopuolisia siirtoja vaativista ominaisuuksista pois organisaatiotasolla.",
+        "sources": [
+          {
+            "id": "mi-residency-help",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty DPA:n alihankkijamuutosten ehto (versio 27.7.2026)."
+      }
+    ]
   },
   "data_egress|m_vibe_team": {
     "status": "p",
-    "text": "Osa ominaisuuksista voi siirtää dataa tilapäisesti EU:n ulkopuolisille alihankkijoille (SCC:t). Konnektoridataa ei tallenneta pysyvästi.",
+    "text": "Osa ominaisuuksista voi siirtää dataa tilapäisesti EU:n ulkopuolisille alihankkijoille (SCC:t). Konnektoridataa ei tallenneta pysyvästi. Alihankkijamuutosta voi vastustaa 10 päivän kuluessa, mutta Mistral voi silloin irtisanoa sopimuksen.",
     "sources": [
       {
         "id": "mi-residency-help",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Ominaisuuskohtaiset tilapäiset siirrot EU:n ulkopuolelle SCC:illä"
       },
       {
         "id": "mi-privacy-controls",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Konnektoridata haetaan tarvittaessa eikä sitä tallenneta pysyvästi"
+      },
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-10-01",
+        "note": "7.2: 10 päivän vastustusaika; Mistral voi irtisanoa, jos ratkaisua ei löydy"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Osa ominaisuuksista voi siirtää dataa tilapäisesti EU:n ulkopuolisille alihankkijoille (SCC:t). Konnektoridataa ei tallenneta pysyvästi.",
+        "sources": [
+          {
+            "id": "mi-residency-help",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "mi-privacy-controls",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty DPA:n alihankkijamuutosten ehto (versio 27.7.2026)."
+      }
+    ]
   },
   "data_egress|ms_copilot": {
     "status": "p",
@@ -1905,14 +2006,11 @@
     "sources": [
       {
         "id": "mi-dpa",
-        "accessed": "2026-09-26"
-      },
-      {
-        "id": "x-conductatlas-mistral",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "2.1 käsittelijä; 2.3 rekisterinpitäjänä koulutus, palaute ja automaattinen moderointi; 8.1 SCC:t (versio 27.7.2026)"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1922,14 +2020,11 @@
     "sources": [
       {
         "id": "mi-dpa",
-        "accessed": "2026-09-26"
-      },
-      {
-        "id": "x-conductatlas-mistral",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "2.1 käsittelijä; 2.3 rekisterinpitäjänä koulutus, palaute ja automaattinen moderointi; 8.1 SCC:t (versio 27.7.2026)"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2104,29 +2199,79 @@
   },
   "exit|m_vibe_enterprise": {
     "status": "p",
-    "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+    "text": "Vienti on tehtävä Vibestä ennen tilin päättämistä, koska sen jälkeen dataa ei välttämättä saa ulos. Mistral poistaa tai palauttaa datan omien käytäntöjensä mukaan, ja data ei ole enää saatavilla 30 päivän kuluttua.",
     "sources": [
       {
-        "id": "x-conductatlas-mistral-del",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "11.4: vienti tehtävä ennen tilin päättämistä"
+      },
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-10-01",
+        "note": "10.1: poisto tai palautus Mistralin käytäntöjen mukaan; data ei saatavilla 30 pv päättymisen jälkeen"
+      },
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-10-01",
+        "note": "Datan lataus Vibestä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+        "sources": [
+          {
+            "id": "x-conductatlas-mistral-del",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty viennin aikaraja ja 30 päivän saatavuus."
+      }
+    ]
   },
   "exit|m_vibe_team": {
     "status": "p",
-    "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+    "text": "Vienti on tehtävä Vibestä ennen tilin päättämistä, koska sen jälkeen dataa ei välttämättä saa ulos. Mistral poistaa tai palauttaa datan omien käytäntöjensä mukaan, ja data ei ole enää saatavilla 30 päivän kuluttua.",
     "sources": [
       {
-        "id": "x-conductatlas-mistral-del",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "11.4: vienti tehtävä ennen tilin päättämistä"
+      },
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-10-01",
+        "note": "10.1: poisto tai palautus Mistralin käytäntöjen mukaan; data ei saatavilla 30 pv päättymisen jälkeen"
+      },
+      {
+        "id": "mi-privacy-controls",
+        "accessed": "2026-10-01",
+        "note": "Datan lataus Vibestä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Poisto tai palautus sopimuksen päättyessä Mistralin omien käytäntöjen ja aikataulun mukaan.",
+        "sources": [
+          {
+            "id": "x-conductatlas-mistral-del",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijainen lähde korvattu ensisijaisilla; lisätty viennin aikaraja ja 30 päivän saatavuus."
+      }
+    ]
   },
   "exit|ms_copilot": {
     "status": "y",
@@ -2330,7 +2475,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2347,7 +2492,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2494,14 +2639,11 @@
     "sources": [
       {
         "id": "mi-dpa",
-        "accessed": "2026-09-26"
-      },
-      {
-        "id": "x-conductatlas-mistral",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "6.1: ilmoitus viipymättä, ei tuntirajaa; tiedot voidaan toimittaa vaiheittain"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2511,14 +2653,11 @@
     "sources": [
       {
         "id": "mi-dpa",
-        "accessed": "2026-09-26"
-      },
-      {
-        "id": "x-conductatlas-mistral",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "6.1: ilmoitus viipymättä, ei tuntirajaa; tiedot voidaan toimittaa vaiheittain"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2696,14 +2835,16 @@
     "sources": [
       {
         "id": "mi-residency-help",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "EU oletuksena; Enterprise-kohtaiset rajaukset"
       },
       {
-        "id": "x-pureai",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "1.1: käyttö asiakkaan omalla infrastruktuurilla tilauslomakkeella sovittuna"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2716,7 +2857,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2953,20 +3094,52 @@
     "verify": true
   },
   "ip_indemnity|m_vibe_enterprise": {
-    "status": "u",
-    "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
-    "sources": [],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "status": "p",
+    "text": "Kaupallisten ehtojen mukaan Mistral puolustaa asiakasta, jos sen tuotteet loukkaavat kolmannen osapuolen IP-oikeuksia. Tuotetun sisällön kattavuutta ei sanota suoraan; poikkeuksia ovat mm. muokattu tuotos, asiakasdata ja tietoinen loukkaus. Tilauslomake voi muuttaa ehtoja.",
+    "sources": [
+      {
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "8.1–8.2 IP-vastuu; 14.11 tilauslomake ensisijainen"
+      }
+    ],
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "u",
+        "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
+        "sources": [],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila u→p: kaupallisissa ehdoissa on IP-vastuusitoumus; verify, koska tuotetun sisällön kattavuus on tulkinnanvarainen."
+      }
+    ],
+    "verify": true
   },
   "ip_indemnity|m_vibe_team": {
-    "status": "u",
-    "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
-    "sources": [],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "status": "p",
+    "text": "Kaupallisten ehtojen mukaan Mistral puolustaa asiakasta, jos sen tuotteet loukkaavat kolmannen osapuolen IP-oikeuksia. Tuotetun sisällön kattavuutta ei sanota suoraan; poikkeuksia ovat mm. muokattu tuotos, asiakasdata ja tietoinen loukkaus.",
+    "sources": [
+      {
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "8.1–8.2: IP-vastuusitoumus tuotteille poikkeuksineen (versio 25.9.2026)"
+      }
+    ],
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "u",
+        "text": "Tekijänoikeusvastuusta ei löytynyt tietoa.",
+        "sources": [],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila u→p: kaupallisissa ehdoissa on IP-vastuusitoumus; verify, koska tuotetun sisällön kattavuus on tulkinnanvarainen."
+      }
+    ],
+    "verify": true
   },
   "ip_indemnity|ms_copilot": {
     "status": "y",
@@ -3177,15 +3350,17 @@
     "text": "Ranskalainen yhtiö: EU-lainsäädäntö, ei yhdysvaltalaista emoyhtiötä. EU:n ulkopuoliset alihankkijat SCC:illä.",
     "sources": [
       {
-        "id": "mi-residency-help",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "Palveluntarjoaja ranskalainen Mistral AI, Pariisi; EU-asiakkaille Ranskan laki ja Pariisin tuomioistuimet"
       },
       {
-        "id": "x-teamazing",
-        "accessed": "2026-09-26"
+        "id": "mi-residency-help",
+        "accessed": "2026-10-01",
+        "note": "EU:n ulkopuoliset alihankkijat SCC:illä"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3194,15 +3369,17 @@
     "text": "Ranskalainen yhtiö: EU-lainsäädäntö, ei yhdysvaltalaista emoyhtiötä. EU:n ulkopuoliset alihankkijat SCC:illä.",
     "sources": [
       {
-        "id": "mi-residency-help",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "Palveluntarjoaja ranskalainen Mistral AI, Pariisi; EU-asiakkaille Ranskan laki ja Pariisin tuomioistuimet"
       },
       {
-        "id": "x-teamazing",
-        "accessed": "2026-09-26"
+        "id": "mi-residency-help",
+        "accessed": "2026-10-01",
+        "note": "EU:n ulkopuoliset alihankkijat SCC:illä"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3367,7 +3544,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3380,7 +3557,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3630,7 +3807,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3917,31 +4094,71 @@
   },
   "provider_access|m_vibe_enterprise": {
     "status": "p",
-    "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+    "text": "Mistralin henkilöstö näkee keskusteluja vain, jos käyttäjä raportoi sisältöä tukeen tai antaa palautetta (pseudonymisoituna). Automaattinen väärinkäytösmoderointi on Mistralin omaa käsittelyä, eikä asiakas voi hyväksyä tai estää pääsyä.",
     "sources": [
       {
-        "id": "x-conductatlas-mistral",
-        "accessed": "2026-09-26"
+        "id": "mi-view-help",
+        "accessed": "2026-10-01",
+        "note": "Henkilöstön pääsy rajattu raportoituun sisältöön ja palautteeseen"
+      },
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-10-01",
+        "note": "2.3: automaattinen moderointi Mistralin rekisterinpitäjänä tekemänä käsittelynä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+        "sources": [
+          {
+            "id": "x-conductatlas-mistral",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; ihmistarkastuksen tilanteet nyt dokumentoitu."
+      }
+    ]
   },
   "provider_access|m_vibe_team": {
     "status": "p",
-    "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+    "text": "Mistralin henkilöstö näkee keskusteluja vain, jos käyttäjä raportoi sisältöä tukeen tai antaa palautetta (pseudonymisoituna). Automaattinen väärinkäytösmoderointi on Mistralin omaa käsittelyä, eikä asiakas voi hyväksyä tai estää pääsyä.",
     "sources": [
       {
-        "id": "x-conductatlas-mistral",
-        "accessed": "2026-09-26"
+        "id": "mi-view-help",
+        "accessed": "2026-10-01",
+        "note": "Henkilöstön pääsy rajattu raportoituun sisältöön ja palautteeseen"
+      },
+      {
+        "id": "mi-dpa",
+        "accessed": "2026-10-01",
+        "note": "2.3: automaattinen moderointi Mistralin rekisterinpitäjänä tekemänä käsittelynä"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "DPA sallii automaattisen väärinkäytösmoderoinnin Mistralin omana käsittelynä; ihmistarkastuksen ehtoja ei löytynyt dokumentaatiosta.",
+        "sources": [
+          {
+            "id": "x-conductatlas-mistral",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; ihmistarkastuksen tilanteet nyt dokumentoitu."
+      }
+    ]
   },
   "provider_access|ms_copilot": {
     "status": "y",
@@ -4192,7 +4409,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4209,7 +4426,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4403,32 +4620,37 @@
     "text": "Organisaatiotason chat-säilytyskäytäntö (automaattinen poisto 30 pv–1 v tai ei koskaan). ZDR ei koske chat-tuotetta.",
     "sources": [
       {
-        "id": "mi-privacy-controls",
-        "accessed": "2026-09-26"
+        "id": "mi-delete-help",
+        "accessed": "2026-10-01",
+        "note": "Team- ja Enterprise-organisaatioilla voi olla omat säilytysasetukset"
       },
       {
         "id": "mi-waimakers",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "Säilytyskäytännön vaihtoehdot"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
-    "history": []
+    "history": [],
+    "verify": true
   },
   "retention|m_vibe_team": {
     "status": "p",
     "text": "Organisaatiotason chat-säilytyskäytäntö (automaattinen poisto 30 pv–1 v tai ei koskaan); saatavuus Team-tasolla tarkistettava. ZDR ei koske chat-tuotetta.",
     "sources": [
       {
-        "id": "mi-privacy-controls",
-        "accessed": "2026-09-26"
+        "id": "mi-delete-help",
+        "accessed": "2026-10-01",
+        "note": "Team- ja Enterprise-organisaatioilla voi olla omat säilytysasetukset; poiston jälkeen backend-säilytys DPA:n ja käytäntöjen mukaan"
       },
       {
         "id": "mi-waimakers",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "Säilytyskäytännön vaihtoehdot"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": [],
     "verify": true
@@ -4862,7 +5084,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4875,7 +5097,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -5064,37 +5286,88 @@
   },
   "training|m_vibe_enterprise": {
     "status": "y",
-    "text": "Ei oletuksena; Enterprise-organisaatiot on poissuljettu koulutuksesta. Palautteen mukana lähetetty sisältö on erillinen tapaus.",
+    "text": "Ei oletuksena; Enterprise-organisaatiot on poissuljettu koulutuksesta, ja admin hallitsee opt-iniä. Palautteen sekä Labs- ja preview-mallien data voidaan käyttää koulutukseen asetuksista riippumatta.",
     "sources": [
       {
-        "id": "mi-privacy-controls",
-        "accessed": "2026-09-26"
+        "id": "mi-training-help",
+        "accessed": "2026-10-01",
+        "note": "Enterprise oletuksena poissuljettu koulutuksesta; opt-in admin-tasolla"
       },
       {
-        "id": "mi-waimakers",
-        "accessed": "2026-09-26"
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "4.2–4.3: palaute sekä Labs- ja preview-mallit koulutuskäytössä opt-outista riippumatta"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Ei oletuksena; Enterprise-organisaatiot on poissuljettu koulutuksesta. Palautteen mukana lähetetty sisältö on erillinen tapaus.",
+        "sources": [
+          {
+            "id": "mi-privacy-controls",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "mi-waimakers",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty kaupallisten ehtojen Labs- ja preview-mallipoikkeus; toissijainen lähde korvattu ensisijaisilla."
+      }
+    ]
   },
   "training|m_vibe_team": {
-    "status": "y",
-    "text": "Team-keskusteluja ei käytetä koulutukseen oletuksena, ja admin hallitsee asetusta. Toissijainen lähde väittää päinvastaista; palautteen mukana lähetetty sisältö voidaan käyttää.",
+    "status": "p",
+    "text": "Lähteet ovat ristiriidassa: Mistralin ohjeartikkelin (31.8.2026) mukaan muiden kuin Enterprise-tilien dataa käytetään oletuksena koulutukseen, dokumentaation mukaan Team-keskusteluja ei. Admin voi kytkeä koulutuksen pois organisaatiolta; palautteen sekä Labs- ja preview-mallien data voidaan aina käyttää.",
     "sources": [
       {
+        "id": "mi-training-help",
+        "accessed": "2026-10-01",
+        "note": "Vibe: data käytetään oletuksena koulutukseen, ellei opt-outia tehdä; vain Enterprise oletuksena poissuljettu"
+      },
+      {
         "id": "mi-privacy-controls",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Pro-, Team- ja Enterprise-keskusteluja ei käytetä koulutukseen oletuksena"
+      },
+      {
+        "id": "mi-commercial-terms",
+        "accessed": "2026-10-01",
+        "note": "4.2–4.3: koulutus opt-in/opt-out-asetuksen mukaan; palaute sekä Labs- ja preview-mallit aina koulutuskäytössä"
       },
       {
         "id": "mi-waimakers",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "Toissijainen arvio: muut kuin Enterprise eivät ole oletuksena poissuljettuja"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": [],
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Team-keskusteluja ei käytetä koulutukseen oletuksena, ja admin hallitsee asetusta. Toissijainen lähde väittää päinvastaista; palautteen mukana lähetetty sisältö voidaan käyttää.",
+        "sources": [
+          {
+            "id": "mi-privacy-controls",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "mi-waimakers",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila y→p: Mistralin ensisijaiset lähteet ovat ristiriidassa Teamin oletuksesta; lisätty Labs- ja preview-mallien poikkeus kaupallisista ehdoista."
+      }
+    ],
     "verify": true
   },
   "training|ms_copilot": {
@@ -5259,7 +5532,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -5272,7 +5545,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
