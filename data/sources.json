@@ -452,10 +452,10 @@
   {
     "id": "mi-privacy-controls",
     "vendor": "mi",
-    "title": "Mistral Docs: Privacy and data controls",
-    "url": "https://docs.mistral.ai/admin/monitor-comply/privacy-data-controls",
+    "title": "Mistral Docs: Privacy",
+    "url": "https://docs.mistral.ai/admin/security-access/privacy",
     "type": "primary",
-    "monitor": false,
+    "monitor": true,
     "selector": ""
   },
   {
@@ -513,33 +513,6 @@
     "selector": ""
   },
   {
-    "id": "mi-enterprise-news",
-    "vendor": "mi",
-    "title": "Mistral: Introducing Le Chat Enterprise (2025)",
-    "url": "https://mistral.ai/news/le-chat-enterprise/",
-    "type": "primary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-conductatlas-mistral",
-    "vendor": "mi",
-    "title": "ConductAtlas: Mistral AI DPA analysis",
-    "url": "https://conductatlas.com/platform/mistral-ai/mistral-ai-data-processing-addendum/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-conductatlas-mistral-del",
-    "vendor": "mi",
-    "title": "ConductAtlas: Mistral DPA, deletion after termination",
-    "url": "https://conductatlas.com/platform/mistral-ai/mistral-ai-data-processing-addendum/provision/CA-P-061979/mistral-ai-deletes-or-returns-personal-data-after-termination/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
     "id": "mi-waimakers",
     "vendor": "mi",
     "title": "WAIMAKERS: Mistral AI – AI Data Security & GDPR Guide",
@@ -571,15 +544,6 @@
     "vendor": "ms",
     "title": "Enterprise DNA: Copilot outages and SLA (6/2026)",
     "url": "https://enterprisedna.co/resources/news/microsoft-copilot-outages-no-sla-enterprise-ai-reliability-june-2026",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-pureai",
-    "vendor": "mi",
-    "title": "PureAI Labs: Mistral Le Chat review (5/2026)",
-    "url": "https://pureailabs.com/ai-assistants/mistral-ai-le-chat-review/",
     "type": "secondary",
     "monitor": false,
     "selector": ""
@@ -1030,6 +994,69 @@
     "vendor": "an",
     "title": "Anthropic: Set up role-based permissions on Enterprise plans",
     "url": "https://support.claude.com/en/articles/13930458-set-up-role-based-permissions-on-enterprise-plans",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mi-training-help",
+    "vendor": "mi",
+    "title": "Mistral Help: Do you use my user data to train your AI models?",
+    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-optout-help",
+    "vendor": "mi",
+    "title": "Mistral Help: Can I opt out of training?",
+    "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mi-view-help",
+    "vendor": "mi",
+    "title": "Mistral Help: Can other people view my conversations?",
+    "url": "https://help.mistral.ai/en/articles/347632-can-other-people-view-my-conversations",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-delete-help",
+    "vendor": "mi",
+    "title": "Mistral Help: Can I delete a chat conversation?",
+    "url": "https://help.mistral.ai/en/articles/323753-can-i-delete-a-chat-conversation",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "mi-commercial-terms",
+    "vendor": "mi",
+    "title": "Mistral AI: Commercial Terms of Service",
+    "url": "https://legal.mistral.ai/terms/commercial-terms-of-service",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-connectors-admin",
+    "vendor": "mi",
+    "title": "Mistral Docs: Connectors (Admin)",
+    "url": "https://docs.mistral.ai/admin/identity-access/connectors",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "mi-admin-api",
+    "vendor": "mi",
+    "title": "Mistral Docs: Admin API overview",
+    "url": "https://docs.mistral.ai/admin/admin-api/overview",
     "type": "primary",
     "monitor": false,
     "selector": ""
