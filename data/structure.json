@@ -72,140 +72,140 @@
       "group": "baseline",
       "label": "Koulutus asiakasdatalla",
       "hint": "Käytetäänkö yrityksen syötteitä mallien koulutukseen. Kyllä-vastaus sulkee vaihtoehdon pois.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "dpa",
       "group": "baseline",
       "label": "DPA ja GDPR-rooli",
       "hint": "Onko tarjoaja sopimuksella henkilötietojen käsittelijä. Ilman tätä palvelua ei voi käyttää henkilötiedoille.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "certifications",
       "group": "baseline",
       "label": "Sertifikaatit",
       "hint": "Riippumaton varmennus tietoturvasta. Tarkista, kattaako sertifikaatti juuri tämän lisenssin.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "incident_notification",
       "group": "baseline",
       "label": "Tietoturvapoikkeamista ilmoittaminen",
       "hint": "Sopimukseen kirjattu ilmoitusaika ja -tapa. Tarvitaan omien GDPR- ja NIS2-velvoitteiden täyttämiseen.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "ai_act",
       "group": "baseline",
       "label": "EU AI Act -valmius",
       "hint": "Tarjoajan GPAI-velvoitteet ja käyttäjälle annettava dokumentaatio, jota tarvitaan omien velvoitteiden arviointiin.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "provider_access",
       "group": "data_access",
       "label": "Palveluntarjoajan pääsy dataan",
       "hint": "Voiko tarjoajan henkilöstö lukea sisältöä, ja voiko asiakas hyväksyä tai estää pääsyn (esim. Customer Lockbox).",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "retention",
       "group": "data_access",
       "label": "Säilytys ja poistaminen",
       "hint": "Kauanko data säilyy ja voiko sen sovittaa omiin säilytys- ja eDiscovery-vaatimuksiin.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "data_egress",
       "group": "data_access",
       "label": "Datan kulku palvelun ulkopuolelle",
       "hint": "Lähteekö dataa web-hakuun, kolmansien osapuolten malleille tai konnektoreille eri ehdoilla kuin itse palvelussa.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "storage_eu",
       "group": "location",
       "label": "Tallennus EU:ssa",
       "hint": "Pysyykö levossa oleva data EU:ssa.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "inference_eu",
       "group": "location",
       "label": "Käsittely EU:ssa",
       "hint": "Ajetaanko malli EU:ssa. Usein eri asia kuin tallennus.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "jurisdiction",
       "group": "location",
       "label": "Lainkäyttöalue",
       "hint": "Minkä maan lainsäädäntö voi velvoittaa tarjoajan luovuttamaan dataa (esim. US CLOUD Act).",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "identity",
       "group": "access",
       "label": "Identiteetin- ja käyttäjähallinta",
       "hint": "Kirjautuminen yrityksen tunnuksilla (SSO) ja automaattinen käyttäjähallinta (SCIM): poistuneen työntekijän pääsy katkeaa automaattisesti.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "rbac",
       "group": "access",
       "label": "Roolit ja ominaisuusrajaukset",
       "hint": "Voiko ominaisuuksia ja pääsyä rajata ryhmittäin, esim. sallia konnektorit vain osalle käyttäjistä.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "dlp",
       "group": "access",
       "label": "DLP ja tietoluokitus",
       "hint": "Kunnioittaako avustaja luottamuksellisuusluokituksia ja voiko syötteisiin ja vastauksiin soveltaa tietovuodon estosääntöjä.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "audit",
       "group": "access",
       "label": "Audit-lokit ja eDiscovery",
       "hint": "Voidaanko käyttö selvittää jälkikäteen tietoturvapoikkeamassa tai oikeudellisessa selvityksessä.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "visibility",
       "group": "access",
       "label": "Mitä avustaja näkee",
       "hint": "Integroitu avustaja näkee kaiken, mihin käyttäjällä on oikeus. Liian laajat jako-oikeudet on siivottava ennen käyttöönottoa.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "personal_accounts",
       "group": "access",
       "label": "Henkilökohtaisten tilien hallinta",
       "hint": "Voiko työntekijöiden omat tilit tuoda organisaation hallintaan (shadow AI).",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "cmk",
       "group": "encryption",
       "label": "Asiakkaan hallinnoimat avaimet",
       "hint": "Voiko yritys hallita salausavaimia itse ja siten estää pääsyn dataansa. Tarpeen lähinnä säännellyillä aloilla.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "agents",
       "group": "llm",
       "label": "Agenttiominaisuudet ja niiden hallinta",
       "hint": "Mihin järjestelmiin avustaja pääsee ja mitä se voi tehdä (konnektorit, koodin suoritus, selain- ja tietokoneagentit), ja voiko näitä rajata.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "pricing",
       "group": "commercial",
       "label": "Hinta ja vähimmäissitoumus",
       "hint": "Listahinta per käyttäjä, vähimmäismäärät ja sitoumus. Tietoturvaominaisuudet ovat usein vain kalliimmissa tasoissa.",
-      "added": "2026-09-30",
+      "added": "2026-10-01",
       "status_labels": {
         "y": "✓ Julkinen hinta",
         "p": "◐ Osittain julkinen",
@@ -217,21 +217,21 @@
       "group": "commercial",
       "label": "Tekijänoikeusvastuu",
       "hint": "Puolustaako tarjoaja asiakasta, jos tuotettu sisältö loukkaa tekijänoikeuksia.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "sla",
       "group": "commercial",
       "label": "SLA ja tuki",
       "hint": "Sopimukseen kirjattu saatavuus ja tuen taso.",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "exit",
       "group": "commercial",
       "label": "Datan vienti ja irtautuminen",
       "hint": "Saako datan ulos ja mitä sille tapahtuu sopimuksen päättyessä (lock-in-riski).",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     }
   ],
   "columns": [
@@ -240,77 +240,77 @@
       "vendor": "ms",
       "plan": "Copilot Chat",
       "meta": "Sisältyy M365-tilaukseen (Entra-käyttäjät)",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "ms_copilot",
       "vendor": "ms",
       "plan": "Microsoft Copilot",
       "meta": "Maksullinen lisenssi (ent. M365 Copilot); pk-yrityksille Copilot Business (≤300)",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "g_workspace_business",
       "vendor": "go",
       "plan": "Gemini – Workspace Business",
       "meta": "Starter / Standard / Plus",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "g_workspace_enterprise",
       "vendor": "go",
       "plan": "Gemini – Workspace Enterprise",
       "meta": "Standard / Plus",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "g_gemini_enterprise",
       "vendor": "go",
       "plan": "Gemini Enterprise (erillinen)",
       "meta": "Business (≤300) vs. Standard / Plus; myös Pay-as-you-go ja Frontline-lisäosa",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "a_claude_team",
       "vendor": "an",
       "plan": "Claude Team",
       "meta": "2–150 käyttäjää",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "a_claude_enterprise",
       "vendor": "an",
       "plan": "Claude Enterprise",
       "meta": "Itsepalveluna väh. 20, myynnin kautta väh. 50 käyttäjää",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "o_chatgpt_business",
       "vendor": "oa",
       "plan": "ChatGPT Business",
       "meta": "Ent. Team, 2–200 käyttäjää",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "o_chatgpt_enterprise",
       "vendor": "oa",
       "plan": "ChatGPT Enterprise",
       "meta": "Hinta neuvoteltava",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "m_vibe_team",
       "vendor": "mi",
       "plan": "Vibe Team",
       "meta": "Ent. Le Chat Team; julkinen hinta",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     },
     {
       "id": "m_vibe_enterprise",
       "vendor": "mi",
       "plan": "Vibe Enterprise",
       "meta": "Pilvi, yksityinen pilvi tai oma asennus; solut koskevat Mistralin pilveä",
-      "added": "2026-09-30"
+      "added": "2026-10-01"
     }
   ]
 }
