@@ -147,31 +147,81 @@
   },
   "agents|ms_copilot": {
     "status": "y",
-    "text": "Admin hyväksyy agentit ja Graph-konnektorit.",
+    "text": "Admin hallitsee agentit, sallitut agenttityypit ja konnektorit ryhmittäin Agents-rekisterissä. Agent 365 (lisälisenssi) antaa agenteille Entra-identiteetit ja keskitetyn valvonnan.",
     "sources": [
       {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "id": "ms-agent-settings",
+        "accessed": "2026-10-01",
+        "note": "User access ja sharing -asetukset käyttäjä- ja ryhmäkohtaisesti"
+      },
+      {
+        "id": "ms-agent-registry",
+        "accessed": "2026-10-01",
+        "note": "Agenttien julkaisu, käyttöönotto ja kiinnitys ryhmille"
+      },
+      {
+        "id": "ms-studio-security",
+        "accessed": "2026-10-01",
+        "note": "Agent 365 keskitettynä hallintatasona; agentit Entra-identiteetteinä"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Admin hyväksyy agentit ja Graph-konnektorit.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ja päivitetty nykyiseen Agents-hallintaan."
+      }
+    ]
   },
   "agents|ms_copilot_chat": {
     "status": "y",
-    "text": "Admin hyväksyy agentit (Integrated apps); näkee oikeudet ja ehdot.",
+    "text": "Admin julkaisee, rajaa ryhmittäin tai estää agentit Agents-rekisterissä ja päättää sallitut agenttityypit (Microsoft, oma organisaatio, ulkoiset julkaisijat). Työdataa käyttävät agentit ovat käyttöpohjaisesti maksullisia.",
     "sources": [
       {
-        "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "id": "ms-agent-settings",
+        "accessed": "2026-10-01",
+        "note": "User access -asetus: kaikki, ei kukaan tai valitut käyttäjät ja ryhmät; jakamisen rajaus"
+      },
+      {
+        "id": "ms-agent-registry",
+        "accessed": "2026-10-01",
+        "note": "Agenttien julkaisu, käyttöönotto ja kiinnitys käyttäjille tai ryhmille"
+      },
+      {
+        "id": "ms-pricing-enterprise",
+        "accessed": "2026-10-01",
+        "note": "Copilot Chatissa agenttien käyttö on metered"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Admin hyväksyy agentit (Integrated apps); näkee oikeudet ja ehdot.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Verify-merkitty solu vahvistettu ja päivitetty nykyiseen Agents-hallintaan."
+      }
+    ]
   },
   "agents|o_chatgpt_business": {
     "status": "p",
@@ -505,7 +555,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -518,7 +568,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -719,29 +769,69 @@
   },
   "certifications|ms_copilot": {
     "status": "y",
-    "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018.",
+    "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018. OpenAI:n operoimilta malleilta puuttuvat SOC 1-, PCI DSS-, HITRUST- ja FedRAMP High -todistukset.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Copilotin sertifikaatit: GDPR, ISO 27001, HIPAA, ISO 42001"
+      },
+      {
+        "id": "ms-openai-subproc",
+        "accessed": "2026-10-01",
+        "note": "Exclusions: OpenAI:n operoimilla malleilla ei FedRAMP High-, PCI DSS-, HITRUST- eikä SOC 1 -todistusta"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty OpenAI-alihankkijan (9.7.2026 alkaen) sertifiointirajaukset."
+      }
+    ]
   },
   "certifications|ms_copilot_chat": {
     "status": "y",
-    "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018.",
+    "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018. OpenAI:n operoimilta malleilta puuttuvat SOC 1-, PCI DSS-, HITRUST- ja FedRAMP High -todistukset.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Copilotin sertifikaatit: GDPR, ISO 27001, HIPAA, ISO 42001"
+      },
+      {
+        "id": "ms-openai-subproc",
+        "accessed": "2026-10-01",
+        "note": "Exclusions: OpenAI:n operoimilla malleilla ei FedRAMP High-, PCI DSS-, HITRUST- eikä SOC 1 -todistusta"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Copilot: ISO 27001, ISO 42001, HIPAA, GDPR. M365 laajemmin mm. ISO 27018.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty OpenAI-alihankkijan (9.7.2026 alkaen) sertifiointirajaukset."
+      }
+    ]
   },
   "certifications|o_chatgpt_business": {
     "status": "p",
@@ -877,13 +967,13 @@
     "sources": [
       {
         "id": "ms-customer-key",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Multi-workload DEP salaa Microsoft 365 Copilot -vuorovaikutukset"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "history": []
   },
   "cmk|ms_copilot_chat": {
     "status": "p",
@@ -894,7 +984,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": [],
     "verify": true
@@ -1101,37 +1191,97 @@
   },
   "data_egress|ms_copilot": {
     "status": "p",
-    "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
+    "text": "Alihankkijoina OpenAI (oletuksena päällä 24.7.2026 alkaen) ja Anthropic (EU:ssa oletuksena pois), molemmat DPA:n piirissä. Anthropicin Data Retention -mallit ovat Anthropicin omin ehdoin ja vaativat erillisen opt-inin. Web-haku lähettää kyselyitä Bingiin; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
     "sources": [
       {
+        "id": "ms-openai-subproc",
+        "accessed": "2026-10-01",
+        "note": "OpenAI alihankkijana 9.7.2026 alkaen, oletuksena päällä 24.7.2026 alkaen; DPA ja EDP koskevat"
+      },
+      {
+        "id": "ms-anthropic-subproc",
+        "accessed": "2026-10-01",
+        "note": "Anthropic EU:ssa oletuksena pois; Data Retention -mallit Anthropicin kaupallisin ehdoin ja DPA:lla, oletuksena pois"
+      },
+      {
         "id": "ms-privacy",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Web-haku lähettää hakukyselyn Bing Search -palveluun"
       },
       {
         "id": "mc-web-dlp",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "DLP voi estää arkaluonteiset kehotteet web-hauista"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "mc-web-dlp",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty OpenAI-alihankkija ja Anthropicin Data Retention -mallit, jotka käsitellään Microsoftin DPA:n ulkopuolella."
+      }
+    ]
   },
   "data_egress|ms_copilot_chat": {
     "status": "p",
-    "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
+    "text": "Alihankkijoina OpenAI (oletuksena päällä 24.7.2026 alkaen) ja Anthropic (EU:ssa oletuksena pois), molemmat DPA:n piirissä. Anthropicin Data Retention -mallit ovat Anthropicin omin ehdoin ja vaativat erillisen opt-inin. Web-haku lähettää kyselyitä Bingiin; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
     "sources": [
       {
+        "id": "ms-openai-subproc",
+        "accessed": "2026-10-01",
+        "note": "OpenAI alihankkijana 9.7.2026 alkaen, oletuksena päällä 24.7.2026 alkaen; DPA ja EDP koskevat"
+      },
+      {
+        "id": "ms-anthropic-subproc",
+        "accessed": "2026-10-01",
+        "note": "Anthropic EU:ssa oletuksena pois; Data Retention -mallit Anthropicin kaupallisin ehdoin ja DPA:lla, oletuksena pois"
+      },
+      {
         "id": "ms-privacy",
-        "accessed": "2026-09-26"
+        "accessed": "2026-10-01",
+        "note": "Web-haku lähettää hakukyselyn Bing Search -palveluun"
       },
       {
         "id": "mc-web-dlp",
-        "accessed": "2026-09-26"
+        "accessed": "2026-09-26",
+        "note": "DLP voi estää arkaluonteiset kehotteet web-hauista"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "OpenAI ja Anthropic alihankkijoina (Anthropic kytkettävissä pois). Web-haku lähettää kyselyitä palvelun ulkopuolelle; Purview DLP voi estää arkaluonteiset kehotteet hauista.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "mc-web-dlp",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty OpenAI-alihankkija ja Anthropicin Data Retention -mallit, jotka käsitellään Microsoftin DPA:n ulkopuolella."
+      }
+    ]
   },
   "data_egress|o_chatgpt_business": {
     "status": "p",
@@ -1507,7 +1657,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -1524,7 +1674,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2088,7 +2238,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2101,7 +2251,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2267,29 +2417,74 @@
   },
   "inference_eu|ms_copilot": {
     "status": "p",
-    "text": "Kuten Copilot Chatissa. Kytke Anthropic-mallit pois, jos EU-käsittely on ehdoton.",
+    "text": "Kuten Copilot Chatissa. Anthropic-mallit, myös Copilot in Microsoft 365 apps -asetuksen kautta otetut, jäävät EU Data Boundaryn ulkopuolelle; pidä ne pois päältä, jos EU-käsittely on ehdoton.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "EU-liikenne pysyy EU Data Boundaryssa; Anthropic-mallit poissuljettu"
+      },
+      {
+        "id": "ms-anthropic-subproc",
+        "accessed": "2026-10-01",
+        "note": "Huhtikuun 2026 asetus Anthropic-malleille Microsoft 365 -sovelluksissa EU/EFTA:ssa; mallit EU Data Boundaryn ulkopuolella"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "Kuten Copilot Chatissa. Kytke Anthropic-mallit pois, jos EU-käsittely on ehdoton.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty uusi EU-asetus, jolla Anthropic voidaan ottaa Microsoft 365 -sovellusten oletusmalliksi."
+      }
+    ]
   },
   "inference_eu|ms_copilot_chat": {
     "status": "p",
-    "text": "EU-liikenne pysyy EU Data Boundaryssa. Poikkeus: Anthropic-mallit eivät kuulu siihen.",
+    "text": "EU-liikenne käsitellään EU Data Boundaryssa, myös OpenAI:n operoimat mallit dokumentoiduin poikkeuksin. Anthropic-mallit eivät kuulu siihen, mutta ne ovat EU:ssa oletuksena pois päältä.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "EU-liikenne pysyy EU Data Boundaryssa; Anthropic-mallit poissuljettu"
+      },
+      {
+        "id": "ms-openai-subproc",
+        "accessed": "2026-10-01",
+        "note": "OpenAI:n operoimat mallit kuuluvat EU Data Boundaryyn osittaisia siirtoja lukuun ottamatta"
+      },
+      {
+        "id": "ms-anthropic-subproc",
+        "accessed": "2026-10-01",
+        "note": "Anthropic-mallit EU Data Boundaryn ulkopuolella; EU/EFTA:ssa oletuksena pois"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "p",
+        "text": "EU-liikenne pysyy EU Data Boundaryssa. Poikkeus: Anthropic-mallit eivät kuulu siihen.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty OpenAI-alihankkijan EU Data Boundary -asema ja Anthropicin EU-oletusasetus."
+      }
+    ]
   },
   "inference_eu|o_chatgpt_business": {
     "status": "n",
@@ -2473,7 +2668,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2486,7 +2681,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2637,15 +2832,17 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
+        "id": "ms-eu-model-clauses",
+        "accessed": "2026-10-01",
+        "note": "Microsoft tarjoaa SCC:t DPA:n osana EU:n ulkopuolisiin siirtoihin"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "ms-eudb",
+        "accessed": "2026-10-01",
+        "note": "EU Data Boundary sisältää rajattuja siirtoja EU:n ulkopuolelle"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2654,15 +2851,17 @@
     "text": "Yhdysvaltalainen yhtiö: CLOUD Act voi velvoittaa luovuttamaan dataa sijainnista riippumatta. Siirrot nojaavat EU–US Data Privacy Frameworkiin ja/tai SCC:ihin.",
     "sources": [
       {
-        "id": "x-sonomos-claude",
-        "accessed": "2026-09-25"
+        "id": "ms-eu-model-clauses",
+        "accessed": "2026-10-01",
+        "note": "Microsoft tarjoaa SCC:t DPA:n osana EU:n ulkopuolisiin siirtoihin"
       },
       {
-        "id": "o-waimakers",
-        "accessed": "2026-09-25"
+        "id": "ms-eudb",
+        "accessed": "2026-10-01",
+        "note": "EU Data Boundary sisältää rajattuja siirtoja EU:n ulkopuolelle"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -2813,25 +3012,60 @@
     "history": []
   },
   "personal_accounts|ms_copilot": {
-    "status": "y",
-    "text": "Entra- ja tenant-rajaukset.",
-    "sources": [],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "status": "p",
+    "text": "Oletuksena työntekijä voi käyttää henkilökohtaista Copilot-tilaustaan työdokumentteihin (ilman Graph-pääsyä); EDP koskee työtunnuksella avattua tiedostoa. Admin voi estää tämän Cloud Policyllä.",
+    "sources": [
+      {
+        "id": "ms-multi-account",
+        "accessed": "2026-10-01",
+        "note": "Multiple account access sallittu oletuksena, estettävissä Cloud Policyllä; ei pääsyä organisaation Graphiin"
+      }
+    ],
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Entra- ja tenant-rajaukset.",
+        "sources": [],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lähteetön solu; tila y→p, koska henkilökohtaisten Copilot-tilausten käyttö työdokumenteissa on oletuksena sallittu."
+      }
+    ]
   },
   "personal_accounts|ms_copilot_chat": {
-    "status": "y",
-    "text": "Entra- ja tenant-rajaukset; EDP näkyy vihreänä kilpenä.",
+    "status": "p",
+    "text": "Työtunnuksilla EDP-suoja (vihreä kilpi). Oletuksena työntekijä voi kuitenkin käyttää henkilökohtaista Copilot-tilaustaan (esim. Microsoft 365 Personal) työdokumentteihin; admin voi estää tämän Cloud Policyllä.",
     "sources": [
       {
         "id": "ms-chat-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-09-25",
+        "note": "EDP-suoja näkyy vihreänä kilpenä työtunnuksella"
+      },
+      {
+        "id": "ms-multi-account",
+        "accessed": "2026-10-01",
+        "note": "Multiple account access on käytössä, ellei Cloud Policyä poisteta käytöstä; EDP koskee työtunnuksella avattua tiedostoa"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Entra- ja tenant-rajaukset; EDP näkyy vihreänä kilpenä.",
+        "sources": [
+          {
+            "id": "ms-chat-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Tila y→p: henkilökohtaisen Copilot-lisenssin käyttö työdokumenteissa on oletuksena sallittu, ja sen estäminen vaatii erillisen käytännön."
+      }
+    ]
   },
   "personal_accounts|o_chatgpt_business": {
     "status": "p",
@@ -2994,20 +3228,40 @@
   },
   "pricing|ms_copilot": {
     "status": "y",
-    "text": "30 $/käyttäjä/kk (vuosisitoumus) Microsoft 365 -lisenssin päälle; pk-versio Copilot Business 21 $ (18 $ kampanja 2026 loppuun).",
+    "text": "30 $/käyttäjä/kk (vuosisitoumus) Microsoft 365 -lisenssin päälle. Pk-versio Copilot Business (enintään 300 käyttäjää) 21 $; kampanjahinta 18 $ ensimmäiseksi vuodeksi 1.7.–31.12.2026 tehdyille vuosisopimuksille.",
     "sources": [
       {
-        "id": "x-layer3-pricing",
-        "accessed": "2026-09-26"
+        "id": "ms-pricing-enterprise",
+        "accessed": "2026-10-01",
+        "note": "Microsoft 365 Copilot 30 $/käyttäjä/kk vuosilaskutuksella; vaatii kelpoisen M365-lisenssin"
       },
       {
-        "id": "x-aipricing",
-        "accessed": "2026-09-26"
+        "id": "ms-pricing-business",
+        "accessed": "2026-10-01",
+        "note": "Copilot Business 21 $, kampanja 18 $ ensimmäisen vuoden ajan 1.7.–31.12.2026; enintään 300 käyttäjää"
       }
     ],
-    "verified": "2026-09-26",
-    "changed": "2026-09-30",
-    "history": []
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "30 $/käyttäjä/kk (vuosisitoumus) Microsoft 365 -lisenssin päälle; pk-versio Copilot Business 21 $ (18 $ kampanja 2026 loppuun).",
+        "sources": [
+          {
+            "id": "x-layer3-pricing",
+            "accessed": "2026-09-26"
+          },
+          {
+            "id": "x-aipricing",
+            "accessed": "2026-09-26"
+          }
+        ],
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Toissijaiset lähteet korvattu ensisijaisilla; tarkennettu kampanjan ehdot ja Copilot Businessin 300 käyttäjän raja."
+      }
+    ]
   },
   "pricing|ms_copilot_chat": {
     "status": "y",
@@ -3018,7 +3272,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3208,30 +3462,81 @@
   },
   "provider_access|ms_copilot": {
     "status": "y",
-    "text": "Sama kuin Copilot Chatissa: ei abuse monitoring -ihmistarkastusta.",
+    "text": "Ei abuse monitoring -ihmistarkastusta. Customer Lockbox (lisensoinnin mukaan) kattaa kaikki Copilot-vuorovaikutukset: Microsoftin henkilöstön pääsy vaatii asiakkaan hyväksynnän. Poikkeus: opt-in Anthropic Data Retention -mallit.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Copilot-palvelut ovat jättäytyneet pois abuse monitoringista"
+      },
+      {
+        "id": "ms-customer-lockbox",
+        "accessed": "2026-10-01",
+        "note": "Kaikki Microsoft 365 Copilot -vuorovaikutukset kuuluvat Customer Lockboxin piiriin"
+      },
+      {
+        "id": "ms-anthropic-subproc",
+        "accessed": "2026-10-01",
+        "note": "Data Retention -malleissa Anthropic säilyttää dataa omien ehtojensa mukaan"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
-    "verify": true
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Sama kuin Copilot Chatissa: ei abuse monitoring -ihmistarkastusta.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Customer Lockbox -kattavuus vahvistettu ensisijaisesta lähteestä; verify poistettu ja lisätty Data Retention -poikkeus."
+      }
+    ]
   },
   "provider_access|ms_copilot_chat": {
     "status": "y",
-    "text": "Copilot on jättäytynyt pois Azure OpenAI:n abuse monitoringista, joka sisältää ihmistarkastuksen.",
+    "text": "Copilot on jättäytynyt pois Azure OpenAI:n ihmistarkastusta sisältävästä abuse monitoringista. Customer Lockbox (lisensoinnin mukaan) vaatii asiakkaan hyväksynnän Microsoftin pääsylle Exchangeen tallentuviin vuorovaikutuksiin. Poikkeus: opt-in Anthropic Data Retention -mallit.",
     "sources": [
       {
         "id": "ms-privacy",
-        "accessed": "2026-09-25"
+        "accessed": "2026-10-01",
+        "note": "Copilot-palvelut ovat jättäytyneet pois abuse monitoringista, joka sisältää ihmistarkastuksen"
+      },
+      {
+        "id": "ms-customer-lockbox",
+        "accessed": "2026-10-01",
+        "note": "Customer Lockbox kattaa Copilot-vuorovaikutukset Exchange Online -tuen kautta"
+      },
+      {
+        "id": "ms-anthropic-subproc",
+        "accessed": "2026-10-01",
+        "note": "Data Retention -malleissa Anthropic säilyttää dataa ja voi tarkastaa sitä omien käytäntöjensä mukaan"
       }
     ],
-    "verified": "2026-09-25",
-    "changed": "2026-09-30",
-    "history": [],
+    "verified": "2026-10-01",
+    "changed": "2026-10-01",
+    "history": [
+      {
+        "status": "y",
+        "text": "Copilot on jättäytynyt pois Azure OpenAI:n abuse monitoringista, joka sisältää ihmistarkastuksen.",
+        "sources": [
+          {
+            "id": "ms-privacy",
+            "accessed": "2026-09-25"
+          }
+        ],
+        "verify": true,
+        "from": "2026-09-30",
+        "until": "2026-10-01",
+        "reason": "Lisätty Customer Lockbox -kontrolli ja Anthropic Data Retention -poikkeus. Verify säilyy, koska Lockbox-dokumentaatio mainitsee nimenomaan Microsoft 365 Copilot -vuorovaikutukset."
+      }
+    ],
     "verify": true
   },
   "provider_access|o_chatgpt_business": {
@@ -3404,7 +3709,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3417,7 +3722,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3597,7 +3902,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -3614,7 +3919,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4011,7 +4316,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4024,7 +4329,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4185,7 +4490,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4202,7 +4507,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4364,7 +4669,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-25",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },
@@ -4381,7 +4686,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-26",
+    "verified": "2026-10-01",
     "changed": "2026-09-30",
     "history": []
   },

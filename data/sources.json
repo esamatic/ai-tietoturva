@@ -291,7 +291,7 @@
     "id": "ms-copilot-faq",
     "vendor": "ms",
     "title": "Microsoft: Frequently asked questions about Copilot Chat",
-    "url": "https://learn.microsoft.com/hi-in/copilot/faq",
+    "url": "https://learn.microsoft.com/en-us/copilot/faq",
     "type": "primary",
     "monitor": true,
     "selector": ""
@@ -915,6 +915,96 @@
     "url": "https://cloud.google.com/terms/gemini-enterprise/sla",
     "type": "primary",
     "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-openai-subproc",
+    "vendor": "ms",
+    "title": "Microsoft: OpenAI as a subprocessor in Microsoft Online Services",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/openai-subprocessor",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-customer-lockbox",
+    "vendor": "ms",
+    "title": "Microsoft Purview: Customer Lockbox requests",
+    "url": "https://learn.microsoft.com/en-us/purview/customer-lockbox-requests",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-multi-account",
+    "vendor": "ms",
+    "title": "Microsoft: Multiple account access to Microsoft Copilot for work and school documents",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/multiple-account-access",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-agent-settings",
+    "vendor": "ms",
+    "title": "Microsoft 365 admin: Agent settings",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-agent-registry",
+    "vendor": "ms",
+    "title": "Microsoft 365 admin: Agent registry",
+    "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "ms-studio-security",
+    "vendor": "ms",
+    "title": "Microsoft Copilot Studio: Security and governance",
+    "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "ms-pricing-business",
+    "vendor": "ms",
+    "title": "Microsoft: Copilot plans and pricing for business",
+    "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-pricing-enterprise",
+    "vendor": "ms",
+    "title": "Microsoft: Copilot plans and pricing for enterprise",
+    "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-eudb",
+    "vendor": "ms",
+    "title": "Microsoft: Overview of the EU Data Boundary",
+    "url": "https://learn.microsoft.com/privacy/eudb/eu-data-boundary-learn",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "ms-eu-model-clauses",
+    "vendor": "ms",
+    "title": "Microsoft Trust Center: EU Standard Contractual Clauses",
+    "url": "https://www.microsoft.com/en-us/TrustCenter/Compliance/EU-Model-Clauses",
+    "type": "primary",
+    "monitor": false,
     "selector": ""
   }
 ]
