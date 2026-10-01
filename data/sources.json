@@ -144,42 +144,6 @@
     "selector": ""
   },
   {
-    "id": "a-welter",
-    "vendor": "an",
-    "title": "Kevin Welter: Claude Enterprise or Team – cost and GDPR",
-    "url": "https://kevinwelter.com/en/blog/claude-enterprise",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "a-aiconsultancy",
-    "vendor": "an",
-    "title": "The AI Consultancy: Claude Team vs Enterprise (UK 2026)",
-    "url": "https://theaiconsultancy.ai/blog/claude-team-vs-enterprise-uk-2026",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-readai",
-    "vendor": "an",
-    "title": "Read AI: How does Claude AI implement data security?",
-    "url": "https://www.read.ai/articles/how-does-claude-ai-implement-data-security",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-sonomos-claude",
-    "vendor": "an",
-    "title": "Sonomos: Claude EU Data Residency in 2026",
-    "url": "https://sonomos.ai/blog/claude-eu-data-residency-2026/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
     "id": "o-pricing",
     "vendor": "oa",
     "title": "OpenAI: Business Pricing (ominaisuusvertailu)",
@@ -378,15 +342,6 @@
     "selector": ""
   },
   {
-    "id": "a-subprocessors",
-    "vendor": "an",
-    "title": "Anthropic: Subprocessors",
-    "url": "https://www.anthropic.com/subprocessors",
-    "type": "primary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
     "id": "a-export",
     "vendor": "an",
     "title": "Anthropic: Export your organization's data",
@@ -409,15 +364,6 @@
     "vendor": "an",
     "title": "Netskope: Real-time DLP for Claude Enterprise (8/2026)",
     "url": "https://www.netskope.com/blog/netskope-integrates-real-time-agentless-dlp-for-claude-enterprise",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-proskauer-anthropic",
-    "vendor": "an",
-    "title": "Proskauer: Anthropic copyright indemnity (Commercial Terms)",
-    "url": "https://www.proskauer.com/blog/anthropic-joins-the-party-offers-copyright-shield-to-enterprise-ai-customers",
     "type": "secondary",
     "monitor": false,
     "selector": ""
@@ -477,28 +423,10 @@
     "selector": ""
   },
   {
-    "id": "x-kemeny",
-    "vendor": "",
-    "title": "Kemeny: ChatGPT Business vs Claude Team vs Gemini vs Copilot (9/2026)",
-    "url": "https://www.kemeny.ai/chatgpt-business-compare",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
     "id": "x-techinsider",
     "vendor": "",
     "title": "Tech Insider: Claude vs ChatGPT vs Gemini Enterprise (2026)",
     "url": "https://tech-insider.org/chatgpt-vs-claude-vs-gemini-enterprise-2026/",
-    "type": "secondary",
-    "monitor": false,
-    "selector": ""
-  },
-  {
-    "id": "x-aipricing",
-    "vendor": "",
-    "title": "AI Pricing Guru: AI subscription pricing",
-    "url": "https://www.aipricing.guru/subscriptions/",
     "type": "secondary",
     "monitor": false,
     "selector": ""
@@ -1012,6 +940,96 @@
     "vendor": "oa",
     "title": "OpenAI Help: ChatGPT Enterprise and Edu release notes",
     "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-commercial-terms",
+    "vendor": "an",
+    "title": "Anthropic: Commercial Terms of Service",
+    "url": "https://www.anthropic.com/legal/commercial-terms",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-covered-models",
+    "vendor": "an",
+    "title": "Anthropic: Data retention practices for Covered Models",
+    "url": "https://privacy.claude.com/en/articles/15425996-data-retention-practices-for-covered-models",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-custom-retention",
+    "vendor": "an",
+    "title": "Anthropic: Configure custom data retention controls for Enterprise plans",
+    "url": "https://privacy.claude.com/en/articles/10440198-configure-custom-data-retention-controls-for-enterprise-plans",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-enterprise-plan",
+    "vendor": "an",
+    "title": "Anthropic: What is the Enterprise plan?",
+    "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-cmek",
+    "vendor": "an",
+    "title": "Anthropic: What are customer-managed encryption keys (CMEK)?",
+    "url": "https://support.claude.com/en/articles/15505325-what-are-customer-managed-encryption-keys-cmek",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-cmek-docs",
+    "vendor": "an",
+    "title": "Claude Platform Docs: Customer-managed encryption keys",
+    "url": "https://platform.claude.com/docs/en/manage-claude/cmek",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-cowork-admin",
+    "vendor": "an",
+    "title": "Anthropic: Use Claude Cowork on Team and Enterprise plans",
+    "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
+  },
+  {
+    "id": "a-chrome-admin",
+    "vendor": "an",
+    "title": "Anthropic: Claude in Chrome admin controls",
+    "url": "https://support.claude.com/en/articles/13065128-claude-in-chrome-admin-controls",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-browser-setup",
+    "vendor": "an",
+    "title": "Anthropic: Set up browser use in Claude Cowork for Team and Enterprise plans",
+    "url": "https://support.claude.com/en/articles/16635803-set-up-browser-use-in-claude-cowork-for-team-and-enterprise-plans",
+    "type": "primary",
+    "monitor": false,
+    "selector": ""
+  },
+  {
+    "id": "a-rbac",
+    "vendor": "an",
+    "title": "Anthropic: Set up role-based permissions on Enterprise plans",
+    "url": "https://support.claude.com/en/articles/13930458-set-up-role-based-permissions-on-enterprise-plans",
     "type": "primary",
     "monitor": false,
     "selector": ""
