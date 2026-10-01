@@ -246,7 +246,7 @@
       "id": "ms_copilot",
       "vendor": "ms",
       "plan": "Microsoft Copilot",
-      "meta": "Maksullinen lisenssi (ent. M365 Copilot)",
+      "meta": "Maksullinen lisenssi (ent. M365 Copilot); pk-yrityksille Copilot Business (≤300)",
       "added": "2026-09-30"
     },
     {
