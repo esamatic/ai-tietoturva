@@ -20,7 +20,7 @@ Patch kommentista ──► validointi ──► pull request ──► sinä yh
 4. Aja **Actions → Seuranta → Run workflow**. Ensimmäinen ajo tallentaa lähtötilanteen eikä avaa issueita, ja se luo myös lomakkeiden tarvitsemat labelit. Julkaisu käynnistyy perään automaattisesti.
 5. Luo claude.ai:ssa Project (esim. "Tietoturvamatriisi") ja liitä sen ohjeiksi `prompts/project_instructions.md`.
 
-Sivu löytyy osoitteesta `https://esamatic.github.io/ai-tietoturva/`.
+Sivu löytyy osoitteesta https://esamatic.github.io/ai-tietoturva/
 
 ## Rakenne
 
