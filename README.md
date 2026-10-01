@@ -1,8 +1,10 @@
 # AI-avustajien tietoturvamatriisi
 
-Julkinen, itseään seuraava vertailu yrityskäyttöön tarkoitettujen AI-avustajien (Microsoft Copilot, Google Gemini, Anthropic Claude, OpenAI ChatGPT) lisensseistä tietoturvan ja tietosuojan näkökulmasta. Jokaisella solulla on omat lähteensä ja muutoshistoriansa.
+Julkinen, itseään seuraava vertailu yrityskäyttöön tarkoitettujen AI-avustajien (Microsoft Copilot, Google Gemini, Anthropic Claude, OpenAI ChatGPT, Mistral Vibe) lisensseistä tietoturvan ja tietosuojan näkökulmasta. Jokaisella solulla on omat lähteensä ja muutoshistoriansa.
 
-Automaatio hoitaa seurannan, julkaisun ja kirjanpidon. Tulkinta tehdään käsin claude.ai-chatissa, ja jokainen muutos hyväksytään pull requestina ennen julkaisua.
+Automaatio hoitaa seurannan, julkaisun ja kirjanpidon. Tekoäly tulkitsee lähteet claude.ai-chatissa, ja jokainen muutos kulkee pull requestina ennen julkaisua.
+
+**Konseptikokeilu.** Vertailun on koonnut ja sitä ylläpitää tekoäly. Tietoja ei ole tarkistettu käsin, joten varmista olennaiset kohdat lähteestä ennen päätöksiä.
 
 ```
 Seuranta (päivittäin) ──► lähde muuttui ──► issue + tutkimuspaketti

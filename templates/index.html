@@ -194,7 +194,7 @@ const lastData = (D.changelog[0] || {}).date;
 const run = MON._run || {};
 document.getElementById('facts').innerHTML = [
   `Data päivitetty <b>${fmt(lastData)}</b>`,
-  run.date ? `Lähteet tarkistettu <b>${fmt(run.date)}</b> (${run.monitored} seurattua${run.failed ? `, <span class="err">${run.failed} epäonnistui</span>` : ""})` : "Seuranta ei ole vielä ajanut",
+  run.date ? `Lähteet haettu <b>${fmt(run.date)}</b> (${run.monitored} seurattua${run.failed ? `, <span class="err">${run.failed} epäonnistui</span>` : ""})` : "Seuranta ei ole vielä ajanut",
   `<b>${all.length}</b> arviota, joista <b>${unsourced}</b> ilman lähdettä ja <b>${verify}</b> merkitty varmistettaviksi`
 ].map(x => `<li>${x}</li>`).join("");
 
