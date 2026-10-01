@@ -1,6 +1,145 @@
 [
   {
     "date": "2026-10-01",
+    "ref": "#22",
+    "summary": "OpenAI:n täysi tarkistus: Businessin tekijänoikeusvastuu korjattu palveluehtojen mukaiseksi, Businessin säilytys- ja analytiikkatiedot päivitetty, palveluntarjoajan pääsy, agenttien hallinta ja datan sijainti vahvistettu ensisijaisista lähteistä sekä Businessin uusi Premium-paikka lisätty.",
+    "changes": [
+      {
+        "kind": "source",
+        "key": "o-service-terms",
+        "text": "OpenAI: Service terms"
+      },
+      {
+        "kind": "source",
+        "key": "o-apps-help",
+        "text": "OpenAI Help: Apps in ChatGPT"
+      },
+      {
+        "kind": "source",
+        "key": "o-devmode-help",
+        "text": "OpenAI Help: Developer mode and MCP apps in ChatGPT"
+      },
+      {
+        "kind": "source",
+        "key": "o-ent-release-notes",
+        "text": "OpenAI Help: ChatGPT Enterprise and Edu release notes"
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|o_chatgpt_business",
+        "from": "p",
+        "to": "p",
+        "text": "OpenAI:n valtuutettu henkilöstö (tekninen tuki, väärinkäytösten tutkinta, lakivelvoitteet) ja vaitiolovelvolliset alihankkijat voivat tarkastella keskusteluja väärinkäytösten selvittämiseksi. Asiakas ei voi hyväksyä tai estää pääsyä.",
+        "reason": "Verify-merkitty solu korvattu ensisijaisen lähteen kuvauksella; aiempaa väitettä USA:ssa säilytettävästä kopiosta ei löytynyt ensisijaisista lähteistä."
+      },
+      {
+        "kind": "text",
+        "key": "provider_access|o_chatgpt_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Valtuutettu henkilöstö käsittelee keskusteluja vain häiriöiden selvittämiseksi, asiakkaan nimenomaisella luvalla tehtävää palautusta varten tai lain vaatiessa. Asiakkaalla ei ole hyväksyntämekanismia muuhun pääsyyn.",
+        "reason": "Lähteetön ja verify-merkitty solu vahvistettu ensisijaisesta lähteestä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "retention|o_chatgpt_business",
+        "from": "p",
+        "to": "p",
+        "text": "Admin voi säätää säilytysaikaa; poistetut keskustelut poistuvat 30 päivässä, ellei laki tai väärinkäytösten torjunta edellytä pidempää säilytystä. Säilytyspitoja ja eDiscovery-työkaluja ei ole (Compliance API vain Enterprisessa).",
+        "reason": "OpenAI:n mukaan Businessin admin voi nyt säätää säilytysaikaa; aiempi teksti oli vanhentunut."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|o_chatgpt_business",
+        "from": "p",
+        "to": "p",
+        "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Businessissa sovellukset ovat oletuksena päällä; admin päättää sallitut sovellukset.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|o_chatgpt_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Enterprisessa sovellukset ovat oletuksena pois, ja RBAC rajaa niiden käyttöä.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "storage_eu|o_chatgpt_business",
+        "from": "n",
+        "to": "n",
+        "text": "Ei. Datan sijainnin valinta on vain Enterprise- ja Edu-asiakkaille.",
+        "reason": "Vahvistettu ensisijaisista lähteistä; poistettu vahvistamaton maininta käyttöönotosta ja verify."
+      },
+      {
+        "kind": "text",
+        "key": "storage_eu|o_chatgpt_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "EU (ETA + Sveitsi) ja 9 muuta aluetta, vain uusissa työtiloissa. Tili- ja metadata sekä sovellusten, MCP:n ja web-haun kautta kulkeva data jäävät alueen ulkopuolelle; Sites ja kolmannen osapuolen GPT:t eivät kuulu piiriin.",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty integraatioiden ja tukemattomien ominaisuuksien rajaukset."
+      },
+      {
+        "kind": "text",
+        "key": "audit|o_chatgpt_business",
+        "from": "n",
+        "to": "n",
+        "text": "Ei Compliance API:a eikä audit-lokia; vain käyttöanalytiikka. Keskustelujen järjestelmällinen haku ja eDiscovery puuttuvat.",
+        "reason": "Analytiikkanäkymä on hinnaston mukaan saatavilla myös Businessissa; korjattu virheellinen maininta."
+      },
+      {
+        "kind": "text",
+        "key": "agents|o_chatgpt_business",
+        "from": "p",
+        "to": "p",
+        "text": "Sovellukset ja konnektorit ovat oletuksena päällä; admin päättää sallitut sovellukset ja niiden toiminnot ja vain admin voi julkaista MCP-sovelluksia. Ryhmäkohtaista rajausta (RBAC) ja connector registryä ei ole.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä; lisätty oletusasetus."
+      },
+      {
+        "kind": "text",
+        "key": "agents|o_chatgpt_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Sovellukset ovat oletuksena pois; RBAC rajaa sovellukset, developer moden (MCP), agentit, Codexin ja web-haun rooleittain. Connector registry ja toimintokohtaiset sovellusluvat.",
+        "reason": "Verify-merkitty solu vahvistettu ensisijaisista lähteistä ja tarkennettu."
+      },
+      {
+        "kind": "text",
+        "key": "pricing|o_chatgpt_business",
+        "from": "y",
+        "to": "y",
+        "text": "Standard-paikka 20 $/käyttäjä/kk vuosilaskutuksella tai 25 $ kuukausittain; Premium-paikka (5x käyttö) 100 $ tai 125 $. 2–200 käyttäjää, paikkatyyppejä voi yhdistellä.",
+        "reason": "Toissijainen lähde korvattu ensisijaisella; lisätty uusi Premium-paikka."
+      },
+      {
+        "kind": "text",
+        "key": "pricing|o_chatgpt_enterprise",
+        "from": "n",
+        "to": "n",
+        "text": "Ei julkista hintaa; raportoidut tarjoukset n. 45–75 $/käyttäjä/kk ja vähimmäismäärä 150 käyttäjää. Tarjolla myös krediitti- ja token-pohjainen hinnoittelu.",
+        "reason": "Lisätty uudet hinnoittelumallit ensisijaisesta lähteestä."
+      },
+      {
+        "kind": "status",
+        "key": "ip_indemnity|o_chatgpt_business",
+        "from": "y",
+        "to": "n",
+        "text": "Ei. Palveluehtojen tuotetun sisällön vastuusitoumus koskee vain Enterprise-, Edu- ja Healthcare-asiakkaita; Business mainitaan ehdoissa erikseen eikä kuulu sen piiriin.",
+        "reason": "Tila y→n: 29.9.2026 päivitettyjen palveluehtojen mukaan vastuusitoumus ei koske Businessia; aiempi tieto perustui toissijaiseen lähteeseen."
+      },
+      {
+        "kind": "text",
+        "key": "ip_indemnity|o_chatgpt_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "OpenAI puolustaa asiakasta, jos tuotettu sisältö loukkaa IP-oikeuksia. Ei koske beta-ominaisuuksia, muokattua tuotosta eikä tilanteita, joissa suodattimet on ohitettu tai loukkaus olisi pitänyt tietää.",
+        "reason": "Toissijainen lähde korvattu palveluehdoilla; lisätty keskeiset poikkeukset."
+      }
+    ]
+  },
+  {
+    "date": "2026-10-01",
     "ref": "#20",
     "summary": "Microsoftin täysi tarkistus: OpenAI-alihankkija ja Anthropicin Data Retention -mallit lisätty, henkilökohtaisten Copilot-tilausten käyttö työdokumenteissa arvioitu, Customer Lockbox- ja Customer Key -kattavuus vahvistettu sekä agenttien hallinta ja hinnat päivitetty ensisijaisista lähteistä.",
     "changes": [
