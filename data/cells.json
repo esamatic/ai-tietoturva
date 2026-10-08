@@ -43,7 +43,7 @@
         "note": "Team: admin controls for remote and local connectors; ei roolipohjaista pääsyä"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -929,7 +929,7 @@
         "note": "Verkkoyhteysrajaukset eivät koske web fetchiä, web-hakua eivätkä MCP:tä"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -953,7 +953,7 @@
         "note": "Verkkoyhteysrajaukset eivät koske web fetchiä, web-hakua eivätkä MCP:tä"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
