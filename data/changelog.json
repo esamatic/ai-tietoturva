@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-08",
+    "ref": "#55",
+    "summary": "Cowork-ohjeeseen lisätyt HIPAA-ready Enterprise -konfiguraation ehdot eivät muuta lähteeseen viittaavia soluja.",
+    "changes": []
+  },
+  {
     "date": "2026-10-01",
     "ref": "",
     "changes": [],
