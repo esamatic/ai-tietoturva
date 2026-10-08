@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#38",
+    "summary": "Cloud DPA:n palvelukohtaisesta liitteestä poistui toistunut otsikkorivi; Workspace- ja Gemini-solujen ehdot ennallaan.",
+    "changes": []
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#45",
     "summary": "Gemini Enterprisen residency-sivulla muotoilumuutoksia ja Gemini 2.5 Pron oletustilan tarkennus; EU-poikkeukset ennallaan, solut eivät muutu.",
     "changes": []
