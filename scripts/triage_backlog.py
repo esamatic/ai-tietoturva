@@ -41,6 +41,8 @@ def verdict(issue: dict) -> tuple[bool, str]:
     blocks = [d for t in texts for d in diffs(t)]
     if not blocks:
         return False, "diffiä ei löytynyt"
+    if any(noise.diff_blocked(d) for d in blocks):
+        return False, "esto- tai kirjautumissivu (korjaa lähde)"
     if any(TRUNCATED in d for d in blocks):
         return False, "diff katkaistu"
     real = sum(not noise.diff_is_noise(d) for d in blocks)

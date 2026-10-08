@@ -42,6 +42,12 @@ LABELS = {
 def fetch(url: str) -> str:
     r = requests.get(url, headers={"User-Agent": UA, "Accept-Language": "en;q=0.9"}, timeout=30)
     r.raise_for_status()
+    if "charset" not in r.headers.get("content-type", "").lower():
+        # Without a charset header requests assumes ISO-8859-1, which garbles UTF-8 pages.
+        try:
+            return r.content.decode("utf-8")
+        except UnicodeDecodeError:
+            r.encoding = r.apparent_encoding
     return r.text
 
 
@@ -161,6 +167,19 @@ def main() -> int:
             continue
         old = snap.read_text(encoding="utf-8")
         if old == text:
+            continue
+        blocked = noise.looks_blocked(text, old)
+        if blocked:
+            # Treated like a failed fetch: the snapshot is kept, repeated blocks open a "Seurantavirhe" issue.
+            failed += 1
+            st["error"] = f"esto- tai kirjautumissivu ({blocked})"
+            st["failures"] = st.get("failures", 0) + 1
+            print(f"BLOCKED {src['id']}: {blocked}", file=sys.stderr)
+            if st["failures"] == FAIL_ISSUE_AFTER:
+                open_or_comment(f"Seurantavirhe: {src['id']}", "seurantavirhe",
+                                f"Lähde **{src['title']}** palauttaa esto- tai kirjautumissivun "
+                                f"{FAIL_ISSUE_AFTER} kertaa peräkkäin (`{blocked}`).\n\n- URL: {src['url']}\n\n"
+                                "Vaihtoehdot: vaihda URL julkiseen versioon tai aseta `monitor: false`.")
             continue
         snap.write_text(text, encoding="utf-8")  # the snapshot follows the page also when the change is noise
         why = noise.classify(old, text, st, src.get("ignore", []))
