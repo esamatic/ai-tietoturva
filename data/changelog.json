@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#54",
+    "summary": "Privacy Hubiin lisättiin ulkoisen yhteistyön suojakaiteita koskeva FAQ ja sertifiointivastauksen sanamuoto muuttui; mikään solu ei muutu.",
+    "changes": []
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#30",
     "summary": "Kytketään ms-copilot-faq-lähteen seuranta pois: sivu vaatii nykyään kirjautumisen, eikä seuranta saa siitä sisältöä.",
     "changes": []
