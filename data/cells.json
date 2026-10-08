@@ -664,7 +664,7 @@
         "note": "Compliance-taulukko: Business-editioiden Gemini-sovellus kattaa mm. BSI C5:n; Gemini in Chrome ei kuulu sertifikaatteihin"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -683,7 +683,7 @@
         "note": "Compliance-taulukko Enterprise-editioille; Gemini in Chrome ei kuulu sertifikaatteihin"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -864,7 +864,7 @@
         "note": "Google-järjestelmillä ei ole teknistä pääsyä CSE-sisältöön, joten CSE rajaa Geminin pääsyä"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -1036,7 +1036,7 @@
         "note": "Admin hallitsee myös ei-Google-sovellusten, kuten GitHubin, käyttöä Geminissä"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -1060,7 +1060,7 @@
         "note": "Admin hallitsee myös ei-Google-sovellusten käyttöä Geminissä"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -1323,7 +1323,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3109,7 +3109,7 @@
         "note": "Access Transparency vaatii Enterprise Plus -lisenssin, Access Approvals Assured Controls -lisäosan"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3848,7 +3848,7 @@
         "note": "Data region -asetukset eivät koske Gemini Notebookin dataa"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3872,7 +3872,7 @@
         "note": "Data region -asetukset eivät koske Gemini Notebookin dataa"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -4027,7 +4027,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -4040,7 +4040,7 @@
         "accessed": "2026-09-25"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -4207,7 +4207,7 @@
         "note": "Workspace Intelligence hakee Gmailista, Drivesta, Kalenterista ja Chatista käyttäjän oikeuksin; admin voi poistaa lähteitä käytöstä"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -4228,7 +4228,7 @@
         "accessed": "2026-09-26"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
