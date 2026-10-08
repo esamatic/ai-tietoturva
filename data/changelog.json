@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#47",
+    "summary": "Gemini Enterprisen IdP-sivulle tuli Workspace-konnektorien ACL-osio ja Google Identity -ohjeistusta; identity-solu ei muutu.",
+    "changes": []
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#54",
     "summary": "Privacy Hubiin lisättiin ulkoisen yhteistyön suojakaiteita koskeva FAQ ja sertifiointivastauksen sanamuoto muuttui; mikään solu ei muutu.",
     "changes": []
