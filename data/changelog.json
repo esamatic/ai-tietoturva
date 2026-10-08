@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#30",
+    "summary": "Kytketään ms-copilot-faq-lähteen seuranta pois: sivu vaatii nykyään kirjautumisen, eikä seuranta saa siitä sisältöä.",
+    "changes": []
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#29",
     "summary": "Enterprise privacy -sivun muutos oli sivuversion vaihdos (markkinointisivu → FAQ-sivu); kaikki neljä siihen viittaavaa solua pitävät yhä paikkansa.",
     "changes": []
