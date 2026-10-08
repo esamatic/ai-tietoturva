@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#45",
+    "summary": "Gemini Enterprisen residency-sivulla muotoilumuutoksia ja Gemini 2.5 Pron oletustilan tarkennus; EU-poikkeukset ennallaan, solut eivät muutu.",
+    "changes": []
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#47",
     "summary": "Gemini Enterprisen IdP-sivulle tuli Workspace-konnektorien ACL-osio ja Google Identity -ohjeistusta; identity-solu ei muutu.",
     "changes": []

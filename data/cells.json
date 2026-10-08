@@ -1012,7 +1012,7 @@
         "note": "Search-grounding vain global-alueella ja kirjaa väliaikaisesti osan asiakasdatasta"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -2200,7 +2200,7 @@
         "note": "Business-edition ei tue data regions -asetuksia"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3298,7 +3298,7 @@
         "note": "Business: hallinta vaatii Services Admin -roolin tai Gemini Enterprise -hallintaoikeuden"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3824,7 +3824,7 @@
         "note": "Business-edition ei tue data regions -asetuksia"
       }
     ],
-    "verified": "2026-09-30",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
