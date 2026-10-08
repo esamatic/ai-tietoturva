@@ -1574,7 +1574,7 @@
         "note": "DPA allekirjoitettavissa Businessille, Enterpriselle ja API:lle"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3229,7 +3229,7 @@
         "note": "Business FAQ: pääsy keskusteluihin valtuutetulla henkilöstöllä ja kolmansien osapuolten tarkastajilla väärinkäytösten selvittämiseksi"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3243,7 +3243,7 @@
         "note": "Enterprise FAQ: työntekijöiden pääsy keskusteluihin vain häiriöihin, luvalliseen palautukseen tai lakivelvoitteisiin"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
@@ -3601,7 +3601,7 @@
         "note": "Compliance API Logs Platform vain Enterprisessa"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
