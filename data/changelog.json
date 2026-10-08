@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#29",
+    "summary": "Enterprise privacy -sivun muutos oli sivuversion vaihdos (markkinointisivu → FAQ-sivu); kaikki neljä siihen viittaavaa solua pitävät yhä paikkansa.",
+    "changes": []
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#52",
     "summary": "Korjataan ChatGPT Enterprisen sovellusten oletustila: uudet työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia, muut ja uudet ovat oletuksena pois; o-apps-help:n diffit itsessään olivat kosmeettisia.",
     "changes": [
