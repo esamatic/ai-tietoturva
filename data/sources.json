@@ -248,7 +248,7 @@
     "title": "Microsoft: Frequently asked questions about Copilot Chat",
     "url": "https://learn.microsoft.com/en-us/copilot/faq",
     "type": "primary",
-    "monitor": true,
+    "monitor": false,
     "selector": ""
   },
   {
