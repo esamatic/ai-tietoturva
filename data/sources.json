@@ -1060,5 +1060,14 @@
     "type": "primary",
     "monitor": false,
     "selector": ""
+  },
+  {
+    "id": "o-apps-admin-help",
+    "vendor": "oa",
+    "title": "OpenAI Help: Admin controls, security, and compliance for plugins and apps",
+    "url": "https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps",
+    "type": "primary",
+    "monitor": true,
+    "selector": ""
   }
 ]

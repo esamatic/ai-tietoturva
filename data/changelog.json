@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-10-08",
+    "ref": "#52",
+    "summary": "Korjataan ChatGPT Enterprisen sovellusten oletustila: uudet työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia, muut ja uudet ovat oletuksena pois; o-apps-help:n diffit itsessään olivat kosmeettisia.",
+    "changes": [
+      {
+        "kind": "source",
+        "key": "o-apps-admin-help",
+        "text": "OpenAI Help: Admin controls, security, and compliance for plugins and apps"
+      },
+      {
+        "kind": "text",
+        "key": "agents|o_chatgpt_enterprise",
+        "from": "y",
+        "to": "y",
+        "text": "Uusissa työtiloissa valikoitu joukko sovelluksia on päällä, muut ja uudet sovellukset ovat oletuksena pois; RBAC rajaa sovellukset, developer moden (MCP), agentit, Codexin ja web-haun rooleittain. Connector registry ja toimintokohtaiset sovellusluvat.",
+        "reason": "Väite 'sovellukset oletuksena pois' oli virheellinen: o-apps-help ja admin-ohje (haettu 2026-10-08) kertovat, että uudet Enterprise-työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia ja vain muut ja uudet sovellukset ovat yleensä pois. Tila ennallaan."
+      },
+      {
+        "kind": "text",
+        "key": "data_egress|o_chatgpt_enterprise",
+        "from": "p",
+        "to": "p",
+        "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Enterprisessa uudet työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia, muut ovat oletuksena pois, ja RBAC rajaa käyttöä.",
+        "reason": "Korjattu virheellinen väite sovellusten oletustilasta: uudet Enterprise-työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia (o-apps-help ja admin-ohje, haettu 2026-10-08). Tila ennallaan."
+      }
+    ]
+  },
+  {
+    "date": "2026-10-08",
     "ref": "#55",
     "summary": "Cowork-ohjeeseen lisätyt HIPAA-ready Enterprise -konfiguraation ehdot eivät muuta lähteeseen viittaavia soluja.",
     "changes": []

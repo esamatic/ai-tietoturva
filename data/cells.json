@@ -205,38 +205,73 @@
         "note": "Business: RBAC No, Connector registry No"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
   "agents|o_chatgpt_enterprise": {
     "status": "y",
-    "text": "Sovellukset ovat oletuksena pois; RBAC rajaa sovellukset, developer moden (MCP), agentit, Codexin ja web-haun rooleittain. Connector registry ja toimintokohtaiset sovellusluvat.",
+    "text": "Uusissa työtiloissa valikoitu joukko sovelluksia on päällä, muut ja uudet sovellukset ovat oletuksena pois; RBAC rajaa sovellukset, developer moden (MCP), agentit, Codexin ja web-haun rooleittain. Connector registry ja toimintokohtaiset sovellusluvat.",
     "sources": [
       {
         "id": "o-apps-help",
-        "accessed": "2026-10-01",
-        "note": "Sovellukset oletuksena pois Enterprise/Edu-työtiloissa; RBAC sovelluksille"
+        "accessed": "2026-10-08",
+        "note": "Uudet Enterprise/Edu-työtilat alkavat valikoiduilla päällä olevilla sovelluksilla; oletukset eivät muuta olemassa olevia työtiloja"
+      },
+      {
+        "id": "o-apps-admin-help",
+        "accessed": "2026-10-08",
+        "note": "Uudet sovellukset yleensä oletuksena pois; RBAC sovelluksille ja plugineille, Actions-asetukset ja uusien toimintojen oletus"
       },
       {
         "id": "o-devmode-help",
         "accessed": "2026-10-01",
-        "note": "Enterprise/Edu-admin rajaa developer moden RBAC:lla"
+        "note": "Developer mode ja MCP-sovellukset roolioikeuksin"
       },
       {
         "id": "o-ent-release-notes",
         "accessed": "2026-10-01",
-        "note": "Sovellusten käyttöoikeudet, RBAC ja toimintojen hallinta erillisinä kontrolleina"
+        "note": "Connector registry ja roolipohjaiset hallintaominaisuudet"
       },
       {
         "id": "o-pricing",
         "accessed": "2026-10-01",
-        "note": "Enterprise: Connector registry ja RBAC"
+        "note": "Enterprisen admin- ja RBAC-ominaisuudet"
       }
     ],
-    "verified": "2026-10-01",
-    "changed": "2026-10-01",
-    "history": []
+    "verified": "2026-10-08",
+    "changed": "2026-10-08",
+    "history": [
+      {
+        "status": "y",
+        "text": "Sovellukset ovat oletuksena pois; RBAC rajaa sovellukset, developer moden (MCP), agentit, Codexin ja web-haun rooleittain. Connector registry ja toimintokohtaiset sovellusluvat.",
+        "sources": [
+          {
+            "id": "o-apps-help",
+            "accessed": "2026-10-01",
+            "note": "Sovellukset oletuksena pois Enterprise/Edu-työtiloissa; RBAC sovelluksille"
+          },
+          {
+            "id": "o-devmode-help",
+            "accessed": "2026-10-01",
+            "note": "Enterprise/Edu-admin rajaa developer moden RBAC:lla"
+          },
+          {
+            "id": "o-ent-release-notes",
+            "accessed": "2026-10-01",
+            "note": "Sovellusten käyttöoikeudet, RBAC ja toimintojen hallinta erillisinä kontrolleina"
+          },
+          {
+            "id": "o-pricing",
+            "accessed": "2026-10-01",
+            "note": "Enterprise: Connector registry ja RBAC"
+          }
+        ],
+        "from": "2026-10-01",
+        "until": "2026-10-08",
+        "reason": "Väite 'sovellukset oletuksena pois' oli virheellinen: o-apps-help ja admin-ohje (haettu 2026-10-08) kertovat, että uudet Enterprise-työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia ja vain muut ja uudet sovellukset ovat yleensä pois. Tila ennallaan."
+      }
+    ]
   },
   "ai_act|a_claude_enterprise": {
     "status": "y",
@@ -1150,33 +1185,63 @@
         "note": "Sovellukset oletuksena päällä Business-työtiloissa"
       }
     ],
-    "verified": "2026-10-01",
+    "verified": "2026-10-08",
     "changed": "2026-10-01",
     "history": []
   },
   "data_egress|o_chatgpt_enterprise": {
     "status": "p",
-    "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Enterprisessa sovellukset ovat oletuksena pois, ja RBAC rajaa niiden käyttöä.",
+    "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Enterprisessa uudet työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia, muut ovat oletuksena pois, ja RBAC rajaa käyttöä.",
     "sources": [
       {
         "id": "o-service-terms",
         "accessed": "2026-10-01",
-        "note": "Apps and Actions: sovellukselle lähetetty data käsitellään sovelluksen ehdoin"
+        "note": "Kolmannen osapuolen palveluihin lähtevä data niiden ehtojen alaisena"
       },
       {
         "id": "o-residency-help",
         "accessed": "2026-10-01",
-        "note": "Ulkoisiin sovelluksiin, MCP:hen ja selainpalveluun lähtevä data kolmannen osapuolen ehdoin"
+        "note": "Data residency ei kata ulkoisia integraatioita"
       },
       {
         "id": "o-apps-help",
-        "accessed": "2026-10-01",
-        "note": "Sovellukset oletuksena pois Enterprise/Edu-työtiloissa; RBAC sovelluksille"
+        "accessed": "2026-10-08",
+        "note": "Sovelluksille jaettu data käsitellään sovelluksen omin ehdoin; Enterprisen oletussovellukset"
+      },
+      {
+        "id": "o-apps-admin-help",
+        "accessed": "2026-10-08",
+        "note": "Ei-synkronoidut sovellukset tarjoajan tallennus- ja residency-ehdoin; roolikohtainen sovelluspääsy Enterprisessa"
       }
     ],
-    "verified": "2026-10-01",
-    "changed": "2026-10-01",
-    "history": []
+    "verified": "2026-10-08",
+    "changed": "2026-10-08",
+    "history": [
+      {
+        "status": "p",
+        "text": "Sovelluksiin, MCP-palvelimille ja web-selaukseen lähtevä data käsitellään kolmannen osapuolen ehdoin, eikä OpenAI vastaa siitä luovutuksen jälkeen. Enterprisessa sovellukset ovat oletuksena pois, ja RBAC rajaa niiden käyttöä.",
+        "sources": [
+          {
+            "id": "o-service-terms",
+            "accessed": "2026-10-01",
+            "note": "Apps and Actions: sovellukselle lähetetty data käsitellään sovelluksen ehdoin"
+          },
+          {
+            "id": "o-residency-help",
+            "accessed": "2026-10-01",
+            "note": "Ulkoisiin sovelluksiin, MCP:hen ja selainpalveluun lähtevä data kolmannen osapuolen ehdoin"
+          },
+          {
+            "id": "o-apps-help",
+            "accessed": "2026-10-01",
+            "note": "Sovellukset oletuksena pois Enterprise/Edu-työtiloissa; RBAC sovelluksille"
+          }
+        ],
+        "from": "2026-10-01",
+        "until": "2026-10-08",
+        "reason": "Korjattu virheellinen väite sovellusten oletustilasta: uudet Enterprise-työtilat alkavat valikoidulla joukolla päällä olevia sovelluksia (o-apps-help ja admin-ohje, haettu 2026-10-08). Tila ennallaan."
+      }
+    ]
   },
   "dlp|a_claude_enterprise": {
     "status": "p",
