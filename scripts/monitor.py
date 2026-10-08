@@ -4,6 +4,10 @@ The first successful fetch of a source only stores a baseline.
 A fetch that fails or returns suspiciously little text never overwrites a
 snapshot; after 3 consecutive failures an issue is opened, so silent
 breakage does not look like "no changes".
+
+Changes that noise.classify() deems cosmetic (dates, whitespace, case, line
+order, a page alternating between versions) only update the snapshot.
+Real changes are collected into one open issue per vendor.
 """
 from __future__ import annotations
 
@@ -17,6 +21,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import bundles
+import noise
 from common import LEGACY_STATUS, SNAPSHOTS, STATUS_FILE, gh, load_all, out_path, today
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -91,6 +96,11 @@ def open_or_comment(title: str, label: str, body: str) -> None:
         gh("issue", "create", "--title", title, "--label", label, "--body-file", str(path))
 
 
+def vendor_name(src: dict, data: dict) -> str:
+    names = {v["id"]: v["name"] for v in data["structure"]["vendors"]}
+    return names.get(src.get("vendor", ""), "yhteiset lähteet")
+
+
 def main() -> int:
     data = load_all()
     SNAPSHOTS.mkdir(parents=True, exist_ok=True)
@@ -109,7 +119,7 @@ def main() -> int:
         status.pop(sid)
     monitored = [s for s in data["sources"] if s.get("monitor")]
     ensure_labels()
-    changed = failed = 0
+    changed = failed = noisy = 0
 
     for src in monitored:
         st = status.setdefault(src["id"], {})
@@ -140,6 +150,7 @@ def main() -> int:
             # The source now points to a different page: start a new baseline instead of reporting a diff.
             snap.write_text(text, encoding="utf-8")
             st.update({"url": src["url"], "baseline": now})
+            st.pop("versions", None)
             print(f"REBASELINE {src['id']}")
             continue
         st["url"] = src["url"]
@@ -151,20 +162,27 @@ def main() -> int:
         old = snap.read_text(encoding="utf-8")
         if old == text:
             continue
+        snap.write_text(text, encoding="utf-8")  # the snapshot follows the page also when the change is noise
+        why = noise.classify(old, text, st, src.get("ignore", []))
+        if why:
+            noisy += 1
+            st["last_noise"] = f"{now}: {why}"
+            print(f"NOISE {src['id']}: {why}")
+            continue
         changed += 1
         diff = unified(old, text, src["id"])
-        snap.write_text(text, encoding="utf-8")
         st["last_change"] = now
         n_cells = sum(1 for c in data["cells"].values() if any(s["id"] == src["id"] for s in c.get("sources", [])))
         body = (f"Seurattu lähde **[{src['title']}]({src['url']})** muuttui ({now}).\n"
                 f"Lähteeseen viittaa {n_cells} solua. Koko sivun versiot tallentuvat yksityiseen snapshot-repoon.\n\n"
                 + bundles.source_change(src, diff, data))
-        open_or_comment(f"Lähdemuutos: {src['id']}", "lahdemuutos", body)
+        open_or_comment(f"Lähdemuutokset: {vendor_name(src, data)}", "lahdemuutos", body)
         print(f"CHANGED {src['id']}")
 
-    status["_run"] = {"date": now, "monitored": len(monitored), "changed": changed, "failed": failed}
+    status["_run"] = {"date": now, "monitored": len(monitored), "changed": changed, "noise": noisy,
+                      "failed": failed}
     status_path.write_text(json.dumps(status, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"Valmis: {len(monitored)} lähdettä, {changed} muuttui, {failed} epäonnistui.")
+    print(f"Valmis: {len(monitored)} lähdettä, {changed} muuttui, {noisy} kohinaa, {failed} epäonnistui.")
     return 0
 
 

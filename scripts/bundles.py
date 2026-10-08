@@ -92,7 +92,9 @@ def source_change(src: dict, diff: str, data: dict) -> str:
     diff_txt = diff[:MAX_DIFF_CHARS] + ("\n[... diff katkaistu, hae sivu itse ...]" if truncated else "")
     parts = [
         f"Tehtävä: seurattu lähde on muuttunut. Hae sivu ({src['url']}) ja arvioi, muuttaako muutos "
-        "alla lueteltuja soluja. Jos muutos on kosmeettinen, palauta patch, jossa on vain summary ja unchanged-lista.",
+        "alla lueteltuja soluja. Jos muutos on kosmeettinen, palauta patch, jossa on vain summary ja unchanged-lista. "
+        "Jos kosmeettinen muutos todennäköisesti toistuu (esim. vaihtuva navigaatio tai artikkelilista), "
+        "ehdota lähteelle source_ops-päivityksellä selector tai ignore, jotta seuranta ohittaa sen jatkossa.",
         f"Lähde: {src['id']} – {src['title']} ({src['type']})",
         f"Solut, jotka viittaavat tähän lähteeseen ({len(views)} kpl):\n{_json(views)}",
         f"Muutos (unified diff poimitusta tekstistä):\n{diff_txt}",

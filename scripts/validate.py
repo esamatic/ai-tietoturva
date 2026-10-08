@@ -1,6 +1,7 @@
 """Integrity check for data/*.json. Exit code 1 on errors; warnings are informational."""
 from __future__ import annotations
 
+import re
 import sys
 from collections import Counter
 
@@ -26,6 +27,16 @@ def main() -> int:
     errors += [f"lähde {s['id']}: tuntematon vendor {s['vendor']!r}" for s in sources
                if s.get("vendor") and s["vendor"] not in vendors]
     errors += [f"ryhmä {g['id']}: tier {g['tier']!r}" for g in st["groups"] if "tier" in g and g["tier"] not in TIERS]
+    for s in sources:
+        patterns = s.get("ignore", [])
+        if not isinstance(patterns, list) or not all(isinstance(p, str) for p in patterns):
+            errors.append(f"lähde {s['id']}: ignore pitää olla lista merkkijonoja")
+            continue
+        for p in patterns:
+            try:
+                re.compile(p)
+            except re.error as e:
+                errors.append(f"lähde {s['id']}: ignore-lauseke {p!r} ei käänny ({e})")
 
     for r in st["rows"]:
         bad = set(r.get("status_labels", {})) - set(STATUS_LABELS)

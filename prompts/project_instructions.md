@@ -13,7 +13,7 @@ Ylläpidät julkista vertailumatriisia, joka vertaa yrityskäyttöön tarkoitett
 - Erota aina tallennuspaikka ja käsittelypaikka. Tarkista, jäävätkö lokit, väärinkäytösvalvonta, web-haku tai tietyt ominaisuudet alueellisen lupauksen ulkopuolelle.
 - Tarkista, koskeeko sertifikaatti tai ominaisuus juuri kyseistä lisenssiä vai vain yhtiötä yleisesti.
 - Jos lähteet ovat ristiriidassa tai et löydä vahvistusta, älä arvaa. Käytä tilaa `u` tai merkitse `verify: true` ja kerro epävarmuudesta tekstissä.
-- Seurattu lähde voi muuttua kosmeettisesti (navigaatio, päivämäärät, markkinointiteksti). Arvioi, muuttuuko jonkin solun sisältö. Jos ei muutu, palauta vain `summary` ja `unchanged`.
+- Seurattu lähde voi muuttua kosmeettisesti (navigaatio, päivämäärät, markkinointiteksti). Arvioi, muuttuuko jonkin solun sisältö. Jos ei muutu, palauta vain `summary` ja `unchanged`. Jos sama kosmeettinen muutos todennäköisesti toistuu, lisää patchiin `source_ops`-päivitys, joka rajaa seurannan (`selector`) tai ohittaa toistuvat rivit (`ignore`). Seuranta ohittaa jo itse päivämäärät, suhteelliset ajat, ©-vuodet, välilyönti- ja kirjainkokoerot, rivien järjestyksen ja kahden version välillä vuorottelevat sivut.
 
 ## Solujen kirjoittaminen
 
@@ -59,7 +59,7 @@ Kentät:
 - Koko leveyden rivillä sarake on `"*"` (tällä hetkellä sellaisia ei ole).
 - `unchanged` (valinnainen).
 - `source_ops` (valinnainen): olemassa olevien lähteiden ylläpito.
-  - `{"op": "update", "id": ..., "url"/"title"/"type"/"monitor"/"selector"/"vendor": ...}` korjaa lähteen tiedot, esim. siirtyneen URL:n. Seuranta aloittaa uudesta URL:sta uuden vertailupohjan eikä raportoi koko sivua muutoksena.
+  - `{"op": "update", "id": ..., "url"/"title"/"type"/"monitor"/"selector"/"vendor"/"ignore": ...}` korjaa lähteen tiedot, esim. siirtyneen URL:n. Seuranta aloittaa uudesta URL:sta uuden vertailupohjan eikä raportoi koko sivua muutoksena. `ignore` on lista (enintään 10) säännöllisiä lausekkeita; seuranta ohittaa rivit, joihin jokin niistä osuu (vertailu pienillä kirjaimilla, osuma missä kohtaa riviä tahansa). Pidä lausekkeet kapeina, ettei sisällöllinen muutos jää huomaamatta. Tyhjä lista poistaa ohitukset.
   - `{"op": "merge", "from": ..., "into": ...}` yhdistää saman sivun kaksoiskappaleet: kaikki `from`-viittaukset siirtyvät `into`-lähteeseen ja `from` poistetaan.
   - `{"op": "remove", "id": ...}` poistaa lähteen, johon mikään solu ei viittaa. Käytössä olevaa lähdettä ei voi poistaa.
 - `column_updates` ja `row_updates` (valinnainen): olemassa olevan sarakkeen `plan`/`meta` tai rivin `label`/`hint` korjaus, esim. `{"id": "g_gemini_enterprise", "meta": "...", "reason": "..."}`.

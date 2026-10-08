@@ -1,0 +1,28 @@
+name: Issue-jonon purku (kertaluonteinen)
+
+# Aja ensin ilman rastia ja lue raportti lokista. Aja sitten uudelleen rasti päällä.
+# Kun jono on purettu, tämän tiedoston ja scripts/triage_backlog.py:n voi poistaa.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Sulje kohinaissuet (tyhjänä vain raportti)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python scripts/triage_backlog.py ${{ inputs.apply && '--apply' || '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}

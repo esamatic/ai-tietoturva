@@ -32,7 +32,7 @@ Tarjoajien värit ovat datassa (`color`, `color_dark`). Uusi tarjoaja saa värin
 
 ## Käyttö
 
-**Lähde muuttui.** Seuranta avaa issuen *Lähdemuutos: &lt;lähde&gt;*, jossa on diff ja kopioitava paketti. Liitä paketti Claude-projektin keskusteluun, ja liitä Clauden koko vastaus issueen kommentiksi. Workflow poimii `BEGIN-PATCH … END-PATCH`-lohkon, validoi sen ja avaa pull requestin, jonka taulukko näyttää jokaisen muutoksen. Yhdistä PR, niin sivu päivittyy. Jos validointi epäonnistuu, virheet tulevat kommenttina ja voit pyytää Claudelta korjatun version. Saman issuen myöhemmät patch-kommentit (korjaukset tai pitkän patchin jatko-osat) lisätään samaan avoimeen PR:ään.
+**Lähde muuttui.** Seuranta kokoaa saman tarjoajan muutokset yhteen avoimeen issueen *Lähdemuutokset: &lt;tarjoaja&gt;*; jokainen muuttunut lähde tuo oman kommenttinsa, jossa on diff ja kopioitava paketti. Liitä paketti Claude-projektin keskusteluun, ja liitä Clauden koko vastaus issueen kommentiksi. Workflow poimii `BEGIN-PATCH … END-PATCH`-lohkon, validoi sen ja avaa pull requestin, jonka taulukko näyttää jokaisen muutoksen. Yhdistä PR, niin sivu päivittyy. Jos validointi epäonnistuu, virheet tulevat kommenttina ja voit pyytää Claudelta korjatun version. Saman issuen myöhemmät patch-kommentit (korjaukset tai pitkän patchin jatko-osat) lisätään samaan avoimeen PR:ään.
 
 **Uusi seurattava ominaisuus (rivi), lisenssi (sarake) tai lähde.** Avaa issue vastaavalla lomakkeella. Workflow avaa PR:n, joka lisää kohteen, ja kommentoi issueen tutkimuspaketin. Tutki kohde paketilla ja liitä vastaus samaan issueen: patch lisätään samaan PR:ään, joten sitä ei tarvitse yhdistää välissä. Jos yhdistät PR:n ennen tutkimusta, uudet solut näkyvät sivulla tilassa *Ei vielä tutkittu* ja rivillä lukee, mistä päivästä alkaen sitä on seurattu.
 
@@ -50,7 +50,7 @@ Tarjoajien värit ovat datassa (`color`, `color_dark`). Uusi tarjoaja saa värin
 |---|---|
 | `data/structure.json` | tarjoajat (värit), ryhmät (taso), rivit ja sarakkeet (`added`-päivä kertoo, mistä asti kohdetta on seurattu) |
 | `data/cells.json` | solut avaimella `rivi\|sarake`: tila, teksti, lähteet, `verified`, `changed`, `history` |
-| `data/sources.json` | kaikki lähteet; `monitor: true` = päivittäisessä seurannassa, `selector` = CSS-rajaus |
+| `data/sources.json` | kaikki lähteet; `monitor: true` = päivittäisessä seurannassa, `selector` = CSS-rajaus, `ignore` = ohitettavien rivien regexit |
 | `data/changelog.json` | muutosloki |
 | `data/meta.json` | otsikko, huomiot, muutosikkunan pituus |
 | `status/monitor.json` | seurannan tila (tarkistuspäivät, muutokset, virheet); julkinen |
@@ -79,7 +79,7 @@ SNAPSHOT_DIR=/tmp/snap DRY_RUN=1 python scripts/monitor.py   # gh-komennot vain 
 ## Tiedossa olevat rajoitukset
 
 - **Bottiesto ja JavaScript-sivut.** Osa sivuista palauttaa esto- tai tyhjän sivun. Tällainen haku ei koskaan ylikirjoita snapshotia, ja kolmen peräkkäisen epäonnistumisen jälkeen avautuu issue *Seurantavirhe*. Korjaus on yleensä `selector`, toinen URL tai `monitor: false`.
-- **Kosmeettiset muutokset.** Ilman valitsinta myös navigaation tai päivämäärien muutokset näkyvät. Lisää lähteelle `selector` (esim. `main`, `article`).
+- **Kosmeettiset muutokset.** Seuranta (`scripts/noise.py`) ei avaa issueta, jos muuttuu vain päivämääriä, suhteellisia aikoja, ©-vuosia, välilyöntejä, kirjainkokoa tai rivien järjestystä, tai jos sivu vuorottelee kahden version välillä; snapshot päivittyy silti, ja syy näkyy tilan kentässä `last_noise`. Kokoon perustuvaa kynnystä ei ole, koska hinnastossa yhden sanan muutos voi olla olennainen. Toistuvan kohinan voi rajata lähteen `selector`- tai `ignore`-kentällä.
 - **Seuranta näkee vain seuratut sivut.** Uudet dokumentit ja lisenssit löytyvät täysissä tarkistuksissa.
 - **Ylläpito patcheilla.** Patch voi myös korjata olemassa olevia lähteitä (`source_ops`: update, merge, remove) sekä sarakkeiden ja rivien tekstejä (`column_updates`, `row_updates`). Lähde, johon mikään solu ei patchin jälkeen viittaa, poistuu automaattisesti, ja seuranta siivoaa poistettujen lähteiden snapshotit. Täyden tarkistuksen paketti näyttää, montako solua kuhunkin lähteeseen viittaa, joten siivous tapahtuu tarkistusten yhteydessä.
 - **Automaattinen yhdistäminen (valinnainen).** Repository variable `AUTO_MERGE=true` (*Settings → Secrets and variables → Actions → Variables*) yhdistää validoidun patchin PR:n heti ja julkaisee sivun. Silloin ihmisen tekemä PR-tarkastus jää pois; muutosloki ja git-historia säilyvät, ja virheellisen muutoksen voi perua uudella patchilla tai revertillä.

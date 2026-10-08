@@ -35,6 +35,23 @@ class PatchError(Exception):
     pass
 
 
+MAX_IGNORE = 10
+
+
+def ignore_list(value, where: str, errors: list[str]) -> list[str] | None:
+    """Validate a source's `ignore` patterns: list of compilable regexes (lines matching them are skipped by the monitor)."""
+    if not isinstance(value, list) or len(value) > MAX_IGNORE or not all(isinstance(p, str) and 0 < len(p) <= 200 for p in value):
+        errors.append(f"{where}: ignore pitää olla lista (enintään {MAX_IGNORE}) säännöllisiä lausekkeita, kukin 1–200 merkkiä.")
+        return None
+    for p in value:
+        try:
+            re.compile(p)
+        except re.error as e:
+            errors.append(f"{where}: ignore-lauseke {p!r} ei käänny: {e}")
+            return None
+    return value
+
+
 def extract_patch(text: str) -> dict:
     m = PATCH_RE.search(text)
     if not m:
@@ -97,6 +114,11 @@ def apply(patch: dict, data: dict, ref: str) -> tuple[dict, list[str], list[dict
         new = {"id": sid, "vendor": vendor, "title": (src.get("title") or url)[:200],
                "url": url, "type": stype, "monitor": bool(src.get("monitor", stype == "primary")),
                "selector": src.get("selector", "")}
+        if src.get("ignore"):
+            patterns = ignore_list(src["ignore"], where, errors)
+            if patterns is None:
+                return None
+            new["ignore"] = patterns
         sources.append(new)
         added.append(new)
         ids.add(sid)
@@ -134,7 +156,7 @@ def apply(patch: dict, data: dict, ref: str) -> tuple[dict, list[str], list[dict
             if s is None:
                 errors.append(f"{where}: tuntematon lähde {op.get('id')!r}.")
                 continue
-            extra = set(op) - {"op", "id", "url", "title", "type", "monitor", "selector", "vendor"}
+            extra = set(op) - {"op", "id", "url", "title", "type", "monitor", "selector", "vendor", "ignore"}
             if extra:
                 errors.append(f"{where}: tuntemattomat kentät {sorted(extra)}.")
                 continue
@@ -156,6 +178,14 @@ def apply(patch: dict, data: dict, ref: str) -> tuple[dict, list[str], list[dict
             if op.get("vendor") and op["vendor"] not in vendor_ids:
                 errors.append(f"{where}: tuntematon vendor {op['vendor']!r}.")
                 continue
+            if "ignore" in op:
+                patterns = ignore_list(op["ignore"], where, errors)
+                if patterns is None:
+                    continue
+                if patterns:
+                    s["ignore"] = patterns
+                else:
+                    s.pop("ignore", None)
             for f in ("title", "type", "selector", "vendor"):
                 if f in op:
                     s[f] = str(op[f])[:200]
