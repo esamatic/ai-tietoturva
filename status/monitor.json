@@ -1,17 +1,17 @@
 {
   "_run": {
-    "changed": 0,
-    "date": "2026-11-23",
-    "failed": 0,
+    "changed": 14,
+    "date": "2026-11-25",
+    "failed": 2,
     "monitored": 69,
-    "noise": 0
+    "noise": 2
   },
   "a-certs": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-31",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://support.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained",
     "versions": {
       "61977a606b6e": 1,
@@ -21,16 +21,16 @@
   "a-cmek": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://support.claude.com/en/articles/15505325-what-are-customer-managed-encryption-keys-cmek"
   },
   "a-commercial-terms": {
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-10-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://www.anthropic.com/legal/commercial-terms",
     "versions": {
       "0d7ec90aba0a": 1,
@@ -41,8 +41,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-10",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://privacy.claude.com/en/articles/15425996-data-retention-practices-for-covered-models",
     "versions": {
       "0527d60b2f7f": 1,
@@ -55,8 +55,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-20",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
     "versions": {
       "004867ae74ec": 1,
@@ -74,8 +74,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-04",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://privacy.claude.com/en/articles/10440198-configure-custom-data-retention-controls-for-enterprise-plans",
     "versions": {
       "3318afd76c60": 1,
@@ -93,8 +93,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://www.anthropic.com/legal/data-processing-addendum",
     "versions": {
       "4f33e0c33e9a": 1,
@@ -104,16 +104,16 @@
   "a-enterprise-plan": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan"
   },
   "a-export": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://support.claude.com/en/articles/13346720-export-your-organization-s-data",
     "versions": {
       "05a61d6eb26c": 1,
@@ -128,8 +128,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://claude.com/pricing",
     "versions": {
       "0bb250db4221": 1,
@@ -144,13 +144,12 @@
   "a-residency": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-19",
-    "last_checked": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
     "last_noise": "2026-10-28: vain muotoilua, päivämääriä tai ohitettavia rivejä",
-    "last_ok": "2026-11-23",
+    "last_ok": "2026-11-25",
     "url": "https://platform.claude.com/docs/en/manage-claude/data-residency",
     "versions": {
-      "1c17ce480c87": 1,
       "35fcb58e0350": 1,
       "4a4edc5baea1": 1,
       "4e98a501e31e": 1,
@@ -158,6 +157,7 @@
       "577604994566": 1,
       "5c382efc0cd0": 1,
       "6bbfa41bb6a4": 1,
+      "8afeae999e83": 1,
       "9a17d7820e92": 1,
       "abc21b588154": 1,
       "b8ec59c8abc2": 1,
@@ -167,16 +167,16 @@
   "a-retention": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data"
   },
   "eu-gpai": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-30",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://digital-strategy.ec.europa.eu/en/policies/gpai-code-practice",
     "versions": {
       "c5a19b637e69": 1,
@@ -187,8 +187,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-08",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://workspace.google.com/intl/en_sg/security/ai-privacy",
     "versions": {
       "8c7db18fdb15": 1,
@@ -199,8 +199,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-30",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://cloud.google.com/terms/data-processing-addendum",
     "versions": {
       "3c3f1a2877aa": 1,
@@ -211,8 +211,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/compliance/set-up-advanced-settings-for-data-regions",
     "versions": {
       "bfb424545b84": 1,
@@ -223,8 +223,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/compliance/compare-data-region-features-across-google-workspace-editions",
     "versions": {
       "64c5ccd8e2f4": 1,
@@ -237,8 +237,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/compliance/data-covered-by-data-regions",
     "versions": {
       "415f453a0a42": 1,
@@ -251,8 +251,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-12",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/security/about-dlp-for-gemini",
     "versions": {
       "1fdf4ad82d73": 1,
@@ -265,8 +265,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-10-08",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://business.safety.google/processorterms/",
     "versions": {
       "9dd6013694f3": 1,
@@ -276,16 +276,16 @@
   "g-ge-business-manage": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-enterprise/manage-your-gemini-enterprise-business-edition-subscription"
   },
   "g-ge-business-terms": {
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-10-16",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://cloud.google.com/terms/gemini-enterprise/business",
     "versions": {
       "251a7c0d6bb2": 1,
@@ -295,19 +295,20 @@
   "g-ge-controls": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.cloud.google.com/gemini/enterprise/docs/compliance-security-controls"
   },
   "g-ge-editions-pricing": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_change": "2026-10-09",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://cloud.google.com/gemini-enterprise",
     "versions": {
       "2e7460072773": 1,
+      "47d32a3308d7": 1,
       "78bbacc30a4d": 1,
       "fedd0ba8c066": 1
     }
@@ -316,8 +317,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-04",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider",
     "versions": {
       "35cb7422324a": 1,
@@ -330,8 +331,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-20",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.cloud.google.com/gemini/enterprise/docs/locations",
     "versions": {
       "494a78e04f71": 1,
@@ -351,21 +352,23 @@
   "g-ge-sla": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_change": "2026-10-16",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://cloud.google.com/terms/gemini-enterprise/sla",
     "versions": {
       "34961c2307cf": 1,
-      "be2c2657fc50": 1
+      "be2c2657fc50": 1,
+      "e58b4d7d56ea": 1
     }
   },
   "g-gemini-app-admin": {
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_noise": "2026-11-25: vain rivien järjestys",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/turn-the-gemini-app-on-or-off",
     "versions": {
       "40b95d748723": 1,
@@ -377,16 +380,16 @@
   "g-indemnified-services": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://cloud.google.com/terms/generative-ai-indemnified-services"
   },
   "g-privacyhub": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-10",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
     "versions": {
       "20223f992fbd": 1,
@@ -397,8 +400,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-25",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://knowledge.workspace.google.com/vault/getting-started/vault-overview",
     "versions": {
       "79995dbe2636": 1,
@@ -409,13 +412,13 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-18",
-    "last_checked": "2026-11-23",
-    "last_noise": "2026-11-22: sivu vuorottelee versioiden välillä (versioon palattu 4 kertaa aiemmin)",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_noise": "2026-11-25: sivu vuorottelee versioiden välillä (versioon palattu 6 kertaa aiemmin)",
+    "last_ok": "2026-11-25",
     "url": "https://workspace.google.com/pricing",
     "versions": {
       "149a16149de4": 5,
-      "295be694fe37": 6,
+      "295be694fe37": 7,
       "4d146c1767e0": 1,
       "8475bcd3220e": 1,
       "8f75d22918a0": 1,
@@ -425,24 +428,26 @@
   "g-ws-sla": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_change": "2026-10-08",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://workspace.google.com/terms/sla/",
     "versions": {
       "56cb1d1c0afb": 1,
-      "812596e7f32b": 1
+      "812596e7f32b": 1,
+      "fe43170ffd24": 1
     }
   },
   "mi-admin": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-13",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.mistral.ai/admin/overview",
     "versions": {
       "35b075764e65": 1,
+      "661d6de5a5c7": 1,
       "98a275f89c1a": 1,
       "bfb55fee07e8": 1,
       "f3c4a9c8c250": 1
@@ -451,11 +456,12 @@
   "mi-audit": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-18",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.mistral.ai/admin/monitor-comply/audit-logs/overview",
     "versions": {
+      "71b93e3f9780": 1,
       "9e71aa65bb79": 1,
       "f5a43dd80599": 1
     }
@@ -468,29 +474,35 @@
   "mi-commercial-terms": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://legal.mistral.ai/terms/commercial-terms-of-service"
   },
   "mi-connectors-admin": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
-    "url": "https://docs.mistral.ai/admin/identity-access/connectors"
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
+    "url": "https://docs.mistral.ai/admin/identity-access/connectors",
+    "versions": {
+      "723231e9a310": 1,
+      "f0a6f98ae263": 1
+    }
   },
   "mi-dpa": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://legal.mistral.ai/terms/data-processing-addendum"
   },
   "mi-privacy-controls": {
     "baseline": "2026-10-14",
-    "failures": 0,
+    "error": "404 Client Error: Not Found for url: https://docs.mistral.ai/admin/security-access/privacy",
+    "failures": 1,
     "last_change": "2026-11-19",
-    "last_checked": "2026-11-23",
+    "last_checked": "2026-11-25",
     "last_ok": "2026-11-23",
     "url": "https://docs.mistral.ai/admin/security-access/privacy",
     "versions": {
@@ -502,8 +514,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-19",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.mistral.ai/en/articles/347629-where-do-you-store-my-data-or-my-organization-s-data",
     "versions": {
       "e18d0024a957": 1,
@@ -513,20 +525,22 @@
   "mi-sso": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-13",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.mistral.ai/admin/set-up-organization/sign-in-method/saml-sso",
     "versions": {
+      "0cbc1dabb29e": 1,
       "689c3d3e07ae": 1,
       "6b8c5121da84": 1
     }
   },
   "mi-sso-quickstart": {
     "baseline": "2026-09-30",
-    "failures": 0,
+    "error": "404 Client Error: Not Found for url: https://docs.mistral.ai/admin/quickstarts/configure-sso",
+    "failures": 1,
     "last_change": "2026-11-19",
-    "last_checked": "2026-11-23",
+    "last_checked": "2026-11-25",
     "last_ok": "2026-11-23",
     "url": "https://docs.mistral.ai/admin/quickstarts/configure-sso",
     "versions": {
@@ -538,8 +552,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-19",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "versions": {
       "368a1290a26e": 1,
@@ -550,36 +564,37 @@
   "mi-users": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-19",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://docs.mistral.ai/admin/identity-access/user-management",
     "versions": {
       "8559e43a304f": 1,
       "8eb89da34fbf": 1,
-      "bf7688e23b96": 1
+      "bf7688e23b96": 1,
+      "d59d7dbcb6fd": 1
     }
   },
   "mi-view-help": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.mistral.ai/en/articles/347632-can-other-people-view-my-conversations"
   },
   "ms-agent-settings": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings"
   },
   "ms-anthropic-subproc": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
     "versions": {
       "2620ff1f300c": 1,
@@ -595,8 +610,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-11",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://support.microsoft.com/en-US/copilot-microsoft365-chat",
     "versions": {
       "739b55150cb6": 1,
@@ -608,9 +623,9 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-08",
-    "last_checked": "2026-11-23",
+    "last_checked": "2026-11-25",
     "last_noise": "2026-11-04: vain muotoilua, päivämääriä tai ohitettavia rivejä",
-    "last_ok": "2026-11-23",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/copilot/privacy-and-protections",
     "versions": {
       "0094850ab0e0": 1,
@@ -629,8 +644,8 @@
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-10-08",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/purview/customer-key-overview",
     "versions": {
       "92e8f8807ca2": 1,
@@ -640,16 +655,16 @@
   "ms-customer-lockbox": {
     "baseline": "2026-10-01",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/purview/customer-lockbox-requests"
   },
   "ms-edp": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-05",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection",
     "versions": {
       "2cc33a80e895": 1,
@@ -662,8 +677,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-10-08",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/privacy/eudb/eu-data-boundary-learn",
     "versions": {
       "4ac59d4b1d5f": 1,
@@ -674,8 +689,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-14",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/multiple-account-access",
     "versions": {
       "32684e946bfb": 1,
@@ -687,8 +702,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-10-24",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/openai-subprocessor",
     "versions": {
       "06f0c2d9efb6": 1,
@@ -701,9 +716,9 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-20",
-    "last_checked": "2026-11-23",
+    "last_checked": "2026-11-25",
     "last_noise": "2026-11-18: vain muotoilua, päivämääriä tai ohitettavia rivejä",
-    "last_ok": "2026-11-23",
+    "last_ok": "2026-11-25",
     "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing",
     "versions": {
       "3ce1359b2af7": 1,
@@ -716,16 +731,16 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-10-03",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise"
   },
   "ms-privacy": {
     "baseline": "2026-09-30",
     "failures": 0,
     "last_change": "2026-11-05",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
     "versions": {
       "1b9edf29540d": 1,
@@ -738,23 +753,23 @@
   "ms-purview-ai": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/purview/ai-microsoft-purview"
   },
   "ms-retention-deletion": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview"
   },
   "o-apps-admin-help": {
     "baseline": "2026-10-08",
     "failures": 0,
     "last_change": "2026-10-30",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.openai.com/en/articles/11509118-admin-controls-security-and-compliance-for-plugins-and-apps",
     "versions": {
       "1ae381ca0e09": 1,
@@ -770,8 +785,8 @@
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.openai.com/en/articles/11487775-apps-in-chatgpt",
     "versions": {
       "314526f69b61": 1,
@@ -785,38 +800,43 @@
   "o-business-data": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-10-01",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
-    "url": "https://openai.com/enterprise-privacy/"
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
+    "url": "https://openai.com/enterprise-privacy/",
+    "versions": {
+      "72b7954657d9": 1,
+      "9dedab3b63cb": 1
+    }
   },
   "o-dpa": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://openai.com/en-GB/policies/data-processing-addendum/"
   },
   "o-export-help": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data",
     "versions": {
       "3c5108953784": 1,
       "52c347901f31": 1,
       "9305c9d358a0": 1,
-      "bc9090ed7710": 1
+      "bc9090ed7710": 1,
+      "ed2372d39f40": 1
     }
   },
   "o-help-ent": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.openai.com/en/collections/5688074-chatgpt-enterprise-and-edu",
     "versions": {
       "174a024351b3": 1,
@@ -828,17 +848,19 @@
       "abc9f4b2119e": 1,
       "b908d9d61c16": 1,
       "dd85cf303f10": 1,
+      "e1b1b455f06e": 1,
       "ff075e265ab8": 1
     }
   },
   "o-pricing": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://openai.com/business/pricing/",
     "versions": {
+      "77282d777d6d": 1,
       "7f8d5061801c": 1,
       "aaa910b23b2f": 1
     }
@@ -846,23 +868,24 @@
   "o-residency-help": {
     "baseline": "2026-09-30",
     "failures": 0,
-    "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_change": "2026-11-25",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://help.openai.com/en/articles/9903489-data-residency-and-inference-residency-for-chatgpt",
     "versions": {
       "646ab8d8c325": 1,
       "83681db4b9b6": 1,
       "c9e542cb7bf1": 1,
-      "d2a5d4c338fb": 1
+      "d2a5d4c338fb": 1,
+      "f633bea20994": 1
     }
   },
   "o-service-terms": {
     "baseline": "2026-10-01",
     "failures": 0,
     "last_change": "2026-11-21",
-    "last_checked": "2026-11-23",
-    "last_ok": "2026-11-23",
+    "last_checked": "2026-11-25",
+    "last_ok": "2026-11-25",
     "url": "https://openai.com/policies/service-terms/",
     "versions": {
       "41ed3ccb9a8f": 1,
